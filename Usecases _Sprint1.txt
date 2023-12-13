@@ -1,0 +1,11 @@
+Usecases Sprint 1.
+
+Mit der Libary "OPC UA .NET SDK" auseinanadersetzten.
+
+Akz1:
+Daten der SPS bekommen
+OPCUA Client und OPCUA Server konfigurieren
+Client mit Server verbinden
+
+Aku2:
+Spizielle Nodes (Variablen) von Server einlesen und am Client ausgeben
