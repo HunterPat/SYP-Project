@@ -1,6 +1,12 @@
 Sprint 2. Userstories:
+
 1. 
-Als Chef möchte ich ein Ziel für die Gesammtanzahl an Tuben pro Tag festlegen.
+Als Chef möchte ich ein Ziel für den Sollwert der Gesammtanzahl an Tuben pro Tag festlegen.
 Dieses Ziel wird so lange gespeichert, bis man den Wert per Button refreshed.
 
 2. 
+Als Techniker möchte ich, dass die eingelesenen Daten vom Server auf einem Bildschirm angezeigt werden.
+
+3.
+Als Chef möchte ich die Daten eines gesamten Tages in einer Datenbank gespeichert haben, wobei es die Daten einer Gesammten woche Summieren sollte.
+
