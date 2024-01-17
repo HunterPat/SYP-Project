@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj": {}
+    "D:\\Htl folder\\4.Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj": {
+    "D:\\Htl folder\\4.Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
+        "projectUniqueName": "D:\\Htl folder\\4.Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
         "projectName": "OPC-UA_Client",
-        "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
-        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\obj\\",
+        "projectPath": "D:\\Htl folder\\4.Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Htl folder\\4.Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
