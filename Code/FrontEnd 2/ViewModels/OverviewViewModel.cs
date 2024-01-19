@@ -1,5 +1,6 @@
 ﻿using FrontEnd_2.DataSimulation;
 using FrontEnd_2.SharedServices;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -104,8 +105,41 @@ namespace FrontEnd_2.ViewModels
 
         private async void UpdateData()
         {
-            int newData = await _dataService.GetDataFromApi();
-            CurrentAmount += newData;
+            int newData = await GetCurrentAmountFromApi();
+            CurrentAmount = newData;
+        }
+
+        private async Task<int> GetCurrentAmountFromApi()
+        {
+            string baseUrl = "http://192.168.139.120";
+            string endPoint = "/1/TAA1";
+
+            var client = new RestClient(baseUrl);
+            var request = new RestRequest(endPoint, Method.Get);
+
+            try
+            {
+                var response = await client.ExecuteAsync(request);
+
+                if (response.IsSuccessful)
+                {
+                    // Parse the response content and return the result
+                    int currentAmount = int.Parse(response.Content);
+                    return currentAmount;
+                }
+                else
+                {
+                    // Handle the error
+                    Console.WriteLine($"Error: {response.ErrorMessage}");
+                    return -1; // or throw an exception or handle the error accordingly
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions, e.g., network issues
+                Console.WriteLine($"Exception: {ex.Message}");
+                return -1; // or throw an exception or handle the error accordingly
+            }
         }
     }
 }
