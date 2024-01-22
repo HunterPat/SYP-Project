@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitRepositories\\SYP-Project\\Code\\FrontEnd 2\\FrontEnd 2.csproj": {}
+    "D:\\Visual Studio Projects\\FrontEnd 2\\FrontEnd 2.csproj": {}
   },
   "projects": {
-    "C:\\GitRepositories\\SYP-Project\\Code\\FrontEnd 2\\FrontEnd 2.csproj": {
+    "D:\\Visual Studio Projects\\FrontEnd 2\\FrontEnd 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitRepositories\\SYP-Project\\Code\\FrontEnd 2\\FrontEnd 2.csproj",
+        "projectUniqueName": "D:\\Visual Studio Projects\\FrontEnd 2\\FrontEnd 2.csproj",
         "projectName": "FrontEnd 2",
-        "projectPath": "C:\\GitRepositories\\SYP-Project\\Code\\FrontEnd 2\\FrontEnd 2.csproj",
-        "packagesPath": "C:\\Users\\vadym2005\\.nuget\\packages\\",
-        "outputPath": "C:\\GitRepositories\\SYP-Project\\Code\\FrontEnd 2\\obj\\",
+        "projectPath": "D:\\Visual Studio Projects\\FrontEnd 2\\FrontEnd 2.csproj",
+        "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual Studio Projects\\FrontEnd 2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vadym2005\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,12 +39,6 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "RestSharp": {
-              "target": "Package",
-              "version": "[110.2.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

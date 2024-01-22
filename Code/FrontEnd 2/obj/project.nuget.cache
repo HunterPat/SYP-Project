@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QFg5Fi2bfCcfsLB2bdmrMM1PnJ2ErjBybuKUOcRdlhuG+BbP5R54qhU8tKT71ghfmswpjennPDDYFSDmiDBWSg==",
+  "dgSpecHash": "iPoqjUz2C4RYxtY0m08qLLluRXEOctMsfnFIyV0BajUL49lWFY9CVe5kaGArMzVVbw6Qj1U5SeKhQK20U0rXSQ==",
   "success": true,
-  "projectFilePath": "C:\\GitRepositories\\SYP-Project\\Code\\FrontEnd 2\\FrontEnd 2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\vadym2005\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Visual Studio Projects\\FrontEnd 2\\FrontEnd 2.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

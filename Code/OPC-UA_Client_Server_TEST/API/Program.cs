@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using OPC_UA_Client;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,14 +17,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 //Server
-MyOPCServer1 server1 = new MyOPCServer1();
-MyOPCServer2 server2 = new MyOPCServer2();
-string server1URL = "opc.tcp://localhost:4840";
-string server2URL = "opc.tcp://localhost:4841";
+int gesamtTubenAnzZiel = 0;
+string server1URL = "opc.tcp://localhost:4840/";
+string server2URL = "opc.tcp://localhost:4841/";
+MyOPCServer1 server1 = new MyOPCServer1(server1URL);
+MyOPCServer2 server2 = new MyOPCServer2(server2URL);
 server1.StartServer();
 server2.StartServer();
 //Client
 MyOPCClient client = new MyOPCClient(server1URL);
+client.EstablishConnection();
 
 app.MapGet("/{serverID}/TAA1", (int serverID) =>
 {
@@ -74,4 +77,16 @@ app.MapGet("/{serverID}/TAA2", (int serverID) =>
     }
     return null;
 });
+var gesamtTubenAnzGroup = app.MapGroup("/gesamttubenanz");
+gesamtTubenAnzGroup.MapGet("", () => gesamtTubenAnzZiel);
+
+gesamtTubenAnzGroup.MapPost("", ([FromBody] int value) =>
+{
+    gesamtTubenAnzZiel = value;
+    return value;
+});
 app.Run();
+public class GesamtTubenAnzZiel
+{
+    public int GesamtTubenAnzZielValue { get; set; } = 0;
+}
