@@ -23,3 +23,32 @@ D:\Visual Studio Projects\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.genrunt
 D:\Visual Studio Projects\FrontEnd 2\obj\Debug\net8.0-windows\ref\FrontEnd 2.dll
 D:\Visual Studio Projects\FrontEnd 2\obj\Debug\net8.0-windows\Views\OverviewView.g.cs
 D:\Visual Studio Projects\FrontEnd 2\obj\Debug\net8.0-windows\Views\OverviewView.baml
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\bin\Debug\net8.0-windows\FrontEnd 2.exe
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\bin\Debug\net8.0-windows\FrontEnd 2.deps.json
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\bin\Debug\net8.0-windows\FrontEnd 2.runtimeconfig.json
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\bin\Debug\net8.0-windows\FrontEnd 2.dll
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\bin\Debug\net8.0-windows\FrontEnd 2.pdb
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\bin\Debug\net8.0-windows\RestSharp.dll
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.csproj.AssemblyReference.cache
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\Views\OverviewView.g.cs
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\Views\SettingsView.g.cs
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\App.g.cs
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2_MarkupCompile.cache
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2_MarkupCompile.lref
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\MainWindow.baml
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\Views\OverviewView.baml
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\Views\SettingsView.baml
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.g.resources
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.AssemblyInfoInputs.cache
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.AssemblyInfo.cs
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.csproj.CoreCompileInputs.cache
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.sourcelink.json
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.csproj.CopyComplete
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.dll
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\refint\FrontEnd 2.dll
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.pdb
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\FrontEnd 2.genruntimeconfig.cache
+C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\ref\FrontEnd 2.dll
