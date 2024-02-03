@@ -17,4 +17,5 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+Console.WriteLine("Ready!");
 app.Run();

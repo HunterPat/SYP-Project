@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Org.OpenAPITools.Api;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,9 +21,12 @@ namespace ProdVisOverviewFrontend
         private MainViewModel viewModel;
         private DispatcherTimer timeDisplayTimer;
         private DispatcherTimer updateTimer;
+        private string baseUrl = "http://localhost:5501";
+        private APIApi api;
         public MainWindow()
         {
             InitializeComponent();
+            api = new APIApi(baseUrl);
             viewModel = new MainViewModel();
             DataContext = viewModel;
 
@@ -41,14 +45,19 @@ namespace ProdVisOverviewFrontend
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
 
-            viewModel.ProductionGoal_1 = 1000;
-            viewModel.ProductionGoal_2 = 1000;
-            viewModel.CurrentAmount_1 = 345;
-            viewModel.CurrentAmount_2 = 234;
+            
+
         }
 
         private void UpdateTimer_Tick(object? sender, EventArgs e)
         {
+            if (api == null) return;
+
+            viewModel.ProductionGoal_1 = api.GesamttubenanzZielGet();
+            viewModel.ProductionGoal_2 = api.GesamttubenanzZielGet();
+            viewModel.CurrentAmount_1 = (int) ((long) api.ServerIDTAA1Get(1) + (long) api.ServerIDTAA2Get(1));
+            viewModel.CurrentAmount_2 = (int) ((long)api.ServerIDTAA1Get(2) + (long)api.ServerIDTAA2Get(2));
+            
             viewModel.Progress_1 = CalculatePercentage(viewModel.CurrentAmount_1, viewModel.ProductionGoal_1);
             viewModel.Progress_2 = CalculatePercentage(viewModel.CurrentAmount_2, viewModel.ProductionGoal_2);
             //int result = (int)CalculatePercentage(10, 100); = 10
@@ -69,6 +78,7 @@ namespace ProdVisOverviewFrontend
 
         private void TimeTimer_Tick(object sender, EventArgs e)
         {
+            
             // Update DateText with the current DateTime.Now value
             viewModel.DateText = DateTime.Now.ToString("dddd, dd.MM.yyyy - HH:mm:ss");
         }

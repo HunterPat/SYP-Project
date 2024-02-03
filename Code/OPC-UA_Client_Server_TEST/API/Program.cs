@@ -22,5 +22,5 @@ app.MapMachineData();
 app.Run();
 public class GesamtTubenAnzZiel
 {
-    public int GesamtTubenAnzZielValue { get; set; } = 0;
+    public int GesamtTubenAnzZielValue { get; set; } = 4000;
 }

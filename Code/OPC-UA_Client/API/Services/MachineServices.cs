@@ -7,8 +7,8 @@ namespace API.Services
 {
     public class MachineServices
     {
-        public static string server1URL = "opc.tcp://192.168.1.10:4840"; //TODO: change URL
-        public static string server2URL = "opc.tcp://192.168.1.10:4840"; //TODO: change URL
+        public static string server1URL = "opc.tcp://localhost:4840"; //TODO: change URL
+        public static string server2URL = "opc.tcp://localhost:4840"; //TODO: change URL
         MyOPCClient client;
         public MachineServices()
         {
