@@ -1,0 +1,108 @@
+openapi: 3.0.1
+info:
+  title: API
+  version: "1.0"
+servers:
+- url: /
+paths:
+  /{serverID}/TAA1:
+    get:
+      parameters:
+      - explode: false
+        in: path
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema: {}
+          description: Success
+      tags:
+      - API
+  /{serverID}/TAA2:
+    get:
+      parameters:
+      - explode: false
+        in: path
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema: {}
+          description: Success
+      tags:
+      - API
+  /gesamttubenanzZiel:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              format: int32
+              type: integer
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+  /resetBit:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              format: int32
+              type: integer
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+components:
+  schemas: {}
+
