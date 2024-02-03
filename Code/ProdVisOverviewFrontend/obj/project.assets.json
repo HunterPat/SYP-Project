@@ -2,18 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
-      "JsonSubTypes/2.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/JsonSubTypes.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/JsonSubTypes.dll": {}
-        }
-      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -130,45 +118,38 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "Org.OpenAPITools/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "JsonSubTypes": "2.0.1",
-          "Newtonsoft.Json": "13.0.3",
-          "Polly": "8.1.0",
-          "RestSharp": "110.2.0"
-        },
+      "xunit.abstractions/2.0.3": {
+        "type": "package",
         "compile": {
-          "bin/placeholder/Org.OpenAPITools.dll": {}
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "bin/placeholder/Org.OpenAPITools.dll": {}
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "xunit.extensibility.core/2.6.6": {
+        "type": "package",
+        "dependencies": {
+          "xunit.abstractions": "2.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
   },
   "libraries": {
-    "JsonSubTypes/2.0.1": {
-      "sha512": "1Po+Ypf0SjCeEKx5+C89Nb5OgTcqNvfS3uTI46MUM+KEp6Rq/M0h+vVsTUt/6DFRwZMTpsAJM4yJrZmEObVANA==",
-      "type": "package",
-      "path": "jsonsubtypes/2.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "jsonsubtypes.2.0.1.nupkg.sha512",
-        "jsonsubtypes.nuspec",
-        "lib/net35/JsonSubTypes.dll",
-        "lib/net40/JsonSubTypes.dll",
-        "lib/net45/JsonSubTypes.dll",
-        "lib/net46/JsonSubTypes.dll",
-        "lib/net47/JsonSubTypes.dll",
-        "lib/netstandard1.3/JsonSubTypes.dll",
-        "lib/netstandard2.0/JsonSubTypes.dll"
-      ]
-    },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -387,33 +368,66 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Org.OpenAPITools/1.0.0": {
-      "type": "project",
-      "path": "../swagger/src/Org.OpenAPITools/Org.OpenAPITools.csproj",
-      "msbuildProject": "../swagger/src/Org.OpenAPITools/Org.OpenAPITools.csproj"
+    "xunit.abstractions/2.0.3": {
+      "sha512": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "type": "package",
+      "path": "xunit.abstractions/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/xunit.abstractions.dll",
+        "lib/net35/xunit.abstractions.xml",
+        "lib/netstandard1.0/xunit.abstractions.dll",
+        "lib/netstandard1.0/xunit.abstractions.xml",
+        "lib/netstandard2.0/xunit.abstractions.dll",
+        "lib/netstandard2.0/xunit.abstractions.xml",
+        "xunit.abstractions.2.0.3.nupkg.sha512",
+        "xunit.abstractions.nuspec"
+      ]
+    },
+    "xunit.extensibility.core/2.6.6": {
+      "sha512": "ty6VKByzbx4Toj4/VGJLEnlmOawqZiMv0in/tLju+ftA+lbWuAWDERM+E52Jfhj4ZYHrAYVa14KHK5T+dq0XxA==",
+      "type": "package",
+      "path": "xunit.extensibility.core/2.6.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "lib/net452/xunit.core.dll",
+        "lib/net452/xunit.core.dll.tdnet",
+        "lib/net452/xunit.core.xml",
+        "lib/net452/xunit.runner.tdnet.dll",
+        "lib/net452/xunit.runner.utility.net452.dll",
+        "lib/netstandard1.1/xunit.core.dll",
+        "lib/netstandard1.1/xunit.core.xml",
+        "xunit.extensibility.core.2.6.6.nupkg.sha512",
+        "xunit.extensibility.core.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "Org.OpenAPITools >= 1.0.0",
+      "Polly >= 8.1.0",
       "RestSharp >= 110.2.0",
-      "RestSharp.Serializers.NewtonsoftJson >= 110.2.0"
+      "RestSharp.Serializers.NewtonsoftJson >= 110.2.0",
+      "xunit.extensibility.core >= 2.6.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vadym\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj",
+      "projectUniqueName": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj",
       "projectName": "ProdVisOverviewFrontend",
-      "projectPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj",
-      "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
-      "outputPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\obj\\",
+      "projectPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisOverviewFrontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -426,14 +440,7 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {
-            "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
-              "projectPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj"
-            },
-            "D:\\GitRepositories\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
-              "projectPath": "D:\\GitRepositories\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -446,6 +453,10 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "Polly": {
+            "target": "Package",
+            "version": "[8.1.0, )"
+          },
           "RestSharp": {
             "target": "Package",
             "version": "[110.2.0, )"
@@ -453,6 +464,10 @@
           "RestSharp.Serializers.NewtonsoftJson": {
             "target": "Package",
             "version": "[110.2.0, )"
+          },
+          "xunit.extensibility.core": {
+            "target": "Package",
+            "version": "[2.6.6, )"
           }
         },
         "imports": [

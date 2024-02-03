@@ -6,14 +6,16 @@ namespace API.Maps
 {
     public static class MachineMaps
     {
+        public static int gesamtTubenAnzZiel = 0;
+        public static int resetBit = 1;
+
         public static IEndpointRouteBuilder MapMachineData(this IEndpointRouteBuilder routes)
         {
             var gesamtTubenAnzDataGroup = routes.MapGroup("/{serverID}");
             var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
             var resetBitGroup = routes.MapGroup("/resetBit");
 
-            int gesamtTubenAnzZiel = 0;
-            int resetBit = 1;
+
             MyOPCServer1 server1 = new MyOPCServer1(MachineServices.server1URL);
             MyOPCServer2 server2 = new MyOPCServer2(MachineServices.server2URL);
             server1.StartServer();

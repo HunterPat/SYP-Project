@@ -27,10 +27,10 @@
           }
         }
       },
-      "Polly/8.2.1": {
+      "Polly/8.1.0": {
         "type": "package",
         "dependencies": {
-          "Polly.Core": "8.2.1"
+          "Polly.Core": "8.1.0"
         },
         "compile": {
           "lib/net6.0/Polly.dll": {
@@ -43,15 +43,15 @@
           }
         }
       },
-      "Polly.Core/8.2.1": {
+      "Polly.Core/8.1.0": {
         "type": "package",
         "compile": {
-          "lib/net8.0/Polly.Core.dll": {
+          "lib/net6.0/Polly.Core.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Polly.Core.dll": {
+          "lib/net6.0/Polly.Core.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -166,10 +166,10 @@
         "packageIcon.png"
       ]
     },
-    "Polly/8.2.1": {
-      "sha512": "tVHvP5Z0fNoZCE9mpKAsh0IaValwsTGPrqjlWqkWR/Gpl5jL05HWC/AVGSL+jkAqkl1Jn7uBUOArnRD+dK5PfQ==",
+    "Polly/8.1.0": {
+      "sha512": "EeCJCjxX/Czm6sjnEWbeCBfogYHLcPNEL6yJT5nZzT0U78sizhTYhY2l5aXxTD+DWeVRLZtkUHqWp7ij+tvYCQ==",
       "type": "package",
-      "path": "polly/8.2.1",
+      "path": "polly/8.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -183,14 +183,14 @@
         "lib/netstandard2.0/Polly.pdb",
         "package-icon.png",
         "package-readme.md",
-        "polly.8.2.1.nupkg.sha512",
+        "polly.8.1.0.nupkg.sha512",
         "polly.nuspec"
       ]
     },
-    "Polly.Core/8.2.1": {
-      "sha512": "/Z3EspfWBdTla4I9IAcQn32/7kB5WS3rSnOYloz8YlVyClu8h7uuYf4pfUvffOYVbxmDX/mFRfxwzqW2Zs96ZA==",
+    "Polly.Core/8.1.0": {
+      "sha512": "M9Mlim+I9QNP/Hu6SuWMTUFnjQPvYViGk1IAJyvdl85zNedmos8Yzx74/xPa+TEi3uof3H1xQLwAzWebhEvEYw==",
       "type": "package",
-      "path": "polly.core/8.2.1",
+      "path": "polly.core/8.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -203,15 +203,12 @@
         "lib/net6.0/Polly.Core.dll",
         "lib/net6.0/Polly.Core.pdb",
         "lib/net6.0/Polly.Core.xml",
-        "lib/net8.0/Polly.Core.dll",
-        "lib/net8.0/Polly.Core.pdb",
-        "lib/net8.0/Polly.Core.xml",
         "lib/netstandard2.0/Polly.Core.dll",
         "lib/netstandard2.0/Polly.Core.pdb",
         "lib/netstandard2.0/Polly.Core.xml",
         "package-icon.png",
         "package-readme.md",
-        "polly.core.8.2.1.nupkg.sha512",
+        "polly.core.8.1.0.nupkg.sha512",
         "polly.core.nuspec"
       ]
     },
@@ -342,24 +339,24 @@
     "net8.0": [
       "JsonSubTypes >= 2.0.1",
       "Newtonsoft.Json >= 13.0.3",
-      "Polly >= 8.2.1",
+      "Polly >= 8.1.0",
       "RestSharp >= 110.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vadym\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
+      "projectUniqueName": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
       "projectName": "Org.OpenAPITools",
-      "projectPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
-      "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
-      "outputPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\obj\\",
+      "projectPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -395,7 +392,7 @@
           },
           "Polly": {
             "target": "Package",
-            "version": "[8.2.1, )"
+            "version": "[8.1.0, )"
           },
           "RestSharp": {
             "target": "Package",

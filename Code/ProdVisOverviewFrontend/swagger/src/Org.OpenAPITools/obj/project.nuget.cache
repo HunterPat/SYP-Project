@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "DBS7vN5b1wK0FPC5f8/RjIGiMed6oiiZtZHavvaezNJnrFznrw7gIem/SHBnc38J77CFquSs2tR93mNVWib0Tg==",
+  "dgSpecHash": "B3GsUg8Tc3QpLFuYu0D/v4cge34htb5+SeWM+fV/lY+NX3yASI6aDO2jlz7gvmtNaUJDLEzwU85Lpa4ucobJag==",
   "success": true,
-  "projectFilePath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
+  "projectFilePath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vadym\\.nuget\\packages\\jsonsubtypes\\2.0.1\\jsonsubtypes.2.0.1.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\polly\\8.2.1\\polly.8.2.1.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\polly.core\\8.2.1\\polly.core.8.2.1.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\jsonsubtypes\\2.0.1\\jsonsubtypes.2.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\polly\\8.1.0\\polly.8.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\polly.core\\8.1.0\\polly.core.8.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

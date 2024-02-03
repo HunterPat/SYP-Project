@@ -47,7 +47,11 @@ namespace OPC_UA_Client
             {
                 var gesamtAnzahl = client.ReadNode(anzTag);
                 var refeshBit = client.ReadNode(resetBitTag);
-                return gesamtAnzahl!;
+                if (gesamtAnzahl != null)
+                {
+                    return gesamtAnzahl;
+                }
+                return null;
             }
             catch (Exception ex)
             {
@@ -62,14 +66,14 @@ namespace OPC_UA_Client
             var resetBitTag = "ns=2;s=TAA2/resetBitTag";
             try
             {
-                var gesammtAnzahl = client.ReadNode(anzTag);
+                var gesamtAnzahl = client.ReadNode(anzTag);
                 var refeshBit = client.ReadNode(resetBitTag);
-                if (gesammtAnzahl != null)
+                if (gesamtAnzahl != null)
                 {
-                    return gesammtAnzahl;
+                    return gesamtAnzahl;
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
-                return gesammtAnzahl!;
+                return null;
             }
             catch (Exception ex)
             {

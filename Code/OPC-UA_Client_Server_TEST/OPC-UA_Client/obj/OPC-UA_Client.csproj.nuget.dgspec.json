@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj": {}
+    "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj": {}
   },
   "projects": {
-    "D:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj": {
+    "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
+        "projectUniqueName": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
         "projectName": "OPC-UA_Client",
-        "projectPath": "D:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
-        "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
-        "outputPath": "D:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\obj\\",
+        "projectPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

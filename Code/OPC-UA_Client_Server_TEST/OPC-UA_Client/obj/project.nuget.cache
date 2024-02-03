@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "M3vk6GjvKcn8gpcqsD6DEWeE40TnRYxZE8CVP5iqa5lzh0SJzTU5l5Ii1Nc8JvNCIaDR0OGGLCNKOW605To3ww==",
+  "dgSpecHash": "/Pc5i8HKQjD++vv5BGrph0fomhnpb78JrItVJyFDQnPJk13BYcVdPRcdAO/6Kiww4roAx/lbOXOy3YAHVf3Kng==",
   "success": true,
-  "projectFilePath": "D:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
+  "projectFilePath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\OPC-UA_Client\\OPC-UA_Client.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vadym\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\opc.uafx.advanced\\2.41.0\\opc.uafx.advanced.2.41.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\portable.bouncycastle\\1.8.6\\portable.bouncycastle.1.8.6.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.management\\4.7.0\\system.management.4.7.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.private.servicemodel\\4.5.3\\system.private.servicemodel.4.5.3.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.0\\system.reflection.dispatchproxy.4.5.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
-    "C:\\Users\\Vadym\\.nuget\\packages\\system.servicemodel.primitives\\4.5.3\\system.servicemodel.primitives.4.5.3.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\opc.uafx.advanced\\2.41.0\\opc.uafx.advanced.2.41.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\portable.bouncycastle\\1.8.6\\portable.bouncycastle.1.8.6.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.management\\4.7.0\\system.management.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.private.servicemodel\\4.5.3\\system.private.servicemodel.4.5.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.0\\system.reflection.dispatchproxy.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.servicemodel.primitives\\4.5.3\\system.servicemodel.primitives.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

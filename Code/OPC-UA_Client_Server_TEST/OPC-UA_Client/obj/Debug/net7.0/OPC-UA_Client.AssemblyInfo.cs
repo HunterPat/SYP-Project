@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OPC-UA_Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba25222a158a9c8e5e5ecb8130501fb5ffee67fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ddbee6d267301bad3ffa434c943b8e8e8b64653")]
 [assembly: System.Reflection.AssemblyProductAttribute("OPC-UA_Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OPC-UA_Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

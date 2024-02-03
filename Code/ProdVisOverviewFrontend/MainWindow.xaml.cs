@@ -32,7 +32,7 @@ namespace ProdVisOverviewFrontend
 
             // Set an initial value for DateText
             viewModel.DateText = "Initial Date";
-
+            api.GesamttubenanzZielPost(5000);
             // Set up the timer to update DateText every second
 
             timeDisplayTimer = new DispatcherTimer();

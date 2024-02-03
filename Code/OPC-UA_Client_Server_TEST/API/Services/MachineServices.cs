@@ -28,7 +28,9 @@ namespace API.Services
                     client = new MyOPCClient(server1URL);
                     client.EstablishConnection();
                 }
-                return client.ReadDataFromTAA1().Value;
+                if (client.ReadDataFromTAA2() != null) return client.ReadDataFromTAA2().Value;
+
+                return null;
 
             }
             else if (serverID == 2)
@@ -39,7 +41,8 @@ namespace API.Services
                     client = new MyOPCClient(server2URL);
                     client.EstablishConnection();
                 }
-                return client.ReadDataFromTAA1().Value;
+                if (client.ReadDataFromTAA2() != null) return client.ReadDataFromTAA2().Value;
+                return null;
             }
             return null;
         }
@@ -54,7 +57,8 @@ namespace API.Services
                     client = new MyOPCClient(server1URL);
                     client.EstablishConnection();
                 }
-                return client.ReadDataFromTAA2().Value;
+                if (client.ReadDataFromTAA1() != null) return client.ReadDataFromTAA1().Value;
+                return null;
 
             }
             else if (serverID == 2)
@@ -65,7 +69,9 @@ namespace API.Services
                     client = new MyOPCClient(server2URL);
                     client.EstablishConnection();
                 }
-                return client.ReadDataFromTAA2().Value;
+                if (client.ReadDataFromTAA1() != null) return client.ReadDataFromTAA1().Value;
+
+                return null!;
             }
             return null;
         }
