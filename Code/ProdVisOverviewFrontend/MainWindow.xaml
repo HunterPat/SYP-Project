@@ -34,7 +34,7 @@ Background="White"
                 <RowDefinition Height="1*"></RowDefinition>
                 <RowDefinition Height="19*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" Content="Anlagenpaar 1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+            <Label Grid.Row="0" Content="Anlagenpaar 1" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Bottom"></Label>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
@@ -53,7 +53,7 @@ Background="White"
                         <RowDefinition Height="6*"></RowDefinition>
                         <RowDefinition Height="1*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <ProgressBar Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="Black" BorderThickness="1"></ProgressBar>
+                    <ProgressBar Orientation="Vertical" Value="{Binding Progress_1}" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="Black" BorderThickness="1"></ProgressBar>
                     <Label Grid.Row="0" Grid.Column="1" Content="{Binding ProductionGoal_1}" VerticalAlignment="Bottom" FontSize="20" HorizontalContentAlignment="Center"></Label>
                     <Label Grid.Row="2" Grid.Column="1" Content="0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center"></Label>
                     <Grid Grid.Row="1">
@@ -79,8 +79,44 @@ Background="White"
                 <RowDefinition Height="1*"></RowDefinition>
                 <RowDefinition Height="19*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" Content="Anlagenpaar 2" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+            <Label Grid.Row="0" Content="Anlagenpaar 2" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Bottom"></Label>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
 
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="6*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <ProgressBar Orientation="Vertical" Value="{Binding Progress_2}" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="Black" BorderThickness="1"></ProgressBar>
+                    <Label Grid.Row="0" Grid.Column="1" Content="{Binding ProductionGoal_2}" VerticalAlignment="Bottom" FontSize="20" HorizontalContentAlignment="Center"></Label>
+                    <Label Grid.Row="2" Grid.Column="1" Content="0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center"></Label>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="1" Grid.Column="0" FontSize="20" Content="Jetzt: " HorizontalContentAlignment="Center" VerticalAlignment="Center"></Label>
+
+                        <Label Grid.Row="1" Grid.Column="1" FontSize="20" Content="{Binding CurrentAmount_1}" HorizontalContentAlignment="Center" VerticalAlignment="Center"></Label>
+                    </Grid>
+                </Grid>
+                
+            </Grid>
         </Grid>
     </Grid>
 </Window>

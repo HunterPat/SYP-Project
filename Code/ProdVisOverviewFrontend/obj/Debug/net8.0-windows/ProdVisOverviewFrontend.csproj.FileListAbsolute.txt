@@ -18,3 +18,24 @@ C:\Visual Studio Projects\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\refin
 C:\Visual Studio Projects\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.pdb
 C:\Visual Studio Projects\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.genruntimeconfig.cache
 C:\Visual Studio Projects\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ref\ProdVisOverviewFrontend.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\ProdVisOverviewFrontend.exe
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\ProdVisOverviewFrontend.deps.json
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\ProdVisOverviewFrontend.runtimeconfig.json
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\ProdVisOverviewFrontend.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\ProdVisOverviewFrontend.pdb
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\App.g.cs
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend_MarkupCompile.cache
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend_MarkupCompile.lref
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\MainWindow.baml
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.g.resources
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.AssemblyInfoInputs.cache
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.AssemblyInfo.cs
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.csproj.CoreCompileInputs.cache
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.sourcelink.json
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\refint\ProdVisOverviewFrontend.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.pdb
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.genruntimeconfig.cache
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ref\ProdVisOverviewFrontend.dll

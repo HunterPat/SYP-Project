@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Visual Studio Projects\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj": {}
+    "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj": {}
   },
   "projects": {
-    "C:\\Visual Studio Projects\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj": {
+    "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Visual Studio Projects\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj",
+        "projectUniqueName": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj",
         "projectName": "ProdVisOverviewFrontend",
-        "projectPath": "C:\\Visual Studio Projects\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj",
-        "packagesPath": "C:\\Users\\vadym2005\\.nuget\\packages\\",
-        "outputPath": "C:\\Visual Studio Projects\\ProdVisOverviewFrontend\\obj\\",
+        "projectPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\ProdVisOverviewFrontend.csproj",
+        "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vadym2005\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
