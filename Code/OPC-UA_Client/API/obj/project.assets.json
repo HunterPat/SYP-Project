@@ -1089,19 +1089,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Windows\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Htl folder\\4.Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Htl folder\\4.Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Htl folder\\4.Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client\\API\\obj\\",
+      "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1159,7 +1159,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
