@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Org.OpenAPITools.Api;
+using ProdVisAdminFrontend.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,19 @@ namespace ProdVisAdminFrontend.Views
     /// </summary>
     public partial class SettingsView : UserControl
     {
+        private const string baseUrl = "http://localhost:5501";
+        private SettingsViewModel viewModel;
         public SettingsView()
         {
             InitializeComponent();
+            viewModel = DataContext as SettingsViewModel;
+        }
+
+        private void ConfirmGoal_Clicked(object sender, RoutedEventArgs e)
+        {
+            var api = new APIApi(baseUrl);
+            var productionGoal = Int32.Parse(txtProductionGoal.Text);
+            var response = api.GesamttubenanzZielPost(productionGoal);
         }
     }
 }
