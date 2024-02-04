@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using ProdVisAdminFrontend.ViewModels;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,26 @@ namespace ProdVisAdminFrontend
     /// </summary>
     public partial class MainWindow : Window
     {
+        private OverviewViewModel overviewViewModel;
+        private SettingsViewModel settingsViewModel;
+
         public MainWindow()
         {
             InitializeComponent();
+            overviewViewModel = new OverviewViewModel();
+            settingsViewModel = new SettingsViewModel();
+
+            DataContext = overviewViewModel;
+        }
+
+        private void Overview_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = overviewViewModel;
+        }
+
+        private void Settings_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = settingsViewModel;
         }
     }
 }

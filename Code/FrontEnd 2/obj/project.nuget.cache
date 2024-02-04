@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QFg5Fi2bfCcfsLB2bdmrMM1PnJ2ErjBybuKUOcRdlhuG+BbP5R54qhU8tKT71ghfmswpjennPDDYFSDmiDBWSg==",
+  "dgSpecHash": "eojmTedeR9btsDgohs5vBeBnBHSIv6zAgNcI4iafJueTr9fwfGCytkc2G1PvPq1QGirndEfwbRe4pRL+9YpgGw==",
   "success": true,
-  "projectFilePath": "C:\\GitRepositories\\SYP-Project\\Code\\FrontEnd 2\\FrontEnd 2.csproj",
+  "projectFilePath": "D:\\GitRepositories\\SYP-Project\\Code\\FrontEnd 2\\FrontEnd 2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vadym2005\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+    "C:\\Users\\Vadym\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Vadym\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Vadym\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

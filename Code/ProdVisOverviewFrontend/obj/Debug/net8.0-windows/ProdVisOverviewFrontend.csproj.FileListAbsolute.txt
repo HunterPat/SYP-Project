@@ -40,15 +40,11 @@ D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-win
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.genruntimeconfig.cache
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ref\ProdVisOverviewFrontend.dll
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.csproj.AssemblyReference.cache
-D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\JsonSubTypes.dll
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Polly.dll
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Polly.Core.dll
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\RestSharp.dll
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\RestSharp.Serializers.NewtonsoftJson.dll
-D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.dll
-D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.pdb
-D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.xml
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.csproj.CopyComplete
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.dll
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\refint\ProdVisOverviewFrontend.dll
@@ -80,3 +76,5 @@ D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.csproj.CopyComplete
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.genruntimeconfig.cache
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ref\ProdVisOverviewFrontend.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\xunit.abstractions.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\xunit.core.dll

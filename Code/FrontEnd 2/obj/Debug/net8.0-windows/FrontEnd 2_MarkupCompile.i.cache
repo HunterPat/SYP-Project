@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\
+D:\GitRepositories\SYP-Project\Code\FrontEnd 2\obj\Debug\net8.0-windows\
 FrontEnd_2
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\GitRepositories\SYP-Project\Code\FrontEnd 2\App.xaml
+D:\GitRepositories\SYP-Project\Code\FrontEnd 2\App.xaml
 3-1193702933
 
 13844484117
-19953202075
+199-1453656936
 MainWindow.xaml;Views\OverviewView.xaml;Views\SettingsView.xaml;
 
-False
+True
 

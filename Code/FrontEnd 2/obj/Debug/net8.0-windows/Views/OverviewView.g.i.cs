@@ -61,7 +61,7 @@ namespace FrontEnd_2.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FrontEnd 2;component/views/overviewview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FrontEnd 2;V1.0.0.0;component/views/overviewview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\OverviewView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

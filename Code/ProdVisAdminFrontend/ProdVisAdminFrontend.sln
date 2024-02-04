@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdVisAdminFrontend", "ProdVisAdminFrontend.csproj", "{386CAC48-7F2A-46AB-A301-42B9F7D3D730}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProdVisAdminFrontend", "ProdVisAdminFrontend.csproj", "{386CAC48-7F2A-46AB-A301-42B9F7D3D730}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

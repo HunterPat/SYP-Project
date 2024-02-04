@@ -4,9 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProdVisAdminFrontend"
+        xmlns:viewmodels="clr-namespace:ProdVisAdminFrontend.ViewModels"
+        xmlns:views="clr-namespace:ProdVisAdminFrontend.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Background="DarkGray"
+        Title="ProdVis Admin" Height="720" Width="1280">
+    <Window.Resources>
+        <DataTemplate x:Name="settingsViewTemplate" DataType="{x:Type viewmodels:SettingsViewModel}">
+            <views:SettingsView DataContext="{Binding}"></views:SettingsView>
+        </DataTemplate>
+        <DataTemplate x:Name="overviewViewTemplate" DataType="{x:Type viewmodels:OverviewViewModel}">
+            <views:OverviewView DataContext="{Binding}"></views:OverviewView>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="12*"></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <StackPanel Background="DarkSlateGray">
+                <Button Click="Overview_Clicked" Content="Übersicht" Background="Orange" Foreground="White" FontSize="16" Margin="5,10,5,5" VerticalContentAlignment="Center"></Button>
+                <Button Click="Settings_Clicked" Content="Einstellungen" Background="Orange" Foreground="White" FontSize="16" Margin="5" VerticalContentAlignment="Center"></Button>
+            </StackPanel>
+        </Grid>
+        <ContentControl Grid.Column="1" Content="{Binding}"></ContentControl>
     </Grid>
 </Window>
+    
+
