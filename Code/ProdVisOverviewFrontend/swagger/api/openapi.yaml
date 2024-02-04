@@ -5,7 +5,7 @@ info:
 servers:
 - url: /
 paths:
-  /{serverID}/TAA1:
+  /{serverID}/Machine1:
     get:
       parameters:
       - explode: false
@@ -20,11 +20,13 @@ paths:
         "200":
           content:
             application/json:
-              schema: {}
+              schema:
+                format: int64
+                type: integer
           description: Success
       tags:
       - API
-  /{serverID}/TAA2:
+  /{serverID}/Machine2:
     get:
       parameters:
       - explode: false
@@ -39,7 +41,9 @@ paths:
         "200":
           content:
             application/json:
-              schema: {}
+              schema:
+                format: int64
+                type: integer
           description: Success
       tags:
       - API
@@ -73,18 +77,39 @@ paths:
           description: Success
       tags:
       - API
-  /resetBit:
-    get:
+  /resetBit/Machine1:
+    post:
+      parameters:
+      - explode: true
+        in: query
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: form
       responses:
         "200":
-          content:
-            application/json:
-              schema:
-                format: int32
-                type: integer
           description: Success
       tags:
       - API
+  /resetBit/Machine2:
+    post:
+      parameters:
+      - explode: true
+        in: query
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: form
+      responses:
+        "200":
+          description: Success
+      tags:
+      - API
+  /resetBit:
     post:
       requestBody:
         content:

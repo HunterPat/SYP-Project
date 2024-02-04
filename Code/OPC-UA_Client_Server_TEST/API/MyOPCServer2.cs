@@ -17,12 +17,12 @@ namespace OPC_UA_Client
         public MyOPCServer2(string url)
         {
               var taa1 = new OpcObjectNode(
-            "TAA1",
+            "TAA3",
             new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 1234),
             new OpcDataVariableNode<int>("resetBit", value: 1));
             nodes.Add(taa1);
             var taa2 = new OpcObjectNode(
-            "TAA2",
+            "TAA4",
             new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 4321),
             new OpcDataVariableNode<int>("resetBit", value: 0));
             nodes.Add(taa2);
@@ -35,17 +35,15 @@ namespace OPC_UA_Client
             var value2 = 99;
             while (true)
             {
-                Console.WriteLine(server.NodeManagers[0].Nodes[0].Name);
-                Console.WriteLine(server.NodeManagers[0].Nodes[3].Name);
                 server.NodeManagers[0].RemoveNode(server.NodeManagers[0].Nodes[0]);
                 server.NodeManagers[0].AddNode(new OpcObjectNode(
-          "TAA1",
+          "TAA3",
           new OpcDataVariableNode<int>("Gesamttubenanzahl", value: value1),
           new OpcDataVariableNode<int>("resetBit", value: 1)));
                 value1++;
                 server.NodeManagers[0].RemoveNode(server.NodeManagers[0].Nodes[3]);
                 server.NodeManagers[0].AddNode(new OpcObjectNode(
-          "TAA2",
+          "TAA4",
           new OpcDataVariableNode<int>("Gesamttubenanzahl", value: value2),
           new OpcDataVariableNode<int>("resetBit", value: 1)));
                 value2++;

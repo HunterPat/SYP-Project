@@ -19,18 +19,10 @@ namespace API.Maps
                 gesamtTubenAnzZiel = value;
                 return gesamtTubenAnzZiel;
             });
-            resetBitGroup.MapGet("/", () => resetBit);
-            resetBitGroup.MapPost("/", ([FromBody] int value) =>
-            {
-                if (value == 1 || value == 0)
-                {
-                    resetBit = value;
-                    return resetBit;
-                }
-                return -1;
-            });
-            gesamtTubenAnzDataGroup.MapGet("/TAA1", (int serverID, MachineServices service) => service.GetGesamttubenanzahlTAA1(serverID));
-            gesamtTubenAnzDataGroup.MapGet("/TAA2", (int serverID, MachineServices service) => service.GetGesamttubenanzahlTAA2(serverID));
+            resetBitGroup.MapPost("/Machine1/resetBit", (int serverID, MachineServices service) => service.PostResetBitMachine1(serverID));
+            resetBitGroup.MapPost("/Machine2/resetBit", (int serverID, MachineServices service) => service.PostResetBitMachine2(serverID));
+            gesamtTubenAnzDataGroup.MapGet("/Machine1", (int serverID, MachineServices service) => service.GetGesamttubenanzahlMachine1(serverID));
+            gesamtTubenAnzDataGroup.MapGet("/Machine2", (int serverID, MachineServices service) => service.GetGesamttubenanzahlMachine2(serverID));
             return routes;
         }
     }

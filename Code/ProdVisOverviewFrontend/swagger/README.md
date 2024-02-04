@@ -113,10 +113,11 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *APIApi* | [**GesamttubenanzZielGet**](docs/APIApi.md#gesamttubenanzzielget) | **GET** /gesamttubenanzZiel | 
 *APIApi* | [**GesamttubenanzZielPost**](docs/APIApi.md#gesamttubenanzzielpost) | **POST** /gesamttubenanzZiel | 
-*APIApi* | [**ResetBitGet**](docs/APIApi.md#resetbitget) | **GET** /resetBit | 
+*APIApi* | [**ResetBitMachine1Post**](docs/APIApi.md#resetbitmachine1post) | **POST** /resetBit/Machine1 | 
+*APIApi* | [**ResetBitMachine2Post**](docs/APIApi.md#resetbitmachine2post) | **POST** /resetBit/Machine2 | 
 *APIApi* | [**ResetBitPost**](docs/APIApi.md#resetbitpost) | **POST** /resetBit | 
-*APIApi* | [**ServerIDTAA1Get**](docs/APIApi.md#serveridtaa1get) | **GET** /{serverID}/TAA1 | 
-*APIApi* | [**ServerIDTAA2Get**](docs/APIApi.md#serveridtaa2get) | **GET** /{serverID}/TAA2 | 
+*APIApi* | [**ServerIDMachine1Get**](docs/APIApi.md#serveridmachine1get) | **GET** /{serverID}/Machine1 | 
+*APIApi* | [**ServerIDMachine2Get**](docs/APIApi.md#serveridmachine2get) | **GET** /{serverID}/Machine2 | 
 
 
 <a id="documentation-for-models"></a>

@@ -16,7 +16,7 @@ namespace API.Services
             client.EstablishConnection();
 
         }
-        public object GetGesamttubenanzahlTAA2(int serverID)
+        public long GetGesamttubenanzahlMachine1(int serverID)
         {
             if (serverID == 1)
             {
@@ -26,7 +26,9 @@ namespace API.Services
                     client = new MyOPCClient(server1URL);
                     client.EstablishConnection();
                 }
-                return client.ReadDataFromTAA1().Value;
+                if (client.ReadDataFromTAA1() != null) return long.Parse(client.ReadDataFromTAA1().Value.ToString()!);
+
+                return -1;
 
             }
             else if (serverID == 2)
@@ -37,12 +39,13 @@ namespace API.Services
                     client = new MyOPCClient(server2URL);
                     client.EstablishConnection();
                 }
-                return client.ReadDataFromTAA1().Value;
+                if (client.ReadDataFromTAA3() != null) return long.Parse(client.ReadDataFromTAA3().Value.ToString()!);
+                return -1;
             }
-            return null;
+            return -1;
         }
 
-        public object GetGesamttubenanzahlTAA1(int serverID)
+        public long GetGesamttubenanzahlMachine2(int serverID)
         {
             if (serverID == 1)
             {
@@ -52,7 +55,8 @@ namespace API.Services
                     client = new MyOPCClient(server1URL);
                     client.EstablishConnection();
                 }
-                return client.ReadDataFromTAA2().Value;
+                if (client.ReadDataFromTAA2() != null) return long.Parse(client.ReadDataFromTAA2().Value.ToString()!);
+                return -1;
 
             }
             else if (serverID == 2)
@@ -63,9 +67,37 @@ namespace API.Services
                     client = new MyOPCClient(server2URL);
                     client.EstablishConnection();
                 }
-                return client.ReadDataFromTAA2().Value;
+                if (client.ReadDataFromTAA4() != null) return long.Parse(client.ReadDataFromTAA4().Value.ToString()!);
+
+                return -1;
             }
-            return null;
+            return -1;
+        }
+
+        public void PostResetBitMachine1(int serverID)
+        {
+            if (serverID == 1)
+            {
+                client.ResetBit("ns=4;i=7");
+            }
+            else if (serverID == 2)
+            {
+                client.ResetBit("");//TODO: insert value
+            }
+        }
+
+        public void PostResetBitMachine2(int serverID)
+        {
+            if (serverID == 1)
+            {
+                client.ResetBit("ns=4;i=12");
+
+            }
+            else if (serverID == 2)
+            {
+                client.ResetBit(""); //TODO: insert value
+
+            }
         }
     }
 }

@@ -18,7 +18,7 @@ namespace API.Services
 
         }
 
-        public object GetGesamttubenanzahlTAA2(int serverID)
+        public long GetGesamttubenanzahlMachine1(int serverID)
         {
             if (serverID == 1)
             {
@@ -28,9 +28,9 @@ namespace API.Services
                     client = new MyOPCClient(server1URL);
                     client.EstablishConnection();
                 }
-                if (client.ReadDataFromTAA2() != null) return client.ReadDataFromTAA2().Value;
+                if (client.ReadDataFromTAA1() != -1) return client.ReadDataFromTAA1();
 
-                return null;
+                return -1;
 
             }
             else if (serverID == 2)
@@ -41,13 +41,13 @@ namespace API.Services
                     client = new MyOPCClient(server2URL);
                     client.EstablishConnection();
                 }
-                if (client.ReadDataFromTAA2() != null) return client.ReadDataFromTAA2().Value;
-                return null;
+                if (client.ReadDataFromTAA3() != -1) return client.ReadDataFromTAA3();
+                return -1;
             }
-            return null;
+            return -1;
         }
 
-        public object GetGesamttubenanzahlTAA1(int serverID)
+        public long GetGesamttubenanzahlMachine2(int serverID)
         {
             if (serverID == 1)
             {
@@ -57,8 +57,8 @@ namespace API.Services
                     client = new MyOPCClient(server1URL);
                     client.EstablishConnection();
                 }
-                if (client.ReadDataFromTAA1() != null) return client.ReadDataFromTAA1().Value;
-                return null;
+                if (client.ReadDataFromTAA2() != -1) return client.ReadDataFromTAA2();
+                return -1;
 
             }
             else if (serverID == 2)
@@ -69,11 +69,35 @@ namespace API.Services
                     client = new MyOPCClient(server2URL);
                     client.EstablishConnection();
                 }
-                if (client.ReadDataFromTAA1() != null) return client.ReadDataFromTAA1().Value;
+                if (client.ReadDataFromTAA4() != -1) return client.ReadDataFromTAA4();
 
-                return null!;
+                return -1;
             }
-            return null;
+            return -1;
+        }
+
+        public void PostResetbitMachine1(int serverID)
+        {
+            if(serverID == 1)
+            {
+                client.ResetBit("TAA1");
+            }else if(serverID == 2)
+            {
+                client.ResetBit("TAA3");
+            }
+        }
+
+        public void PostResetbitMachine2(int serverID)
+        {
+            if (serverID == 1)
+            {
+                client.ResetBit("TAA2");
+            }
+            else if (serverID == 2)
+            {
+                client.ResetBit("TAA4");
+            }
+            throw new NotImplementedException();
         }
     }
 }

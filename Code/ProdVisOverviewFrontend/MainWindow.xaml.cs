@@ -55,8 +55,8 @@ namespace ProdVisOverviewFrontend
 
             viewModel.ProductionGoal_1 = api.GesamttubenanzZielGet();
             viewModel.ProductionGoal_2 = api.GesamttubenanzZielGet();
-            viewModel.CurrentAmount_1 = (int) ((long) api.ServerIDTAA1Get(1) + (long) api.ServerIDTAA2Get(1));
-            viewModel.CurrentAmount_2 = (int) ((long)api.ServerIDTAA1Get(2) + (long)api.ServerIDTAA2Get(2));
+            viewModel.CurrentAmount_1 = (int) ( api.ServerIDMachine1Get(1) +api.ServerIDMachine1Get(1));
+            viewModel.CurrentAmount_2 = (int) (api.ServerIDMachine2Get(2) + api.ServerIDMachine2Get(2));
             
             viewModel.Progress_1 = CalculatePercentage(viewModel.CurrentAmount_1, viewModel.ProductionGoal_1);
             viewModel.Progress_2 = CalculatePercentage(viewModel.CurrentAmount_2, viewModel.ProductionGoal_2);

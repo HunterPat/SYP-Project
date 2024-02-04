@@ -67,9 +67,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>int</returns>
-        int ResetBitGet(int operationIndex = 0);
+        /// <returns></returns>
+        void ResetBitMachine1Post(int serverID, int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -78,9 +79,30 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> ResetBitGetWithHttpInfo(int operationIndex = 0);
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ResetBitMachine1PostWithHttpInfo(int serverID, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns></returns>
+        void ResetBitMachine2Post(int serverID, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ResetBitMachine2PostWithHttpInfo(int serverID, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -107,8 +129,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Object</returns>
-        Object ServerIDTAA1Get(int serverID, int operationIndex = 0);
+        /// <returns>long</returns>
+        long ServerIDMachine1Get(int serverID, int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -119,16 +141,16 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> ServerIDTAA1GetWithHttpInfo(int serverID, int operationIndex = 0);
+        /// <returns>ApiResponse of long</returns>
+        ApiResponse<long> ServerIDMachine1GetWithHttpInfo(int serverID, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Object</returns>
-        Object ServerIDTAA2Get(int serverID, int operationIndex = 0);
+        /// <returns>long</returns>
+        long ServerIDMachine2Get(int serverID, int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -139,8 +161,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> ServerIDTAA2GetWithHttpInfo(int serverID, int operationIndex = 0);
+        /// <returns>ApiResponse of long</returns>
+        ApiResponse<long> ServerIDMachine2GetWithHttpInfo(int serverID, int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
@@ -205,10 +227,11 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> ResetBitGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ResetBitMachine1PostAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -217,10 +240,36 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> ResetBitGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ResetBitMachine1PostWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ResetBitMachine2PostAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ResetBitMachine2PostWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -256,8 +305,8 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> ServerIDTAA1GetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of long</returns>
+        System.Threading.Tasks.Task<long> ServerIDMachine1GetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -269,8 +318,8 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ServerIDTAA1GetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (long)</returns>
+        System.Threading.Tasks.Task<ApiResponse<long>> ServerIDMachine1GetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -281,8 +330,8 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> ServerIDTAA2GetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of long</returns>
+        System.Threading.Tasks.Task<long> ServerIDMachine2GetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -294,8 +343,8 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ServerIDTAA2GetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (long)</returns>
+        System.Threading.Tasks.Task<ApiResponse<long>> ServerIDMachine2GetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -680,21 +729,22 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>int</returns>
-        public int ResetBitGet(int operationIndex = 0)
+        /// <returns></returns>
+        public void ResetBitMachine1Post(int serverID, int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = ResetBitGetWithHttpInfo();
-            return localVarResponse.Data;
+            ResetBitMachine1PostWithHttpInfo(serverID);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> ResetBitGetWithHttpInfo(int operationIndex = 0)
+        /// <returns>ApiResponse of Object(void)</returns>
+        public Org.OpenAPITools.Client.ApiResponse<Object> ResetBitMachine1PostWithHttpInfo(int serverID, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -703,7 +753,6 @@ namespace Org.OpenAPITools.Api
 
             // to determine the Accept header
             string[] _accepts = new string[] {
-                "application/json"
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -718,16 +767,17 @@ namespace Org.OpenAPITools.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "serverID", serverID));
 
-            localVarRequestOptions.Operation = "APIApi.ResetBitGet";
+            localVarRequestOptions.Operation = "APIApi.ResetBitMachine1Post";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/resetBit", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<Object>("/resetBit/Machine1", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ResetBitGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ResetBitMachine1Post", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -741,23 +791,24 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> ResetBitGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ResetBitMachine1PostAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await ResetBitGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
+            await ResetBitMachine1PostWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> ResetBitGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ResetBitMachine1PostWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -767,7 +818,6 @@ namespace Org.OpenAPITools.Api
 
             // to determine the Accept header
             string[] _accepts = new string[] {
-                "application/json"
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -782,17 +832,146 @@ namespace Org.OpenAPITools.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "serverID", serverID));
 
-            localVarRequestOptions.Operation = "APIApi.ResetBitGet";
+            localVarRequestOptions.Operation = "APIApi.ResetBitMachine1Post";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/resetBit", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/resetBit/Machine1", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ResetBitGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ResetBitMachine1Post", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns></returns>
+        public void ResetBitMachine2Post(int serverID, int operationIndex = 0)
+        {
+            ResetBitMachine2PostWithHttpInfo(serverID);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public Org.OpenAPITools.Client.ApiResponse<Object> ResetBitMachine2PostWithHttpInfo(int serverID, int operationIndex = 0)
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "serverID", serverID));
+
+            localVarRequestOptions.Operation = "APIApi.ResetBitMachine2Post";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/resetBit/Machine2", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ResetBitMachine2Post", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ResetBitMachine2PostAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            await ResetBitMachine2PostWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ResetBitMachine2PostWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "serverID", serverID));
+
+            localVarRequestOptions.Operation = "APIApi.ResetBitMachine2Post";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/resetBit/Machine2", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ResetBitMachine2Post", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -942,10 +1121,10 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Object</returns>
-        public Object ServerIDTAA1Get(int serverID, int operationIndex = 0)
+        /// <returns>long</returns>
+        public long ServerIDMachine1Get(int serverID, int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<Object> localVarResponse = ServerIDTAA1GetWithHttpInfo(serverID);
+            Org.OpenAPITools.Client.ApiResponse<long> localVarResponse = ServerIDMachine1GetWithHttpInfo(serverID);
             return localVarResponse.Data;
         }
 
@@ -955,8 +1134,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Object</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ServerIDTAA1GetWithHttpInfo(int serverID, int operationIndex = 0)
+        /// <returns>ApiResponse of long</returns>
+        public Org.OpenAPITools.Client.ApiResponse<long> ServerIDMachine1GetWithHttpInfo(int serverID, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -982,15 +1161,15 @@ namespace Org.OpenAPITools.Api
 
             localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
 
-            localVarRequestOptions.Operation = "APIApi.ServerIDTAA1Get";
+            localVarRequestOptions.Operation = "APIApi.ServerIDMachine1Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/{serverID}/TAA1", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<long>("/{serverID}/Machine1", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ServerIDTAA1Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ServerIDMachine1Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1007,10 +1186,10 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> ServerIDTAA1GetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of long</returns>
+        public async System.Threading.Tasks.Task<long> ServerIDMachine1GetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Object> localVarResponse = await ServerIDTAA1GetWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<long> localVarResponse = await ServerIDMachine1GetWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1021,8 +1200,8 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ServerIDTAA1GetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (long)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<long>> ServerIDMachine1GetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1049,16 +1228,16 @@ namespace Org.OpenAPITools.Api
 
             localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
 
-            localVarRequestOptions.Operation = "APIApi.ServerIDTAA1Get";
+            localVarRequestOptions.Operation = "APIApi.ServerIDMachine1Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/{serverID}/TAA1", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<long>("/{serverID}/Machine1", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ServerIDTAA1Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ServerIDMachine1Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1074,10 +1253,10 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Object</returns>
-        public Object ServerIDTAA2Get(int serverID, int operationIndex = 0)
+        /// <returns>long</returns>
+        public long ServerIDMachine2Get(int serverID, int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<Object> localVarResponse = ServerIDTAA2GetWithHttpInfo(serverID);
+            Org.OpenAPITools.Client.ApiResponse<long> localVarResponse = ServerIDMachine2GetWithHttpInfo(serverID);
             return localVarResponse.Data;
         }
 
@@ -1087,8 +1266,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Object</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ServerIDTAA2GetWithHttpInfo(int serverID, int operationIndex = 0)
+        /// <returns>ApiResponse of long</returns>
+        public Org.OpenAPITools.Client.ApiResponse<long> ServerIDMachine2GetWithHttpInfo(int serverID, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1114,15 +1293,15 @@ namespace Org.OpenAPITools.Api
 
             localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
 
-            localVarRequestOptions.Operation = "APIApi.ServerIDTAA2Get";
+            localVarRequestOptions.Operation = "APIApi.ServerIDMachine2Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/{serverID}/TAA2", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<long>("/{serverID}/Machine2", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ServerIDTAA2Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ServerIDMachine2Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1139,10 +1318,10 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> ServerIDTAA2GetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of long</returns>
+        public async System.Threading.Tasks.Task<long> ServerIDMachine2GetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Object> localVarResponse = await ServerIDTAA2GetWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<long> localVarResponse = await ServerIDMachine2GetWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1153,8 +1332,8 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ServerIDTAA2GetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (long)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<long>> ServerIDMachine2GetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1181,16 +1360,16 @@ namespace Org.OpenAPITools.Api
 
             localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
 
-            localVarRequestOptions.Operation = "APIApi.ServerIDTAA2Get";
+            localVarRequestOptions.Operation = "APIApi.ServerIDMachine2Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/{serverID}/TAA2", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<long>("/{serverID}/Machine2", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ServerIDTAA2Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ServerIDMachine2Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
