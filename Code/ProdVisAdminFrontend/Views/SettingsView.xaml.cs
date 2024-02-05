@@ -24,17 +24,28 @@ namespace ProdVisAdminFrontend.Views
     {
         private const string baseUrl = "http://localhost:5501";
         private SettingsViewModel viewModel;
+        
         public SettingsView()
         {
             InitializeComponent();
-            viewModel = DataContext as SettingsViewModel;
+            
+
         }
+
+
 
         private void ConfirmGoal_Clicked(object sender, RoutedEventArgs e)
         {
             var api = new APIApi(baseUrl);
             var productionGoal = Int32.Parse(txtProductionGoal.Text);
             var response = api.GesamttubenanzZielPost(productionGoal);
+            viewModel.ProductionGoal_1 = productionGoal;
+            viewModel.ProductionGoal_2 = productionGoal;
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            viewModel = DataContext as SettingsViewModel;
         }
     }
 }

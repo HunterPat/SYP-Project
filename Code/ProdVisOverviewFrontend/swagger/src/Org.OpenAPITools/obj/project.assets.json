@@ -344,19 +344,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vadym2005\\.nuget\\packages\\": {}
+    "C:\\Users\\Vadym\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
+      "projectUniqueName": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
       "projectName": "Org.OpenAPITools",
-      "projectPath": "C:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
-      "packagesPath": "C:\\Users\\vadym2005\\.nuget\\packages\\",
-      "outputPath": "C:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\obj\\",
+      "projectPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
+      "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
+      "outputPath": "D:\\GitRepositories\\SYP-Project\\Code\\ProdVisOverviewFrontend\\swagger\\src\\Org.OpenAPITools\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vadym2005\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

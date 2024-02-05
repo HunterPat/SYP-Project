@@ -60,3 +60,14 @@ C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-window
 C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.xml
 C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\ProdVisAdminFrontend.csproj.AssemblyReference.cache
 C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\ProdVisAdminFrontend.csproj.CopyComplete
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\ProdVisAdminFrontend.csproj.AssemblyReference.cache
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\JsonSubTypes.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\Polly.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\Polly.Core.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\RestSharp.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.dll
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.pdb
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.xml
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\ProdVisAdminFrontend.csproj.CopyComplete
+D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Styles\Resources.baml

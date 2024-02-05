@@ -25,7 +25,6 @@ namespace ProdVisAdminFrontend.Views
         public OverviewView()
         {
             InitializeComponent();
-            viewModel = new OverviewViewModel();
             viewModel = DataContext as OverviewViewModel;
         }
     }

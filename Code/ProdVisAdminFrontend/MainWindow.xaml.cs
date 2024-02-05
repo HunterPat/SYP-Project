@@ -1,4 +1,5 @@
-﻿using ProdVisAdminFrontend.ViewModels;
+﻿using ProdVisAdminFrontend.SharedServices;
+using ProdVisAdminFrontend.ViewModels;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,12 +20,16 @@ namespace ProdVisAdminFrontend
     {
         private OverviewViewModel overviewViewModel;
         private SettingsViewModel settingsViewModel;
+        private ISharedService productionGoal_1;
+        private ISharedService productionGoal_2;
 
         public MainWindow()
         {
             InitializeComponent();
-            overviewViewModel = new OverviewViewModel();
-            settingsViewModel = new SettingsViewModel();
+            productionGoal_1 = new SharedProductionGoal(100);
+            productionGoal_2 = new SharedProductionGoal(101);
+            overviewViewModel = new OverviewViewModel(productionGoal_1, productionGoal_2);
+            settingsViewModel = new SettingsViewModel(productionGoal_1,productionGoal_2);
 
             DataContext = overviewViewModel;
         }

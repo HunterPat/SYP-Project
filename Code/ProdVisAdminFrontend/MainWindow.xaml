@@ -17,6 +17,8 @@
         <DataTemplate x:Name="overviewViewTemplate" DataType="{x:Type viewmodels:OverviewViewModel}">
             <views:OverviewView DataContext="{Binding}"></views:OverviewView>
         </DataTemplate>
+
+        
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
