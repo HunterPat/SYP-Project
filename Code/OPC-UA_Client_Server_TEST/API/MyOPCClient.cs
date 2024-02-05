@@ -18,8 +18,8 @@ namespace OPC_UA_Client
             {
                 client.Connect();
                 Console.WriteLine("-----------------------\nconnected!");
-                //    var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
-                //  Browse(node);
+             //       var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
+             //     Browse(node);
             }
             catch (Exception ex)
             {
@@ -42,38 +42,34 @@ namespace OPC_UA_Client
         public long ReadDataFromTAA1()
         {
             var anzTag = "ns=2;s=TAA1/Gesamttubenanzahl";
-            var resetBitTag = "ns=2;s=TAA1/resetBit";
             try
             {
                 var gesamtAnzahl = client.ReadNode(anzTag);
-                var refeshBit = client.ReadNode(resetBitTag);
                 if (gesamtAnzahl != null)
                 {
                     return long.Parse(gesamtAnzahl.ToString());
                 }
-                return -1;
+                return ReadDataFromTAA1();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
             }
             return -1;
-        }        //TAA2: anz: ns=4;i=11 | reset-Bit: ns=4;i=12
+        }
 
         public long ReadDataFromTAA2()
         {
             var anzTag = "ns=2;s=TAA2/Gesamttubenanzahl";
-            var resetBitTag = "ns=2;s=TAA2/resetBitTag";
             try
             {
                 var gesamtAnzahl = client.ReadNode(anzTag);
-                var refeshBit = client.ReadNode(resetBitTag);
                 if (gesamtAnzahl != null)
                 {
                     return long.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
-                return -1;
+                return ReadDataFromTAA2();
             }
             catch (Exception ex)
             {
@@ -84,7 +80,6 @@ namespace OPC_UA_Client
         public long ReadDataFromTAA3()
         {
             var anzTag = "ns=2;s=TAA3/Gesamttubenanzahl";
-            // var resetBitTag = "ns=2;s=TAA3/resetBitTag";
             try
             {
                 var gesamtAnzahl = client.ReadNode(anzTag);
@@ -93,7 +88,7 @@ namespace OPC_UA_Client
                     return long.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
-                return -1;
+                return ReadDataFromTAA3();
             }
             catch (Exception ex)
             {
@@ -104,17 +99,15 @@ namespace OPC_UA_Client
         public long ReadDataFromTAA4()
         {
             var anzTag = "ns=2;s=TAA4/Gesamttubenanzahl";
-            var resetBitTag = "ns=2;s=TAA4/resetBitTag";
             try
             {
                 var gesamtAnzahl = client.ReadNode(anzTag);
-                var refeshBit = client.ReadNode(resetBitTag);
                 if (gesamtAnzahl != null)
                 {
                     return long.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
-                return -1;
+                return ReadDataFromTAA4();
             }
             catch (Exception ex)
             {
@@ -125,9 +118,9 @@ namespace OPC_UA_Client
 
         public void ResetBit(string machine)
         {   //same node on every Machine except the Name of the Machine => TAA1 TAA2 ...
-            client.WriteNode("ns=2;s=" + machine + "/resetBitTag", true);
+            client.WriteNode("ns=2;s=" + machine + "/resetBit", 1); // ns=2;s=TAA1/resetBit
             Thread.Sleep(2000);//so that the server can read the Bit 
-            client.WriteNode("ns=2;s=" + machine + "/resetBitTag", false);
+            client.WriteNode("ns=2;s=" + machine + "/resetBit", 0);
         }
 
         public void Browse(OpcNodeInfo node, int level = 0)

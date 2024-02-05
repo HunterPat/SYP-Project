@@ -86,15 +86,16 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
             var apiInstance = new APIApi(config);
+            var serverID = 56;  // int | 
 
             try
             {
-                int result = apiInstance.GesamttubenanzZielGet();
+                long result = apiInstance.GesamttubenanzMachine1ServerIDGet(serverID);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzZielGet: " + e.Message );
+                Debug.Print("Exception when calling APIApi.GesamttubenanzMachine1ServerIDGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -111,13 +112,14 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*APIApi* | [**GesamttubenanzMachine1ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine1serveridget) | **GET** /gesamttubenanz/Machine1/{serverID} | 
+*APIApi* | [**GesamttubenanzMachine2ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine2serveridget) | **GET** /gesamttubenanz/Machine2/{serverID} | 
+*APIApi* | [**GesamttubenanzServer1Get**](docs/APIApi.md#gesamttubenanzserver1get) | **GET** /gesamttubenanz/Server1 | 
+*APIApi* | [**GesamttubenanzServer2Get**](docs/APIApi.md#gesamttubenanzserver2get) | **GET** /gesamttubenanz/Server2 | 
 *APIApi* | [**GesamttubenanzZielGet**](docs/APIApi.md#gesamttubenanzzielget) | **GET** /gesamttubenanzZiel | 
 *APIApi* | [**GesamttubenanzZielPost**](docs/APIApi.md#gesamttubenanzzielpost) | **POST** /gesamttubenanzZiel | 
-*APIApi* | [**ResetBitMachine1Post**](docs/APIApi.md#resetbitmachine1post) | **POST** /resetBit/Machine1 | 
-*APIApi* | [**ResetBitMachine2Post**](docs/APIApi.md#resetbitmachine2post) | **POST** /resetBit/Machine2 | 
-*APIApi* | [**ResetBitPost**](docs/APIApi.md#resetbitpost) | **POST** /resetBit | 
-*APIApi* | [**ServerIDMachine1Get**](docs/APIApi.md#serveridmachine1get) | **GET** /{serverID}/Machine1 | 
-*APIApi* | [**ServerIDMachine2Get**](docs/APIApi.md#serveridmachine2get) | **GET** /{serverID}/Machine2 | 
+*APIApi* | [**ResetBitServer1Post**](docs/APIApi.md#resetbitserver1post) | **POST** /resetBit/Server1 | 
+*APIApi* | [**ResetBitServer2Post**](docs/APIApi.md#resetbitserver2post) | **POST** /resetBit/Server2 | 
 
 
 <a id="documentation-for-models"></a>

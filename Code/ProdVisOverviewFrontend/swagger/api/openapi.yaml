@@ -5,7 +5,31 @@ info:
 servers:
 - url: /
 paths:
-  /{serverID}/Machine1:
+  /gesamttubenanz/Server1:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int64
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenanz/Server2:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int64
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenanz/Machine1/{serverID}:
     get:
       parameters:
       - explode: false
@@ -26,7 +50,7 @@ paths:
           description: Success
       tags:
       - API
-  /{serverID}/Machine2:
+  /gesamttubenanz/Machine2/{serverID}:
     get:
       parameters:
       - explode: false
@@ -77,54 +101,17 @@ paths:
           description: Success
       tags:
       - API
-  /resetBit/Machine1:
+  /resetBit/Server1:
     post:
-      parameters:
-      - explode: true
-        in: query
-        name: serverID
-        required: true
-        schema:
-          format: int32
-          type: integer
-        style: form
       responses:
         "200":
           description: Success
       tags:
       - API
-  /resetBit/Machine2:
+  /resetBit/Server2:
     post:
-      parameters:
-      - explode: true
-        in: query
-        name: serverID
-        required: true
-        schema:
-          format: int32
-          type: integer
-        style: form
       responses:
         "200":
-          description: Success
-      tags:
-      - API
-  /resetBit:
-    post:
-      requestBody:
-        content:
-          application/json:
-            schema:
-              format: int32
-              type: integer
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                format: int32
-                type: integer
           description: Success
       tags:
       - API

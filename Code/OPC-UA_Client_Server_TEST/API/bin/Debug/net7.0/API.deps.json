@@ -8,12 +8,33 @@
     ".NETCoreApp,Version=v7.0": {
       "API/1.0.0": {
         "dependencies": {
+          "EcoCore": "7.0.0.15386",
           "Microsoft.AspNetCore.OpenApi": "7.0.11",
           "Opc.UaFx.Advanced": "2.41.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "API.dll": {}
+        }
+      },
+      "EcoCore/7.0.0.15386": {
+        "runtime": {
+          "lib/net40/Eco.Handles.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.0.0.15386"
+          },
+          "lib/net40/Eco.Interfaces.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.0.0.15386"
+          },
+          "lib/net40/Eco.LinqExtender.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.0.0.15386"
+          },
+          "lib/net40/MDriven.Net.Http.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.0.0.15386"
+          }
         }
       },
       "Microsoft.AspNetCore.OpenApi/7.0.11": {
@@ -192,6 +213,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EcoCore/7.0.0.15386": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2WpMbjVYcbUuGZGlPN60syzYSyBHY/V8QxbtAW0t2ibEexUOSrV/PTI9aigZaxriqU2fRbtx1YNybUTYfaX4Qw==",
+      "path": "ecocore/7.0.0.15386",
+      "hashPath": "ecocore.7.0.0.15386.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/7.0.11": {
       "type": "package",

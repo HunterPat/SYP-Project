@@ -217,3 +217,7 @@ C:\GitRepositories\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7
 C:\GitRepositories\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.pdb
 C:\GitRepositories\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\GitRepositories\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\ref\API.dll
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\Eco.Handles.dll
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\Eco.Interfaces.dll
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\Eco.LinqExtender.dll
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\MDriven.Net.Http.dll
