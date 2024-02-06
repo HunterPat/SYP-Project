@@ -9,6 +9,86 @@
             Represents a collection of functions to interact with the API endpoints
             </summary>
         </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzMachine1ServerIDGet(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzMachine1ServerIDGetWithHttpInfo(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzMachine2ServerIDGet(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzMachine2ServerIDGetWithHttpInfo(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzServer1Get(System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzServer1GetWithHttpInfo(System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzServer2Get(System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzServer2GetWithHttpInfo(System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of long</returns>
+        </member>
         <member name="M:Org.OpenAPITools.Api.IAPIApiSync.GesamttubenanzZielGet(System.Int32)">
             <summary>
             
@@ -49,15 +129,15 @@
             <param name="operationIndex">Index associated with the operation.</param>
             <returns>ApiResponse of int</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitGet(System.Int32)">
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitServer1Post(System.Int32)">
             <summary>
             
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
             <param name="operationIndex">Index associated with the operation.</param>
-            <returns>int</returns>
+            <returns></returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitGetWithHttpInfo(System.Int32)">
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitServer1PostWithHttpInfo(System.Int32)">
             <summary>
             
             </summary>
@@ -66,39 +146,17 @@
             </remarks>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
             <param name="operationIndex">Index associated with the operation.</param>
-            <returns>ApiResponse of int</returns>
+            <returns>ApiResponse of Object(void)</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitPost(System.Int32,System.Int32)">
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitServer2Post(System.Int32)">
             <summary>
             
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="body"></param>
             <param name="operationIndex">Index associated with the operation.</param>
-            <returns>int</returns>
+            <returns></returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitPostWithHttpInfo(System.Int32,System.Int32)">
-            <summary>
-            
-            </summary>
-            <remarks>
-            
-            </remarks>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="body"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <returns>ApiResponse of int</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ServerIDTAA1Get(System.Int32,System.Int32)">
-            <summary>
-            
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <returns>Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ServerIDTAA1GetWithHttpInfo(System.Int32,System.Int32)">
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitServer2PostWithHttpInfo(System.Int32)">
             <summary>
             
             </summary>
@@ -106,35 +164,113 @@
             
             </remarks>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
             <param name="operationIndex">Index associated with the operation.</param>
-            <returns>ApiResponse of Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ServerIDTAA2Get(System.Int32,System.Int32)">
-            <summary>
-            
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <returns>Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ServerIDTAA2GetWithHttpInfo(System.Int32,System.Int32)">
-            <summary>
-            
-            </summary>
-            <remarks>
-            
-            </remarks>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <returns>ApiResponse of Object</returns>
+            <returns>ApiResponse of Object(void)</returns>
         </member>
         <member name="T:Org.OpenAPITools.Api.IAPIApiAsync">
             <summary>
             Represents a collection of functions to interact with the API endpoints
             </summary>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzMachine1ServerIDGetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzMachine1ServerIDGetWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (long)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzMachine2ServerIDGetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzMachine2ServerIDGetWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (long)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzServer1GetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzServer1GetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (long)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzServer2GetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzServer2GetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (long)</returns>
         </member>
         <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.GesamttubenanzZielGetAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
@@ -186,7 +322,7 @@
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
             <returns>Task of ApiResponse (int)</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitGetAsync(System.Int32,System.Threading.CancellationToken)">
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitServer1PostAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
             
             </summary>
@@ -196,9 +332,9 @@
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of int</returns>
+            <returns>Task of void</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitGetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitServer1PostWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
             
             </summary>
@@ -208,9 +344,9 @@
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of ApiResponse (int)</returns>
+            <returns>Task of ApiResponse</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitPostAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitServer2PostAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
             
             </summary>
@@ -218,12 +354,11 @@
             
             </remarks>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="body"></param>
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of int</returns>
+            <returns>Task of void</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitPostWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitServer2PostWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
             
             </summary>
@@ -231,62 +366,9 @@
             
             </remarks>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="body"></param>
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of ApiResponse (int)</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ServerIDTAA1GetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
-            <summary>
-            
-            </summary>
-            <remarks>
-            
-            </remarks>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ServerIDTAA1GetWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
-            <summary>
-            
-            </summary>
-            <remarks>
-            
-            </remarks>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of ApiResponse (Object)</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ServerIDTAA2GetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
-            <summary>
-            
-            </summary>
-            <remarks>
-            
-            </remarks>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ServerIDTAA2GetWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
-            <summary>
-            
-            </summary>
-            <remarks>
-            
-            </remarks>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of ApiResponse (Object)</returns>
+            <returns>Task of ApiResponse</returns>
         </member>
         <member name="T:Org.OpenAPITools.Api.IAPIApi">
             <summary>
@@ -353,6 +435,150 @@
             <summary>
             Provides a factory method hook for the creation of exceptions.
             </summary>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzMachine1ServerIDGet(System.Int32,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzMachine1ServerIDGetWithHttpInfo(System.Int32,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzMachine1ServerIDGetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzMachine1ServerIDGetWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (long)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzMachine2ServerIDGet(System.Int32,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzMachine2ServerIDGetWithHttpInfo(System.Int32,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzMachine2ServerIDGetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzMachine2ServerIDGetWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="serverID"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (long)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzServer1Get(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzServer1GetWithHttpInfo(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzServer1GetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzServer1GetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (long)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzServer2Get(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzServer2GetWithHttpInfo(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzServer2GetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of long</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzServer2GetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (long)</returns>
         </member>
         <member name="M:Org.OpenAPITools.Api.APIApi.GesamttubenanzZielGet(System.Int32)">
             <summary>
@@ -426,153 +652,73 @@
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
             <returns>Task of ApiResponse (int)</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitGet(System.Int32)">
+        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer1Post(System.Int32)">
             <summary>
              
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
             <param name="operationIndex">Index associated with the operation.</param>
-            <returns>int</returns>
+            <returns></returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitGetWithHttpInfo(System.Int32)">
+        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer1PostWithHttpInfo(System.Int32)">
             <summary>
              
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
             <param name="operationIndex">Index associated with the operation.</param>
-            <returns>ApiResponse of int</returns>
+            <returns>ApiResponse of Object(void)</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitGetAsync(System.Int32,System.Threading.CancellationToken)">
+        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer1PostAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
              
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of int</returns>
+            <returns>Task of void</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitGetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer1PostWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
              
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of ApiResponse (int)</returns>
+            <returns>Task of ApiResponse</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitPost(System.Int32,System.Int32)">
+        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer2Post(System.Int32)">
             <summary>
              
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="body"></param>
             <param name="operationIndex">Index associated with the operation.</param>
-            <returns>int</returns>
+            <returns></returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitPostWithHttpInfo(System.Int32,System.Int32)">
+        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer2PostWithHttpInfo(System.Int32)">
             <summary>
              
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="body"></param>
             <param name="operationIndex">Index associated with the operation.</param>
-            <returns>ApiResponse of int</returns>
+            <returns>ApiResponse of Object(void)</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitPostAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer2PostAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
              
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="body"></param>
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of int</returns>
+            <returns>Task of void</returns>
         </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitPostWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
+        <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer2PostWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
              
             </summary>
             <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="body"></param>
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of ApiResponse (int)</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ServerIDTAA1Get(System.Int32,System.Int32)">
-            <summary>
-             
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <returns>Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ServerIDTAA1GetWithHttpInfo(System.Int32,System.Int32)">
-            <summary>
-             
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <returns>ApiResponse of Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ServerIDTAA1GetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
-            <summary>
-             
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ServerIDTAA1GetWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
-            <summary>
-             
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of ApiResponse (Object)</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ServerIDTAA2Get(System.Int32,System.Int32)">
-            <summary>
-             
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <returns>Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ServerIDTAA2GetWithHttpInfo(System.Int32,System.Int32)">
-            <summary>
-             
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <returns>ApiResponse of Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ServerIDTAA2GetAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
-            <summary>
-             
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of Object</returns>
-        </member>
-        <member name="M:Org.OpenAPITools.Api.APIApi.ServerIDTAA2GetWithHttpInfoAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">
-            <summary>
-             
-            </summary>
-            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-            <param name="serverID"></param>
-            <param name="operationIndex">Index associated with the operation.</param>
-            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-            <returns>Task of ApiResponse (Object)</returns>
+            <returns>Task of ApiResponse</returns>
         </member>
         <member name="T:Org.OpenAPITools.Client.CustomJsonCodec">
             <summary>

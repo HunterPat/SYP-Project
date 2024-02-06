@@ -108,3 +108,11 @@ C:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-win
 C:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.pdb
 C:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.genruntimeconfig.cache
 C:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ref\ProdVisOverviewFrontend.dll
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.csproj.AssemblyReference.cache
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\App.g.cs
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend_MarkupCompile.cache
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend_MarkupCompile.lref
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.dll
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\refint\ProdVisOverviewFrontend.dll
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.pdb

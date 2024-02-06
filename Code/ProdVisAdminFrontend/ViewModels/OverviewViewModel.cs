@@ -34,32 +34,76 @@ namespace ProdVisAdminFrontend.ViewModels
             }
         }
 
+        private int progress_AP1;
+
+        public int Progress_AP1
+        {
+            get { return progress_AP1; }
+            set
+            {
+                if (progress_AP1 != value)
+                {
+                    progress_AP1 = value;
+                    OnPropertyChanged(nameof(Progress_AP1));
+                }
+            }
+        }
+
+        private int progress_AP2;
+
+        public int Progress_AP2
+        {
+            get { return progress_AP2; }
+            set
+            {
+                if (progress_AP2 != value)
+                {
+                    progress_AP2 = value;
+                    OnPropertyChanged(nameof(Progress_AP2));
+                }
+            }
+        }
+
         private ISharedService currentAmount_AP1;
 
         public int CurrentAmount_AP1
         {
-            get { return currentAmount_AP1.CurrentAmount; }
+            get { return currentAmount_AP1.Value; }
             set
             {
-                if (currentAmount_AP1.CurrentAmount != value)
+                if (currentAmount_AP1.Value != value)
                 {
-                    currentAmount_AP1.CurrentAmount = value;
+                    currentAmount_AP1.Value = value;
                     OnPropertyChanged(nameof(CurrentAmount_AP1));
                 }
             }
         }
 
+        private ISharedService currentAmount_AP2;
+
+        public int CurrentAmount_AP2
+        {
+            get { return currentAmount_AP2.Value; }
+            set
+            {
+                if (currentAmount_AP2.Value != value)
+                {
+                    currentAmount_AP2.Value = value;
+                    OnPropertyChanged(nameof(CurrentAmount_AP2));
+                }
+            }
+        }
 
         private ISharedService productionGoal_AP1;
 
         public int ProductionGoal_AP1
         {
-            get { return productionGoal_AP1.ProductionGoal; }
+            get { return productionGoal_AP1.Value; }
             set
             {
-                if (productionGoal_AP1.ProductionGoal != value)
+                if (productionGoal_AP1.Value != value)
                 {
-                    productionGoal_AP1.ProductionGoal = value;
+                    productionGoal_AP1.Value = value;
                     OnPropertyChanged(nameof(ProductionGoal_AP1));
                 }
             }
@@ -69,45 +113,34 @@ namespace ProdVisAdminFrontend.ViewModels
 
         public int ProductionGoal_AP2
         {
-            get { return productionGoal_AP2.ProductionGoal; }
+            get { return productionGoal_AP2.Value; }
             set
             {
-                if (productionGoal_AP2.ProductionGoal != value)
+                if (productionGoal_AP2.Value != value)
                 {
-                    productionGoal_AP2.ProductionGoal = value;
+                    productionGoal_AP2.Value = value;
                     OnPropertyChanged(nameof(ProductionGoal_AP2));
                 }
             }
         }
 
 
-        public OverviewViewModel(ISharedService productionService)
+        public OverviewViewModel(ISharedService productionGoal_AP1, ISharedService productionGoal_AP2, ISharedService currentAmount_AP1, ISharedService currentAmount_AP2)
         {
 
-            this.productionGoal_AP1 = productionService;
-            this.productionGoal_AP2 = productionService;
+            this.productionGoal_AP1 = productionGoal_AP1;
+            this.productionGoal_AP2 = productionGoal_AP2;
+            this.currentAmount_AP1 = currentAmount_AP1;
+            this.currentAmount_AP2 = currentAmount_AP2;
             timeTimer = new DispatcherTimer();
             _dateText = "Loading...";
             timeTimer.Interval = TimeSpan.FromMilliseconds(500);
             timeTimer.Tick += TimeTimer_Tick;
             timeTimer.Start();
 
-            updateTimer = new DispatcherTimer();
-            updateTimer.Interval = TimeSpan.FromMilliseconds(2000);
-            updateTimer.Tick += UpdateTimer_Tick;
-            updateTimer.Start();
-            api = new APIApi(baseUrl);
-            productionGoal_AP1.ProductionGoal = api.GesamttubenanzZielGet();
-            productionGoal_AP2.ProductionGoal = api.GesamttubenanzZielGet();
-            
         }
 
-        private void UpdateTimer_Tick(object? sender, EventArgs e)
-        {
-            if (api == null) return;
-            productionGoal_AP1.ProductionGoal = api.GesamttubenanzZielGet();
-            productionGoal_AP2.ProductionGoal = api.GesamttubenanzZielGet();
-        }
+
 
         private void TimeTimer_Tick(object? sender, EventArgs e)
         {

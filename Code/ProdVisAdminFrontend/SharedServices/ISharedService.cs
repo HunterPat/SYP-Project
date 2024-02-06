@@ -8,8 +8,6 @@ namespace ProdVisAdminFrontend.SharedServices
 {
     public class ISharedService
     {
-        public int ProductionGoal { get; set; }
-
-        public int CurrentAmount { get; set; }
+        public int Value { get; set; }
     }
 }

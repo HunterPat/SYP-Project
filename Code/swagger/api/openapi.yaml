@@ -5,26 +5,31 @@ info:
 servers:
 - url: /
 paths:
-  /{serverID}/TAA1:
+  /gesamttubenanz/Server1:
     get:
-      parameters:
-      - explode: false
-        in: path
-        name: serverID
-        required: true
-        schema:
-          format: int32
-          type: integer
-        style: simple
       responses:
         "200":
           content:
             application/json:
-              schema: {}
+              schema:
+                format: int64
+                type: integer
           description: Success
       tags:
       - API
-  /{serverID}/TAA2:
+  /gesamttubenanz/Server2:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int64
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenanz/Machine1/{serverID}:
     get:
       parameters:
       - explode: false
@@ -39,7 +44,30 @@ paths:
         "200":
           content:
             application/json:
-              schema: {}
+              schema:
+                format: int64
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenanz/Machine2/{serverID}:
+    get:
+      parameters:
+      - explode: false
+        in: path
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int64
+                type: integer
           description: Success
       tags:
       - API
@@ -73,33 +101,17 @@ paths:
           description: Success
       tags:
       - API
-  /resetBit:
-    get:
+  /resetBit/Server1:
+    post:
       responses:
         "200":
-          content:
-            application/json:
-              schema:
-                format: int32
-                type: integer
           description: Success
       tags:
       - API
+  /resetBit/Server2:
     post:
-      requestBody:
-        content:
-          application/json:
-            schema:
-              format: int32
-              type: integer
-        required: true
       responses:
         "200":
-          content:
-            application/json:
-              schema:
-                format: int32
-                type: integer
           description: Success
       tags:
       - API
