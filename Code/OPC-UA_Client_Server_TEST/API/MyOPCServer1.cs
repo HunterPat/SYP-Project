@@ -65,7 +65,6 @@ namespace OPC_UA_Client
 
             if (server.NodeManagers[0].Nodes[0].Children().ToList()[1].AttributeValue(OpcAttribute.Value).ToString().Equals("1"))
             {
-                Console.WriteLine("yes1");
                 server.NodeManagers[0].RemoveNode(server.NodeManagers[0].Nodes[0]);
                 server.NodeManagers[0].AddNode(new OpcObjectNode(
                 "TAA1",
@@ -74,7 +73,6 @@ namespace OPC_UA_Client
             }
             if (server.NodeManagers[0].Nodes[3].Children().ToList()[1].AttributeValue(OpcAttribute.Value).ToString().Equals("1"))
             {
-                Console.WriteLine("yes2");
 
                 server.NodeManagers[0].RemoveNode(server.NodeManagers[0].Nodes[3]);
                 server.NodeManagers[0].AddNode(new OpcObjectNode(
@@ -82,7 +80,6 @@ namespace OPC_UA_Client
           new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 0),
                     new OpcDataVariableNode<int>("resetBit", value: 0)));
             }
-            Console.WriteLine("Node: " + (server.NodeManagers[0].Nodes[3].Children().ToList()[1].AttributeValue(OpcAttribute.Value)));
         }
 
         public void StartServer()

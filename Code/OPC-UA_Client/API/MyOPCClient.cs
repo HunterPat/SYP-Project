@@ -9,7 +9,7 @@ namespace OPC_UA_Client
         public MyOPCClient(string url)
         {
             client = new OpcClient(url);//OPC-Server URL
-            serverURL = url;                                
+            serverURL = url;
         }
         public void EstablishConnection()
         {
@@ -17,6 +17,8 @@ namespace OPC_UA_Client
             {
                 client.Connect();
                 Console.WriteLine("-----------------------\nconnected!");
+             //       var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
+             //     Browse(node);
             }
             catch (Exception ex)
             {
@@ -36,92 +38,88 @@ namespace OPC_UA_Client
             }
         }
 
-        public OpcValue ReadDataFromTAA1()
+        public int ReadDataFromTAA1()
         {
             var anzTag = "ns=4;i=6";
-                var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
-               Browse(node);
             try
             {
                 var gesamtAnzahl = client.ReadNode(anzTag);
-                return gesamtAnzahl!;
+                if (gesamtAnzahl != null)
+                {
+                    return int.Parse(gesamtAnzahl.ToString());
+                }
+                return ReadDataFromTAA1();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
             }
-            return null!;
+            return -1;
         }
 
-        public OpcValue ReadDataFromTAA2()
+        public int ReadDataFromTAA2()
         {
             var anzTag = "ns=4;i=11";
-            //    var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
-            //   Browse(node);
             try
             {
-                var gesammtAnzahl = client.ReadNode(anzTag);
-                if (gesammtAnzahl != null)
+                var gesamtAnzahl = client.ReadNode(anzTag);
+                if (gesamtAnzahl != null)
                 {
-                    return gesammtAnzahl;
+                    return int.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
-                return gesammtAnzahl!;
+                return ReadDataFromTAA2();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
             }
-            return null!;
+            return -1;
         }
-        public OpcValue ReadDataFromTAA3()
+        public int ReadDataFromTAA3()
         {
-            var anzTag = "ns=4;i=11"; //TODO: change node
-            //    var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
-            //   Browse(node);
+            var anzTag = "ns=2;s=TAA3/Gesamttubenanzahl";
             try
             {
-                var gesammtAnzahl = client.ReadNode(anzTag);
-                if (gesammtAnzahl != null)
+                var gesamtAnzahl = client.ReadNode(anzTag);
+                if (gesamtAnzahl != null)
                 {
-                    return gesammtAnzahl;
+                    return int.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
-                return gesammtAnzahl!;
+                return ReadDataFromTAA3();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
             }
-            return null!;
+            return -1;
         }
-        public OpcValue ReadDataFromTAA4()
+        public int ReadDataFromTAA4()
         {
-            var anzTag = "ns=4;i=11"; //TODO: change node
-            //    var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
-            //   Browse(node);
+            var anzTag = "ns=2;s=TAA4/Gesamttubenanzahl";
             try
             {
-                var gesammtAnzahl = client.ReadNode(anzTag);
-                if (gesammtAnzahl != null)
+                var gesamtAnzahl = client.ReadNode(anzTag);
+                if (gesamtAnzahl != null)
                 {
-                    return gesammtAnzahl;
+                    return int.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
-                return gesammtAnzahl!;
+                return ReadDataFromTAA4();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
             }
-            return null!;
+            return -1;
         }
 
-        public void ResetBit(string resetBitTag)
-        {
-            client.WriteNode(resetBitTag, true);
-            Thread.Sleep(2000);//to read the Bit 
-            client.WriteNode(resetBitTag, false);
+        public void ResetBit(string machine)
+        {   //same node on every Machine except the Name of the Machine => TAA1 TAA2 ...
+            client.WriteNode("ns=2;s=" + machine + "/resetBit", 1); // ns=2;s=TAA1/resetBit
+            Thread.Sleep(2000);//so that the server can read the Bit 
+            client.WriteNode("ns=2;s=" + machine + "/resetBit", 0);
         }
 
         public void Browse(OpcNodeInfo node, int level = 0)

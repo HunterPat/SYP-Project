@@ -39,7 +39,7 @@ namespace OPC_UA_Client
             }
         }
 
-        public long ReadDataFromTAA1()
+        public int ReadDataFromTAA1()
         {
             var anzTag = "ns=2;s=TAA1/Gesamttubenanzahl";
             try
@@ -47,7 +47,7 @@ namespace OPC_UA_Client
                 var gesamtAnzahl = client.ReadNode(anzTag);
                 if (gesamtAnzahl != null)
                 {
-                    return long.Parse(gesamtAnzahl.ToString());
+                    return int.Parse(gesamtAnzahl.ToString());
                 }
                 return ReadDataFromTAA1();
             }
@@ -58,7 +58,7 @@ namespace OPC_UA_Client
             return -1;
         }
 
-        public long ReadDataFromTAA2()
+        public int ReadDataFromTAA2()
         {
             var anzTag = "ns=2;s=TAA2/Gesamttubenanzahl";
             try
@@ -66,7 +66,7 @@ namespace OPC_UA_Client
                 var gesamtAnzahl = client.ReadNode(anzTag);
                 if (gesamtAnzahl != null)
                 {
-                    return long.Parse(gesamtAnzahl.ToString());
+                    return int.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
                 return ReadDataFromTAA2();
@@ -77,7 +77,7 @@ namespace OPC_UA_Client
             }
             return -1;
         }
-        public long ReadDataFromTAA3()
+        public int ReadDataFromTAA3()
         {
             var anzTag = "ns=2;s=TAA3/Gesamttubenanzahl";
             try
@@ -85,7 +85,7 @@ namespace OPC_UA_Client
                 var gesamtAnzahl = client.ReadNode(anzTag);
                 if (gesamtAnzahl != null)
                 {
-                    return long.Parse(gesamtAnzahl.ToString());
+                    return int.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
                 return ReadDataFromTAA3();
@@ -96,7 +96,7 @@ namespace OPC_UA_Client
             }
             return -1;
         }
-        public long ReadDataFromTAA4()
+        public int ReadDataFromTAA4()
         {
             var anzTag = "ns=2;s=TAA4/Gesamttubenanzahl";
             try
@@ -104,7 +104,7 @@ namespace OPC_UA_Client
                 var gesamtAnzahl = client.ReadNode(anzTag);
                 if (gesamtAnzahl != null)
                 {
-                    return long.Parse(gesamtAnzahl.ToString());
+                    return int.Parse(gesamtAnzahl.ToString());
                 }
                 Console.WriteLine("-----------------------\nempty Data read");
                 return ReadDataFromTAA4();

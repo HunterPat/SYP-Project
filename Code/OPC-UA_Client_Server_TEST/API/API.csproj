@@ -9,8 +9,10 @@
   <ItemGroup>
     <PackageReference Include="EcoCore" Version="7.0.0.15386" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	  <PackageReference Include="Opc.UaFx.Advanced" Version="2.41.0" />
+	  <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
   </ItemGroup>
 
 </Project>

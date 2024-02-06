@@ -31,7 +31,6 @@ namespace OPC_UA_Client
         }
         private void GesamttubenAnzRaiseMethod()
         {
-
             while (true)
             {
                 //Console.WriteLine(server.NodeManagers[0].Nodes[0].Name);
