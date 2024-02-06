@@ -221,3 +221,7 @@ D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debu
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\Eco.Interfaces.dll
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\Eco.LinqExtender.dll
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\MDriven.Net.Http.dll
+C:\GitRepositories\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\Eco.Handles.dll
+C:\GitRepositories\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\Eco.Interfaces.dll
+C:\GitRepositories\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\Eco.LinqExtender.dll
+C:\GitRepositories\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\MDriven.Net.Http.dll

@@ -39,8 +39,8 @@ namespace ProdVisAdminFrontend.Views
             var api = new APIApi(baseUrl);
             var productionGoal = Int32.Parse(txtProductionGoal.Text);
             var response = api.GesamttubenanzZielPost(productionGoal);
-            viewModel.ProductionGoal_1 = productionGoal;
-            viewModel.ProductionGoal_2 = productionGoal;
+            viewModel.ProductionGoal_AP1 = productionGoal;
+            viewModel.ProductionGoal_AP2 = productionGoal;
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)

@@ -8,7 +8,7 @@
         xmlns:views="clr-namespace:ProdVisAdminFrontend.Views"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Background="DarkGray"
+        Background="White"
         Title="ProdVis Admin" Height="720" Width="1280">
     <Window.Resources>
         <DataTemplate x:Name="settingsViewTemplate" DataType="{x:Type viewmodels:SettingsViewModel}">
@@ -27,9 +27,10 @@
             
         </Grid.ColumnDefinitions>
         <Grid>
-            <StackPanel Background="DarkSlateGray">
-                <Button Click="Overview_Clicked" Content="Übersicht" Background="Orange" Foreground="White" FontSize="16" Margin="5,10,5,5" VerticalContentAlignment="Center"></Button>
-                <Button Click="Settings_Clicked" Content="Einstellungen" Background="Orange" Foreground="White" FontSize="16" Margin="5" VerticalContentAlignment="Center"></Button>
+            <StackPanel Background="#EEEDED">
+
+                <Button  Click="Overview_Clicked" Content="Übersicht" Foreground="White" FontSize="16" Margin="10,10,10,5" VerticalContentAlignment="Center"></Button>
+                <Button  Click="Settings_Clicked" Content="Einstellungen" Foreground="White" FontSize="16" Margin="10" VerticalContentAlignment="Center"></Button>
             </StackPanel>
         </Grid>
         <ContentControl Grid.Column="1" Content="{Binding}"></ContentControl>

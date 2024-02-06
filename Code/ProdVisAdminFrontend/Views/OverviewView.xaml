@@ -8,7 +8,182 @@
              Background="DarkGray"
             
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Label VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding DateText}" FontSize="20"></Label>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="18*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Background="#EEEDED" BorderThickness="0" CornerRadius="5" Margin="10,8,10,0">
+        <Label VerticalAlignment="Center" HorizontalAlignment="Center" Content="{Binding DateText}" FontSize="16" FontWeight="DemiBold"></Label>
+        </Border>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="17*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Border Background="#EEEDED" BorderThickness="1" BorderBrush="#EEEDED" CornerRadius="5" Margin="10, 20, 10, 10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="7*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,8,10,5">
+                        <Label FontWeight="DemiBold" Content="Anlagenpaar 1" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
+                    </Border>
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="8*"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="Green" CornerRadius="5" BorderThickness="1"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="70" Orientation="Vertical" Margin="1"></ProgressBar>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="8*"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="6*"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="1" Grid.Row="1" Background="#C7C8CC" BorderThickness="1" BorderBrush="#C7C8CC" CornerRadius="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label  Grid.Row="2" Content="Ziel:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding ProductionGoal_AP1}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+
+                                <Label Grid.Row="4" Content="Jetzt:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding CurrentAmount_AP1}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="6" Content="Prozent:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding Progress_AP1}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.ColumnSpan="3" Content="Details" FontSize="14" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border Grid.Column="1" Background="#EEEDED" BorderThickness="1" BorderBrush="#EEEDED" CornerRadius="5" Margin="10,20,10,10">
+                
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="7*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,8,10,5">
+                        <Label FontWeight="DemiBold" Content="Anlagenpaar 2" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
+                    </Border>
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="8*"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="Green" CornerRadius="5" BorderThickness="1"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="70" Orientation="Vertical" Margin="1"></ProgressBar>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="8*"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="6*"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="1" Grid.Row="1" Background="#C7C8CC" BorderThickness="1" BorderBrush="#C7C8CC" CornerRadius="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label  Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding ProductionGoal_AP2}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding CurrentAmount_AP2}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding Progress_AP2}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+
+                                <Label Grid.Row="2" FontSize="14" FontWeight="DemiBold" Content="Ziel:" HorizontalAlignment="Center"></Label>
+                                <Label Grid.Row="4" FontSize="14" FontWeight="DemiBold" Content="Jetzt:" HorizontalAlignment="Center"></Label>
+                                <Label Grid.Row="6" FontSize="14" FontWeight="DemiBold" Content="Prozent:" HorizontalAlignment="Center"></Label>
+                                <Label Grid.ColumnSpan="3" Content="Details" FontSize="14" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="12" Content="Wechseln" Margin="15,0,10,8"></Button>
+                </Grid>
+            </Grid>
+        </Grid>
     </Grid>
 </UserControl>

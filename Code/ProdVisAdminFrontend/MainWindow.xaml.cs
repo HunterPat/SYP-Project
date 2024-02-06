@@ -20,16 +20,14 @@ namespace ProdVisAdminFrontend
     {
         private OverviewViewModel overviewViewModel;
         private SettingsViewModel settingsViewModel;
-        private ISharedService productionGoal_1;
-        private ISharedService productionGoal_2;
+        private ISharedService productionService;
 
         public MainWindow()
         {
             InitializeComponent();
-            productionGoal_1 = new SharedProductionGoal(100);
-            productionGoal_2 = new SharedProductionGoal(101);
-            overviewViewModel = new OverviewViewModel(productionGoal_1, productionGoal_2);
-            settingsViewModel = new SettingsViewModel(productionGoal_1,productionGoal_2);
+            productionService = new ProductionSharedService(0, 0);
+            overviewViewModel = new OverviewViewModel(productionService);
+            settingsViewModel = new SettingsViewModel(productionService);
 
             DataContext = overviewViewModel;
         }

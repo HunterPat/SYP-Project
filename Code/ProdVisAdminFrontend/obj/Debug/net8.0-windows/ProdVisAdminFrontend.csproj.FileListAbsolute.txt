@@ -71,3 +71,5 @@ D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-window
 D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.xml
 D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\ProdVisAdminFrontend.csproj.CopyComplete
 D:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Styles\Resources.baml
+C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Styles\Resources.baml
+C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\App.baml
