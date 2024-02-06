@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              Background="DarkGray"
             
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded">
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
@@ -37,7 +37,7 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition Height="7*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,8,10,5">
+                    <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,8,10,0">
                         <Label FontWeight="DemiBold" Content="Anlagenpaar 1" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
                     </Border>
                     <Grid Grid.Column="1" Grid.Row="1">
@@ -52,8 +52,8 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="Green" CornerRadius="5" BorderThickness="1"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="70" Orientation="Vertical" Margin="1"></ProgressBar>
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF06B025" CornerRadius="5" BorderThickness="2"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="{Binding Progress_AP1}" Orientation="Vertical" Margin="1.5"></ProgressBar>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -89,7 +89,7 @@
 
                                 <Label Grid.Row="4" Content="Jetzt:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
                                 <Label Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding CurrentAmount_AP1}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="6" Content="Prozent:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="6" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
                                 <Label Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding Progress_AP1}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="14" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
@@ -109,7 +109,7 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition Height="7*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,8,10,5">
+                    <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,8,10,0">
                         <Label FontWeight="DemiBold" Content="Anlagenpaar 2" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
                     </Border>
                     <Grid Grid.Column="1" Grid.Row="1">
@@ -124,8 +124,8 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="Green" CornerRadius="5" BorderThickness="1"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="70" Orientation="Vertical" Margin="1"></ProgressBar>
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF06B025" CornerRadius="5" BorderThickness="2"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="{Binding Progress_AP2}" Orientation="Vertical" Margin="1.5"></ProgressBar>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -162,7 +162,7 @@
 
                                 <Label Grid.Row="2" FontSize="14" FontWeight="DemiBold" Content="Ziel:" HorizontalAlignment="Center"></Label>
                                 <Label Grid.Row="4" FontSize="14" FontWeight="DemiBold" Content="Jetzt:" HorizontalAlignment="Center"></Label>
-                                <Label Grid.Row="6" FontSize="14" FontWeight="DemiBold" Content="Prozent:" HorizontalAlignment="Center"></Label>
+                                <Label Grid.Row="6" FontSize="14" FontWeight="DemiBold" Content="Erfüllt:" HorizontalAlignment="Center"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="14" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>

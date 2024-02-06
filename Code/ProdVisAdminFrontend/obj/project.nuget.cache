@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "2pMnCbSBnoyrYiewMjOP/Bhdi7lyslB0elBm9mwP5xbqjU4sRbfL1uzP1tHZvnM4/RZvMQBBSz2rhxsF+cOvwA==",
+  "dgSpecHash": "eJ6ztH6rSagjV5F8DQCnVpKN+VovRLXtPT+Kuf0sKTtGRhh/TgKfDClVAgTLIWL1pvTbF8xZmMLmvwrlzB6QuQ==",
   "success": true,
-  "projectFilePath": "C:\\GitRepositories\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
+  "projectFilePath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vadym2005\\.nuget\\packages\\jsonsubtypes\\2.0.1\\jsonsubtypes.2.0.1.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\polly\\8.1.0\\polly.8.1.0.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\polly.core\\8.1.0\\polly.core.8.1.0.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\vadym2005\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+    "C:\\Users\\Vadym\\.nuget\\packages\\jsonsubtypes\\2.0.1\\jsonsubtypes.2.0.1.nupkg.sha512",
+    "C:\\Users\\Vadym\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Vadym\\.nuget\\packages\\polly\\8.1.0\\polly.8.1.0.nupkg.sha512",
+    "C:\\Users\\Vadym\\.nuget\\packages\\polly.core\\8.1.0\\polly.core.8.1.0.nupkg.sha512",
+    "C:\\Users\\Vadym\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Vadym\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Vadym\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

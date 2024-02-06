@@ -21,12 +21,12 @@ namespace ProdVisAdminFrontend.ViewModels
         private ISharedService productionGoal_AP1;
         public int ProductionGoal_AP1
         {
-            get { return productionGoal_AP1.ProductionGoal; }
+            get { return productionGoal_AP1.Value; }
             set
             {
-                if (productionGoal_AP1.ProductionGoal != value)
+                if (productionGoal_AP1.Value != value)
                 {
-                    productionGoal_AP1.ProductionGoal = value;
+                    productionGoal_AP1.Value = value;
                     OnPropertyChanged(nameof(ProductionGoal_AP1));
                 }
             }
@@ -36,34 +36,55 @@ namespace ProdVisAdminFrontend.ViewModels
 
         public int ProductionGoal_AP2
         {
-            get { return productionGoal_AP2.ProductionGoal; }
+            get { return productionGoal_AP2.Value; }
             set
             {
-                if (productionGoal_AP2.ProductionGoal != value)
+                if (productionGoal_AP2.Value != value)
                 {
-                    productionGoal_AP2.ProductionGoal = value;
+                    productionGoal_AP2.Value = value;
                     OnPropertyChanged(nameof(ProductionGoal_AP2));
                 }
             }
         }
 
-        public SettingsViewModel(ISharedService productionService)
-        {
-            this.productionGoal_AP1 = productionService;
-            this.productionGoal_AP2 = productionService;
+        private ISharedService currentAmount_AP1;
 
-            updateTimer = new DispatcherTimer();
-            updateTimer.Interval = TimeSpan.FromMilliseconds(2000);
-            updateTimer.Tick += UpdateTimer_Tick;
-            updateTimer.Start();
-            api = new APIApi(baseUrl);
+        public int CurrentAmount_AP1
+        {
+            get { return currentAmount_AP1.Value; }
+            set
+            {
+                if (currentAmount_AP1.Value != value)
+                {
+                    currentAmount_AP1.Value = value;
+                    OnPropertyChanged(nameof(CurrentAmount_AP1));
+                }
+            }
         }
 
-        private void UpdateTimer_Tick(object? sender, EventArgs e)
+        private ISharedService currentAmount_AP2;
+
+        public int CurrentAmount_AP2
         {
-            if (api == null) return;
-            productionGoal_AP1.ProductionGoal = api.GesamttubenanzZielGet();
-            productionGoal_AP2.ProductionGoal = api.GesamttubenanzZielGet();
+            get { return currentAmount_AP2.Value; }
+            set
+            {
+                if (currentAmount_AP2.Value != value)
+                {
+                    currentAmount_AP2.Value = value;
+                    OnPropertyChanged(nameof(CurrentAmount_AP2));
+                }
+            }
+        }
+
+        public SettingsViewModel(ISharedService productionGoal_AP1, ISharedService productionGoal_AP2, ISharedService currentAmount_AP1, ISharedService currentAmount_AP2)
+        {
+            this.productionGoal_AP1 = productionGoal_AP1;
+            this.productionGoal_AP2 = productionGoal_AP2;
+            this.currentAmount_AP1 = currentAmount_AP1;
+            this.currentAmount_AP2 = currentAmount_AP2;
+
+            
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

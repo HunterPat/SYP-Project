@@ -20,14 +20,20 @@ namespace ProdVisAdminFrontend
     {
         private OverviewViewModel overviewViewModel;
         private SettingsViewModel settingsViewModel;
-        private ISharedService productionService;
+        private ISharedService productionGoal_AP1;
+        private ISharedService productionGoal_AP2;
+        private ISharedService currentAmount_AP1;
+        private ISharedService currentAmount_AP2;
 
         public MainWindow()
         {
             InitializeComponent();
-            productionService = new ProductionSharedService(0, 0);
-            overviewViewModel = new OverviewViewModel(productionService);
-            settingsViewModel = new SettingsViewModel(productionService);
+            productionGoal_AP1 = new IntegerSharedService(0);
+            productionGoal_AP2 = new IntegerSharedService(0);
+            currentAmount_AP1 = new IntegerSharedService(0);
+            currentAmount_AP2 = new IntegerSharedService(0);
+            overviewViewModel = new OverviewViewModel(productionGoal_AP1, productionGoal_AP2, currentAmount_AP1, currentAmount_AP2);
+            settingsViewModel = new SettingsViewModel(productionGoal_AP1, productionGoal_AP2, currentAmount_AP1, currentAmount_AP2);
 
             DataContext = overviewViewModel;
         }

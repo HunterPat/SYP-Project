@@ -4,12 +4,352 @@ All URIs are relative to *http://localhost*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
+| [**GesamttubenanzMachine1ServerIDGet**](APIApi.md#gesamttubenanzmachine1serveridget) | **GET** /gesamttubenanz/Machine1/{serverID} |  |
+| [**GesamttubenanzMachine2ServerIDGet**](APIApi.md#gesamttubenanzmachine2serveridget) | **GET** /gesamttubenanz/Machine2/{serverID} |  |
+| [**GesamttubenanzServer1Get**](APIApi.md#gesamttubenanzserver1get) | **GET** /gesamttubenanz/Server1 |  |
+| [**GesamttubenanzServer2Get**](APIApi.md#gesamttubenanzserver2get) | **GET** /gesamttubenanz/Server2 |  |
 | [**GesamttubenanzZielGet**](APIApi.md#gesamttubenanzzielget) | **GET** /gesamttubenanzZiel |  |
 | [**GesamttubenanzZielPost**](APIApi.md#gesamttubenanzzielpost) | **POST** /gesamttubenanzZiel |  |
-| [**ResetBitGet**](APIApi.md#resetbitget) | **GET** /resetBit |  |
-| [**ResetBitPost**](APIApi.md#resetbitpost) | **POST** /resetBit |  |
-| [**ServerIDTAA1Get**](APIApi.md#serveridtaa1get) | **GET** /{serverID}/TAA1 |  |
-| [**ServerIDTAA2Get**](APIApi.md#serveridtaa2get) | **GET** /{serverID}/TAA2 |  |
+| [**ResetBitServer1Post**](APIApi.md#resetbitserver1post) | **POST** /resetBit/Server1 |  |
+| [**ResetBitServer2Post**](APIApi.md#resetbitserver2post) | **POST** /resetBit/Server2 |  |
+
+<a id="gesamttubenanzmachine1serveridget"></a>
+# **GesamttubenanzMachine1ServerIDGet**
+> long GesamttubenanzMachine1ServerIDGet (int serverID)
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class GesamttubenanzMachine1ServerIDGetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://localhost";
+            var apiInstance = new APIApi(config);
+            var serverID = 56;  // int | 
+
+            try
+            {
+                long result = apiInstance.GesamttubenanzMachine1ServerIDGet(serverID);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling APIApi.GesamttubenanzMachine1ServerIDGet: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the GesamttubenanzMachine1ServerIDGetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    ApiResponse<long> response = apiInstance.GesamttubenanzMachine1ServerIDGetWithHttpInfo(serverID);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling APIApi.GesamttubenanzMachine1ServerIDGetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **serverID** | **int** |  |  |
+
+### Return type
+
+**long**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a id="gesamttubenanzmachine2serveridget"></a>
+# **GesamttubenanzMachine2ServerIDGet**
+> long GesamttubenanzMachine2ServerIDGet (int serverID)
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class GesamttubenanzMachine2ServerIDGetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://localhost";
+            var apiInstance = new APIApi(config);
+            var serverID = 56;  // int | 
+
+            try
+            {
+                long result = apiInstance.GesamttubenanzMachine2ServerIDGet(serverID);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling APIApi.GesamttubenanzMachine2ServerIDGet: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the GesamttubenanzMachine2ServerIDGetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    ApiResponse<long> response = apiInstance.GesamttubenanzMachine2ServerIDGetWithHttpInfo(serverID);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling APIApi.GesamttubenanzMachine2ServerIDGetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **serverID** | **int** |  |  |
+
+### Return type
+
+**long**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a id="gesamttubenanzserver1get"></a>
+# **GesamttubenanzServer1Get**
+> long GesamttubenanzServer1Get ()
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class GesamttubenanzServer1GetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://localhost";
+            var apiInstance = new APIApi(config);
+
+            try
+            {
+                long result = apiInstance.GesamttubenanzServer1Get();
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling APIApi.GesamttubenanzServer1Get: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the GesamttubenanzServer1GetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    ApiResponse<long> response = apiInstance.GesamttubenanzServer1GetWithHttpInfo();
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling APIApi.GesamttubenanzServer1GetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+### Return type
+
+**long**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a id="gesamttubenanzserver2get"></a>
+# **GesamttubenanzServer2Get**
+> long GesamttubenanzServer2Get ()
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class GesamttubenanzServer2GetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://localhost";
+            var apiInstance = new APIApi(config);
+
+            try
+            {
+                long result = apiInstance.GesamttubenanzServer2Get();
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling APIApi.GesamttubenanzServer2Get: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the GesamttubenanzServer2GetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    ApiResponse<long> response = apiInstance.GesamttubenanzServer2GetWithHttpInfo();
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling APIApi.GesamttubenanzServer2GetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+### Return type
+
+**long**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanzzielget"></a>
 # **GesamttubenanzZielGet**
@@ -180,9 +520,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a id="resetbitget"></a>
-# **ResetBitGet**
-> int ResetBitGet ()
+<a id="resetbitserver1post"></a>
+# **ResetBitServer1Post**
+> void ResetBitServer1Post ()
 
 
 
@@ -196,7 +536,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class ResetBitGetExample
+    public class ResetBitServer1PostExample
     {
         public static void Main()
         {
@@ -206,12 +546,11 @@ namespace Example
 
             try
             {
-                int result = apiInstance.ResetBitGet();
-                Debug.WriteLine(result);
+                apiInstance.ResetBitServer1Post();
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.ResetBitGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.ResetBitServer1Post: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -220,20 +559,17 @@ namespace Example
 }
 ```
 
-#### Using the ResetBitGetWithHttpInfo variant
+#### Using the ResetBitServer1PostWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.ResetBitGetWithHttpInfo();
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
+    apiInstance.ResetBitServer1PostWithHttpInfo();
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.ResetBitGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.ResetBitServer1PostWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -243,7 +579,7 @@ catch (ApiException e)
 This endpoint does not need any parameter.
 ### Return type
 
-**int**
+void (empty response body)
 
 ### Authorization
 
@@ -252,7 +588,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 ### HTTP response details
@@ -262,9 +598,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a id="resetbitpost"></a>
-# **ResetBitPost**
-> int ResetBitPost (int body)
+<a id="resetbitserver2post"></a>
+# **ResetBitServer2Post**
+> void ResetBitServer2Post ()
 
 
 
@@ -278,23 +614,21 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class ResetBitPostExample
+    public class ResetBitServer2PostExample
     {
         public static void Main()
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
             var apiInstance = new APIApi(config);
-            var body = 56;  // int | 
 
             try
             {
-                int result = apiInstance.ResetBitPost(body);
-                Debug.WriteLine(result);
+                apiInstance.ResetBitServer2Post();
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.ResetBitPost: " + e.Message);
+                Debug.Print("Exception when calling APIApi.ResetBitServer2Post: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -303,121 +637,27 @@ namespace Example
 }
 ```
 
-#### Using the ResetBitPostWithHttpInfo variant
+#### Using the ResetBitServer2PostWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.ResetBitPostWithHttpInfo(body);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
+    apiInstance.ResetBitServer2PostWithHttpInfo();
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.ResetBitPostWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.ResetBitServer2PostWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
 ```
 
 ### Parameters
-
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **body** | **int** |  |  |
-
+This endpoint does not need any parameter.
 ### Return type
 
-**int**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Success |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a id="serveridtaa1get"></a>
-# **ServerIDTAA1Get**
-> Object ServerIDTAA1Get (int serverID)
-
-
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
-
-namespace Example
-{
-    public class ServerIDTAA1GetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "http://localhost";
-            var apiInstance = new APIApi(config);
-            var serverID = 56;  // int | 
-
-            try
-            {
-                Object result = apiInstance.ServerIDTAA1Get(serverID);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling APIApi.ServerIDTAA1Get: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-#### Using the ServerIDTAA1GetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    ApiResponse<Object> response = apiInstance.ServerIDTAA1GetWithHttpInfo(serverID);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling APIApi.ServerIDTAA1GetWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **serverID** | **int** |  |  |
-
-### Return type
-
-**Object**
+void (empty response body)
 
 ### Authorization
 
@@ -426,94 +666,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Success |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a id="serveridtaa2get"></a>
-# **ServerIDTAA2Get**
-> Object ServerIDTAA2Get (int serverID)
-
-
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
-
-namespace Example
-{
-    public class ServerIDTAA2GetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "http://localhost";
-            var apiInstance = new APIApi(config);
-            var serverID = 56;  // int | 
-
-            try
-            {
-                Object result = apiInstance.ServerIDTAA2Get(serverID);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling APIApi.ServerIDTAA2Get: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-#### Using the ServerIDTAA2GetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    ApiResponse<Object> response = apiInstance.ServerIDTAA2GetWithHttpInfo(serverID);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling APIApi.ServerIDTAA2GetWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **serverID** | **int** |  |  |
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 ### HTTP response details
