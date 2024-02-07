@@ -26,7 +26,7 @@ namespace API.Services
             Console.WriteLine("Get: GesamttubenanzahlServer1");
             if (clientServer1.ReadDataFromTAA1() != -1 && clientServer1.ReadDataFromTAA2() != -1) return clientServer1.ReadDataFromTAA1() + clientServer1.ReadDataFromTAA2();
 
-            return -1;
+            return GetGesamttubenanzahlServer1();
 
         }
 
@@ -35,7 +35,7 @@ namespace API.Services
             Console.WriteLine("Get: GesamttubenanzahlServer2");
 
             if (clientServer2.ReadDataFromTAA3() != -1 && clientServer2.ReadDataFromTAA4() != -1) return clientServer2.ReadDataFromTAA3() + clientServer2.ReadDataFromTAA4();
-            return -1;
+            return GetGesamttubenanzahlServer2();
 
         }
         public void GetDataFromDB()
@@ -101,16 +101,12 @@ namespace API.Services
             {
 
                 if (clientServer1.ReadDataFromTAA1() != -1) return int.Parse(clientServer1.ReadDataFromTAA1().ToString()!);
-
-                return -1;
-
             }
             else if (serverID == 2)
             {
                 if (clientServer2.ReadDataFromTAA3() != -1) return int.Parse(clientServer2.ReadDataFromTAA3().ToString()!);
-                return -1;
             }
-            return -1;
+            return GetGesamttubenanzahlMachine1(serverID);
         }
 
         public int GetGesamttubenanzahlMachine2(int serverID)
@@ -120,16 +116,12 @@ namespace API.Services
             if (serverID == 1)
             {
                 if (clientServer1.ReadDataFromTAA2() != -1) return int.Parse(clientServer1.ReadDataFromTAA2().ToString()!);
-                return -1;
-
             }
             else if (serverID == 2)
             {
                 if (clientServer2.ReadDataFromTAA4() != -1) return int.Parse(clientServer2.ReadDataFromTAA4().ToString()!);
-
-                return -1;
             }
-            return -1;
+            return GetGesamttubenanzahlMachine2(serverID);
         }
 
         public void PostResetbitServer1()
@@ -149,12 +141,37 @@ namespace API.Services
 
         public int GetGesamttubenanzahlPercentServer2(int gesamttubenAnzZiel)
         {
-            return GetGesamttubenanzahlServer1() / (gesamttubenAnzZiel/2);
+            return (GetGesamttubenanzahlServer2() / (GetGesamttubenanzahlZielMachinePairs(gesamttubenAnzZiel))) * 100;
         }
 
         public int GetGesamttubenanzahlPercentServer1(int gesamttubenAnzZiel)
         {
-            return GetGesamttubenanzahlServer1() / (gesamttubenAnzZiel/2);
+            return (GetGesamttubenanzahlServer1() / (GetGesamttubenanzahlZielMachinePairs(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlPercentTAA1(int gesamttubenAnzZiel)
+        {
+            return (GetGesamttubenanzahlMachine1(1) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlPercentTAA2(int gesamttubenAnzZiel)
+        {
+            return (GetGesamttubenanzahlMachine2(1) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlPercentTAA3(int gesamttubenAnzZiel)
+        {
+            return (GetGesamttubenanzahlMachine1(2) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlPercentTAA4(int gesamttubenAnzZiel)
+        {
+            return (GetGesamttubenanzahlMachine2(2) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+        }
+
+        public int GetGesamttubenanzahlZielMachinePairs(int gesamtTubenAnzZiel)
+        {
+            return gesamtTubenAnzZiel / 2;
+        }
+        public int GetGesamttubenanzahlZiel4Machines(int gesamtTubenAnzZiel)
+        {
+            return gesamtTubenAnzZiel / 4;
         }
     }
 }

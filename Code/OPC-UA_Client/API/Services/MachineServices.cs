@@ -148,12 +148,36 @@ namespace API.Services
 
         public int GetGesamttubenanzahlPercentServer2(int gesamttubenAnzZiel)
         {
-            return GetGesamttubenanzahlServer1() / (gesamttubenAnzZiel / 2);
+            return (GetGesamttubenanzahlServer2() / (GetGesamttubenanzahlZielMachinePairs(gesamttubenAnzZiel))) * 100;
         }
 
         public int GetGesamttubenanzahlPercentServer1(int gesamttubenAnzZiel)
         {
-            return GetGesamttubenanzahlServer1() / (gesamttubenAnzZiel / 2);
+            return (GetGesamttubenanzahlServer1() / (GetGesamttubenanzahlZielMachinePairs(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlPercentTAA1(int gesamttubenAnzZiel)
+        {
+            return (GetGesamttubenanzahlMachine1(1) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlPercentTAA2(int gesamttubenAnzZiel)
+        {
+            return (GetGesamttubenanzahlMachine2(1) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlPercentTAA3(int gesamttubenAnzZiel)
+        {
+            return (GetGesamttubenanzahlMachine1(2) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlPercentTAA4(int gesamttubenAnzZiel)
+        {
+            return (GetGesamttubenanzahlMachine2(2) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+        }
+        public int GetGesamttubenanzahlZielMachinePairs(int gesamtTubenAnzZiel)
+        {
+            return gesamtTubenAnzZiel / 2;
+        }
+        public int GetGesamttubenanzahlZiel4Machines(int gesamtTubenAnzZiel)
+        {
+            return gesamtTubenAnzZiel / 4;
         }
     }
 }
