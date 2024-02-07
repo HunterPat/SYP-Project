@@ -90,7 +90,7 @@ namespace Example
 
             try
             {
-                long result = apiInstance.GesamttubenanzMachine1ServerIDGet(serverID);
+                int result = apiInstance.GesamttubenanzMachine1ServerIDGet(serverID);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -115,8 +115,16 @@ Class | Method | HTTP request | Description
 *APIApi* | [**GesamttubenanzMachine1ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine1serveridget) | **GET** /gesamttubenanz/Machine1/{serverID} | 
 *APIApi* | [**GesamttubenanzMachine2ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine2serveridget) | **GET** /gesamttubenanz/Machine2/{serverID} | 
 *APIApi* | [**GesamttubenanzServer1Get**](docs/APIApi.md#gesamttubenanzserver1get) | **GET** /gesamttubenanz/Server1 | 
+*APIApi* | [**GesamttubenanzServer1PercentGet**](docs/APIApi.md#gesamttubenanzserver1percentget) | **GET** /gesamttubenanz/Server1/Percent | 
 *APIApi* | [**GesamttubenanzServer2Get**](docs/APIApi.md#gesamttubenanzserver2get) | **GET** /gesamttubenanz/Server2 | 
+*APIApi* | [**GesamttubenanzServer2PercentGet**](docs/APIApi.md#gesamttubenanzserver2percentget) | **GET** /gesamttubenanz/Server2/Percent | 
+*APIApi* | [**GesamttubenanzTAA1PercentGet**](docs/APIApi.md#gesamttubenanztaa1percentget) | **GET** /gesamttubenanz/TAA1/Percent | 
+*APIApi* | [**GesamttubenanzTAA2PercentGet**](docs/APIApi.md#gesamttubenanztaa2percentget) | **GET** /gesamttubenanz/TAA2/Percent | 
+*APIApi* | [**GesamttubenanzTAA3PercentGet**](docs/APIApi.md#gesamttubenanztaa3percentget) | **GET** /gesamttubenanz/TAA3/Percent | 
+*APIApi* | [**GesamttubenanzTAA4PercentGet**](docs/APIApi.md#gesamttubenanztaa4percentget) | **GET** /gesamttubenanz/TAA4/Percent | 
+*APIApi* | [**GesamttubenanzZiel4MachinesGet**](docs/APIApi.md#gesamttubenanzziel4machinesget) | **GET** /gesamttubenanzZiel/4Machines | 
 *APIApi* | [**GesamttubenanzZielGet**](docs/APIApi.md#gesamttubenanzzielget) | **GET** /gesamttubenanzZiel | 
+*APIApi* | [**GesamttubenanzZielMachinePairsGet**](docs/APIApi.md#gesamttubenanzzielmachinepairsget) | **GET** /gesamttubenanzZiel/MachinePairs | 
 *APIApi* | [**GesamttubenanzZielPost**](docs/APIApi.md#gesamttubenanzzielpost) | **POST** /gesamttubenanzZiel | 
 *APIApi* | [**ResetBitServer1Post**](docs/APIApi.md#resetbitserver1post) | **POST** /resetBit/Server1 | 
 *APIApi* | [**ResetBitServer2Post**](docs/APIApi.md#resetbitserver2post) | **POST** /resetBit/Server2 | 

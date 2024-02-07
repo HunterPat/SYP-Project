@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\
+C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\
 ProdVisAdminFrontend
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\App.xaml
+C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\App.xaml
 5-440966506
 
 111487953927
-204-540892398
+2041567395021
 MainWindow.xaml;Styles\Resources.xaml;Views\CustomAlert.xaml;Views\OverviewView.xaml;Views\SettingsView.xaml;
 
 False

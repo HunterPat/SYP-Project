@@ -64,10 +64,10 @@ namespace ProdVisAdminFrontend.Views
         public void UpdateAllValues()
         {
             if (api == null) return;
-            viewModel.ProductionGoal_AP1 = api.GesamttubenanzZielGet();
-            viewModel.ProductionGoal_AP2 = api.GesamttubenanzZielGet();
-            viewModel.CurrentAmount_AP1 = (int)api.GesamttubenanzServer1Get();
-            viewModel.CurrentAmount_AP2 = (int)api.GesamttubenanzServer2Get();
+            viewModel.ProductionGoal_AP1 = api.GesamttubenanzZielMachinePairsGet();
+            viewModel.ProductionGoal_AP2 = api.GesamttubenanzZielMachinePairsGet();
+            viewModel.CurrentAmount_AP1 = api.GesamttubenanzServer1Get();
+            viewModel.CurrentAmount_AP2 = api.GesamttubenanzServer2Get();
         }
 
         private void Resest_Clicked(object sender, RoutedEventArgs e)

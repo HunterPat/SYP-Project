@@ -100,7 +100,7 @@
 
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="5*"></RowDefinition>
+                <RowDefinition Height="6*"></RowDefinition>
                 <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition></RowDefinition>
 
@@ -132,7 +132,7 @@
 
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="5*"></RowDefinition>
+                <RowDefinition Height="6*"></RowDefinition>
                 <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition></RowDefinition>
 
@@ -161,7 +161,7 @@
         </Grid>
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="5*"></RowDefinition>
+                <RowDefinition Height="6*"></RowDefinition>
                 <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition ></RowDefinition>
             </Grid.RowDefinitions>
@@ -195,11 +195,13 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
                     <TextBox Name="txtProductionGoal" Grid.Row="1" Grid.Column="1" Margin="0" Padding="0,5,0,5" FontSize="16" HorizontalContentAlignment="Center" VerticalAlignment="Center"></TextBox>
                     <Label Grid.Row="0" Grid.Column="1" FontSize="18"  Content="Ziel setzen:" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="DemiBold"></Label>
+                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" FontSize="12"  Content="Das Ziel wird gleichmäßig auf die Anlagenpaare aufgeteilt!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
 
-                    <Button  Click="ConfirmGoal_Clicked" Grid.Row="2" Grid.Column="1" Margin="25,0,25,0" Content="Anwenden" Foreground="White" FontSize="14" VerticalAlignment="Center" VerticalContentAlignment="Center" FontWeight="DemiBold"></Button>
+                    <Button  Click="ConfirmGoal_Clicked" Grid.Row="3" Grid.Column="1" Margin="25,0,25,0" Content="Anwenden" Foreground="White" FontSize="14" VerticalAlignment="Center" VerticalContentAlignment="Center" FontWeight="DemiBold"></Button>
 
                 </Grid>
             </Border>
