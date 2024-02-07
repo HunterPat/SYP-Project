@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                     xmlns:views="clr-namespace:ProdVisAdminFrontend.Views"
+
              xmlns:local="clr-namespace:ProdVisAdminFrontend.Views"
              mc:Ignorable="d" 
              Background="White"
@@ -72,6 +74,7 @@
             </Style.Triggers>
         </Style>
     </UserControl.Resources>
+    
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -81,10 +84,14 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
-            <RowDefinition Height="10*"></RowDefinition>
-            <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="18*"></RowDefinition>
+
+
 
         </Grid.RowDefinitions>
+        <Popup  Name="popupAlert" IsOpen="False" StaysOpen="False" Placement="Center" AllowsTransparency="True">
+            <views:CustomAlert></views:CustomAlert>
+        </Popup>
         <Border Grid.ColumnSpan="3" Margin="10, 8, 10 ,0" Background="#EEEDED" BorderThickness="0" CornerRadius="5">
             <Label Content="Einstellungen"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
         </Border>
@@ -94,7 +101,7 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"></RowDefinition>
-                <RowDefinition ></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
@@ -126,7 +133,7 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"></RowDefinition>
-                <RowDefinition ></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
@@ -155,9 +162,28 @@
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition ></RowDefinition>
-                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
+
+            <Border Grid.Row="1" Background="#EEEDED" BorderBrush="#EEEDED" BorderThickness="0" CornerRadius="5" Margin="0,15,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="16"  Content="Tubenannzahl zurücksetzen" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="DemiBold"></Label>
+                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="12"  Content="Die Anzahl der Produzierten Tuben wird auf 0 gesetzt!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
+                    <Button  Click="Resest_Clicked" Grid.Row="2" Grid.Column="1" Margin="25,0,25,0" Content="Zurücksetzen" Foreground="White" FontSize="14" VerticalAlignment="Center" VerticalContentAlignment="Center" FontWeight="DemiBold"></Button>
+
+                </Grid>
+            </Border>
             <Border   BorderThickness="1" BorderBrush="#EEEDED" CornerRadius="5" Margin="0,20,0,0">
                 <Grid Grid.Row="1" Grid.Column="1" Background="#EEEDED">
                     <Grid.ColumnDefinitions>

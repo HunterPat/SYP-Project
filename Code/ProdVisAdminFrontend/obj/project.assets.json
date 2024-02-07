@@ -362,19 +362,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Windows\\.nuget\\packages\\": {}
+    "C:\\Users\\vadym2005\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
+      "projectUniqueName": "C:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
       "projectName": "ProdVisAdminFrontend",
-      "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
-      "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\ProdVisAdminFrontend\\obj\\",
+      "projectPath": "C:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
+      "packagesPath": "C:\\Users\\vadym2005\\.nuget\\packages\\",
+      "outputPath": "C:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisAdminFrontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vadym2005\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -388,8 +388,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
-              "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj"
+            "C:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
+              "projectPath": "C:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj"
             }
           }
         }
