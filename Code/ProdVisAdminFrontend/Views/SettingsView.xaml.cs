@@ -69,5 +69,32 @@ namespace ProdVisAdminFrontend.Views
             viewModel.CurrentAmount_AP1 = (int)api.GesamttubenanzServer1Get();
             viewModel.CurrentAmount_AP2 = (int)api.GesamttubenanzServer2Get();
         }
+
+        private void Resest_Clicked(object sender, RoutedEventArgs e)
+        {
+            var alert = popupAlert.Child as CustomAlert;
+            alert.CloseButtonClicked += CustomAlert_CloseButtonClicked;
+
+            alert.Message = "Warnung!";
+            alert.Details = "Bestätigen um fortzufahren";
+            popupAlert.IsOpen = true;
+        }
+
+        private void CustomAlert_CloseButtonClicked(object sender, EventArgs e)
+        {
+            // This method will be called when the OK button is clicked in the CustomAlert
+            // Hide the custom alert
+            HideCustomAlert();
+        }
+
+        private void HideCustomAlert()
+        {
+            var customAlert = popupAlert.Child as CustomAlert;
+
+            // Unsubscribe from the CloseButtonClicked event
+            customAlert.CloseButtonClicked -= CustomAlert_CloseButtonClicked;
+
+            popupAlert.IsOpen = false;
+        }
     }
 }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProdVisAdminFrontend
-build_property.ProjectDir = C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdminFrontend\
+build_property.ProjectDir = C:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
