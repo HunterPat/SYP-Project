@@ -137,7 +137,27 @@
                 <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
-            <Border Margin="10,20,10,0"  CornerRadius="5" BorderThickness="1" BorderBrush="#FFDDDDDD">
+            <Border Grid.Row="1" Background="#EEEDED" BorderThickness="1" BorderBrush="#EEEDED" CornerRadius="5" Margin="10,15,10,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <ComboBox Grid.Row="1" Margin="10,15,10,15">
+                        <ComboBoxItem Name="swInt15Sec" Content="15 Sekunden"></ComboBoxItem>
+                        <ComboBoxItem Name="swInt30Sec" Content="30 Sekunden"></ComboBoxItem>
+                        <ComboBoxItem Name="swInt45Sec" Content="45 Sekunden"></ComboBoxItem>
+                        <ComboBoxItem Name="swInt1Min" Content="1 Minute"></ComboBoxItem>
+                    </ComboBox>
+                    <Border Grid.Row="2" BorderBrush="Black" BorderThickness="0.75" CornerRadius="5" Margin="58,15,58,15">
+                        <Button Content="i" FontSize="8" FontWeight="ExtraBold" Background="#EEEDED" Foreground="Black" VerticalContentAlignment="Center"></Button>
+                    </Border>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="12"  Content="Wechselinterval" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
+
+                </Grid>
+            </Border>
+            <Border Margin="10,20,10,0"  CornerRadius="5" BorderThickness="1" BorderBrush="#EEEDED">
                 <Grid Grid.Row="1" Background="#EEEDED">
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
