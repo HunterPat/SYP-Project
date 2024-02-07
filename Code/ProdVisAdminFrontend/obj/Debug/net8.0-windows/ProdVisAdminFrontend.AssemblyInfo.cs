@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProdVisAdminFrontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+811e67ce06aa99d8c10ebc05e043bb3a02ebfe19")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+197838130a5e72d418bb91faf7657fa8bc1415c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProdVisAdminFrontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProdVisAdminFrontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
