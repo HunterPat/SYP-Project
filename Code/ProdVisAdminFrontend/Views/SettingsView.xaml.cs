@@ -27,11 +27,11 @@ namespace ProdVisAdminFrontend.Views
         private SettingsViewModel viewModel;
         private DispatcherTimer updateTimer;
         private APIApi api;
-        
+
         public SettingsView()
         {
             InitializeComponent();
-            
+
 
         }
 
@@ -61,39 +61,65 @@ namespace ProdVisAdminFrontend.Views
             UpdateAllValues();
         }
 
-        public void UpdateAllValues()
+        public async void UpdateAllValues()
         {
             if (api == null) return;
-            viewModel.ProductionGoal_AP1 = api.GesamttubenanzZielMachinePairsGet();
-            viewModel.ProductionGoal_AP2 = api.GesamttubenanzZielMachinePairsGet();
-            viewModel.CurrentAmount_AP1 = api.GesamttubenanzServer1Get();
-            viewModel.CurrentAmount_AP2 = api.GesamttubenanzServer2Get();
+            viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielMachinePairsGetAsync();
+            viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielMachinePairsGetAsync();
+            viewModel.CurrentAmount_AP1 = await api.GesamttubenanzServer1GetAsync();
+            viewModel.CurrentAmount_AP2 = await api.GesamttubenanzServer2GetAsync();
         }
 
         private void Resest_Clicked(object sender, RoutedEventArgs e)
         {
             var alert = popupAlert.Child as CustomAlert;
             alert.CloseButtonClicked += CustomAlert_CloseButtonClicked;
+            alert.ConfirmButtonClicked += CustomAlert_ConfirmButtonClicked;
 
-            alert.Message = "Warnung!";
+            alert.Message = "Tubenanzahl wird zurückgesetzt!";
             alert.Details = "Bestätigen um fortzufahren";
             popupAlert.IsOpen = true;
+        }
+
+        private void CustomAlert_ConfirmButtonClicked(object? sender, EventArgs e)
+        {
+            HideCustomAlert(true);
         }
 
         private void CustomAlert_CloseButtonClicked(object sender, EventArgs e)
         {
             // This method will be called when the OK button is clicked in the CustomAlert
             // Hide the custom alert
-            HideCustomAlert();
+            HideCustomAlert(false);
         }
 
-        private void HideCustomAlert()
+
+
+        private async void HideCustomAlert(bool contiueReset)
         {
-            var customAlert = popupAlert.Child as CustomAlert;
+            if (!contiueReset)
+            {
+                var customAlert = popupAlert.Child as CustomAlert;
 
-            // Unsubscribe from the CloseButtonClicked event
-            customAlert.CloseButtonClicked -= CustomAlert_CloseButtonClicked;
+                // Unsubscribe from the CloseButtonClicked event
+                customAlert.CloseButtonClicked -= CustomAlert_CloseButtonClicked;
+                customAlert.ConfirmButtonClicked -= CustomAlert_ConfirmButtonClicked;
+            }
+            else
+            {
+                var customAlert = popupAlert.Child as CustomAlert;
 
+                // Unsubscribe from the CloseButtonClicked event
+                customAlert.CloseButtonClicked -= CustomAlert_CloseButtonClicked;
+                customAlert.ConfirmButtonClicked -= CustomAlert_ConfirmButtonClicked;
+                customAlert.Message = "Bitte warten!";
+                customAlert.Details = "Die Tubenanzahl wird zurückgesetzt!";
+                await api.ResetBitServer1PostAsync();
+                await api.ResetBitServer2PostAsync();
+                
+                UpdateAllValues();
+                popupAlert.IsOpen = false;
+            }
             popupAlert.IsOpen = false;
         }
     }

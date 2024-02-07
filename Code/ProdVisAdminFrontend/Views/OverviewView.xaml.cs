@@ -62,15 +62,24 @@ namespace ProdVisAdminFrontend.Views
             return 0;
         }
 
-        public void UpdateAllValues()
+        public async void UpdateAllValues()
         {
             if (api == null) return;
-            viewModel.ProductionGoal_AP1 = api.GesamttubenanzZielGet();
-            viewModel.ProductionGoal_AP2 = api.GesamttubenanzZielGet();
-            viewModel.CurrentAmount_AP1 = (int)api.GesamttubenanzServer1Get();
-            viewModel.CurrentAmount_AP2 = (int)api.GesamttubenanzServer2Get();
-            viewModel.Progress_AP1 = CalculatePercentage(viewModel.CurrentAmount_AP1, viewModel.ProductionGoal_AP1);
-            viewModel.Progress_AP2 = CalculatePercentage(viewModel.CurrentAmount_AP2, viewModel.ProductionGoal_AP2);
+            viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielGetAsync();
+            viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielGetAsync();
+            viewModel.CurrentAmount_AP1 = await api.GesamttubenanzServer1GetAsync();
+            viewModel.CurrentAmount_AP2 = await api.GesamttubenanzServer2GetAsync();
+            viewModel.Progress_AP1 = await api.GesamttubenanzServer1PercentGetAsync();
+            viewModel.Progress_AP2 = await api.GesamttubenanzServer2PercentGetAsync();
         }
+
+        //public event EventHandler SwitchUserControlRequested;
+        private void Switch_Clicked(object sender, RoutedEventArgs e)
+        {
+            viewModel.OnSwitchUserControlRequested();
+
+        }
+
+
     }
 }

@@ -171,17 +171,17 @@
                 </Grid>
             </Border>
 
-            <Grid Grid.Row="1" Grid.Column="1">
+            <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="6*"></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
+                        
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="12" Content="Wechseln" Margin="15,0,10,8"></Button>
+                    <Button Click="Switch_Clicked" Grid.Column="12" Content="Wechseln" Margin="15,0,10,8"></Button>
                 </Grid>
             </Grid>
         </Grid>

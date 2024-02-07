@@ -362,19 +362,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vadym2005\\.nuget\\packages\\": {}
+    "C:\\Users\\Vadym\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitRepositories\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
+      "projectUniqueName": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
       "projectName": "ProdVisAdminFrontend",
-      "projectPath": "C:\\GitRepositories\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
-      "packagesPath": "C:\\Users\\vadym2005\\.nuget\\packages\\",
-      "outputPath": "C:\\GitRepositories\\SYP-Project\\Code\\ProdVisAdminFrontend\\obj\\",
+      "projectPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
+      "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
+      "outputPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisAdminFrontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vadym2005\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -388,8 +388,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\GitRepositories\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
-              "projectPath": "C:\\GitRepositories\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj"
+            "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
+              "projectPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj"
             }
           }
         }

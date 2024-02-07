@@ -5,12 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\vadym2005\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Vadym\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\vadym2005\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\Vadym\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.props" Condition="Exists('$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.props')" />
@@ -18,9 +18,9 @@
     <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.5.0\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.5.0\build\Swashbuckle.AspNetCore.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\vadym2005\.nuget\packages\entityframework\6.4.4</PkgEntityFramework>
-    <PkgSystem_Data_SQLite_EF6 Condition=" '$(PkgSystem_Data_SQLite_EF6)' == '' ">C:\Users\vadym2005\.nuget\packages\system.data.sqlite.ef6\1.0.118</PkgSystem_Data_SQLite_EF6>
-    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\vadym2005\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
-    <PkgOpc_UaFx_Advanced Condition=" '$(PkgOpc_UaFx_Advanced)' == '' ">C:\Users\vadym2005\.nuget\packages\opc.uafx.advanced\2.41.0</PkgOpc_UaFx_Advanced>
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\Vadym\.nuget\packages\entityframework\6.4.4</PkgEntityFramework>
+    <PkgSystem_Data_SQLite_EF6 Condition=" '$(PkgSystem_Data_SQLite_EF6)' == '' ">C:\Users\Vadym\.nuget\packages\system.data.sqlite.ef6\1.0.118</PkgSystem_Data_SQLite_EF6>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Vadym\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgOpc_UaFx_Advanced Condition=" '$(PkgOpc_UaFx_Advanced)' == '' ">C:\Users\Vadym\.nuget\packages\opc.uafx.advanced\2.41.0</PkgOpc_UaFx_Advanced>
   </PropertyGroup>
 </Project>
