@@ -26,10 +26,12 @@ namespace OPC_UA_Client
                 Console.WriteLine("Exception: " + ex.Message);
             }
         }
+        
         public void Disconnect()
         {
             try
             {
+                client.SessionTimeout = 0;
                 client.Disconnect();
                 Console.WriteLine("-----------------------\ndisconnected!");
             }

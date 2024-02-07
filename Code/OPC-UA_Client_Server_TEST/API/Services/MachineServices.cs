@@ -11,25 +11,20 @@ namespace API.Services
     {
         public static string server1URL = "opc.tcp://localhost:4840/";
         public static string server2URL = "opc.tcp://localhost:4841/";
-        MyOPCClient client;
+        static MyOPCClient clientServer1 = new MyOPCClient(server1URL);
+        static MyOPCClient clientServer2 = new MyOPCClient(server2URL);
 
         public MachineServices()
         {
-            client = new MyOPCClient(server1URL);
-            client.EstablishConnection();
+
+            clientServer1.EstablishConnection();
+            clientServer2.EstablishConnection();
 
         }
-
         public int GetGesamttubenanzahlServer1()
         {
             Console.WriteLine("Get: GesamttubenanzahlServer1");
-            if (client.serverURL == server2URL)
-            {
-                client.Disconnect();
-                client = new MyOPCClient(server1URL);
-                client.EstablishConnection();
-            }
-            if (client.ReadDataFromTAA1() != -1 && client.ReadDataFromTAA2() != -1) return client.ReadDataFromTAA1() + client.ReadDataFromTAA1();
+            if (clientServer1.ReadDataFromTAA1() != -1 && clientServer1.ReadDataFromTAA2() != -1) return clientServer1.ReadDataFromTAA1() + clientServer1.ReadDataFromTAA2();
 
             return -1;
 
@@ -39,13 +34,7 @@ namespace API.Services
         {
             Console.WriteLine("Get: GesamttubenanzahlServer2");
 
-            if (client.serverURL == server1URL)
-            {
-                client.Disconnect();
-                client = new MyOPCClient(server2URL);
-                client.EstablishConnection();
-            }
-            if (client.ReadDataFromTAA3() != -1 && client.ReadDataFromTAA4() != -1) return client.ReadDataFromTAA3() + client.ReadDataFromTAA4();
+            if (clientServer2.ReadDataFromTAA3() != -1 && clientServer2.ReadDataFromTAA4() != -1) return clientServer2.ReadDataFromTAA3() + clientServer2.ReadDataFromTAA4();
             return -1;
 
         }
@@ -110,26 +99,15 @@ namespace API.Services
 
             if (serverID == 1)
             {
-                if (client.serverURL != server1URL)
-                {
-                    client.Disconnect();
-                    client = new MyOPCClient(server1URL);
-                    client.EstablishConnection();
-                }
-                if (client.ReadDataFromTAA1() != -1) return int.Parse(client.ReadDataFromTAA1().ToString()!);
+
+                if (clientServer1.ReadDataFromTAA1() != -1) return int.Parse(clientServer1.ReadDataFromTAA1().ToString()!);
 
                 return -1;
 
             }
             else if (serverID == 2)
             {
-                if (client.serverURL != server2URL)
-                {
-                    client.Disconnect();
-                    client = new MyOPCClient(server2URL);
-                    client.EstablishConnection();
-                }
-                if (client.ReadDataFromTAA3() != -1) return int.Parse(client.ReadDataFromTAA3().ToString()!);
+                if (clientServer2.ReadDataFromTAA3() != -1) return int.Parse(clientServer2.ReadDataFromTAA3().ToString()!);
                 return -1;
             }
             return -1;
@@ -141,25 +119,13 @@ namespace API.Services
 
             if (serverID == 1)
             {
-                if (client.serverURL != server1URL)
-                {
-                    client.Disconnect();
-                    client = new MyOPCClient(server1URL);
-                    client.EstablishConnection();
-                }
-                if (client.ReadDataFromTAA2() != -1) return int.Parse(client.ReadDataFromTAA2().ToString()!);
+                if (clientServer1.ReadDataFromTAA2() != -1) return int.Parse(clientServer1.ReadDataFromTAA2().ToString()!);
                 return -1;
 
             }
             else if (serverID == 2)
             {
-                if (client.serverURL != server2URL)
-                {
-                    client.Disconnect();
-                    client = new MyOPCClient(server2URL);
-                    client.EstablishConnection();
-                }
-                if (client.ReadDataFromTAA4() != -1) return int.Parse(client.ReadDataFromTAA4().ToString()!);
+                if (clientServer2.ReadDataFromTAA4() != -1) return int.Parse(clientServer2.ReadDataFromTAA4().ToString()!);
 
                 return -1;
             }
@@ -169,28 +135,26 @@ namespace API.Services
         public void PostResetbitServer1()
         {
             Console.WriteLine("POST: ResetbitServer");
-            if (client.serverURL == server2URL)
-            {
-                client.Disconnect();
-                client = new MyOPCClient(server1URL);
-                client.EstablishConnection();
-            }
-            client.ResetBit("TAA1");
-            client.ResetBit("TAA2");
+
+            clientServer1.ResetBit("TAA1");
+            clientServer1.ResetBit("TAA2");
         }
 
         public void PostResetbitMachine2()
         {
             Console.WriteLine("POST: ResetbitServer2");
+            clientServer2.ResetBit("TAA3");
+            clientServer2.ResetBit("TAA4");
+        }
 
-            if (client.serverURL == server1URL)
-            {
-                client.Disconnect();
-                client = new MyOPCClient(server2URL);
-                client.EstablishConnection();
-            }
-            client.ResetBit("TAA3");
-            client.ResetBit("TAA4");
+        public int GetGesamttubenanzahlPercentServer2(int gesamttubenAnzZiel)
+        {
+            return GetGesamttubenanzahlServer1() / (gesamttubenAnzZiel/2);
+        }
+
+        public int GetGesamttubenanzahlPercentServer1(int gesamttubenAnzZiel)
+        {
+            return GetGesamttubenanzahlServer1() / (gesamttubenAnzZiel/2);
         }
     }
 }

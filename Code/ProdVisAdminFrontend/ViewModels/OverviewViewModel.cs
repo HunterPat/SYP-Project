@@ -134,7 +134,7 @@ namespace ProdVisAdminFrontend.ViewModels
             this.currentAmount_AP2 = currentAmount_AP2;
             timeTimer = new DispatcherTimer();
             _dateText = "Loading...";
-            timeTimer.Interval = TimeSpan.FromMilliseconds(500);
+            timeTimer.Interval = TimeSpan.FromMilliseconds(250);
             timeTimer.Tick += TimeTimer_Tick;
             timeTimer.Start();
 
