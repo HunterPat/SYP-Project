@@ -21,6 +21,14 @@ namespace ProdVisAdminFrontend.ViewModels
         private APIApi api;
         private const string baseUrl = "http://localhost:5501";
 
+        // Event to be triggered by the button click
+        public event EventHandler SwitchUserControlRequested;
+
+        public void OnSwitchUserControlRequested()
+        {
+            // Raise the event
+            SwitchUserControlRequested?.Invoke(this, EventArgs.Empty);
+        }
         public string DateText
         {
             get { return _dateText; }

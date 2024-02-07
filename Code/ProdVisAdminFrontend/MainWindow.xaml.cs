@@ -20,6 +20,7 @@ namespace ProdVisAdminFrontend
     {
         private OverviewViewModel overviewViewModel;
         private SettingsViewModel settingsViewModel;
+        private DetailedOverviewViewModel detailedOverviewViewModel;
         private ISharedService productionGoal_AP1;
         private ISharedService productionGoal_AP2;
         private ISharedService currentAmount_AP1;
@@ -34,8 +35,21 @@ namespace ProdVisAdminFrontend
             currentAmount_AP2 = new IntegerSharedService(0);
             overviewViewModel = new OverviewViewModel(productionGoal_AP1, productionGoal_AP2, currentAmount_AP1, currentAmount_AP2);
             settingsViewModel = new SettingsViewModel(productionGoal_AP1, productionGoal_AP2, currentAmount_AP1, currentAmount_AP2);
+            detailedOverviewViewModel = new DetailedOverviewViewModel();
 
             DataContext = overviewViewModel;
+            overviewViewModel.SwitchUserControlRequested += SwitchToDetailedView_Invoked;
+            detailedOverviewViewModel.SwitchUserControlRequested += SwitchToOverView_Invoked;
+        }
+
+        private void SwitchToOverView_Invoked(object? sender, EventArgs e)
+        {
+            DataContext = overviewViewModel;
+        }
+
+        private void SwitchToDetailedView_Invoked(object? sender, EventArgs e)
+        {
+            DataContext = detailedOverviewViewModel;
         }
 
         private void Overview_Clicked(object sender, RoutedEventArgs e)

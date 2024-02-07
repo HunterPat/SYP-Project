@@ -60,6 +60,7 @@ namespace ProdVisAdminFrontend.Views
 
 
         public event EventHandler CloseButtonClicked;
+        public event EventHandler ConfirmButtonClicked;
         public CustomAlert()
         {
             InitializeComponent();
@@ -73,7 +74,7 @@ namespace ProdVisAdminFrontend.Views
 
         private void Confirm_Clicked(object sender, RoutedEventArgs e)
         {
-            CloseButtonClicked?.Invoke(this, EventArgs.Empty);
+            ConfirmButtonClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

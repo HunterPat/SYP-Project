@@ -10,6 +10,9 @@
     <Compile Update="Views\CustomAlert.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\DetailedOverviewView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\OverviewView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\CustomAlert.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DetailedOverviewView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\OverviewView.xaml">
