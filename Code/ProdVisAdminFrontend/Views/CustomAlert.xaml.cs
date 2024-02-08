@@ -21,6 +21,39 @@ namespace ProdVisAdminFrontend.Views
     /// </summary>
     public partial class CustomAlert : UserControl, INotifyPropertyChanged
     {
+        private Visibility _cancelButtonVisibility;
+
+        public Visibility CancelButtonVisibility
+        {
+            get { return _cancelButtonVisibility; }
+            set
+            {
+                if (_cancelButtonVisibility != value)
+                {
+                    _cancelButtonVisibility = value;
+                    OnPropertyChanged(nameof(CancelButtonVisibility));
+                }
+            }
+        }
+
+        private Visibility _confirmButtonVisibility;
+
+
+        public Visibility ConfirmButtonVisibility
+        {
+            get { return _confirmButtonVisibility; }
+            set
+            {
+                if (_confirmButtonVisibility != value)
+                {
+                    _confirmButtonVisibility = value;
+                    OnPropertyChanged(nameof(ConfirmButtonVisibility));
+                }
+            }
+        }
+
+
+
         private string _message;
 
         public string Message

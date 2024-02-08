@@ -7,7 +7,9 @@
              mc:Ignorable="d" 
              Background="Transparent"
              d:DesignHeight="150" d:DesignWidth="300">
+    
     <Border Background="White" BorderThickness="1" BorderBrush="White" CornerRadius="5">
+        
         <Grid Width="300" Height="150" Background="Transparent">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
@@ -21,8 +23,8 @@
             </Grid.ColumnDefinitions>
             <Label Content="{Binding Message}" FontSize="12" FontWeight="DemiBold" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
             <Label Content="{Binding Details}" Grid.Row="1" Grid.ColumnSpan="3" FontSize="10" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-            <Button Click="Cancel_Clicked" Grid.Row="2" Margin="10" Background="Transparent" Content="Abbrechen" Foreground="Red" Padding="10,0" FontWeight="DemiBold" HorizontalAlignment="Right" FontSize="12"></Button>
-            <Button Click="Confirm_Clicked" Grid.Row="2" Grid.Column="2" Margin="10" Content="Bestätigen" FontSize="12" Background="Green" HorizontalAlignment="Left" Padding="10,0"></Button>
+            <Button Visibility="{Binding CancelButtonVisibility}" Click="Cancel_Clicked" Grid.Row="2" Margin="10" Background="Transparent" Content="Abbrechen" Foreground="Red" Padding="10,0" FontWeight="DemiBold" HorizontalAlignment="Right" FontSize="12"></Button>
+            <Button Visibility="{Binding ConfirmButtonVisibility}" Click="Confirm_Clicked" Grid.Row="2" Grid.Column="2" Margin="10" Content="Bestätigen" FontSize="12" Background="Green" HorizontalAlignment="Left" Padding="10,0"></Button>
         </Grid>
     </Border>
 </UserControl>

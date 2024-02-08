@@ -2354,19 +2354,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vadym\\.nuget\\packages\\": {}
+    "C:\\Users\\vadym2005\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
+      "projectUniqueName": "C:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
-      "outputPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\obj\\",
+      "projectPath": "C:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\vadym2005\\.nuget\\packages\\",
+      "outputPath": "C:\\GitRepositories\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vadym2005\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

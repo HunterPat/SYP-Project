@@ -157,3 +157,5 @@ D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\CustomAlert.baml
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\DetailedOverviewView.g.cs
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\DetailedOverviewView.baml
+C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\DetailedOverviewView.g.cs
+C:\GitRepositories\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\DetailedOverviewView.baml

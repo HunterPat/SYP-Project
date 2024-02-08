@@ -83,37 +83,37 @@ namespace ProdVisAdminFrontend.Views
 
         private void CustomAlert_ConfirmButtonClicked(object? sender, EventArgs e)
         {
-            HideCustomAlert(true);
+            HideResetAlert(true);
         }
 
         private void CustomAlert_CloseButtonClicked(object sender, EventArgs e)
         {
             // This method will be called when the OK button is clicked in the CustomAlert
             // Hide the custom alert
-            HideCustomAlert(false);
+            HideResetAlert(false);
         }
 
 
 
-        private async void HideCustomAlert(bool contiueReset)
+        private async void HideResetAlert(bool contiueReset)
         {
+            var customAlert = popupAlert.Child as CustomAlert;
             if (!contiueReset)
             {
-                var customAlert = popupAlert.Child as CustomAlert;
+                
 
                 // Unsubscribe from the CloseButtonClicked event
-                customAlert.CloseButtonClicked -= CustomAlert_CloseButtonClicked;
-                customAlert.ConfirmButtonClicked -= CustomAlert_ConfirmButtonClicked;
+                
             }
             else
             {
-                var customAlert = popupAlert.Child as CustomAlert;
+                
 
-                // Unsubscribe from the CloseButtonClicked event
-                customAlert.CloseButtonClicked -= CustomAlert_CloseButtonClicked;
-                customAlert.ConfirmButtonClicked -= CustomAlert_ConfirmButtonClicked;
+                
                 customAlert.Message = "Bitte warten!";
                 customAlert.Details = "Die Tubenanzahl wird zurückgesetzt!";
+                customAlert.CancelButtonVisibility = Visibility.Hidden;
+                customAlert.ConfirmButtonVisibility = Visibility.Hidden;
                 await api.ResetBitServer1PostAsync();
                 await api.ResetBitServer2PostAsync();
                 
@@ -121,6 +121,28 @@ namespace ProdVisAdminFrontend.Views
                 popupAlert.IsOpen = false;
             }
             popupAlert.IsOpen = false;
+            customAlert.CancelButtonVisibility = Visibility.Visible;
+            customAlert.ConfirmButtonVisibility = Visibility.Visible;
+            customAlert.Message = "Tubenanzahl wird zurückgesetzt!";
+            customAlert.Details = "Bestätigen um fortzufahren";
+        }
+
+        private void HideIntervalInfoAlert()
+        {
+            popupInfo.IsOpen = false;
+            
+        }
+
+        private void IntervalInfo_Entered(object sender, MouseEventArgs e)
+        {
+            var alert = popupInfo.Child as CustomAlert;
+            alert.Message = "ASd";
+            popupInfo.IsOpen = true;
+        }
+
+        private void IntervalInfo_Leave(object sender, MouseEventArgs e)
+        {
+            HideIntervalInfoAlert();
         }
     }
 }
