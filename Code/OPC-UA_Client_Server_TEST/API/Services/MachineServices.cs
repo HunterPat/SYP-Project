@@ -138,33 +138,41 @@ namespace API.Services
             clientServer2.ResetBit("TAA3");
             clientServer2.ResetBit("TAA4");
         }
+        private int CalculatePercentage(int numerator, int denominator)
+        {
+            if (denominator != 0)
+            {
+                double result = ((double)numerator / denominator) * 100;
+                return (int)result;
+            }
+            return 0;
+        }
 
         public int GetGesamttubenanzahlPercentServer2(int gesamttubenAnzZiel)
         {
-            return (GetGesamttubenanzahlServer2() / (GetGesamttubenanzahlZielMachinePairs(gesamttubenAnzZiel))) * 100;
+            return CalculatePercentage(GetGesamttubenanzahlServer2(), GetGesamttubenanzahlZielMachinePairs(gesamttubenAnzZiel));
         }
 
         public int GetGesamttubenanzahlPercentServer1(int gesamttubenAnzZiel)
         {
-            return (GetGesamttubenanzahlServer1() / (GetGesamttubenanzahlZielMachinePairs(gesamttubenAnzZiel))) * 100;
+            return CalculatePercentage(GetGesamttubenanzahlServer1(), GetGesamttubenanzahlZielMachinePairs(gesamttubenAnzZiel));
         }
         public int GetGesamttubenanzahlPercentTAA1(int gesamttubenAnzZiel)
         {
-            return (GetGesamttubenanzahlMachine1(1) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+            return CalculatePercentage(GetGesamttubenanzahlMachine1(1), GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel));
         }
         public int GetGesamttubenanzahlPercentTAA2(int gesamttubenAnzZiel)
         {
-            return (GetGesamttubenanzahlMachine2(1) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+            return CalculatePercentage(GetGesamttubenanzahlMachine2(1), GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel));
         }
         public int GetGesamttubenanzahlPercentTAA3(int gesamttubenAnzZiel)
         {
-            return (GetGesamttubenanzahlMachine1(2) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+            return CalculatePercentage(GetGesamttubenanzahlMachine1(2), GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel));
         }
         public int GetGesamttubenanzahlPercentTAA4(int gesamttubenAnzZiel)
         {
-            return (GetGesamttubenanzahlMachine2(2) / (GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel))) * 100;
+            return CalculatePercentage(GetGesamttubenanzahlMachine2(2), GetGesamttubenanzahlZiel4Machines(gesamttubenAnzZiel));
         }
-
         public int GetGesamttubenanzahlZielMachinePairs(int gesamtTubenAnzZiel)
         {
             return gesamtTubenAnzZiel / 2;

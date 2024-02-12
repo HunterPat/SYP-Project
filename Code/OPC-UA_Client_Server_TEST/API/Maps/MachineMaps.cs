@@ -19,7 +19,7 @@ namespace API.Maps
             var secondsInADay = 86400;
             timeToNextResetInSeconds = secondsInADay - (DateTime.Now.Hour * 3600 + DateTime.Now.Minute * 60 + DateTime.Now.Second);
             //   MachineServices.CreateDatabase(); If not created
-            System.Timers.Timer timer = new System.Timers.Timer(timeToNextResetInSeconds); // timeToNextResetInSeconds*1000
+            System.Timers.Timer timer = new System.Timers.Timer(3000); // timeToNextResetInSeconds*1000
             timer.Elapsed += Timer_Elapsed!;
             timer.Start();
 
