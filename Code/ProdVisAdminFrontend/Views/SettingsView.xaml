@@ -145,21 +145,21 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Border Grid.Row="1" Margin="20,25,20,25" CornerRadius="5" BorderThickness="1">
-                    <ComboBox >
+                    <Border Grid.Row="1" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center" CornerRadius="5" BorderThickness="1">
+                    <ComboBox SelectedIndex="0">
                         <ComboBoxItem Name="swInt15Sec" Content="15 Sekunden"></ComboBoxItem>
                         <ComboBoxItem Name="swInt30Sec" Content="30 Sekunden"></ComboBoxItem>
                         <ComboBoxItem Name="swInt45Sec" Content="45 Sekunden"></ComboBoxItem>
                         <ComboBoxItem Name="swInt1Min" Content="1 Minute"></ComboBoxItem>
                     </ComboBox>
                     </Border>
-                    <Popup  Name="popupInfo" IsOpen="False" StaysOpen="True" Placement="Top" PlacementTarget="{Binding ElementName=btnIntervalInfo}"  AllowsTransparency="True">
+                    <Popup  Name="popupInfo" HorizontalOffset="-150" VerticalOffset="-5" IsOpen="False" StaysOpen="True" Placement="Top" PlacementTarget="{Binding ElementName=btnIntervalInfo}"  AllowsTransparency="True">
                         <views:CustomAlert></views:CustomAlert>
                     </Popup>
                     <Grid Grid.Row="2" >
-                    <Border  Name="btnIntervalInfo" Margin="87,30,87,30" BorderBrush="Black" BorderThickness="0.75" CornerRadius="5" >
+                        <Border  Name="btnIntervalInfo" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="Black" BorderThickness="1" CornerRadius="5" >
                         
-                        <Button MouseLeave="IntervalInfo_Leave" MouseEnter="IntervalInfo_Entered" Content="i" FontSize="8" FontWeight="ExtraBold" Background="#EEEDED" Foreground="Black" VerticalContentAlignment="Center"></Button>
+                        <Button MouseLeave="IntervalInfo_Leave" MouseEnter="IntervalInfo_Entered" Content="i" FontSize="8" Padding="8,4" FontWeight="ExtraBold" Background="#EEEDED" Foreground="Black" VerticalContentAlignment="Center"></Button>
                         </Border>
                     </Grid>
                     <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="12"  Content="Wechselinterval" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>

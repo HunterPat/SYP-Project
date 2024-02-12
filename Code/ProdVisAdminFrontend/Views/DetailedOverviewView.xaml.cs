@@ -1,4 +1,5 @@
-﻿using ProdVisAdminFrontend.ViewModels;
+﻿using Org.OpenAPITools.Api;
+using ProdVisAdminFrontend.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace ProdVisAdminFrontend.Views
 {
@@ -21,6 +23,10 @@ namespace ProdVisAdminFrontend.Views
     /// </summary>
     public partial class DetailedOverviewView : UserControl
     {
+        private const string baseUrl = "http://localhost:5501";
+       
+        private DispatcherTimer updateTimer;
+        private APIApi api;
         private DetailedOverviewViewModel viewModel;
         public DetailedOverviewView()
         {
@@ -36,6 +42,34 @@ namespace ProdVisAdminFrontend.Views
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             viewModel = DataContext as DetailedOverviewViewModel;
+            updateTimer = new DispatcherTimer();
+            updateTimer.Interval = TimeSpan.FromMilliseconds(5000);
+            updateTimer.Tick += UpdateTimer_Tick;
+            updateTimer.Start();
+            api = new APIApi(baseUrl);
+            UpdateAllValues();
+        }
+
+        private void UpdateTimer_Tick(object? sender, EventArgs e)
+        {
+            UpdateAllValues();
+        }
+
+        public async void UpdateAllValues()
+        {
+            if (api == null) return;
+            viewModel.Progress_A1 = await api.GesamttubenanzTAA1PercentGetAsync();
+            viewModel.Progress_A2 = await api.GesamttubenanzTAA2PercentGetAsync();
+            viewModel.Progress_A3 = await api.GesamttubenanzTAA3PercentGetAsync();
+            viewModel.Progress_A4 = await api.GesamttubenanzTAA4PercentGetAsync();
+            viewModel.ProductionGoal_A1 = await api.GesamttubenanzZiel4MachinesGetAsync();
+            viewModel.ProductionGoal_A2 = await api.GesamttubenanzZiel4MachinesGetAsync();
+            viewModel.ProductionGoal_A3 = await api.GesamttubenanzZiel4MachinesGetAsync();
+            viewModel.ProductionGoal_A4 = await api.GesamttubenanzZiel4MachinesGetAsync();
+            viewModel.CurrentAmount_A1 = await api.GesamttubenanzServer1GetAsync(1);
+            viewModel.CurrentAmount_A2 = await api.GesamttubenanzServer1GetAsync(2);
+            viewModel.CurrentAmount_A3 = await api.GesamttubenanzServer2GetAsync(1);
+            viewModel.CurrentAmount_A4 = await api.GesamttubenanzServer2GetAsync(2);
         }
     }
 }
