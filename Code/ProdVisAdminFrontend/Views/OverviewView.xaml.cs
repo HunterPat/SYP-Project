@@ -65,8 +65,8 @@ namespace ProdVisAdminFrontend.Views
         public async void UpdateAllValues()
         {
             if (api == null) return;
-            viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielGetAsync();
-            viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielGetAsync();
+            viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielMachinePairsGetAsync();
+            viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielMachinePairsGetAsync();
             viewModel.CurrentAmount_AP1 = await api.GesamttubenanzServer1GetAsync();
             viewModel.CurrentAmount_AP2 = await api.GesamttubenanzServer2GetAsync();
             viewModel.Progress_AP1 = await api.GesamttubenanzServer1PercentGetAsync();

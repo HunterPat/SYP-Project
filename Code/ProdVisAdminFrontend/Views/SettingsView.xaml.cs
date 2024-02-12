@@ -136,7 +136,10 @@ namespace ProdVisAdminFrontend.Views
         private void IntervalInfo_Entered(object sender, MouseEventArgs e)
         {
             var alert = popupInfo.Child as CustomAlert;
-            alert.Message = "ASd";
+            alert.Message = "Information";
+            alert.Details = "Interval für den Ansichtswechsel am großen Bildschirm";
+            alert.CancelButtonVisibility = Visibility.Hidden;
+            alert.ConfirmButtonVisibility = Visibility.Hidden;
             popupInfo.IsOpen = true;
         }
 
