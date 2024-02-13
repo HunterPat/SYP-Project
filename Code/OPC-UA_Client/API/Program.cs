@@ -1,7 +1,7 @@
 using OPC_UA_Client;
 using System.Data.SQLite;
 
-SQLiteConnection.CreateFile("ProdVis.sqlite"); //Check If can create here
+SQLiteConnection.CreateFile("ProdVis.sqlite"); //Check If can create here TODO: comment
 
 var builder = WebApplication.CreateBuilder(args);
 

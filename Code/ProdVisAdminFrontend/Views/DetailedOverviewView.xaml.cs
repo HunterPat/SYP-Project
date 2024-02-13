@@ -66,10 +66,10 @@ namespace ProdVisAdminFrontend.Views
             viewModel.ProductionGoal_A2 = await api.GesamttubenanzZiel4MachinesGetAsync();
             viewModel.ProductionGoal_A3 = await api.GesamttubenanzZiel4MachinesGetAsync();
             viewModel.ProductionGoal_A4 = await api.GesamttubenanzZiel4MachinesGetAsync();
-            viewModel.CurrentAmount_A1 = await api.GesamttubenanzServer1GetAsync(1);
-            viewModel.CurrentAmount_A2 = await api.GesamttubenanzServer1GetAsync(2);
-            viewModel.CurrentAmount_A3 = await api.GesamttubenanzServer2GetAsync(1);
-            viewModel.CurrentAmount_A4 = await api.GesamttubenanzServer2GetAsync(2);
+            viewModel.CurrentAmount_A1 = await api.GesamttubenanzMachine1ServerIDGetAsync(1);
+            viewModel.CurrentAmount_A2 = await api.GesamttubenanzMachine2ServerIDGetAsync(1);
+            viewModel.CurrentAmount_A3 = await api.GesamttubenanzMachine1ServerIDGetAsync(2);
+            viewModel.CurrentAmount_A4 = await api.GesamttubenanzMachine2ServerIDGetAsync(2);
         }
     }
 }

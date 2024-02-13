@@ -8,25 +8,32 @@ namespace API.Maps
     public static class MachineMaps
     {
         private static int gesamtTubenAnzZiel = 8000;
+        private static int timeInterval = 30;
         private static long timeToNextResetInSeconds = 0;
-        private static MachineServices service = null;
+        
+        private static MachineServices service = null!;
         public static IEndpointRouteBuilder MapMachineData(this IEndpointRouteBuilder routes)
         {
             var gesamtTubenAnzDataGroup = routes.MapGroup("/gesamttubenanz");
             var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
             var resetBitGroup = routes.MapGroup("/resetBit");
+            var timeIntervalGroup = routes.MapGroup("/timeInterval");
             //check DateTime = 12:00 to resetAll
             var secondsInADay = 86400;
             timeToNextResetInSeconds = secondsInADay - (DateTime.Now.Hour * 3600 + DateTime.Now.Minute * 60 + DateTime.Now.Second);
             //   MachineServices.CreateDatabase(); If not created
-            System.Timers.Timer timer = new System.Timers.Timer(3000); // timeToNextResetInSeconds*1000
-            timer.Elapsed += Timer_Elapsed!;
-            timer.Start();
+
+           System.Timers.Timer timer = new System.Timers.Timer(3000); // timeToNextResetInSeconds*1000
+
 
             MyOPCServer1 server1 = new MyOPCServer1(MachineServices.server1URL);
             MyOPCServer2 server2 = new MyOPCServer2(MachineServices.server2URL);
             server1.StartServer();
             server2.StartServer();
+            service = new MachineServices();
+
+            timer.Elapsed += Timer_Elapsed!;
+            timer.Start();
 
             gesamtTubenAnzZielGroup.MapGet("", () => gesamtTubenAnzZiel);
             gesamtTubenAnzZielGroup.MapPost("", ([FromBody] int value) =>
@@ -34,9 +41,12 @@ namespace API.Maps
                 gesamtTubenAnzZiel = value;
                 return gesamtTubenAnzZiel;
             });
-            service = new MachineServices();
+
             resetBitGroup.MapPost("/Server1", () => service.PostResetbitServer1());
             resetBitGroup.MapPost("/Server2", () => service.PostResetbitMachine2());
+
+            timeIntervalGroup.MapPost("/", (int intervalValue) => timeInterval = intervalValue);
+            timeIntervalGroup.MapGet("/", () => timeInterval);
             //gesamttubenAnzahl GET-Requests
             gesamtTubenAnzDataGroup.MapGet("/Server1", () => service.GetGesamttubenanzahlServer1());
             gesamtTubenAnzDataGroup.MapGet("/Server2", () => service.GetGesamttubenanzahlServer2());

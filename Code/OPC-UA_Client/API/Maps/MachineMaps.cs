@@ -9,19 +9,20 @@ namespace API.Maps
     {
         public static long timeToNextResetInSeconds = 0;
         public static int gesamtTubenAnzZiel = 8000;
-        private static MachineServices service = null;
+        private static int timeInterval = 30;
+        private static MachineServices service = null!;
 
         public static IEndpointRouteBuilder MapMachineData(this IEndpointRouteBuilder routes)
         {
             var gesamtTubenAnzDataGroup = routes.MapGroup("/gesamttubenAnz");
             var resetBitGroup = routes.MapGroup("/resetBit");
             var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
+            var timeIntervalGroup = routes.MapGroup("/timeInterval");
             var secondsInADay = 86400;
             timeToNextResetInSeconds = secondsInADay - (DateTime.Now.Hour * 3600 + DateTime.Now.Minute * 60 + DateTime.Now.Second);
             //   MachineServices.CreateDatabase(); If not created
-            System.Timers.Timer timer = new System.Timers.Timer(3000); // timeToNextResetInSeconds*1000
-            timer.Elapsed += Timer_Elapsed!;
-            timer.Start();
+            System.Timers.Timer timer = new System.Timers.Timer(3000); // TODO: timeToNextResetInSeconds*1000
+
             gesamtTubenAnzZielGroup.MapGet("", () => gesamtTubenAnzZiel);
             gesamtTubenAnzZielGroup.MapPost("", ([FromBody] int value) =>
             {
@@ -30,8 +31,15 @@ namespace API.Maps
             });
             service = new MachineServices();
 
+            timer.Elapsed += Timer_Elapsed!;
+            timer.Start();
+
             resetBitGroup.MapPost("/Machine1/resetBit", (int serverID, MachineServices service) => service.PostResetbitServer1());
             resetBitGroup.MapPost("/Machine2/resetBit", (int serverID, MachineServices service) => service.PostResetbitServer2());
+
+            timeIntervalGroup.MapPost("/", (int intervalValue) => timeInterval = intervalValue);
+            timeIntervalGroup.MapGet("/", () => timeInterval);
+
             gesamtTubenAnzDataGroup.MapGet("/Server1", (MachineServices service) => service.GetGesamttubenanzahlServer1());
             gesamtTubenAnzDataGroup.MapGet("/Server2", (MachineServices service) => service.GetGesamttubenanzahlServer2());
 
