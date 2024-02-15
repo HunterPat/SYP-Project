@@ -1,4 +1,5 @@
 ﻿using Org.OpenAPITools.Api;
+using ProdVisAdminFrontend.Values;
 using ProdVisAdminFrontend.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace ProdVisAdminFrontend.Views
     /// </summary>
     public partial class SettingsView : UserControl
     {
-        private const string baseUrl = "http://localhost:5000";
+        private string baseUrl = StaticValues.BaseUrl;
         private SettingsViewModel viewModel;
         private DispatcherTimer updateTimer;
         private APIApi api;
