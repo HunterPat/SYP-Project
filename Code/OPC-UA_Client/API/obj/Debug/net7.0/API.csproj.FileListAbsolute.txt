@@ -154,3 +154,5 @@ C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Clie
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client\API\obj\Debug\net7.0\API.csproj.CopyComplete
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client\API\obj\Debug\net7.0\ref\API.dll
+C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client\API\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
+C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client\API\bin\Debug\net7.0\SQLitePCLRaw.core.dll

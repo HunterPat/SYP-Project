@@ -8,8 +8,8 @@ namespace API.Services
 {
     public class MachineServices
     {
-        public static string server1URL = "opc.tcp://localhost:4840"; //TODO: change URL
-        public static string server2URL = "opc.tcp://localhost:4840"; //TODO: change URL
+        public static string server1URL = "opc.tcp://192.168.1.10:4840"; //TODO: change URL
+        public static string server2URL = "opc.tcp://192.168.1.20:4850"; //TODO: change URL
         static MyOPCClient clientServer1 = new MyOPCClient(server1URL);
         static MyOPCClient clientServer2 = new MyOPCClient(server2URL);
 
@@ -135,15 +135,15 @@ namespace API.Services
         {
             Console.WriteLine("POST: ResetbitServer");
 
-            clientServer1.ResetBit("TAA1");
-            clientServer1.ResetBit("TAA2");
+            clientServer1.ResetBit();
+            clientServer1.ResetBit();
         }
 
         public void PostResetbitServer2()
         {
             Console.WriteLine("POST: ResetbitServer2");
-            clientServer2.ResetBit("TAA3");
-            clientServer2.ResetBit("TAA4");
+            clientServer2.ResetBit();
+            clientServer2.ResetBit();
         }
 
         private int CalculatePercentage(int numerator, int denominator)

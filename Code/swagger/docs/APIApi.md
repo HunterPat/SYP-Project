@@ -4,26 +4,28 @@ All URIs are relative to *http://localhost*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
-| [**GesamttubenanzMachine1ServerIDGet**](APIApi.md#gesamttubenanzmachine1serveridget) | **GET** /gesamttubenanz/Machine1/{serverID} |  |
-| [**GesamttubenanzMachine2ServerIDGet**](APIApi.md#gesamttubenanzmachine2serveridget) | **GET** /gesamttubenanz/Machine2/{serverID} |  |
-| [**GesamttubenanzServer1Get**](APIApi.md#gesamttubenanzserver1get) | **GET** /gesamttubenanz/Server1 |  |
-| [**GesamttubenanzServer1PercentGet**](APIApi.md#gesamttubenanzserver1percentget) | **GET** /gesamttubenanz/Server1/Percent |  |
-| [**GesamttubenanzServer2Get**](APIApi.md#gesamttubenanzserver2get) | **GET** /gesamttubenanz/Server2 |  |
-| [**GesamttubenanzServer2PercentGet**](APIApi.md#gesamttubenanzserver2percentget) | **GET** /gesamttubenanz/Server2/Percent |  |
-| [**GesamttubenanzTAA1PercentGet**](APIApi.md#gesamttubenanztaa1percentget) | **GET** /gesamttubenanz/TAA1/Percent |  |
-| [**GesamttubenanzTAA2PercentGet**](APIApi.md#gesamttubenanztaa2percentget) | **GET** /gesamttubenanz/TAA2/Percent |  |
-| [**GesamttubenanzTAA3PercentGet**](APIApi.md#gesamttubenanztaa3percentget) | **GET** /gesamttubenanz/TAA3/Percent |  |
-| [**GesamttubenanzTAA4PercentGet**](APIApi.md#gesamttubenanztaa4percentget) | **GET** /gesamttubenanz/TAA4/Percent |  |
+| [**GesamttubenAnzMachine1ServerIDGet**](APIApi.md#gesamttubenanzmachine1serveridget) | **GET** /gesamttubenAnz/Machine1/{serverID} |  |
+| [**GesamttubenAnzMachine2ServerIDGet**](APIApi.md#gesamttubenanzmachine2serveridget) | **GET** /gesamttubenAnz/Machine2/{serverID} |  |
+| [**GesamttubenAnzServer1Get**](APIApi.md#gesamttubenanzserver1get) | **GET** /gesamttubenAnz/Server1 |  |
+| [**GesamttubenAnzServer1PercentGet**](APIApi.md#gesamttubenanzserver1percentget) | **GET** /gesamttubenAnz/Server1/Percent |  |
+| [**GesamttubenAnzServer2Get**](APIApi.md#gesamttubenanzserver2get) | **GET** /gesamttubenAnz/Server2 |  |
+| [**GesamttubenAnzServer2PercentGet**](APIApi.md#gesamttubenanzserver2percentget) | **GET** /gesamttubenAnz/Server2/Percent |  |
+| [**GesamttubenAnzTAA1PercentGet**](APIApi.md#gesamttubenanztaa1percentget) | **GET** /gesamttubenAnz/TAA1/Percent |  |
+| [**GesamttubenAnzTAA2PercentGet**](APIApi.md#gesamttubenanztaa2percentget) | **GET** /gesamttubenAnz/TAA2/Percent |  |
+| [**GesamttubenAnzTAA3PercentGet**](APIApi.md#gesamttubenanztaa3percentget) | **GET** /gesamttubenAnz/TAA3/Percent |  |
+| [**GesamttubenAnzTAA4PercentGet**](APIApi.md#gesamttubenanztaa4percentget) | **GET** /gesamttubenAnz/TAA4/Percent |  |
 | [**GesamttubenanzZiel4MachinesGet**](APIApi.md#gesamttubenanzziel4machinesget) | **GET** /gesamttubenanzZiel/4Machines |  |
 | [**GesamttubenanzZielGet**](APIApi.md#gesamttubenanzzielget) | **GET** /gesamttubenanzZiel |  |
 | [**GesamttubenanzZielMachinePairsGet**](APIApi.md#gesamttubenanzzielmachinepairsget) | **GET** /gesamttubenanzZiel/MachinePairs |  |
 | [**GesamttubenanzZielPost**](APIApi.md#gesamttubenanzzielpost) | **POST** /gesamttubenanzZiel |  |
-| [**ResetBitServer1Post**](APIApi.md#resetbitserver1post) | **POST** /resetBit/Server1 |  |
-| [**ResetBitServer2Post**](APIApi.md#resetbitserver2post) | **POST** /resetBit/Server2 |  |
+| [**ResetBitMachine1Post**](APIApi.md#resetbitmachine1post) | **POST** /resetBit/Machine1 |  |
+| [**ResetBitMachine2Post**](APIApi.md#resetbitmachine2post) | **POST** /resetBit/Machine2 |  |
+| [**TimeIntervalGet**](APIApi.md#timeintervalget) | **GET** /timeInterval |  |
+| [**TimeIntervalPost**](APIApi.md#timeintervalpost) | **POST** /timeInterval |  |
 
 <a id="gesamttubenanzmachine1serveridget"></a>
-# **GesamttubenanzMachine1ServerIDGet**
-> int GesamttubenanzMachine1ServerIDGet (int serverID)
+# **GesamttubenAnzMachine1ServerIDGet**
+> int GesamttubenAnzMachine1ServerIDGet (int serverID)
 
 
 
@@ -37,7 +39,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzMachine1ServerIDGetExample
+    public class GesamttubenAnzMachine1ServerIDGetExample
     {
         public static void Main()
         {
@@ -48,12 +50,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzMachine1ServerIDGet(serverID);
+                int result = apiInstance.GesamttubenAnzMachine1ServerIDGet(serverID);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzMachine1ServerIDGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzMachine1ServerIDGet: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -62,20 +64,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzMachine1ServerIDGetWithHttpInfo variant
+#### Using the GesamttubenAnzMachine1ServerIDGetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzMachine1ServerIDGetWithHttpInfo(serverID);
+    ApiResponse<int> response = apiInstance.GesamttubenAnzMachine1ServerIDGetWithHttpInfo(serverID);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzMachine1ServerIDGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzMachine1ServerIDGetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -109,8 +111,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanzmachine2serveridget"></a>
-# **GesamttubenanzMachine2ServerIDGet**
-> int GesamttubenanzMachine2ServerIDGet (int serverID)
+# **GesamttubenAnzMachine2ServerIDGet**
+> int GesamttubenAnzMachine2ServerIDGet (int serverID)
 
 
 
@@ -124,7 +126,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzMachine2ServerIDGetExample
+    public class GesamttubenAnzMachine2ServerIDGetExample
     {
         public static void Main()
         {
@@ -135,12 +137,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzMachine2ServerIDGet(serverID);
+                int result = apiInstance.GesamttubenAnzMachine2ServerIDGet(serverID);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzMachine2ServerIDGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzMachine2ServerIDGet: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -149,20 +151,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzMachine2ServerIDGetWithHttpInfo variant
+#### Using the GesamttubenAnzMachine2ServerIDGetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzMachine2ServerIDGetWithHttpInfo(serverID);
+    ApiResponse<int> response = apiInstance.GesamttubenAnzMachine2ServerIDGetWithHttpInfo(serverID);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzMachine2ServerIDGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzMachine2ServerIDGetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -196,8 +198,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanzserver1get"></a>
-# **GesamttubenanzServer1Get**
-> int GesamttubenanzServer1Get ()
+# **GesamttubenAnzServer1Get**
+> int GesamttubenAnzServer1Get ()
 
 
 
@@ -211,7 +213,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzServer1GetExample
+    public class GesamttubenAnzServer1GetExample
     {
         public static void Main()
         {
@@ -221,12 +223,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzServer1Get();
+                int result = apiInstance.GesamttubenAnzServer1Get();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzServer1Get: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzServer1Get: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -235,20 +237,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzServer1GetWithHttpInfo variant
+#### Using the GesamttubenAnzServer1GetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzServer1GetWithHttpInfo();
+    ApiResponse<int> response = apiInstance.GesamttubenAnzServer1GetWithHttpInfo();
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzServer1GetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzServer1GetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -278,8 +280,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanzserver1percentget"></a>
-# **GesamttubenanzServer1PercentGet**
-> int GesamttubenanzServer1PercentGet ()
+# **GesamttubenAnzServer1PercentGet**
+> int GesamttubenAnzServer1PercentGet ()
 
 
 
@@ -293,7 +295,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzServer1PercentGetExample
+    public class GesamttubenAnzServer1PercentGetExample
     {
         public static void Main()
         {
@@ -303,12 +305,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzServer1PercentGet();
+                int result = apiInstance.GesamttubenAnzServer1PercentGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzServer1PercentGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzServer1PercentGet: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -317,20 +319,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzServer1PercentGetWithHttpInfo variant
+#### Using the GesamttubenAnzServer1PercentGetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzServer1PercentGetWithHttpInfo();
+    ApiResponse<int> response = apiInstance.GesamttubenAnzServer1PercentGetWithHttpInfo();
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzServer1PercentGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzServer1PercentGetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -360,8 +362,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanzserver2get"></a>
-# **GesamttubenanzServer2Get**
-> int GesamttubenanzServer2Get ()
+# **GesamttubenAnzServer2Get**
+> int GesamttubenAnzServer2Get ()
 
 
 
@@ -375,7 +377,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzServer2GetExample
+    public class GesamttubenAnzServer2GetExample
     {
         public static void Main()
         {
@@ -385,12 +387,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzServer2Get();
+                int result = apiInstance.GesamttubenAnzServer2Get();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzServer2Get: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzServer2Get: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -399,20 +401,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzServer2GetWithHttpInfo variant
+#### Using the GesamttubenAnzServer2GetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzServer2GetWithHttpInfo();
+    ApiResponse<int> response = apiInstance.GesamttubenAnzServer2GetWithHttpInfo();
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzServer2GetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzServer2GetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -442,8 +444,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanzserver2percentget"></a>
-# **GesamttubenanzServer2PercentGet**
-> int GesamttubenanzServer2PercentGet ()
+# **GesamttubenAnzServer2PercentGet**
+> int GesamttubenAnzServer2PercentGet ()
 
 
 
@@ -457,7 +459,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzServer2PercentGetExample
+    public class GesamttubenAnzServer2PercentGetExample
     {
         public static void Main()
         {
@@ -467,12 +469,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzServer2PercentGet();
+                int result = apiInstance.GesamttubenAnzServer2PercentGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzServer2PercentGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzServer2PercentGet: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -481,20 +483,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzServer2PercentGetWithHttpInfo variant
+#### Using the GesamttubenAnzServer2PercentGetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzServer2PercentGetWithHttpInfo();
+    ApiResponse<int> response = apiInstance.GesamttubenAnzServer2PercentGetWithHttpInfo();
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzServer2PercentGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzServer2PercentGetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -524,8 +526,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanztaa1percentget"></a>
-# **GesamttubenanzTAA1PercentGet**
-> int GesamttubenanzTAA1PercentGet ()
+# **GesamttubenAnzTAA1PercentGet**
+> int GesamttubenAnzTAA1PercentGet ()
 
 
 
@@ -539,7 +541,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzTAA1PercentGetExample
+    public class GesamttubenAnzTAA1PercentGetExample
     {
         public static void Main()
         {
@@ -549,12 +551,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzTAA1PercentGet();
+                int result = apiInstance.GesamttubenAnzTAA1PercentGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzTAA1PercentGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzTAA1PercentGet: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -563,20 +565,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzTAA1PercentGetWithHttpInfo variant
+#### Using the GesamttubenAnzTAA1PercentGetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzTAA1PercentGetWithHttpInfo();
+    ApiResponse<int> response = apiInstance.GesamttubenAnzTAA1PercentGetWithHttpInfo();
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzTAA1PercentGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzTAA1PercentGetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -606,8 +608,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanztaa2percentget"></a>
-# **GesamttubenanzTAA2PercentGet**
-> int GesamttubenanzTAA2PercentGet ()
+# **GesamttubenAnzTAA2PercentGet**
+> int GesamttubenAnzTAA2PercentGet ()
 
 
 
@@ -621,7 +623,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzTAA2PercentGetExample
+    public class GesamttubenAnzTAA2PercentGetExample
     {
         public static void Main()
         {
@@ -631,12 +633,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzTAA2PercentGet();
+                int result = apiInstance.GesamttubenAnzTAA2PercentGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzTAA2PercentGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzTAA2PercentGet: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -645,20 +647,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzTAA2PercentGetWithHttpInfo variant
+#### Using the GesamttubenAnzTAA2PercentGetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzTAA2PercentGetWithHttpInfo();
+    ApiResponse<int> response = apiInstance.GesamttubenAnzTAA2PercentGetWithHttpInfo();
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzTAA2PercentGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzTAA2PercentGetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -688,8 +690,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanztaa3percentget"></a>
-# **GesamttubenanzTAA3PercentGet**
-> int GesamttubenanzTAA3PercentGet ()
+# **GesamttubenAnzTAA3PercentGet**
+> int GesamttubenAnzTAA3PercentGet ()
 
 
 
@@ -703,7 +705,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzTAA3PercentGetExample
+    public class GesamttubenAnzTAA3PercentGetExample
     {
         public static void Main()
         {
@@ -713,12 +715,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzTAA3PercentGet();
+                int result = apiInstance.GesamttubenAnzTAA3PercentGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzTAA3PercentGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzTAA3PercentGet: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -727,20 +729,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzTAA3PercentGetWithHttpInfo variant
+#### Using the GesamttubenAnzTAA3PercentGetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzTAA3PercentGetWithHttpInfo();
+    ApiResponse<int> response = apiInstance.GesamttubenAnzTAA3PercentGetWithHttpInfo();
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzTAA3PercentGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzTAA3PercentGetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -770,8 +772,8 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a id="gesamttubenanztaa4percentget"></a>
-# **GesamttubenanzTAA4PercentGet**
-> int GesamttubenanzTAA4PercentGet ()
+# **GesamttubenAnzTAA4PercentGet**
+> int GesamttubenAnzTAA4PercentGet ()
 
 
 
@@ -785,7 +787,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class GesamttubenanzTAA4PercentGetExample
+    public class GesamttubenAnzTAA4PercentGetExample
     {
         public static void Main()
         {
@@ -795,12 +797,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzTAA4PercentGet();
+                int result = apiInstance.GesamttubenAnzTAA4PercentGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzTAA4PercentGet: " + e.Message);
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzTAA4PercentGet: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -809,20 +811,20 @@ namespace Example
 }
 ```
 
-#### Using the GesamttubenanzTAA4PercentGetWithHttpInfo variant
+#### Using the GesamttubenAnzTAA4PercentGetWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    ApiResponse<int> response = apiInstance.GesamttubenanzTAA4PercentGetWithHttpInfo();
+    ApiResponse<int> response = apiInstance.GesamttubenAnzTAA4PercentGetWithHttpInfo();
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.GesamttubenanzTAA4PercentGetWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.GesamttubenAnzTAA4PercentGetWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -1184,9 +1186,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a id="resetbitserver1post"></a>
-# **ResetBitServer1Post**
-> void ResetBitServer1Post ()
+<a id="resetbitmachine1post"></a>
+# **ResetBitMachine1Post**
+> void ResetBitMachine1Post ()
 
 
 
@@ -1200,7 +1202,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class ResetBitServer1PostExample
+    public class ResetBitMachine1PostExample
     {
         public static void Main()
         {
@@ -1210,11 +1212,11 @@ namespace Example
 
             try
             {
-                apiInstance.ResetBitServer1Post();
+                apiInstance.ResetBitMachine1Post();
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.ResetBitServer1Post: " + e.Message);
+                Debug.Print("Exception when calling APIApi.ResetBitMachine1Post: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1223,17 +1225,17 @@ namespace Example
 }
 ```
 
-#### Using the ResetBitServer1PostWithHttpInfo variant
+#### Using the ResetBitMachine1PostWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    apiInstance.ResetBitServer1PostWithHttpInfo();
+    apiInstance.ResetBitMachine1PostWithHttpInfo();
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.ResetBitServer1PostWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.ResetBitMachine1PostWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -1262,9 +1264,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a id="resetbitserver2post"></a>
-# **ResetBitServer2Post**
-> void ResetBitServer2Post ()
+<a id="resetbitmachine2post"></a>
+# **ResetBitMachine2Post**
+> void ResetBitMachine2Post ()
 
 
 
@@ -1278,7 +1280,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class ResetBitServer2PostExample
+    public class ResetBitMachine2PostExample
     {
         public static void Main()
         {
@@ -1288,11 +1290,11 @@ namespace Example
 
             try
             {
-                apiInstance.ResetBitServer2Post();
+                apiInstance.ResetBitMachine2Post();
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling APIApi.ResetBitServer2Post: " + e.Message);
+                Debug.Print("Exception when calling APIApi.ResetBitMachine2Post: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1301,17 +1303,17 @@ namespace Example
 }
 ```
 
-#### Using the ResetBitServer2PostWithHttpInfo variant
+#### Using the ResetBitMachine2PostWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    apiInstance.ResetBitServer2PostWithHttpInfo();
+    apiInstance.ResetBitMachine2PostWithHttpInfo();
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling APIApi.ResetBitServer2PostWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling APIApi.ResetBitMachine2PostWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -1331,6 +1333,175 @@ No authorization required
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a id="timeintervalget"></a>
+# **TimeIntervalGet**
+> int TimeIntervalGet ()
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class TimeIntervalGetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://localhost";
+            var apiInstance = new APIApi(config);
+
+            try
+            {
+                int result = apiInstance.TimeIntervalGet();
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling APIApi.TimeIntervalGet: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the TimeIntervalGetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    ApiResponse<int> response = apiInstance.TimeIntervalGetWithHttpInfo();
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling APIApi.TimeIntervalGetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+### Return type
+
+**int**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a id="timeintervalpost"></a>
+# **TimeIntervalPost**
+> int TimeIntervalPost (int intervalValue)
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class TimeIntervalPostExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://localhost";
+            var apiInstance = new APIApi(config);
+            var intervalValue = 56;  // int | 
+
+            try
+            {
+                int result = apiInstance.TimeIntervalPost(intervalValue);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling APIApi.TimeIntervalPost: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the TimeIntervalPostWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    ApiResponse<int> response = apiInstance.TimeIntervalPostWithHttpInfo(intervalValue);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling APIApi.TimeIntervalPostWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **intervalValue** | **int** |  |  |
+
+### Return type
+
+**int**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 
 ### HTTP response details

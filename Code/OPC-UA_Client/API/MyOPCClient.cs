@@ -17,8 +17,8 @@ namespace OPC_UA_Client
             {
                 client.Connect();
                 Console.WriteLine("-----------------------\nconnected!");
-                //       var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
-                //     Browse(node);
+                //     var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
+                //   Browse(node);
             }
             catch (Exception ex)
             {
@@ -78,7 +78,7 @@ namespace OPC_UA_Client
         }
         public int ReadDataFromTAA3()
         {
-            var anzTag = "ns=2;s=TAA3/Gesamttubenanzahl";
+            var anzTag = "ns=4;i=6";
             try
             {
                 var gesamtAnzahl = client.ReadNode(anzTag);
@@ -97,7 +97,7 @@ namespace OPC_UA_Client
         }
         public int ReadDataFromTAA4()
         {
-            var anzTag = "ns=2;s=TAA4/Gesamttubenanzahl";
+            var anzTag = "ns=4;i=11";
             try
             {
                 var gesamtAnzahl = client.ReadNode(anzTag);
@@ -115,31 +115,14 @@ namespace OPC_UA_Client
             return -1;
         }
 
-        public void ResetBit(string machine)
+        public void ResetBit()
         {
-            string nodeDesc = null!;
-            if (machine == "TAA1")
-            {
-                nodeDesc = "";
-            }
-            else if (machine == "TAA2")
-            {
-                nodeDesc = "";
-
-            }
-            else if (machine == "TAA3")
-            {
-                nodeDesc = "";
-
-            }
-            else if (machine == "TAA4")
-            {
-                nodeDesc = "";
-            }
-
-            client.WriteNode(nodeDesc, 1); // ns=2;s=TAA1/resetBit
+            client.WriteNode("ns=4;i=7", true); // ns=2;s=TAA1/resetBit
+            client.WriteNode("ns=4;i=12", true); // ns=2;s=TAA1/resetBit
             Thread.Sleep(2000);// that the server can read the Bit 
-            client.WriteNode(nodeDesc, 0);
+            client.WriteNode("ns=4;i=7", false); // ns=2;s=TAA1/resetBit
+            client.WriteNode("ns=4;i=12", false); // ns=2;s=TAA1/resetBit
+
         }
 
         public void Browse(OpcNodeInfo node, int level = 0)

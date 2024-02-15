@@ -32,7 +32,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzMachine1ServerIDGet(int serverID, int operationIndex = 0);
+        int GesamttubenAnzMachine1ServerIDGet(int serverID, int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -44,7 +44,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzMachine1ServerIDGetWithHttpInfo(int serverID, int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzMachine1ServerIDGetWithHttpInfo(int serverID, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -52,7 +52,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzMachine2ServerIDGet(int serverID, int operationIndex = 0);
+        int GesamttubenAnzMachine2ServerIDGet(int serverID, int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -64,14 +64,14 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzMachine2ServerIDGetWithHttpInfo(int serverID, int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzMachine2ServerIDGetWithHttpInfo(int serverID, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzServer1Get(int operationIndex = 0);
+        int GesamttubenAnzServer1Get(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -82,14 +82,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzServer1GetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzServer1GetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzServer1PercentGet(int operationIndex = 0);
+        int GesamttubenAnzServer1PercentGet(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -100,14 +100,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzServer1PercentGetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzServer1PercentGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzServer2Get(int operationIndex = 0);
+        int GesamttubenAnzServer2Get(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -118,14 +118,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzServer2GetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzServer2GetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzServer2PercentGet(int operationIndex = 0);
+        int GesamttubenAnzServer2PercentGet(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -136,14 +136,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzServer2PercentGetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzServer2PercentGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzTAA1PercentGet(int operationIndex = 0);
+        int GesamttubenAnzTAA1PercentGet(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -154,14 +154,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzTAA1PercentGetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzTAA1PercentGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzTAA2PercentGet(int operationIndex = 0);
+        int GesamttubenAnzTAA2PercentGet(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -172,14 +172,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzTAA2PercentGetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzTAA2PercentGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzTAA3PercentGet(int operationIndex = 0);
+        int GesamttubenAnzTAA3PercentGet(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -190,14 +190,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzTAA3PercentGetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzTAA3PercentGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        int GesamttubenanzTAA4PercentGet(int operationIndex = 0);
+        int GesamttubenAnzTAA4PercentGet(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -208,7 +208,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        ApiResponse<int> GesamttubenanzTAA4PercentGetWithHttpInfo(int operationIndex = 0);
+        ApiResponse<int> GesamttubenAnzTAA4PercentGetWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -289,7 +289,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns></returns>
-        void ResetBitServer1Post(int operationIndex = 0);
+        void ResetBitMachine1Post(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -300,14 +300,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ResetBitServer1PostWithHttpInfo(int operationIndex = 0);
+        ApiResponse<Object> ResetBitMachine1PostWithHttpInfo(int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns></returns>
-        void ResetBitServer2Post(int operationIndex = 0);
+        void ResetBitMachine2Post(int operationIndex = 0);
 
         /// <summary>
         /// 
@@ -318,7 +318,45 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ResetBitServer2PostWithHttpInfo(int operationIndex = 0);
+        ApiResponse<Object> ResetBitMachine2PostWithHttpInfo(int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>int</returns>
+        int TimeIntervalGet(int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of int</returns>
+        ApiResponse<int> TimeIntervalGetWithHttpInfo(int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="intervalValue"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>int</returns>
+        int TimeIntervalPost(int intervalValue, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="intervalValue"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of int</returns>
+        ApiResponse<int> TimeIntervalPostWithHttpInfo(int intervalValue, int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
@@ -339,7 +377,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzMachine1ServerIDGetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzMachine1ServerIDGetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -352,7 +390,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzMachine1ServerIDGetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzMachine1ServerIDGetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -364,7 +402,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzMachine2ServerIDGetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzMachine2ServerIDGetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -377,7 +415,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzMachine2ServerIDGetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzMachine2ServerIDGetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -388,7 +426,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzServer1GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzServer1GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -400,7 +438,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzServer1GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzServer1GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -411,7 +449,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzServer1PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzServer1PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -423,7 +461,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzServer1PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzServer1PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -434,7 +472,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzServer2GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzServer2GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -446,7 +484,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzServer2GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzServer2GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -457,7 +495,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzServer2PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzServer2PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -469,7 +507,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzServer2PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzServer2PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -480,7 +518,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzTAA1PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzTAA1PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -492,7 +530,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzTAA1PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzTAA1PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -503,7 +541,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzTAA2PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzTAA2PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -515,7 +553,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzTAA2PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzTAA2PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -526,7 +564,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzTAA3PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzTAA3PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -538,7 +576,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzTAA3PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzTAA3PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -549,7 +587,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        System.Threading.Tasks.Task<int> GesamttubenanzTAA4PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<int> GesamttubenAnzTAA4PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -561,7 +599,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenanzTAA4PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<int>> GesamttubenAnzTAA4PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -666,7 +704,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ResetBitServer1PostAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ResetBitMachine1PostAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -678,7 +716,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ResetBitServer1PostWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ResetBitMachine1PostWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -689,7 +727,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ResetBitServer2PostAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ResetBitMachine2PostAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -701,7 +739,55 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ResetBitServer2PostWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ResetBitMachine2PostWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of int</returns>
+        System.Threading.Tasks.Task<int> TimeIntervalGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (int)</returns>
+        System.Threading.Tasks.Task<ApiResponse<int>> TimeIntervalGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="intervalValue"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of int</returns>
+        System.Threading.Tasks.Task<int> TimeIntervalPostAsync(int intervalValue, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="intervalValue"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (int)</returns>
+        System.Threading.Tasks.Task<ApiResponse<int>> TimeIntervalPostWithHttpInfoAsync(int intervalValue, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -829,9 +915,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzMachine1ServerIDGet(int serverID, int operationIndex = 0)
+        public int GesamttubenAnzMachine1ServerIDGet(int serverID, int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzMachine1ServerIDGetWithHttpInfo(serverID);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzMachine1ServerIDGetWithHttpInfo(serverID);
             return localVarResponse.Data;
         }
 
@@ -842,7 +928,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="serverID"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzMachine1ServerIDGetWithHttpInfo(int serverID, int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzMachine1ServerIDGetWithHttpInfo(int serverID, int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -868,15 +954,15 @@ namespace Org.OpenAPITools.Api
 
             localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzMachine1ServerIDGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzMachine1ServerIDGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/Machine1/{serverID}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/Machine1/{serverID}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzMachine1ServerIDGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzMachine1ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -894,9 +980,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzMachine1ServerIDGetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzMachine1ServerIDGetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzMachine1ServerIDGetWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzMachine1ServerIDGetWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -908,139 +994,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzMachine1ServerIDGetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-
-            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
-
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzMachine1ServerIDGet";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/Machine1/{serverID}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzMachine1ServerIDGet", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="serverID"></param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>int</returns>
-        public int GesamttubenanzMachine2ServerIDGet(int serverID, int operationIndex = 0)
-        {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzMachine2ServerIDGetWithHttpInfo(serverID);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="serverID"></param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzMachine2ServerIDGetWithHttpInfo(int serverID, int operationIndex = 0)
-        {
-            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
-
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzMachine2ServerIDGet";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/Machine2/{serverID}", localVarRequestOptions, this.Configuration);
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzMachine2ServerIDGet", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="serverID"></param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzMachine2ServerIDGetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzMachine2ServerIDGetWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="serverID"></param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzMachine2ServerIDGetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzMachine1ServerIDGetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1067,16 +1021,148 @@ namespace Org.OpenAPITools.Api
 
             localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzMachine2ServerIDGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzMachine1ServerIDGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/Machine2/{serverID}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/Machine1/{serverID}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzMachine2ServerIDGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzMachine1ServerIDGet", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>int</returns>
+        public int GesamttubenAnzMachine2ServerIDGet(int serverID, int operationIndex = 0)
+        {
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzMachine2ServerIDGetWithHttpInfo(serverID);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of int</returns>
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzMachine2ServerIDGetWithHttpInfo(int serverID, int operationIndex = 0)
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
+
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzMachine2ServerIDGet";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/Machine2/{serverID}", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzMachine2ServerIDGet", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of int</returns>
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzMachine2ServerIDGetAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzMachine2ServerIDGetWithHttpInfoAsync(serverID, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="serverID"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (int)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzMachine2ServerIDGetWithHttpInfoAsync(int serverID, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.PathParameters.Add("serverID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(serverID)); // path parameter
+
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzMachine2ServerIDGet";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/Machine2/{serverID}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzMachine2ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1092,9 +1178,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzServer1Get(int operationIndex = 0)
+        public int GesamttubenAnzServer1Get(int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzServer1GetWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzServer1GetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -1104,7 +1190,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzServer1GetWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzServer1GetWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1129,15 +1215,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzServer1Get";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzServer1Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/Server1", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/Server1", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzServer1Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzServer1Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1154,9 +1240,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzServer1GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzServer1GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzServer1GetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzServer1GetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1167,7 +1253,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzServer1GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzServer1GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1193,16 +1279,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzServer1Get";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzServer1Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/Server1", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/Server1", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzServer1Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzServer1Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1218,9 +1304,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzServer1PercentGet(int operationIndex = 0)
+        public int GesamttubenAnzServer1PercentGet(int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzServer1PercentGetWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzServer1PercentGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -1230,7 +1316,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzServer1PercentGetWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzServer1PercentGetWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1255,15 +1341,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzServer1PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzServer1PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/Server1/Percent", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/Server1/Percent", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzServer1PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzServer1PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1280,9 +1366,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzServer1PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzServer1PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzServer1PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzServer1PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1293,7 +1379,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzServer1PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzServer1PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1319,16 +1405,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzServer1PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzServer1PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/Server1/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/Server1/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzServer1PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzServer1PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1344,9 +1430,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzServer2Get(int operationIndex = 0)
+        public int GesamttubenAnzServer2Get(int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzServer2GetWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzServer2GetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -1356,7 +1442,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzServer2GetWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzServer2GetWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1381,15 +1467,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzServer2Get";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzServer2Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/Server2", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/Server2", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzServer2Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzServer2Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1406,9 +1492,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzServer2GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzServer2GetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzServer2GetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzServer2GetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1419,7 +1505,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzServer2GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzServer2GetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1445,16 +1531,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzServer2Get";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzServer2Get";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/Server2", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/Server2", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzServer2Get", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzServer2Get", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1470,9 +1556,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzServer2PercentGet(int operationIndex = 0)
+        public int GesamttubenAnzServer2PercentGet(int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzServer2PercentGetWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzServer2PercentGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -1482,7 +1568,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzServer2PercentGetWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzServer2PercentGetWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1507,15 +1593,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzServer2PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzServer2PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/Server2/Percent", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/Server2/Percent", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzServer2PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzServer2PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1532,9 +1618,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzServer2PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzServer2PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzServer2PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzServer2PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1545,7 +1631,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzServer2PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzServer2PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1571,16 +1657,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzServer2PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzServer2PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/Server2/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/Server2/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzServer2PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzServer2PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1596,9 +1682,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzTAA1PercentGet(int operationIndex = 0)
+        public int GesamttubenAnzTAA1PercentGet(int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzTAA1PercentGetWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzTAA1PercentGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -1608,7 +1694,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzTAA1PercentGetWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzTAA1PercentGetWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1633,15 +1719,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzTAA1PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzTAA1PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/TAA1/Percent", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/TAA1/Percent", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzTAA1PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzTAA1PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1658,9 +1744,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzTAA1PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzTAA1PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzTAA1PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzTAA1PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1671,7 +1757,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzTAA1PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzTAA1PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1697,16 +1783,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzTAA1PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzTAA1PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/TAA1/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/TAA1/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzTAA1PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzTAA1PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1722,9 +1808,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzTAA2PercentGet(int operationIndex = 0)
+        public int GesamttubenAnzTAA2PercentGet(int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzTAA2PercentGetWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzTAA2PercentGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -1734,7 +1820,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzTAA2PercentGetWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzTAA2PercentGetWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1759,15 +1845,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzTAA2PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzTAA2PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/TAA2/Percent", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/TAA2/Percent", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzTAA2PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzTAA2PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1784,9 +1870,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzTAA2PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzTAA2PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzTAA2PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzTAA2PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1797,7 +1883,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzTAA2PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzTAA2PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1823,16 +1909,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzTAA2PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzTAA2PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/TAA2/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/TAA2/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzTAA2PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzTAA2PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1848,9 +1934,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzTAA3PercentGet(int operationIndex = 0)
+        public int GesamttubenAnzTAA3PercentGet(int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzTAA3PercentGetWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzTAA3PercentGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -1860,7 +1946,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzTAA3PercentGetWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzTAA3PercentGetWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1885,15 +1971,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzTAA3PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzTAA3PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/TAA3/Percent", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/TAA3/Percent", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzTAA3PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzTAA3PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1910,9 +1996,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzTAA3PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzTAA3PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzTAA3PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzTAA3PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1923,7 +2009,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzTAA3PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzTAA3PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1949,16 +2035,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzTAA3PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzTAA3PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/TAA3/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/TAA3/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzTAA3PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzTAA3PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1974,9 +2060,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>int</returns>
-        public int GesamttubenanzTAA4PercentGet(int operationIndex = 0)
+        public int GesamttubenAnzTAA4PercentGet(int operationIndex = 0)
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenanzTAA4PercentGetWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = GesamttubenAnzTAA4PercentGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -1986,7 +2072,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of int</returns>
-        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenanzTAA4PercentGetWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<int> GesamttubenAnzTAA4PercentGetWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -2011,15 +2097,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzTAA4PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzTAA4PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<int>("/gesamttubenanz/TAA4/Percent", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<int>("/gesamttubenAnz/TAA4/Percent", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzTAA4PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzTAA4PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -2036,9 +2122,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of int</returns>
-        public async System.Threading.Tasks.Task<int> GesamttubenanzTAA4PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<int> GesamttubenAnzTAA4PercentGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenanzTAA4PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await GesamttubenAnzTAA4PercentGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -2049,7 +2135,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (int)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenanzTAA4PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> GesamttubenAnzTAA4PercentGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -2075,16 +2161,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.GesamttubenanzTAA4PercentGet";
+            localVarRequestOptions.Operation = "APIApi.GesamttubenAnzTAA4PercentGet";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenanz/TAA4/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/gesamttubenAnz/TAA4/Percent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GesamttubenanzTAA4PercentGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GesamttubenAnzTAA4PercentGet", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -2612,9 +2698,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns></returns>
-        public void ResetBitServer1Post(int operationIndex = 0)
+        public void ResetBitMachine1Post(int operationIndex = 0)
         {
-            ResetBitServer1PostWithHttpInfo();
+            ResetBitMachine1PostWithHttpInfo();
         }
 
         /// <summary>
@@ -2623,7 +2709,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ResetBitServer1PostWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<Object> ResetBitMachine1PostWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -2647,15 +2733,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.ResetBitServer1Post";
+            localVarRequestOptions.Operation = "APIApi.ResetBitMachine1Post";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<Object>("/resetBit/Server1", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<Object>("/resetBit/Machine1", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ResetBitServer1Post", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ResetBitMachine1Post", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -2672,9 +2758,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ResetBitServer1PostAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ResetBitMachine1PostAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await ResetBitServer1PostWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            await ResetBitMachine1PostWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -2684,7 +2770,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ResetBitServer1PostWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ResetBitMachine1PostWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -2709,16 +2795,16 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.ResetBitServer1Post";
+            localVarRequestOptions.Operation = "APIApi.ResetBitMachine1Post";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/resetBit/Server1", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/resetBit/Machine1", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ResetBitServer1Post", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ResetBitMachine1Post", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -2734,9 +2820,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns></returns>
-        public void ResetBitServer2Post(int operationIndex = 0)
+        public void ResetBitMachine2Post(int operationIndex = 0)
         {
-            ResetBitServer2PostWithHttpInfo();
+            ResetBitMachine2PostWithHttpInfo();
         }
 
         /// <summary>
@@ -2745,7 +2831,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ResetBitServer2PostWithHttpInfo(int operationIndex = 0)
+        public Org.OpenAPITools.Client.ApiResponse<Object> ResetBitMachine2PostWithHttpInfo(int operationIndex = 0)
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -2769,15 +2855,15 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.ResetBitServer2Post";
+            localVarRequestOptions.Operation = "APIApi.ResetBitMachine2Post";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<Object>("/resetBit/Server2", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<Object>("/resetBit/Machine2", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ResetBitServer2Post", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ResetBitMachine2Post", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -2794,9 +2880,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ResetBitServer2PostAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ResetBitMachine2PostAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await ResetBitServer2PostWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            await ResetBitMachine2PostWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -2806,7 +2892,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ResetBitServer2PostWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ResetBitMachine2PostWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -2831,16 +2917,274 @@ namespace Org.OpenAPITools.Api
             }
 
 
-            localVarRequestOptions.Operation = "APIApi.ResetBitServer2Post";
+            localVarRequestOptions.Operation = "APIApi.ResetBitMachine2Post";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/resetBit/Server2", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/resetBit/Machine2", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ResetBitServer2Post", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ResetBitMachine2Post", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>int</returns>
+        public int TimeIntervalGet(int operationIndex = 0)
+        {
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = TimeIntervalGetWithHttpInfo();
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of int</returns>
+        public Org.OpenAPITools.Client.ApiResponse<int> TimeIntervalGetWithHttpInfo(int operationIndex = 0)
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+
+            localVarRequestOptions.Operation = "APIApi.TimeIntervalGet";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get<int>("/timeInterval", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TimeIntervalGet", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of int</returns>
+        public async System.Threading.Tasks.Task<int> TimeIntervalGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await TimeIntervalGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (int)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> TimeIntervalGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+
+            localVarRequestOptions.Operation = "APIApi.TimeIntervalGet";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.GetAsync<int>("/timeInterval", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TimeIntervalGet", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="intervalValue"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>int</returns>
+        public int TimeIntervalPost(int intervalValue, int operationIndex = 0)
+        {
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = TimeIntervalPostWithHttpInfo(intervalValue);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="intervalValue"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of int</returns>
+        public Org.OpenAPITools.Client.ApiResponse<int> TimeIntervalPostWithHttpInfo(int intervalValue, int operationIndex = 0)
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "intervalValue", intervalValue));
+
+            localVarRequestOptions.Operation = "APIApi.TimeIntervalPost";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<int>("/timeInterval", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TimeIntervalPost", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="intervalValue"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of int</returns>
+        public async System.Threading.Tasks.Task<int> TimeIntervalPostAsync(int intervalValue, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<int> localVarResponse = await TimeIntervalPostWithHttpInfoAsync(intervalValue, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="intervalValue"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (int)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<int>> TimeIntervalPostWithHttpInfoAsync(int intervalValue, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "intervalValue", intervalValue));
+
+            localVarRequestOptions.Operation = "APIApi.TimeIntervalPost";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<int>("/timeInterval", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TimeIntervalPost", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\
+C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\
 ProdVisAdminFrontend
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisAdminFrontend\App.xaml
+C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdminFrontend\App.xaml
 6-860834323
 
-32-1058635485
-204133645662
+131569987348
+204982051597
 MainWindow.xaml;Styles\Resources.xaml;Views\CustomAlert.xaml;Views\DetailedOverviewView.xaml;Views\OverviewView.xaml;Views\SettingsView.xaml;
 
 False

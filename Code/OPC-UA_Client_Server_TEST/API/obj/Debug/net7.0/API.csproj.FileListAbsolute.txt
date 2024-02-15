@@ -68,8 +68,6 @@ C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Clie
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.AssemblyInfoInputs.cache
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.AssemblyInfo.cs
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.csproj.CoreCompileInputs.cache
-C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.sourcelink.json
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\staticwebassets.development.json

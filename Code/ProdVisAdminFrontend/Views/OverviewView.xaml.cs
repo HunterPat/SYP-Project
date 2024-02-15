@@ -23,7 +23,7 @@ namespace ProdVisAdminFrontend.Views
     /// </summary>
     public partial class OverviewView : UserControl
     {
-        private const string baseUrl = "http://localhost:5501";
+        private const string baseUrl = "http://localhost:5000";
         private OverviewViewModel viewModel;
         private DispatcherTimer updateTimer;
         private APIApi api;
@@ -67,10 +67,10 @@ namespace ProdVisAdminFrontend.Views
             if (api == null) return;
             viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielMachinePairsGetAsync();
             viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielMachinePairsGetAsync();
-            viewModel.CurrentAmount_AP1 = await api.GesamttubenanzServer1GetAsync();
-            viewModel.CurrentAmount_AP2 = await api.GesamttubenanzServer2GetAsync();
-            viewModel.Progress_AP1 = await api.GesamttubenanzServer1PercentGetAsync();
-            viewModel.Progress_AP2 = await api.GesamttubenanzServer2PercentGetAsync();
+            viewModel.CurrentAmount_AP1 = await api.GesamttubenAnzServer1GetAsync();
+            viewModel.CurrentAmount_AP2 = await api.GesamttubenAnzServer2GetAsync();
+            viewModel.Progress_AP1 = await api.GesamttubenAnzServer1PercentGetAsync();
+            viewModel.Progress_AP2 = await api.GesamttubenAnzServer2PercentGetAsync();
         }
 
         //public event EventHandler SwitchUserControlRequested;

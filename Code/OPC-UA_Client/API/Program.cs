@@ -1,3 +1,5 @@
+using API.Maps;
+using API.Services;
 using OPC_UA_Client;
 using System.Data.SQLite;
 
@@ -11,7 +13,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<MachineServices>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,4 +23,5 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 Console.WriteLine("Ready!");
+app.MapMachineData();
 app.Run();

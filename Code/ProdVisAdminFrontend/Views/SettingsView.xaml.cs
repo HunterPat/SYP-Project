@@ -23,7 +23,7 @@ namespace ProdVisAdminFrontend.Views
     /// </summary>
     public partial class SettingsView : UserControl
     {
-        private const string baseUrl = "http://localhost:5501";
+        private const string baseUrl = "http://localhost:5000";
         private SettingsViewModel viewModel;
         private DispatcherTimer updateTimer;
         private APIApi api;
@@ -66,8 +66,9 @@ namespace ProdVisAdminFrontend.Views
             if (api == null) return;
             viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielMachinePairsGetAsync();
             viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielMachinePairsGetAsync();
-            viewModel.CurrentAmount_AP1 = await api.GesamttubenanzServer1GetAsync();
-            viewModel.CurrentAmount_AP2 = await api.GesamttubenanzServer2GetAsync();
+            viewModel.CurrentAmount_AP1 = await api.GesamttubenAnzServer1GetAsync();
+            viewModel.CurrentAmount_AP2 = await api.GesamttubenAnzServer2GetAsync();
+
         }
 
         private void Resest_Clicked(object sender, RoutedEventArgs e)
@@ -114,8 +115,8 @@ namespace ProdVisAdminFrontend.Views
                 customAlert.Details = "Die Tubenanzahl wird zurückgesetzt!";
                 customAlert.CancelButtonVisibility = Visibility.Hidden;
                 customAlert.ConfirmButtonVisibility = Visibility.Hidden;
-                await api.ResetBitServer1PostAsync();
-                await api.ResetBitServer2PostAsync();
+                await api.ResetBitMachine1PostAsync();
+                await api.ResetBitMachine2PostAsync();
                 
                 UpdateAllValues();
                 popupAlert.IsOpen = false;

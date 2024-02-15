@@ -5,7 +5,7 @@ info:
 servers:
 - url: /
 paths:
-  /gesamttubenanz/Server1:
+  /gesamttubenAnz/Server1:
     get:
       responses:
         "200":
@@ -17,7 +17,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/Server2:
+  /gesamttubenAnz/Server2:
     get:
       responses:
         "200":
@@ -29,7 +29,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/Machine1/{serverID}:
+  /gesamttubenAnz/Machine1/{serverID}:
     get:
       parameters:
       - explode: false
@@ -50,7 +50,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/Machine2/{serverID}:
+  /gesamttubenAnz/Machine2/{serverID}:
     get:
       parameters:
       - explode: false
@@ -71,7 +71,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/Server1/Percent:
+  /gesamttubenAnz/Server1/Percent:
     get:
       responses:
         "200":
@@ -83,7 +83,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/Server2/Percent:
+  /gesamttubenAnz/Server2/Percent:
     get:
       responses:
         "200":
@@ -95,7 +95,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/TAA1/Percent:
+  /gesamttubenAnz/TAA1/Percent:
     get:
       responses:
         "200":
@@ -107,7 +107,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/TAA2/Percent:
+  /gesamttubenAnz/TAA2/Percent:
     get:
       responses:
         "200":
@@ -119,7 +119,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/TAA3/Percent:
+  /gesamttubenAnz/TAA3/Percent:
     get:
       responses:
         "200":
@@ -131,7 +131,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenanz/TAA4/Percent:
+  /gesamttubenAnz/TAA4/Percent:
     get:
       responses:
         "200":
@@ -140,6 +140,20 @@ paths:
               schema:
                 format: int32
                 type: integer
+          description: Success
+      tags:
+      - API
+  /resetBit/Machine1:
+    post:
+      responses:
+        "200":
+          description: Success
+      tags:
+      - API
+  /resetBit/Machine2:
+    post:
+      responses:
+        "200":
           description: Success
       tags:
       - API
@@ -197,17 +211,35 @@ paths:
           description: Success
       tags:
       - API
-  /resetBit/Server1:
-    post:
+  /timeInterval:
+    get:
       responses:
         "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
           description: Success
       tags:
       - API
-  /resetBit/Server2:
     post:
+      parameters:
+      - explode: true
+        in: query
+        name: intervalValue
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: form
       responses:
         "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
           description: Success
       tags:
       - API

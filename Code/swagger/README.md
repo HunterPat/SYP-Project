@@ -90,12 +90,12 @@ namespace Example
 
             try
             {
-                int result = apiInstance.GesamttubenanzMachine1ServerIDGet(serverID);
+                int result = apiInstance.GesamttubenAnzMachine1ServerIDGet(serverID);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling APIApi.GesamttubenanzMachine1ServerIDGet: " + e.Message );
+                Debug.Print("Exception when calling APIApi.GesamttubenAnzMachine1ServerIDGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -112,22 +112,24 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*APIApi* | [**GesamttubenanzMachine1ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine1serveridget) | **GET** /gesamttubenanz/Machine1/{serverID} | 
-*APIApi* | [**GesamttubenanzMachine2ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine2serveridget) | **GET** /gesamttubenanz/Machine2/{serverID} | 
-*APIApi* | [**GesamttubenanzServer1Get**](docs/APIApi.md#gesamttubenanzserver1get) | **GET** /gesamttubenanz/Server1 | 
-*APIApi* | [**GesamttubenanzServer1PercentGet**](docs/APIApi.md#gesamttubenanzserver1percentget) | **GET** /gesamttubenanz/Server1/Percent | 
-*APIApi* | [**GesamttubenanzServer2Get**](docs/APIApi.md#gesamttubenanzserver2get) | **GET** /gesamttubenanz/Server2 | 
-*APIApi* | [**GesamttubenanzServer2PercentGet**](docs/APIApi.md#gesamttubenanzserver2percentget) | **GET** /gesamttubenanz/Server2/Percent | 
-*APIApi* | [**GesamttubenanzTAA1PercentGet**](docs/APIApi.md#gesamttubenanztaa1percentget) | **GET** /gesamttubenanz/TAA1/Percent | 
-*APIApi* | [**GesamttubenanzTAA2PercentGet**](docs/APIApi.md#gesamttubenanztaa2percentget) | **GET** /gesamttubenanz/TAA2/Percent | 
-*APIApi* | [**GesamttubenanzTAA3PercentGet**](docs/APIApi.md#gesamttubenanztaa3percentget) | **GET** /gesamttubenanz/TAA3/Percent | 
-*APIApi* | [**GesamttubenanzTAA4PercentGet**](docs/APIApi.md#gesamttubenanztaa4percentget) | **GET** /gesamttubenanz/TAA4/Percent | 
+*APIApi* | [**GesamttubenAnzMachine1ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine1serveridget) | **GET** /gesamttubenAnz/Machine1/{serverID} | 
+*APIApi* | [**GesamttubenAnzMachine2ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine2serveridget) | **GET** /gesamttubenAnz/Machine2/{serverID} | 
+*APIApi* | [**GesamttubenAnzServer1Get**](docs/APIApi.md#gesamttubenanzserver1get) | **GET** /gesamttubenAnz/Server1 | 
+*APIApi* | [**GesamttubenAnzServer1PercentGet**](docs/APIApi.md#gesamttubenanzserver1percentget) | **GET** /gesamttubenAnz/Server1/Percent | 
+*APIApi* | [**GesamttubenAnzServer2Get**](docs/APIApi.md#gesamttubenanzserver2get) | **GET** /gesamttubenAnz/Server2 | 
+*APIApi* | [**GesamttubenAnzServer2PercentGet**](docs/APIApi.md#gesamttubenanzserver2percentget) | **GET** /gesamttubenAnz/Server2/Percent | 
+*APIApi* | [**GesamttubenAnzTAA1PercentGet**](docs/APIApi.md#gesamttubenanztaa1percentget) | **GET** /gesamttubenAnz/TAA1/Percent | 
+*APIApi* | [**GesamttubenAnzTAA2PercentGet**](docs/APIApi.md#gesamttubenanztaa2percentget) | **GET** /gesamttubenAnz/TAA2/Percent | 
+*APIApi* | [**GesamttubenAnzTAA3PercentGet**](docs/APIApi.md#gesamttubenanztaa3percentget) | **GET** /gesamttubenAnz/TAA3/Percent | 
+*APIApi* | [**GesamttubenAnzTAA4PercentGet**](docs/APIApi.md#gesamttubenanztaa4percentget) | **GET** /gesamttubenAnz/TAA4/Percent | 
 *APIApi* | [**GesamttubenanzZiel4MachinesGet**](docs/APIApi.md#gesamttubenanzziel4machinesget) | **GET** /gesamttubenanzZiel/4Machines | 
 *APIApi* | [**GesamttubenanzZielGet**](docs/APIApi.md#gesamttubenanzzielget) | **GET** /gesamttubenanzZiel | 
 *APIApi* | [**GesamttubenanzZielMachinePairsGet**](docs/APIApi.md#gesamttubenanzzielmachinepairsget) | **GET** /gesamttubenanzZiel/MachinePairs | 
 *APIApi* | [**GesamttubenanzZielPost**](docs/APIApi.md#gesamttubenanzzielpost) | **POST** /gesamttubenanzZiel | 
-*APIApi* | [**ResetBitServer1Post**](docs/APIApi.md#resetbitserver1post) | **POST** /resetBit/Server1 | 
-*APIApi* | [**ResetBitServer2Post**](docs/APIApi.md#resetbitserver2post) | **POST** /resetBit/Server2 | 
+*APIApi* | [**ResetBitMachine1Post**](docs/APIApi.md#resetbitmachine1post) | **POST** /resetBit/Machine1 | 
+*APIApi* | [**ResetBitMachine2Post**](docs/APIApi.md#resetbitmachine2post) | **POST** /resetBit/Machine2 | 
+*APIApi* | [**TimeIntervalGet**](docs/APIApi.md#timeintervalget) | **GET** /timeInterval | 
+*APIApi* | [**TimeIntervalPost**](docs/APIApi.md#timeintervalpost) | **POST** /timeInterval | 
 
 
 <a id="documentation-for-models"></a>

@@ -23,7 +23,7 @@ namespace ProdVisAdminFrontend.Views
     /// </summary>
     public partial class DetailedOverviewView : UserControl
     {
-        private const string baseUrl = "http://localhost:5501";
+        private const string baseUrl = "http://localhost:5000";
        
         private DispatcherTimer updateTimer;
         private APIApi api;
@@ -58,18 +58,18 @@ namespace ProdVisAdminFrontend.Views
         public async void UpdateAllValues()
         {
             if (api == null) return;
-            viewModel.Progress_A1 = await api.GesamttubenanzTAA1PercentGetAsync();
-            viewModel.Progress_A2 = await api.GesamttubenanzTAA2PercentGetAsync();
-            viewModel.Progress_A3 = await api.GesamttubenanzTAA3PercentGetAsync();
-            viewModel.Progress_A4 = await api.GesamttubenanzTAA4PercentGetAsync();
+            viewModel.Progress_A1 = await api.GesamttubenAnzTAA1PercentGetAsync();
+            viewModel.Progress_A2 = await api.GesamttubenAnzTAA2PercentGetAsync();
+            viewModel.Progress_A3 = await api.GesamttubenAnzTAA3PercentGetAsync();
+            viewModel.Progress_A4 = await api.GesamttubenAnzTAA4PercentGetAsync();
             viewModel.ProductionGoal_A1 = await api.GesamttubenanzZiel4MachinesGetAsync();
             viewModel.ProductionGoal_A2 = await api.GesamttubenanzZiel4MachinesGetAsync();
             viewModel.ProductionGoal_A3 = await api.GesamttubenanzZiel4MachinesGetAsync();
             viewModel.ProductionGoal_A4 = await api.GesamttubenanzZiel4MachinesGetAsync();
-            viewModel.CurrentAmount_A1 = await api.GesamttubenanzMachine1ServerIDGetAsync(1);
-            viewModel.CurrentAmount_A2 = await api.GesamttubenanzMachine2ServerIDGetAsync(1);
-            viewModel.CurrentAmount_A3 = await api.GesamttubenanzMachine1ServerIDGetAsync(2);
-            viewModel.CurrentAmount_A4 = await api.GesamttubenanzMachine2ServerIDGetAsync(2);
+            viewModel.CurrentAmount_A1 = await api.GesamttubenAnzMachine1ServerIDGetAsync(1);
+            viewModel.CurrentAmount_A2 = await api.GesamttubenAnzMachine2ServerIDGetAsync(1);
+            viewModel.CurrentAmount_A3 = await api.GesamttubenAnzMachine1ServerIDGetAsync(2);
+            viewModel.CurrentAmount_A4 = await api.GesamttubenAnzMachine2ServerIDGetAsync(2);
         }
     }
 }

@@ -34,8 +34,8 @@ namespace API.Maps
             timer.Elapsed += Timer_Elapsed!;
             timer.Start();
 
-            resetBitGroup.MapPost("/Machine1/resetBit", (int serverID, MachineServices service) => service.PostResetbitServer1());
-            resetBitGroup.MapPost("/Machine2/resetBit", (int serverID, MachineServices service) => service.PostResetbitServer2());
+            resetBitGroup.MapPost("/Machine1", (MachineServices service) => service.PostResetbitServer1());
+            resetBitGroup.MapPost("/Machine2", (MachineServices service) => service.PostResetbitServer2());
 
             timeIntervalGroup.MapPost("/", (int intervalValue) => timeInterval = intervalValue);
             timeIntervalGroup.MapGet("/", () => timeInterval);
