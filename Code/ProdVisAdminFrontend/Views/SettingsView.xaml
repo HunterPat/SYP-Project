@@ -89,7 +89,10 @@
 
 
         </Grid.RowDefinitions>
-        <Popup  Name="popupAlert" IsOpen="False" StaysOpen="False" Placement="Center" AllowsTransparency="True">
+        <Popup  Name="passwordAlert" IsOpen="False" StaysOpen="True" Placement="Center" AllowsTransparency="True">
+            <views:PasswordAlert></views:PasswordAlert>
+        </Popup>
+        <Popup  Name="resetAlert" IsOpen="False" StaysOpen="True" Placement="Center" AllowsTransparency="True">
             <views:CustomAlert></views:CustomAlert>
         </Popup>
         <Border Grid.ColumnSpan="3" Margin="10, 8, 10 ,0" Background="#EEEDED" BorderThickness="0" CornerRadius="5">

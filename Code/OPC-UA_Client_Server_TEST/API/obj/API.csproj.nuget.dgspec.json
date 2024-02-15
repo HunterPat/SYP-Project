@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj": {}
+    "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj": {
+    "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
+        "projectUniqueName": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\obj\\",
+        "projectPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
