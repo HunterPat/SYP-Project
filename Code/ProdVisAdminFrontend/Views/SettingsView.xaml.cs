@@ -1,4 +1,5 @@
 ﻿using Org.OpenAPITools.Api;
+using ProdVisAdminFrontend.Values;
 using ProdVisAdminFrontend.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace ProdVisAdminFrontend.Views
     /// </summary>
     public partial class SettingsView : UserControl
     {
-        private const string baseUrl = "http://localhost:5000";
+        private string baseUrl = StaticValues.BaseUrl;
         private SettingsViewModel viewModel;
         private DispatcherTimer updateTimer;
         private APIApi api;
@@ -39,10 +40,53 @@ namespace ProdVisAdminFrontend.Views
 
         private void ConfirmGoal_Clicked(object sender, RoutedEventArgs e)
         {
-            var api = new APIApi(baseUrl);
-            var productionGoal = Int32.Parse(txtProductionGoal.Text);
-            var response = api.GesamttubenanzZielPost(productionGoal);
-            UpdateAllValues();
+            OpenPasswordPopup();
+            //var api = new APIApi(baseUrl);
+            //var productionGoal = Int32.Parse(txtProductionGoal.Text);
+            //var response = api.GesamttubenanzZielPost(productionGoal);
+            //UpdateAllValues();
+        }
+
+        private void OpenPasswordPopup()
+        {
+            var alert = passwordAlert.Child as PasswordAlert;
+            alert.CloseButtonClicked += PasswordAlert_CloseButtonClicked;
+            alert.ConfirmButtonClicked += PasswordAlert_ConfirmButtonClicked;
+            alert.WrongPasswordVisibility = Visibility.Hidden;
+            alert.Message = "Passwort benötigt!";
+            passwordAlert.IsOpen = true;
+        }
+
+        private void PasswordAlert_ConfirmButtonClicked(object? sender, EventArgs e)
+        {
+            //TODO: check password with api and do the post request if correct
+            var alert = passwordAlert.Child as PasswordAlert;
+            //set passowrd correct
+            bool passwordCorrect = true;
+            if (passwordCorrect)
+            {
+                alert.WrongPasswordVisibility = Visibility.Hidden;
+
+                var api = new APIApi(baseUrl);
+                var productionGoal = Int32.Parse(txtProductionGoal.Text);
+                var response = api.GesamttubenanzZielPost(productionGoal);
+                UpdateAllValues();
+            }
+            else
+            {
+                alert.WrongPasswordVisibility = Visibility.Visible;
+            }
+        }
+
+        private void PasswordAlert_CloseButtonClicked(object? sender, EventArgs e)
+        {
+            HidePasswordAlert();
+        }
+
+        private void HidePasswordAlert()
+        {
+            var alert = passwordAlert.Child as PasswordAlert;
+            passwordAlert.IsOpen = false;
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
@@ -73,13 +117,13 @@ namespace ProdVisAdminFrontend.Views
 
         private void Resest_Clicked(object sender, RoutedEventArgs e)
         {
-            var alert = popupAlert.Child as CustomAlert;
+            var alert = resetAlert.Child as CustomAlert;
             alert.CloseButtonClicked += CustomAlert_CloseButtonClicked;
             alert.ConfirmButtonClicked += CustomAlert_ConfirmButtonClicked;
 
             alert.Message = "Tubenanzahl wird zurückgesetzt!";
             alert.Details = "Bestätigen um fortzufahren";
-            popupAlert.IsOpen = true;
+            resetAlert.IsOpen = true;
         }
 
         private void CustomAlert_ConfirmButtonClicked(object? sender, EventArgs e)
@@ -98,30 +142,30 @@ namespace ProdVisAdminFrontend.Views
 
         private async void HideResetAlert(bool contiueReset)
         {
-            var customAlert = popupAlert.Child as CustomAlert;
+            var customAlert = resetAlert.Child as CustomAlert;
             if (!contiueReset)
             {
-                
+
 
                 // Unsubscribe from the CloseButtonClicked event
-                
+
             }
             else
             {
-                
 
-                
+
+
                 customAlert.Message = "Bitte warten!";
                 customAlert.Details = "Die Tubenanzahl wird zurückgesetzt!";
                 customAlert.CancelButtonVisibility = Visibility.Hidden;
                 customAlert.ConfirmButtonVisibility = Visibility.Hidden;
                 await api.ResetBitMachine1PostAsync();
                 await api.ResetBitMachine2PostAsync();
-                
+
                 UpdateAllValues();
-                popupAlert.IsOpen = false;
+                resetAlert.IsOpen = false;
             }
-            popupAlert.IsOpen = false;
+            resetAlert.IsOpen = false;
             customAlert.CancelButtonVisibility = Visibility.Visible;
             customAlert.ConfirmButtonVisibility = Visibility.Visible;
             customAlert.Message = "Tubenanzahl wird zurückgesetzt!";
@@ -131,7 +175,7 @@ namespace ProdVisAdminFrontend.Views
         private void HideIntervalInfoAlert()
         {
             popupInfo.IsOpen = false;
-            
+
         }
 
         private void IntervalInfo_Entered(object sender, MouseEventArgs e)

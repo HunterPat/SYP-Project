@@ -16,6 +16,9 @@
     <Compile Update="Views\OverviewView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\PasswordAlert.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\SettingsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\OverviewView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PasswordAlert.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SettingsView.xaml">
