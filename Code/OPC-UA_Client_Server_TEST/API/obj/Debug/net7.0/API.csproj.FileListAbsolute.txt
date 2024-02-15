@@ -405,6 +405,8 @@ D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debu
 D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.AssemblyInfoInputs.cache
 D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.AssemblyInfo.cs
 D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.csproj.CoreCompileInputs.cache
+D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cs
+D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cache
 D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.sourcelink.json
 D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\staticwebassets.build.json
 D:\GitRepositories\Forks\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\staticwebassets.development.json

@@ -7,70 +7,65 @@ namespace API.Maps
 {
     public static class MachineMaps
     {
-        private static int gesamtTubenAnzZiel = 8000;
-        private static int timeInterval = 30;
-        private static long timeToNextResetInSeconds = 0;
-        
-        private static MachineServices service = null!;
+        private static MachineServices service = new MachineServices();
+
+
         public static IEndpointRouteBuilder MapMachineData(this IEndpointRouteBuilder routes)
         {
-            var gesamtTubenAnzDataGroup = routes.MapGroup("/gesamttubenanz");
-            var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
+            var gesamtTubenAnzDataGroup = routes.MapGroup("/gesamttubenAnz");
+            var kaputteTubenAnzGroup = routes.MapGroup("/kaputteTubenAnz");
+            var passwordGroup = routes.MapGroup("/password");
             var resetBitGroup = routes.MapGroup("/resetBit");
+            var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
             var timeIntervalGroup = routes.MapGroup("/timeInterval");
-            //check DateTime = 12:00 to resetAll
             var secondsInADay = 86400;
-            timeToNextResetInSeconds = secondsInADay - (DateTime.Now.Hour * 3600 + DateTime.Now.Minute * 60 + DateTime.Now.Second);
             //   MachineServices.CreateDatabase(); If not created
-
-           System.Timers.Timer timer = new System.Timers.Timer(3000); // timeToNextResetInSeconds*1000
-
-
-            MyOPCServer1 server1 = new MyOPCServer1(MachineServices.server1URL);
-            MyOPCServer2 server2 = new MyOPCServer2(MachineServices.server2URL);
-            server1.StartServer();
-            server2.StartServer();
-            service = new MachineServices();
-
+            System.Timers.Timer timer = new System.Timers.Timer(3600 * 1000 * 3); // every 3 hours check => 3600 seconds in a hour
             timer.Elapsed += Timer_Elapsed!;
             timer.Start();
+            gesamtTubenAnzZielGroup.MapGet("", () => service.GetGesamttubenanzahlZiel());
+            gesamtTubenAnzZielGroup.MapPut("", ([FromBody] int value) => service.PutGesamttubenAnzZiel(value));
 
-            gesamtTubenAnzZielGroup.MapGet("", () => gesamtTubenAnzZiel);
-            gesamtTubenAnzZielGroup.MapPost("", ([FromBody] int value) =>
-            {
-                gesamtTubenAnzZiel = value;
-                return gesamtTubenAnzZiel;
-            });
+            passwordGroup.MapGet("/check", (string passwordValue) => service.CheckPassword(passwordValue));
+            passwordGroup.MapGet("/", () => service.GetPassword());
+            passwordGroup.MapPut("/newPassword", (string newPasswordValue) => service.PutNewPassword(newPasswordValue));
 
-            resetBitGroup.MapPost("/Server1", () => service.PostResetbitServer1());
-            resetBitGroup.MapPost("/Server2", () => service.PostResetbitMachine2());
+            resetBitGroup.MapPost("/Machine1", (MachineServices service) => service.PostResetbitServer1());
+            resetBitGroup.MapPost("/Machine2", (MachineServices service) => service.PostResetbitServer2());
 
-            timeIntervalGroup.MapPost("/", (int intervalValue) => timeInterval = intervalValue);
-            timeIntervalGroup.MapGet("/", () => timeInterval);
-            //gesamttubenAnzahl GET-Requests
-            gesamtTubenAnzDataGroup.MapGet("/Server1", () => service.GetGesamttubenanzahlServer1());
-            gesamtTubenAnzDataGroup.MapGet("/Server2", () => service.GetGesamttubenanzahlServer2());
+            timeIntervalGroup.MapPut("/", (int intervalValue) => service.PutTimeInterval(intervalValue));
+            timeIntervalGroup.MapGet("/", () => service.GetTimeInterval());
 
-            gesamtTubenAnzDataGroup.MapGet("/Machine1/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine1(serverID));
-            gesamtTubenAnzDataGroup.MapGet("/Machine2/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine2(serverID));
+            gesamtTubenAnzDataGroup.MapGet("/Server1", (MachineServices service) => service.GetGesamttubenanzahlServer1());
+            gesamtTubenAnzDataGroup.MapGet("/Server2", (MachineServices service) => service.GetGesamttubenanzahlServer2());
+
+            gesamtTubenAnzDataGroup.MapGet("/Machine1/{serverID}", (int serverID, MachineServices service) => service.GetGesamttubenanzahlMachine1(serverID));
+            gesamtTubenAnzDataGroup.MapGet("/Machine2/{serverID}", (int serverID, MachineServices service) => service.GetGesamttubenanzahlMachine2(serverID));
             //in Percent
-            gesamtTubenAnzDataGroup.MapGet("/Server1/Percent", () => service.GetGesamttubenanzahlPercentServer1(gesamtTubenAnzZiel));
-            gesamtTubenAnzDataGroup.MapGet("/Server2/Percent", () => service.GetGesamttubenanzahlPercentServer2(gesamtTubenAnzZiel));
-            gesamtTubenAnzDataGroup.MapGet("/TAA1/Percent", () => service.GetGesamttubenanzahlPercentTAA1(gesamtTubenAnzZiel));
-            gesamtTubenAnzDataGroup.MapGet("/TAA2/Percent", () => service.GetGesamttubenanzahlPercentTAA2(gesamtTubenAnzZiel));
-            gesamtTubenAnzDataGroup.MapGet("/TAA3/Percent", () => service.GetGesamttubenanzahlPercentTAA3(gesamtTubenAnzZiel));
-            gesamtTubenAnzDataGroup.MapGet("/TAA4/Percent", () => service.GetGesamttubenanzahlPercentTAA4(gesamtTubenAnzZiel));
+            gesamtTubenAnzDataGroup.MapGet("/Server1/Percent", () => service.GetGesamttubenanzahlPercentServer1());
+            gesamtTubenAnzDataGroup.MapGet("/Server2/Percent", () => service.GetGesamttubenanzahlPercentServer2());
+            gesamtTubenAnzDataGroup.MapGet("/TAA1/Percent", () => service.GetGesamttubenanzahlPercentTAA1());
+            gesamtTubenAnzDataGroup.MapGet("/TAA2/Percent", () => service.GetGesamttubenanzahlPercentTAA2());
+            gesamtTubenAnzDataGroup.MapGet("/TAA3/Percent", () => service.GetGesamttubenanzahlPercentTAA3());
+            gesamtTubenAnzDataGroup.MapGet("/TAA4/Percent", () => service.GetGesamttubenanzahlPercentTAA4());
 
+            kaputteTubenAnzGroup.MapGet("/TAA1/", () => service.GetKaputtGesamtTubenAnzTAA1());
+            kaputteTubenAnzGroup.MapGet("/TAA2/", () => service.GetKaputtGesamtTubenAnzTAA2());
+            kaputteTubenAnzGroup.MapGet("/TAA3/", () => service.GetKaputtGesamtTubenAnzTAA3());
+            kaputteTubenAnzGroup.MapGet("/TAA4/", () => service.GetKaputtGesamtTubenAnzTAA4());
 
-            gesamtTubenAnzZielGroup.MapGet("/MachinePairs", () => service.GetGesamttubenanzahlZielMachinePairs(gesamtTubenAnzZiel));
-            gesamtTubenAnzZielGroup.MapGet("/4Machines", () => service.GetGesamttubenanzahlZiel4Machines(gesamtTubenAnzZiel));
+            gesamtTubenAnzZielGroup.MapGet("/MachinePairs", () => service.GetGesamttubenanzahlZielMachinePairs());
+            gesamtTubenAnzZielGroup.MapGet("/4Machines", () => service.GetGesamttubenanzahlZiel4Machines());
+
             return routes;
         }
         private static void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            //   if (DateTime.Now.TimeOfDay.Hours == 12 && DateTime.Now.TimeOfDay.Minutes == 0)
-            service.SaveValueIntoDB(1, service.GetGesamttubenanzahlServer1(), service.GetGesamttubenanzahlServer1(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
-            service.SaveValueIntoDB(2, service.GetGesamttubenanzahlServer2(), service.GetGesamttubenanzahlServer2(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
+            if (DateTime.Now.TimeOfDay.Hours == 0 && DateTime.Now.TimeOfDay.Minutes == 0)
+            {
+                service.SaveValueIntoDB(1, service.GetGesamttubenanzahlServer1(), service.GetGesamttubenanzahlServer1(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
+                service.SaveValueIntoDB(2, service.GetGesamttubenanzahlServer2(), service.GetGesamttubenanzahlServer2(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
+            }
         }
     }
 }
