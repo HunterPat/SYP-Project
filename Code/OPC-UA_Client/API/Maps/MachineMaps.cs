@@ -18,11 +18,11 @@ namespace API.Maps
             var resetBitGroup = routes.MapGroup("/resetBit");
             var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
             var timeIntervalGroup = routes.MapGroup("/timeInterval");
-            var secondsInADay = 86400;
             //   MachineServices.CreateDatabase(); If not created
             System.Timers.Timer timer = new System.Timers.Timer(3600 * 1000 * 3); // every 3 hours check => 3600 seconds in a hour
             timer.Elapsed += Timer_Elapsed!;
             timer.Start();
+
             gesamtTubenAnzZielGroup.MapGet("", () => service.GetGesamttubenanzahlZiel());
             gesamtTubenAnzZielGroup.MapPut("", ([FromBody] int value) => service.PutGesamttubenAnzZiel(value));
 
@@ -30,17 +30,17 @@ namespace API.Maps
             passwordGroup.MapGet("/", () => service.GetPassword());
             passwordGroup.MapPut("/newPassword", (string newPasswordValue) => service.PutNewPassword(newPasswordValue));
 
-            resetBitGroup.MapPost("/Machine1", (MachineServices service) => service.PostResetbitServer1());
-            resetBitGroup.MapPost("/Machine2", (MachineServices service) => service.PostResetbitServer2());
+            resetBitGroup.MapPost("/Machine1", () => service.PostResetbitServer1());
+            resetBitGroup.MapPost("/Machine2", () => service.PostResetbitServer2());
 
             timeIntervalGroup.MapPut("/", (int intervalValue) => service.PutTimeInterval(intervalValue));
             timeIntervalGroup.MapGet("/", () => service.GetTimeInterval());
 
-            gesamtTubenAnzDataGroup.MapGet("/Server1", (MachineServices service) => service.GetGesamttubenanzahlServer1());
-            gesamtTubenAnzDataGroup.MapGet("/Server2", (MachineServices service) => service.GetGesamttubenanzahlServer2());
+            gesamtTubenAnzDataGroup.MapGet("/Server1", () => service.GetGesamttubenanzahlServer1());
+            gesamtTubenAnzDataGroup.MapGet("/Server2", () => service.GetGesamttubenanzahlServer2());
 
-            gesamtTubenAnzDataGroup.MapGet("/Machine1/{serverID}", (int serverID, MachineServices service) => service.GetGesamttubenanzahlMachine1(serverID));
-            gesamtTubenAnzDataGroup.MapGet("/Machine2/{serverID}", (int serverID, MachineServices service) => service.GetGesamttubenanzahlMachine2(serverID));
+            gesamtTubenAnzDataGroup.MapGet("/Machine1/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine1(serverID));
+            gesamtTubenAnzDataGroup.MapGet("/Machine2/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine2(serverID));
             //in Percent
             gesamtTubenAnzDataGroup.MapGet("/Server1/Percent", () => service.GetGesamttubenanzahlPercentServer1());
             gesamtTubenAnzDataGroup.MapGet("/Server2/Percent", () => service.GetGesamttubenanzahlPercentServer2());
@@ -54,6 +54,11 @@ namespace API.Maps
             kaputteTubenAnzGroup.MapGet("/TAA3/", () => service.GetKaputtGesamtTubenAnzTAA3());
             kaputteTubenAnzGroup.MapGet("/TAA4/", () => service.GetKaputtGesamtTubenAnzTAA4());
 
+            kaputteTubenAnzGroup.MapPut("/TAA1/", (int value) => service.PutKaputtGesamtTubenAnzTAA1(value));
+            kaputteTubenAnzGroup.MapPut("/TAA2/", (int value) => service.PutKaputtGesamtTubenAnzTAA2(value));
+            kaputteTubenAnzGroup.MapPut("/TAA3/", (int value) => service.PutKaputtGesamtTubenAnzTAA3(value));
+            kaputteTubenAnzGroup.MapPut("/TAA4/", (int value) => service.PutKaputtGesamtTubenAnzTAA4(value));
+
             gesamtTubenAnzZielGroup.MapGet("/MachinePairs", () => service.GetGesamttubenanzahlZielMachinePairs());
             gesamtTubenAnzZielGroup.MapGet("/4Machines", () => service.GetGesamttubenanzahlZiel4Machines());
 
@@ -65,6 +70,7 @@ namespace API.Maps
             {
                 service.SaveValueIntoDB(1, service.GetGesamttubenanzahlServer1(), service.GetGesamttubenanzahlServer1(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
                 service.SaveValueIntoDB(2, service.GetGesamttubenanzahlServer2(), service.GetGesamttubenanzahlServer2(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
+                service = new MachineServices();
             }
         }
     }

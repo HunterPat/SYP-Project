@@ -13,10 +13,15 @@ namespace API.Services
         public static string server2URL = "opc.tcp://192.168.1.20:4850"; //TODO: change URL
         static MyOPCClient clientServer1 = new MyOPCClient(server1URL);
         static MyOPCClient clientServer2 = new MyOPCClient(server2URL);
-        private static int KaputteTubenAnzTAA1 = 0;
-        private static int KaputteTubenAnzTAA2 = 0;
-        private static int KaputteTubenAnzTAA3 = 0;
-        private static int KaputteTubenAnzTAA4 = 0;
+        private static int KaputteTubenAnzTAA1;
+        private static int KaputteTubenAnzTAA2;
+        private static int KaputteTubenAnzTAA3;
+        private static int KaputteTubenAnzTAA4;
+
+        private static int GesamtTubenAnzBeforeTAA1 = 0;
+        private static int GesamtTubenAnzBeforeTAA2 = 0;
+        private static int GesamtTubenAnzBeforeTAA3 = 0;
+        private static int GesamtTubenAnzBeforeTAA4 = 0;
         private static string password = null!;
 
         public static int gesamtTubenAnzZiel = 8000;
@@ -28,22 +33,26 @@ namespace API.Services
             clientServer1.EstablishConnection();
             clientServer2.EstablishConnection();
 
+            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1(1);
+            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2(1);
+            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1(2);
+            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2(2);
+            KaputteTubenAnzTAA1 = 0;
+            KaputteTubenAnzTAA2 = 0;
+            KaputteTubenAnzTAA3 = 0;
+            KaputteTubenAnzTAA4 = 0;
         }
         public int GetGesamttubenanzahlServer1()
         {
             Console.WriteLine("Get: GesamttubenanzahlServer1");
-            if (clientServer1.ReadDataFromTAA1() != -1 && clientServer1.ReadDataFromTAA2() != -1) return clientServer1.ReadDataFromTAA1() + clientServer1.ReadDataFromTAA2();
-
-            return -1;
+            return (GetGesamttubenanzahlMachine1(1) - GesamtTubenAnzBeforeTAA1) + (GetGesamttubenanzahlMachine2(1) - GesamtTubenAnzBeforeTAA2);
 
         }
 
         public int GetGesamttubenanzahlServer2()
         {
             Console.WriteLine("Get: GesamttubenanzahlServer2");
-
-            if (clientServer2.ReadDataFromTAA3() != -1 && clientServer2.ReadDataFromTAA4() != -1) return clientServer2.ReadDataFromTAA3() + clientServer2.ReadDataFromTAA4();
-            return -1;
+            return (GetGesamttubenanzahlMachine1(2) - GesamtTubenAnzBeforeTAA3) + (GetGesamttubenanzahlMachine2(2) - GesamtTubenAnzBeforeTAA4);
 
         }
         public void GetDataFromDB()
@@ -110,15 +119,15 @@ namespace API.Services
 
                 if (clientServer1.ReadDataFromTAA1() != -1) return int.Parse(clientServer1.ReadDataFromTAA1().ToString()!);
 
-                return -1;
+                return GetGesamttubenanzahlMachine1(serverID);
 
             }
             else if (serverID == 2)
             {
                 if (clientServer2.ReadDataFromTAA3() != -1) return int.Parse(clientServer2.ReadDataFromTAA3().ToString()!);
-                return -1;
+                return GetGesamttubenanzahlMachine1(serverID);
             }
-            return -1;
+            return GetGesamttubenanzahlMachine1(serverID);
         }
 
         public int GetGesamttubenanzahlMachine2(int serverID)
@@ -128,31 +137,28 @@ namespace API.Services
             if (serverID == 1)
             {
                 if (clientServer1.ReadDataFromTAA2() != -1) return int.Parse(clientServer1.ReadDataFromTAA2().ToString()!);
-                return -1;
+                return GetGesamttubenanzahlMachine2(serverID);
 
             }
             else if (serverID == 2)
             {
                 if (clientServer2.ReadDataFromTAA4() != -1) return int.Parse(clientServer2.ReadDataFromTAA4().ToString()!);
 
-                return -1;
+                return GetGesamttubenanzahlMachine2(serverID);
             }
-            return -1;
+            return GetGesamttubenanzahlMachine2(serverID);
         }
 
         public void PostResetbitServer1()
         {
-            Console.WriteLine("POST: ResetbitServer");
-
-            clientServer1.ResetBit();
-            clientServer1.ResetBit();
+            Console.WriteLine("POST: ResetbitServer1");
+            clientServer1.ResetBitServer1();
         }
 
         public void PostResetbitServer2()
         {
             Console.WriteLine("POST: ResetbitServer2");
-            clientServer2.ResetBit();
-            clientServer2.ResetBit();
+            clientServer2.ResetBitServer2();
         }
 
         private int CalculatePercentage(int numerator, int denominator)
@@ -198,31 +204,6 @@ namespace API.Services
         {
             return gesamtTubenAnzZiel / 4;
         }
-
-        public void PostKaputtGesamtTubenAnzTAA1(int value)
-        {
-
-            KaputteTubenAnzTAA1 = value > 0 ? value : KaputteTubenAnzTAA1;
-        }
-
-        public void PostKaputtGesamtTubenAnzTAA2(int value)
-        {
-            KaputteTubenAnzTAA2 = value > 0 ? value : KaputteTubenAnzTAA2;
-
-        }
-
-        public void PostKaputtGesamtTubenAnzTAA3(int value)
-        {
-            KaputteTubenAnzTAA3 = value > 0 ? value : KaputteTubenAnzTAA3;
-
-        }
-
-        public void PostKaputtGesamtTubenAnzTAA4(int value)
-        {
-            KaputteTubenAnzTAA4 = value > 0 ? value : KaputteTubenAnzTAA4;
-
-        }
-
         public int GetKaputtGesamtTubenAnzTAA4()
         {
             return KaputteTubenAnzTAA4;
@@ -278,6 +259,33 @@ namespace API.Services
         public int GetTimeInterval()
         {
             return timeInterval;
+        }
+        public bool PutKaputtGesamtTubenAnzTAA4(int value)
+        {
+            if (value <= 0) return false;
+            KaputteTubenAnzTAA4 = value;
+            return true;
+        }
+
+        public bool PutKaputtGesamtTubenAnzTAA3(int value)
+        {
+            if (value <= 0) return false;
+            KaputteTubenAnzTAA3 = value;
+            return true;
+        }
+
+        public bool PutKaputtGesamtTubenAnzTAA2(int value)
+        {
+            if (value <= 0) return false;
+            KaputteTubenAnzTAA2 = value;
+            return true;
+        }
+
+        public bool PutKaputtGesamtTubenAnzTAA1(int value)
+        {
+            if (value <= 0) return false;
+            KaputteTubenAnzTAA1 = value;
+            return true;
         }
     }
 }

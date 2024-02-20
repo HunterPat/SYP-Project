@@ -15,6 +15,7 @@ namespace OPC_UA_Client
         {
             try
             {
+                Disconnect();
                 client.Connect();
                 Console.WriteLine("-----------------------\nconnected!");
                 //     var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
@@ -29,6 +30,7 @@ namespace OPC_UA_Client
         {
             try
             {
+                if (client.State != OpcClientState.Connected) return;
                 client.Disconnect();
                 Console.WriteLine("-----------------------\ndisconnected!");
             }
@@ -115,13 +117,24 @@ namespace OPC_UA_Client
             return -1;
         }
 
-        public void ResetBit()
+        public void ResetBitServer1()
         {
-            client.WriteNode("ns=4;i=7", true); // ns=2;s=TAA1/resetBit
-            client.WriteNode("ns=4;i=12", true); // ns=2;s=TAA1/resetBit
+            //TODO: check the resetBit tags
+            client.WriteNode("ns=4;i=7", true);
+            client.WriteNode("ns=4;i=12", true); 
             Thread.Sleep(2000);// that the server can read the Bit 
-            client.WriteNode("ns=4;i=7", false); // ns=2;s=TAA1/resetBit
-            client.WriteNode("ns=4;i=12", false); // ns=2;s=TAA1/resetBit
+            client.WriteNode("ns=4;i=7", false); 
+            client.WriteNode("ns=4;i=12", false); 
+
+        }
+        public void ResetBitServer2()
+        {
+            //TODO: change tags
+            client.WriteNode("ns=4;i=7", true);
+            client.WriteNode("ns=4;i=12", true);
+            Thread.Sleep(2000);// that the server can read the Bit 
+            client.WriteNode("ns=4;i=7", false);
+            client.WriteNode("ns=4;i=12", false);
 
         }
 

@@ -16,6 +16,7 @@ namespace OPC_UA_Client
         {
             try
             {
+                Disconnect();
                 client.Connect();
                 Console.WriteLine("-----------------------\nconnected!");
              //       var node = client.BrowseNode(OpcObjectTypes.ObjectsFolder); //refresh-Bit Tag: ns=4;i=7
@@ -31,7 +32,7 @@ namespace OPC_UA_Client
         {
             try
             {
-                client.SessionTimeout = 0;
+                if (client.State != OpcClientState.Connected) return;
                 client.Disconnect();
                 Console.WriteLine("-----------------------\ndisconnected!");
             }
