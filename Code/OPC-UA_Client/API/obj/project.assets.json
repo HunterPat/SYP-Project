@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "EntityFramework/6.4.4": {
         "type": "package",
         "dependencies": {
@@ -66,12 +66,12 @@
           "SQLitePCLRaw.core": "2.1.6"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+          "lib/net8.0/Microsoft.Data.Sqlite.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+          "lib/net8.0/Microsoft.Data.Sqlite.dll": {
             "related": ".xml"
           }
         }
@@ -2091,7 +2091,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
       "Microsoft.Data.Sqlite.Core >= 8.0.2",
       "Opc.UaFx.Advanced >= 2.41.0",
@@ -2100,31 +2100,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\patri\\.nuget\\packages\\": {}
+    "C:\\Users\\Windows\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-      "outputPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client\\API\\obj\\",
+      "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\OPC-UA_Client\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -2135,8 +2135,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
@@ -2178,7 +2178,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
