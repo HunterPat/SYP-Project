@@ -471,3 +471,5 @@ D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debu
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cs
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\OPC-UA_Client_Server_TEST\API\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cache

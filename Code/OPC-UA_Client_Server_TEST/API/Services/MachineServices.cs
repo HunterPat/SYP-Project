@@ -33,10 +33,10 @@ namespace API.Services
             clientServer1.EstablishConnection();
             clientServer2.EstablishConnection();
 
-            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1(1);
-            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2(1);
-            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1(2);
-            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2(2);
+            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1Visual(1);
+            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2Visual(1);
+            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1Visual(2);
+            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2Visual(2);
             KaputteTubenAnzTAA1 = 0;
             KaputteTubenAnzTAA2 = 0;
             KaputteTubenAnzTAA3 = 0;
@@ -45,14 +45,14 @@ namespace API.Services
         public int GetGesamttubenanzahlServer1()
         {
             Console.WriteLine("Get: GesamttubenanzahlServer1");
-            return (GetGesamttubenanzahlMachine1(1) - GesamtTubenAnzBeforeTAA1) + (GetGesamttubenanzahlMachine2(1) - GesamtTubenAnzBeforeTAA2);
+            return (GetGesamttubenanzahlMachine1Visual(1)) + (GetGesamttubenanzahlMachine2Visual(1));
 
         }
 
         public int GetGesamttubenanzahlServer2()
         {
             Console.WriteLine("Get: GesamttubenanzahlServer2");
-           return (GetGesamttubenanzahlMachine1(2) - GesamtTubenAnzBeforeTAA3) + (GetGesamttubenanzahlMachine2(2) - GesamtTubenAnzBeforeTAA4);
+           return (GetGesamttubenanzahlMachine1Visual(2)) + (GetGesamttubenanzahlMachine2Visual(2));
 
         }
         public void GetDataFromDB()
@@ -109,7 +109,6 @@ namespace API.Services
             SQLiteConnection.CreateFile("ProdVis.sqlite");
 
         }
-
         public int GetGesamttubenanzahlMachine1(int serverID)
         {
             Console.WriteLine("Get: GesamttubenanzahlMachine1 / server: " + serverID);
@@ -127,7 +126,7 @@ namespace API.Services
                 if (clientServer2.ReadDataFromTAA3() != -1) return int.Parse(clientServer2.ReadDataFromTAA3().ToString()!);
                 return GetGesamttubenanzahlMachine1(serverID);
             }
-            return GetGesamttubenanzahlMachine1(serverID);
+            return -1;
         }
 
         public int GetGesamttubenanzahlMachine2(int serverID)
@@ -146,7 +145,46 @@ namespace API.Services
 
                 return GetGesamttubenanzahlMachine2(serverID);
             }
-            return GetGesamttubenanzahlMachine2(serverID);
+            return -1;
+        }
+
+        public int GetGesamttubenanzahlMachine1Visual(int serverID)
+        {
+            Console.WriteLine("Get: GesamttubenanzahlMachine1 / server: " + serverID);
+
+            if (serverID == 1)
+            {
+
+                if (clientServer1.ReadDataFromTAA1() != -1) return int.Parse(clientServer1.ReadDataFromTAA1().ToString()!) - GesamtTubenAnzBeforeTAA1;
+
+                return GetGesamttubenanzahlMachine1Visual(serverID);
+
+            }
+            else if (serverID == 2)
+            {
+                if (clientServer2.ReadDataFromTAA3() != -1) return int.Parse(clientServer2.ReadDataFromTAA3().ToString()!) - GesamtTubenAnzBeforeTAA3;
+                return GetGesamttubenanzahlMachine1Visual(serverID);
+            }
+            return -1;
+        }
+
+        public int GetGesamttubenanzahlMachine2Visual(int serverID)
+        {
+            Console.WriteLine("Get: GesamttubenanzahlMachine2 / server: " + serverID);
+
+            if (serverID == 1)
+            {
+                if (clientServer1.ReadDataFromTAA2() != -1) return int.Parse(clientServer1.ReadDataFromTAA2().ToString()!) - GesamtTubenAnzBeforeTAA2;
+                return GetGesamttubenanzahlMachine2Visual(serverID);
+
+            }
+            else if (serverID == 2)
+            {
+                if (clientServer2.ReadDataFromTAA4() != -1) return int.Parse(clientServer2.ReadDataFromTAA4().ToString()!) - GesamtTubenAnzBeforeTAA4;
+
+                return GetGesamttubenanzahlMachine2Visual(serverID);
+            }
+            return -1;
         }
 
         public void PostResetbitServer1()
@@ -185,19 +223,19 @@ namespace API.Services
         }
         public int GetGesamttubenanzahlPercentTAA1()
         {
-            return CalculatePercentage(GetGesamttubenanzahlMachine1(1), GetGesamttubenanzahlZiel4Machines());
+            return CalculatePercentage(GetGesamttubenanzahlMachine1Visual(1), GetGesamttubenanzahlZiel4Machines());
         }
         public int GetGesamttubenanzahlPercentTAA2()
         {
-            return CalculatePercentage(GetGesamttubenanzahlMachine2(1), GetGesamttubenanzahlZiel4Machines());
+            return CalculatePercentage(GetGesamttubenanzahlMachine2Visual(1), GetGesamttubenanzahlZiel4Machines());
         }
         public int GetGesamttubenanzahlPercentTAA3()
         {
-            return CalculatePercentage(GetGesamttubenanzahlMachine1(2), GetGesamttubenanzahlZiel4Machines());
+            return CalculatePercentage(GetGesamttubenanzahlMachine1Visual(2), GetGesamttubenanzahlZiel4Machines());
         }
         public int GetGesamttubenanzahlPercentTAA4()
         {
-            return CalculatePercentage(GetGesamttubenanzahlMachine2(2), GetGesamttubenanzahlZiel4Machines());
+            return CalculatePercentage(GetGesamttubenanzahlMachine2Visual(2), GetGesamttubenanzahlZiel4Machines());
         }
         public int GetGesamttubenanzahlZielMachinePairs()
         {
