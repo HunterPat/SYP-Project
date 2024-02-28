@@ -125,7 +125,6 @@ namespace OPC_UA_Client
             Thread.Sleep(2000);// that the server can read the Bit 
             client.WriteNode("ns=4;i=7", false); 
             client.WriteNode("ns=4;i=12", false); 
-
         }
         public void ResetBitServer2()
         {

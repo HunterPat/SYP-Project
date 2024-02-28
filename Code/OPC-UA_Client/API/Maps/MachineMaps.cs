@@ -31,10 +31,10 @@ namespace API.Maps
             passwordGroup.MapGet("/", () => service.GetPassword());
             passwordGroup.MapPut("/newPassword", (string newPasswordValue) => service.PutNewPassword(newPasswordValue));
 
-            resetBitGroup.MapPost("/Machine1", () => service.PostResetbitServer1());
-            resetBitGroup.MapPost("/Machine2", () => service.PostResetbitServer2());
+            resetBitGroup.MapPost("/Server1", () => service.PostResetbitServer1());
+            resetBitGroup.MapPost("/Server2", () => service.PostResetbitServer2());
 
-            timeIntervalGroup.MapPut("/", (int intervalValue) => service.PutTimeInterval(intervalValue));
+            timeIntervalGroup.MapPut("/", (int intervalValue) => service.PutTimeInterval(intervalValue));   
             timeIntervalGroup.MapGet("/", () => service.GetTimeInterval());
 
             gesamtTubenAnzVisualGroup.MapGet("/Server1", () => service.GetGesamttubenanzahlServer1());
@@ -71,7 +71,7 @@ namespace API.Maps
         }
         private static void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            if (DateTime.Now.TimeOfDay.Hours == 0 && DateTime.Now.TimeOfDay.Minutes == 0) // check if time is 12:00 or 0:00
+            if (DateTime.Now.TimeOfDay.Hours >= 0 && DateTime.Now.TimeOfDay.Hours <= 3 && DateTime.Now.TimeOfDay.Minutes >= 0 && DateTime.Now.TimeOfDay.Minutes <= 60)// check if time is 12:00 or 0:00
             {
                 service.SaveValueIntoDB(1, service.GetGesamttubenanzahlServer1(), service.GetGesamttubenanzahlServer1(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
                 service.SaveValueIntoDB(2, service.GetGesamttubenanzahlServer2(), service.GetGesamttubenanzahlServer2(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
