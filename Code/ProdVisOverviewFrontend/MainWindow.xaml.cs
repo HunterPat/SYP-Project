@@ -32,7 +32,7 @@ namespace ProdVisOverviewFrontend
 
             // Set an initial value for DateText
             viewModel.DateText = "Initial Date";
-            api.GesamttubenanzZielPost(5000);
+            api.GesamttubenanzZielPut(5000);
             // Set up the timer to update DateText every second
 
             timeDisplayTimer = new DispatcherTimer();
@@ -55,8 +55,8 @@ namespace ProdVisOverviewFrontend
 
             viewModel.ProductionGoal_1 = api.GesamttubenanzZielGet();
             viewModel.ProductionGoal_2 = api.GesamttubenanzZielGet();
-            //viewModel.CurrentAmount_1 = (int) ( api.GesamttubenanzServer1Get());
-            //viewModel.CurrentAmount_2 = (int) (api.GesamttubenanzServer2Get());
+            viewModel.CurrentAmount_1 = (int) ( api.GesamttubenAnzVisualServer1Get());
+            viewModel.CurrentAmount_2 = (int) (api.GesamttubenAnzVisualServer2Get());
             
             viewModel.Progress_1 = CalculatePercentage(viewModel.CurrentAmount_1, viewModel.ProductionGoal_1);
             viewModel.Progress_2 = CalculatePercentage(viewModel.CurrentAmount_2, viewModel.ProductionGoal_2);

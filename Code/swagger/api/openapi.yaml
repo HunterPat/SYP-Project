@@ -5,30 +5,6 @@ info:
 servers:
 - url: /
 paths:
-  /gesamttubenAnz/Server1:
-    get:
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                format: int32
-                type: integer
-          description: Success
-      tags:
-      - API
-  /gesamttubenAnz/Server2:
-    get:
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                format: int32
-                type: integer
-          description: Success
-      tags:
-      - API
   /gesamttubenAnz/Machine1/{serverID}:
     get:
       parameters:
@@ -71,7 +47,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenAnz/Server1/Percent:
+  /gesamttubenAnzVisual/Server1:
     get:
       responses:
         "200":
@@ -83,7 +59,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenAnz/Server2/Percent:
+  /gesamttubenAnzVisual/Server2:
     get:
       responses:
         "200":
@@ -95,7 +71,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenAnz/TAA1/Percent:
+  /gesamttubenAnzVisual/Server1/Percent:
     get:
       responses:
         "200":
@@ -107,7 +83,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenAnz/TAA2/Percent:
+  /gesamttubenAnzVisual/Server2/Percent:
     get:
       responses:
         "200":
@@ -119,7 +95,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenAnz/TAA3/Percent:
+  /gesamttubenAnzVisual/TAA1/Percent:
     get:
       responses:
         "200":
@@ -131,7 +107,7 @@ paths:
           description: Success
       tags:
       - API
-  /gesamttubenAnz/TAA4/Percent:
+  /gesamttubenAnzVisual/TAA2/Percent:
     get:
       responses:
         "200":
@@ -143,14 +119,253 @@ paths:
           description: Success
       tags:
       - API
-  /resetBit/Machine1:
+  /gesamttubenAnzVisual/TAA3/Percent:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenAnzVisual/TAA4/Percent:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenAnzVisual/Machine1/{serverID}:
+    get:
+      parameters:
+      - explode: false
+        in: path
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenAnzVisual/Machine2/{serverID}:
+    get:
+      parameters:
+      - explode: false
+        in: path
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+  /kaputteTubenAnz/TAA1:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+    put:
+      parameters:
+      - explode: true
+        in: query
+        name: value
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: boolean
+          description: Success
+      tags:
+      - API
+  /kaputteTubenAnz/TAA2:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+    put:
+      parameters:
+      - explode: true
+        in: query
+        name: value
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: boolean
+          description: Success
+      tags:
+      - API
+  /kaputteTubenAnz/TAA3:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+    put:
+      parameters:
+      - explode: true
+        in: query
+        name: value
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: boolean
+          description: Success
+      tags:
+      - API
+  /kaputteTubenAnz/TAA4:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+    put:
+      parameters:
+      - explode: true
+        in: query
+        name: value
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: boolean
+          description: Success
+      tags:
+      - API
+  /password/check:
+    get:
+      parameters:
+      - explode: true
+        in: query
+        name: passwordValue
+        required: true
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: boolean
+          description: Success
+      tags:
+      - API
+  /password:
+    get:
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                type: string
+          description: Success
+      tags:
+      - API
+  /password/newPassword:
+    put:
+      parameters:
+      - explode: true
+        in: query
+        name: newPasswordValue
+        required: true
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: boolean
+          description: Success
+      tags:
+      - API
+  /resetBit/Server1:
     post:
       responses:
         "200":
           description: Success
       tags:
       - API
-  /resetBit/Machine2:
+  /resetBit/Server2:
     post:
       responses:
         "200":
@@ -169,7 +384,7 @@ paths:
           description: Success
       tags:
       - API
-    post:
+    put:
       requestBody:
         content:
           application/json:
@@ -182,8 +397,7 @@ paths:
           content:
             application/json:
               schema:
-                format: int32
-                type: integer
+                type: boolean
           description: Success
       tags:
       - API
@@ -223,7 +437,7 @@ paths:
           description: Success
       tags:
       - API
-    post:
+    put:
       parameters:
       - explode: true
         in: query
@@ -238,8 +452,7 @@ paths:
           content:
             application/json:
               schema:
-                format: int32
-                type: integer
+                type: boolean
           description: Success
       tags:
       - API

@@ -73,7 +73,6 @@ D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.AssemblyInfo.cs
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.csproj.CoreCompileInputs.cache
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.sourcelink.json
-D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.csproj.CopyComplete
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.genruntimeconfig.cache
 D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ref\ProdVisOverviewFrontend.dll
 D:\GitRepositories\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\xunit.abstractions.dll
@@ -116,3 +115,8 @@ D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.dll
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\refint\ProdVisOverviewFrontend.dll
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisOverviewFrontend.pdb
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\obj\Debug\net8.0-windows\ProdVisO.8140D21E.Up2Date
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\JsonSubTypes.dll
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.dll
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.pdb
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\ProdVisOverviewFrontend\bin\Debug\net8.0-windows\Org.OpenAPITools.xml

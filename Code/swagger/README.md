@@ -114,22 +114,35 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *APIApi* | [**GesamttubenAnzMachine1ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine1serveridget) | **GET** /gesamttubenAnz/Machine1/{serverID} | 
 *APIApi* | [**GesamttubenAnzMachine2ServerIDGet**](docs/APIApi.md#gesamttubenanzmachine2serveridget) | **GET** /gesamttubenAnz/Machine2/{serverID} | 
-*APIApi* | [**GesamttubenAnzServer1Get**](docs/APIApi.md#gesamttubenanzserver1get) | **GET** /gesamttubenAnz/Server1 | 
-*APIApi* | [**GesamttubenAnzServer1PercentGet**](docs/APIApi.md#gesamttubenanzserver1percentget) | **GET** /gesamttubenAnz/Server1/Percent | 
-*APIApi* | [**GesamttubenAnzServer2Get**](docs/APIApi.md#gesamttubenanzserver2get) | **GET** /gesamttubenAnz/Server2 | 
-*APIApi* | [**GesamttubenAnzServer2PercentGet**](docs/APIApi.md#gesamttubenanzserver2percentget) | **GET** /gesamttubenAnz/Server2/Percent | 
-*APIApi* | [**GesamttubenAnzTAA1PercentGet**](docs/APIApi.md#gesamttubenanztaa1percentget) | **GET** /gesamttubenAnz/TAA1/Percent | 
-*APIApi* | [**GesamttubenAnzTAA2PercentGet**](docs/APIApi.md#gesamttubenanztaa2percentget) | **GET** /gesamttubenAnz/TAA2/Percent | 
-*APIApi* | [**GesamttubenAnzTAA3PercentGet**](docs/APIApi.md#gesamttubenanztaa3percentget) | **GET** /gesamttubenAnz/TAA3/Percent | 
-*APIApi* | [**GesamttubenAnzTAA4PercentGet**](docs/APIApi.md#gesamttubenanztaa4percentget) | **GET** /gesamttubenAnz/TAA4/Percent | 
+*APIApi* | [**GesamttubenAnzVisualMachine1ServerIDGet**](docs/APIApi.md#gesamttubenanzvisualmachine1serveridget) | **GET** /gesamttubenAnzVisual/Machine1/{serverID} | 
+*APIApi* | [**GesamttubenAnzVisualMachine2ServerIDGet**](docs/APIApi.md#gesamttubenanzvisualmachine2serveridget) | **GET** /gesamttubenAnzVisual/Machine2/{serverID} | 
+*APIApi* | [**GesamttubenAnzVisualServer1Get**](docs/APIApi.md#gesamttubenanzvisualserver1get) | **GET** /gesamttubenAnzVisual/Server1 | 
+*APIApi* | [**GesamttubenAnzVisualServer1PercentGet**](docs/APIApi.md#gesamttubenanzvisualserver1percentget) | **GET** /gesamttubenAnzVisual/Server1/Percent | 
+*APIApi* | [**GesamttubenAnzVisualServer2Get**](docs/APIApi.md#gesamttubenanzvisualserver2get) | **GET** /gesamttubenAnzVisual/Server2 | 
+*APIApi* | [**GesamttubenAnzVisualServer2PercentGet**](docs/APIApi.md#gesamttubenanzvisualserver2percentget) | **GET** /gesamttubenAnzVisual/Server2/Percent | 
+*APIApi* | [**GesamttubenAnzVisualTAA1PercentGet**](docs/APIApi.md#gesamttubenanzvisualtaa1percentget) | **GET** /gesamttubenAnzVisual/TAA1/Percent | 
+*APIApi* | [**GesamttubenAnzVisualTAA2PercentGet**](docs/APIApi.md#gesamttubenanzvisualtaa2percentget) | **GET** /gesamttubenAnzVisual/TAA2/Percent | 
+*APIApi* | [**GesamttubenAnzVisualTAA3PercentGet**](docs/APIApi.md#gesamttubenanzvisualtaa3percentget) | **GET** /gesamttubenAnzVisual/TAA3/Percent | 
+*APIApi* | [**GesamttubenAnzVisualTAA4PercentGet**](docs/APIApi.md#gesamttubenanzvisualtaa4percentget) | **GET** /gesamttubenAnzVisual/TAA4/Percent | 
 *APIApi* | [**GesamttubenanzZiel4MachinesGet**](docs/APIApi.md#gesamttubenanzziel4machinesget) | **GET** /gesamttubenanzZiel/4Machines | 
 *APIApi* | [**GesamttubenanzZielGet**](docs/APIApi.md#gesamttubenanzzielget) | **GET** /gesamttubenanzZiel | 
 *APIApi* | [**GesamttubenanzZielMachinePairsGet**](docs/APIApi.md#gesamttubenanzzielmachinepairsget) | **GET** /gesamttubenanzZiel/MachinePairs | 
-*APIApi* | [**GesamttubenanzZielPost**](docs/APIApi.md#gesamttubenanzzielpost) | **POST** /gesamttubenanzZiel | 
-*APIApi* | [**ResetBitMachine1Post**](docs/APIApi.md#resetbitmachine1post) | **POST** /resetBit/Machine1 | 
-*APIApi* | [**ResetBitMachine2Post**](docs/APIApi.md#resetbitmachine2post) | **POST** /resetBit/Machine2 | 
+*APIApi* | [**GesamttubenanzZielPut**](docs/APIApi.md#gesamttubenanzzielput) | **PUT** /gesamttubenanzZiel | 
+*APIApi* | [**KaputteTubenAnzTAA1Get**](docs/APIApi.md#kaputtetubenanztaa1get) | **GET** /kaputteTubenAnz/TAA1 | 
+*APIApi* | [**KaputteTubenAnzTAA1Put**](docs/APIApi.md#kaputtetubenanztaa1put) | **PUT** /kaputteTubenAnz/TAA1 | 
+*APIApi* | [**KaputteTubenAnzTAA2Get**](docs/APIApi.md#kaputtetubenanztaa2get) | **GET** /kaputteTubenAnz/TAA2 | 
+*APIApi* | [**KaputteTubenAnzTAA2Put**](docs/APIApi.md#kaputtetubenanztaa2put) | **PUT** /kaputteTubenAnz/TAA2 | 
+*APIApi* | [**KaputteTubenAnzTAA3Get**](docs/APIApi.md#kaputtetubenanztaa3get) | **GET** /kaputteTubenAnz/TAA3 | 
+*APIApi* | [**KaputteTubenAnzTAA3Put**](docs/APIApi.md#kaputtetubenanztaa3put) | **PUT** /kaputteTubenAnz/TAA3 | 
+*APIApi* | [**KaputteTubenAnzTAA4Get**](docs/APIApi.md#kaputtetubenanztaa4get) | **GET** /kaputteTubenAnz/TAA4 | 
+*APIApi* | [**KaputteTubenAnzTAA4Put**](docs/APIApi.md#kaputtetubenanztaa4put) | **PUT** /kaputteTubenAnz/TAA4 | 
+*APIApi* | [**PasswordCheckGet**](docs/APIApi.md#passwordcheckget) | **GET** /password/check | 
+*APIApi* | [**PasswordGet**](docs/APIApi.md#passwordget) | **GET** /password | 
+*APIApi* | [**PasswordNewPasswordPut**](docs/APIApi.md#passwordnewpasswordput) | **PUT** /password/newPassword | 
+*APIApi* | [**ResetBitServer1Post**](docs/APIApi.md#resetbitserver1post) | **POST** /resetBit/Server1 | 
+*APIApi* | [**ResetBitServer2Post**](docs/APIApi.md#resetbitserver2post) | **POST** /resetBit/Server2 | 
 *APIApi* | [**TimeIntervalGet**](docs/APIApi.md#timeintervalget) | **GET** /timeInterval | 
-*APIApi* | [**TimeIntervalPost**](docs/APIApi.md#timeintervalpost) | **POST** /timeInterval | 
+*APIApi* | [**TimeIntervalPut**](docs/APIApi.md#timeintervalput) | **PUT** /timeInterval | 
 
 
 <a id="documentation-for-models"></a>
