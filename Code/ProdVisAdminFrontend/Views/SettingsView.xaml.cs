@@ -54,23 +54,28 @@ namespace ProdVisAdminFrontend.Views
             alert.ConfirmButtonClicked += PasswordAlert_ConfirmButtonClicked;
             alert.WrongPasswordVisibility = Visibility.Hidden;
             alert.Message = "Passwort benötigt!";
+
             passwordAlert.IsOpen = true;
+            alert.Visibility = Visibility.Visible;
         }
+
+        
 
         private void PasswordAlert_ConfirmButtonClicked(object? sender, EventArgs e)
         {
             //TODO: check password with api and do the post request if correct
             var alert = passwordAlert.Child as PasswordAlert;
+            
             //set passowrd correct
-            bool passwordCorrect = true;
+            var passwordCorrect = api.PasswordCheckGet(alert.Password);
             if (passwordCorrect)
             {
-                alert.WrongPasswordVisibility = Visibility.Hidden;
-
-                var api = new APIApi(baseUrl);
-                var productionGoal = Int32.Parse(txtProductionGoal.Text);
-                var response = api.GesamttubenanzZielPost(productionGoal);
+                alert.Visibility = Visibility.Hidden;
+                var productionGoal = int.Parse(txtProductionGoal.Text);
+                api.GesamttubenanzZielPut(productionGoal);
                 UpdateAllValues();
+             //   txtProductionGoal.Text = "";
+                return;
             }
             else
             {
@@ -110,19 +115,17 @@ namespace ProdVisAdminFrontend.Views
             if (api == null) return;
             viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielMachinePairsGetAsync();
             viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielMachinePairsGetAsync();
-            viewModel.CurrentAmount_AP1 = await api.GesamttubenAnzServer1GetAsync();
-            viewModel.CurrentAmount_AP2 = await api.GesamttubenAnzServer2GetAsync();
+            viewModel.CurrentAmount_AP1 = await api.GesamttubenAnzVisualServer1GetAsync();
+            viewModel.CurrentAmount_AP2 = await api.GesamttubenAnzVisualServer2GetAsync();
 
         }
 
         private void Resest_Clicked(object sender, RoutedEventArgs e)
         {
-            var alert = resetAlert.Child as CustomAlert;
-            alert.CloseButtonClicked += CustomAlert_CloseButtonClicked;
-            alert.ConfirmButtonClicked += CustomAlert_ConfirmButtonClicked;
+            var alert = passwordAlert.Child as PasswordAlert;
+            alert.CloseButtonClicked += PasswordAlert_CloseButtonClicked;
+            alert.ConfirmButtonClicked += PasswordAlert_ConfirmButtonClicked;
 
-            alert.Message = "Tubenanzahl wird zurückgesetzt!";
-            alert.Details = "Bestätigen um fortzufahren";
             resetAlert.IsOpen = true;
         }
 
@@ -159,8 +162,8 @@ namespace ProdVisAdminFrontend.Views
                 customAlert.Details = "Die Tubenanzahl wird zurückgesetzt!";
                 customAlert.CancelButtonVisibility = Visibility.Hidden;
                 customAlert.ConfirmButtonVisibility = Visibility.Hidden;
-                await api.ResetBitMachine1PostAsync();
-                await api.ResetBitMachine2PostAsync();
+                await api.ResetBitServer1PostAsync();
+                await api.ResetBitServer2PostAsync();
 
                 UpdateAllValues();
                 resetAlert.IsOpen = false;

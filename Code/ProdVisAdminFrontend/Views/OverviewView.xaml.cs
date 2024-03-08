@@ -69,10 +69,10 @@ namespace ProdVisAdminFrontend.Views
             if (api == null) return;
             viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielMachinePairsGetAsync();
             viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielMachinePairsGetAsync();
-            //viewModel.CurrentAmount_AP1 = await api.GesamttubenAnzServer1GetAsync(); // geht nicht
-            //viewModel.CurrentAmount_AP2 = await api.GesamttubenAnzServer2GetAsync(); // geht nicht
-            //viewModel.Progress_AP1 = await api.GesamttubenAnzServer1PercentGetAsync(); // geht nicht
-            //viewModel.Progress_AP2 = await api.GesamttubenAnzServer2PercentGetAsync(); // geht nicht
+            viewModel.CurrentAmount_AP1 = await api.GesamttubenAnzVisualServer1GetAsync(); 
+            viewModel.CurrentAmount_AP2 = await api.GesamttubenAnzVisualServer1GetAsync(); 
+            viewModel.Progress_AP1 = await api.GesamttubenAnzVisualServer1PercentGetAsync(); 
+            viewModel.Progress_AP2 = await api.GesamttubenAnzVisualServer2PercentGetAsync(); 
         }
 
         //public event EventHandler SwitchUserControlRequested;

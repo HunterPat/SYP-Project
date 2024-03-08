@@ -25,7 +25,10 @@ namespace ProdVisAdminFrontend.Views
         {
             InitializeComponent();
             DataContext = this;
+            
         }
+
+        public string Password { get; set; }
 
         private Visibility _cancelButtonVisibility;
 
@@ -125,6 +128,9 @@ namespace ProdVisAdminFrontend.Views
 
         private void Confirm_Clicked(object sender, RoutedEventArgs e)
         {
+            
+            Password = txtPassword.Password;
+            txtPassword.Password = "";
             ConfirmButtonClicked?.Invoke(this, EventArgs.Empty);
         }
     }

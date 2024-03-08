@@ -59,18 +59,18 @@ namespace ProdVisAdminFrontend.Views
         public async void UpdateAllValues()
         {
             if (api == null) return;
-            viewModel.Progress_A1 = await api.GesamttubenAnzTAA1PercentGetAsync();
-            viewModel.Progress_A2 = await api.GesamttubenAnzTAA2PercentGetAsync();
-            viewModel.Progress_A3 = await api.GesamttubenAnzTAA3PercentGetAsync();
-            viewModel.Progress_A4 = await api.GesamttubenAnzTAA4PercentGetAsync();
+            viewModel.Progress_A1 = await api.GesamttubenAnzVisualTAA1PercentGetAsync();
+            viewModel.Progress_A2 = await api.GesamttubenAnzVisualTAA2PercentGetAsync();
+            viewModel.Progress_A3 = await api.GesamttubenAnzVisualTAA3PercentGetAsync();
+            viewModel.Progress_A4 = await api.GesamttubenAnzVisualTAA4PercentGetAsync();
             viewModel.ProductionGoal_A1 = await api.GesamttubenanzZiel4MachinesGetAsync();
             viewModel.ProductionGoal_A2 = await api.GesamttubenanzZiel4MachinesGetAsync();
             viewModel.ProductionGoal_A3 = await api.GesamttubenanzZiel4MachinesGetAsync();
             viewModel.ProductionGoal_A4 = await api.GesamttubenanzZiel4MachinesGetAsync();
-            viewModel.CurrentAmount_A1 = await api.GesamttubenAnzMachine1ServerIDGetAsync(1);
-            viewModel.CurrentAmount_A2 = await api.GesamttubenAnzMachine2ServerIDGetAsync(1);
-            viewModel.CurrentAmount_A3 = await api.GesamttubenAnzMachine1ServerIDGetAsync(2);
-            viewModel.CurrentAmount_A4 = await api.GesamttubenAnzMachine2ServerIDGetAsync(2);
+            viewModel.CurrentAmount_A1 = await api.GesamttubenAnzVisualMachine1ServerIDGetAsync(1);
+            viewModel.CurrentAmount_A2 = await api.GesamttubenAnzVisualMachine2ServerIDGetAsync(1);
+            viewModel.CurrentAmount_A3 = await api.GesamttubenAnzVisualMachine1ServerIDGetAsync(2);
+            viewModel.CurrentAmount_A4 = await api.GesamttubenAnzVisualMachine2ServerIDGetAsync(2);
         }
     }
 }

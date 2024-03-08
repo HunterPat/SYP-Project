@@ -22,7 +22,7 @@ namespace API.Services
         private static int GesamtTubenAnzBeforeTAA2 = 0;
         private static int GesamtTubenAnzBeforeTAA3 = 0;
         private static int GesamtTubenAnzBeforeTAA4 = 0;
-        private static string password = null!;
+        private static string password = "dog";
 
         public static int gesamtTubenAnzZiel = 8000;
         private static int timeInterval = 30;
@@ -193,6 +193,8 @@ namespace API.Services
 
             clientServer1.ResetBit("TAA1");
             clientServer1.ResetBit("TAA2");
+            GesamtTubenAnzBeforeTAA1 = 0;
+            GesamtTubenAnzBeforeTAA2 = 0;
         }
 
         public void PostResetbitServer2()
@@ -200,6 +202,8 @@ namespace API.Services
             Console.WriteLine("POST: ResetbitServer2");
             clientServer2.ResetBit("TAA3");
             clientServer2.ResetBit("TAA4");
+            GesamtTubenAnzBeforeTAA3 = 0;
+            GesamtTubenAnzBeforeTAA4 = 0;
         }
 
         private int CalculatePercentage(int numerator, int denominator)
@@ -293,7 +297,7 @@ namespace API.Services
 
         public bool PutGesamttubenAnzZiel(int value)
         {
-            gesamtTubenAnzZiel = value > 0 ? gesamtTubenAnzZiel : value;
+            gesamtTubenAnzZiel = value <= 0 || value % 2 != 0 ? gesamtTubenAnzZiel : value;
             return gesamtTubenAnzZiel == value;
         }
 

@@ -245,3 +245,5 @@ C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdmi
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\ref\ProdVisAdminFrontend.dll
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\PasswordAlert.g.cs
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\PasswordAlert.baml
+C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\PasswordAlert.g.cs
+C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\PasswordAlert.baml
