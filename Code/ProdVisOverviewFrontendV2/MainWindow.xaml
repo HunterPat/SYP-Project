@@ -4,9 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProdVisOverviewFrontendV2"
+        xmlns:viewmodels="clr-namespace:ProdVisOverviewFrontendV2.ViewModels"
+        xmlns:views="clr-namespace:ProdVisOverviewFrontendV2.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        
+        Title="ProdVisOverviewFrontend" Height="2160" Width="3840" Loaded="Window_Loaded">
+    <Window.Resources>
+        <DataTemplate x:Name="overviewViewTemplate" DataType="{x:Type viewmodels:OverviewViewModel}">
+            <views:OverviewView DataContext="{Binding}"></views:OverviewView>
+        </DataTemplate>
+        <DataTemplate x:Name="detailedOverviewTemplate" DataType="{x:Type viewmodels:DetailedOverviewViewModel}">
+            <views:DetailedOverviewView DataContext="{Binding}"></views:DetailedOverviewView>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-
+        <ContentControl Content="{Binding}"></ContentControl>
     </Grid>
 </Window>

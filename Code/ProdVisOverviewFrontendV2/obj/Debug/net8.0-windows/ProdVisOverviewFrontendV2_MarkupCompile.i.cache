@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisOverviewFrontendV2\App.xaml
-11407045341
+3-708381997
 
-61159044893
-198-294894759
-MainWindow.xaml;
+11-207645524
+204491809760
+MainWindow.xaml;Views\DetailedOverviewView.xaml;Views\OverviewView.xaml;
 
 False
 
