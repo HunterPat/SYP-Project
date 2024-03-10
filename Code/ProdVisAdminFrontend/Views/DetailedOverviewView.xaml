@@ -78,17 +78,20 @@
                                     
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding ProductionGoal_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
 
                                 <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding CurrentAmount_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding Progress_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>
@@ -145,17 +148,20 @@
 
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding ProductionGoal_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
 
                                 <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding CurrentAmount_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding Progress_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>
@@ -212,17 +218,20 @@
 
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding ProductionGoal_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
 
                                 <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding CurrentAmount_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding Progress_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>
@@ -279,17 +288,20 @@
 
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding ProductionGoal_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
 
                                 <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding CurrentAmount_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding Progress_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>
