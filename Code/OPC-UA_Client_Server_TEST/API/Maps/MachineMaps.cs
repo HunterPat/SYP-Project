@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using OPC_UA_Client;
 using System.Runtime.InteropServices;
 using System.Timers;
+using System.Runtime;
+using System.Diagnostics;
 namespace API.Maps
 {
     public static class MachineMaps
@@ -25,7 +27,7 @@ namespace API.Maps
             server2.StartServer();
             service = new MachineServices();
             //   MachineServices.CreateDatabase(); If not created
-            System.Timers.Timer timer = new System.Timers.Timer((3600 *1000) * 3); // every 3 hours check => 3600 seconds in a hour
+            System.Timers.Timer timer = new System.Timers.Timer((60 * 1000) * 180); // every 3 hours check =>  60 seconds * 180
             timer.Elapsed += Timer_Elapsed!;
             timer.Start();
 

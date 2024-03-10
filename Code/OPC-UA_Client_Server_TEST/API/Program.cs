@@ -2,6 +2,12 @@ using API.Maps;
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
 using OPC_UA_Client;
+using System.Timers;
+using System;
+using static System.Net.Mime.MediaTypeNames;
+using Org.BouncyCastle.Security;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +26,3 @@ if (app.Environment.IsDevelopment())
 }
 app.MapMachineData();
 app.Run();
-public class GesamtTubenAnzZiel
-{
-    public int GesamtTubenAnzZielValue { get; set; } = 4000;
-}

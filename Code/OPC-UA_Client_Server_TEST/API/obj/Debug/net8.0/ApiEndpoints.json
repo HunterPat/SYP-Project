@@ -1,0 +1,628 @@
+[
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_11",
+    "RelativePath": "gesamttubenAnz/Machine1/{serverID}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_12",
+    "RelativePath": "gesamttubenAnz/Machine2/{serverID}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_19",
+    "RelativePath": "gesamttubenAnzVisual/Machine1/{serverID}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_20",
+    "RelativePath": "gesamttubenAnzVisual/Machine2/{serverID}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serverID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_9",
+    "RelativePath": "gesamttubenAnzVisual/Server1",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_13",
+    "RelativePath": "gesamttubenAnzVisual/Server1/Percent",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_10",
+    "RelativePath": "gesamttubenAnzVisual/Server2",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_14",
+    "RelativePath": "gesamttubenAnzVisual/Server2/Percent",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_15",
+    "RelativePath": "gesamttubenAnzVisual/TAA1/Percent",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_16",
+    "RelativePath": "gesamttubenAnzVisual/TAA2/Percent",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_17",
+    "RelativePath": "gesamttubenAnzVisual/TAA3/Percent",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_18",
+    "RelativePath": "gesamttubenAnzVisual/TAA4/Percent",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_0",
+    "RelativePath": "gesamttubenanzZiel/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_1",
+    "RelativePath": "gesamttubenanzZiel/",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_30",
+    "RelativePath": "gesamttubenanzZiel/4Machines",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_29",
+    "RelativePath": "gesamttubenanzZiel/MachinePairs",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_21",
+    "RelativePath": "kaputteTubenAnz/TAA1/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_25",
+    "RelativePath": "kaputteTubenAnz/TAA1/",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_22",
+    "RelativePath": "kaputteTubenAnz/TAA2/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_26",
+    "RelativePath": "kaputteTubenAnz/TAA2/",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_23",
+    "RelativePath": "kaputteTubenAnz/TAA3/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_27",
+    "RelativePath": "kaputteTubenAnz/TAA3/",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_24",
+    "RelativePath": "kaputteTubenAnz/TAA4/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_28",
+    "RelativePath": "kaputteTubenAnz/TAA4/",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_3",
+    "RelativePath": "password/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_2",
+    "RelativePath": "password/check",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "passwordValue",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_4",
+    "RelativePath": "password/newPassword",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newPasswordValue",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_5",
+    "RelativePath": "resetBit/Server1",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_6",
+    "RelativePath": "resetBit/Server2",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_7",
+    "RelativePath": "timeInterval/",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "intervalValue",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Maps.MachineMaps\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMachineData\u003Eb__1_8",
+    "RelativePath": "timeInterval/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

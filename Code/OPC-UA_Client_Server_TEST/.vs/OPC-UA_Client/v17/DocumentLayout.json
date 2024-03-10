@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\maps\\machinemaps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\maps\\machinemaps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\myopcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\myopcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\services\\machineservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\services\\machineservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\myopcserver1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\myopcserver1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\myopcserver2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\myopcserver2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "API.csproj",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
+              "RelativeDocumentMoniker": "API\\API.csproj",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\API.csproj",
+              "RelativeToolTip": "API\\API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-10T18:25:04.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-10T18:17:10.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MachineServices.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Services\\MachineServices.cs",
+              "RelativeDocumentMoniker": "API\\Services\\MachineServices.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Services\\MachineServices.cs",
+              "RelativeToolTip": "API\\Services\\MachineServices.cs",
+              "ViewState": "AQIAADUBAAAAAAAAAAAawA8BAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:23:46.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MachineMaps.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Maps\\MachineMaps.cs",
+              "RelativeDocumentMoniker": "API\\Maps\\MachineMaps.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Maps\\MachineMaps.cs",
+              "RelativeToolTip": "API\\Maps\\MachineMaps.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwE0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:23:46.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyOPCServer2.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCServer2.cs",
+              "RelativeDocumentMoniker": "API\\MyOPCServer2.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCServer2.cs",
+              "RelativeToolTip": "API\\MyOPCServer2.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAIwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:23:46.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyOPCClient.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCClient.cs",
+              "RelativeDocumentMoniker": "API\\MyOPCClient.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCClient.cs",
+              "RelativeToolTip": "API\\MyOPCClient.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:23:46.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MyOPCServer1.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCServer1.cs",
+              "RelativeDocumentMoniker": "API\\MyOPCServer1.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCServer1.cs",
+              "RelativeToolTip": "API\\MyOPCServer1.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAjwFQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:23:46.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:23:46.362Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
