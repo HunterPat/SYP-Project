@@ -108,6 +108,21 @@
                 <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
+            <Border Grid.Row="1" Background="#EEEDED" BorderThickness="1" BorderBrush="#EEEDED" CornerRadius="5" Margin="10,15,10,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="12"  Content="Tuben entfernen" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
+                    <Button Grid.Row="1"  Content="Weiter" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="25, 5" Click="Substract_Clicked"></Button>
+                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Foreground="DarkGray" FontSize="12"  Content="Passwort benötigt!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
+
+
+                </Grid>
+            </Border>
+
             <Border Margin="10,20,10,0"  CornerRadius="5" BorderThickness="1" BorderBrush="#FFDDDDDD">
                 <Grid Grid.Row="1" Background="#EEEDED">
                     <Grid.RowDefinitions>
@@ -210,8 +225,8 @@
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="16"  Content="Tubenannzahl zurücksetzen" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="DemiBold"></Label>
-                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="12"  Content="Die Anzahl der Produzierten Tuben wird auf 0 gesetzt!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
+                    <Label Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3" FontSize="16"  Content="Tubenannzahl zurücksetzen" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="DemiBold"></Label>
+                    <Label Grid.Row="1" Grid.Column="0" Foreground="DarkGray" Grid.ColumnSpan="3" FontSize="12"  Content="Die Anzahl der Produzierten Tuben wird auf 0 gesetzt!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
                     <Button  Click="Resest_Clicked" Grid.Row="2" Grid.Column="1" Margin="25,0,25,0" Content="Zurücksetzen" Foreground="White" FontSize="14" VerticalAlignment="Center" VerticalContentAlignment="Center" FontWeight="DemiBold"></Button>
 
                 </Grid>
@@ -231,7 +246,7 @@
                     </Grid.RowDefinitions>
                     <TextBox Name="txtProductionGoal" Grid.Row="1" Grid.Column="1" Margin="0" Padding="0,5,0,5" FontSize="16" HorizontalContentAlignment="Center" VerticalAlignment="Center"></TextBox>
                     <Label Grid.Row="0" Grid.Column="1" FontSize="18"  Content="Ziel setzen:" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="DemiBold"></Label>
-                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" FontSize="12"  Content="Das Ziel wird gleichmäßig auf die Anlagenpaare aufgeteilt!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
+                    <Label Grid.Row="2" Grid.Column="0" Foreground="DarkGray" Grid.ColumnSpan="3" FontSize="12"  Content="Das Ziel wird gleichmäßig auf die Anlagenpaare aufgeteilt!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold"></Label>
 
                     <Button  Click="ConfirmGoal_Clicked" Grid.Row="3" Grid.Column="1" Margin="25,0,25,0" Content="Anwenden" Foreground="White" FontSize="14" VerticalAlignment="Center" VerticalContentAlignment="Center" FontWeight="DemiBold"></Button>
 
