@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\App.xaml
-7-1775512111
+81924914080
 
-15-290885113
+16-995981538
 204491809760
-MainWindow.xaml;Styles\Resources.xaml;Views\CustomAlert.xaml;Views\DetailedOverviewView.xaml;Views\OverviewView.xaml;Views\PasswordAlert.xaml;Views\SettingsView.xaml;
+MainWindow.xaml;Styles\Resources.xaml;Views\CustomAlert.xaml;Views\DetailedOverviewView.xaml;Views\OverviewView.xaml;Views\PasswordAlert.xaml;Views\SettingsView.xaml;Views\SubstractTubesView.xaml;
 
 False
 

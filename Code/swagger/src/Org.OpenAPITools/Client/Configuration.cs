@@ -60,8 +60,8 @@ namespace Org.OpenAPITools.Client
             }
             if (status == 0)
             {
-                return new ApiException(status,
-                    string.Format("Error calling {0}: {1}", methodName, response.ErrorText), response.ErrorText);
+                //return new ApiException(status,
+                    //string.Format("Error calling {0}: {1}", methodName, response.ErrorText), response.ErrorText);
             }
             return null;
         };

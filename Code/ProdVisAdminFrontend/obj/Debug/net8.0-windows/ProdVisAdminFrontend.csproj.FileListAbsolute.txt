@@ -247,3 +247,5 @@ D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-
 D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\PasswordAlert.baml
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\PasswordAlert.g.cs
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\PasswordAlert.baml
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\SubstractTubesView.g.cs
+D:\GitRepositories\Forks\SYP-Project\Code\ProdVisAdminFrontend\obj\Debug\net8.0-windows\Views\SubstractTubesView.baml

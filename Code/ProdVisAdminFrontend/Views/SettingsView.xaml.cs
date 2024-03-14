@@ -258,5 +258,16 @@ namespace ProdVisAdminFrontend.Views
         {
             HideIntervalInfoAlert();
         }
+
+        private void Substract_Clicked(object sender, RoutedEventArgs e)
+        {
+            var window = new Window();
+            var substractTubes = new SubstractTubesView();
+            window.Content = substractTubes;
+            window.Width = 1000;
+            window.Height = 600;
+            window.Show();
+            window.Title = "Tuben entfernen";
+        }
     }
 }
