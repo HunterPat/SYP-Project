@@ -1,26 +1,66 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "NamedPipeServerStream.NetFrameworkVersion/1.1.13": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/NamedPipeServerStream.NetFrameworkVersion.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/NamedPipeServerStream.NetFrameworkVersion.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NamedPipeServerStream.NetFrameworkVersion/1.1.13": {
+      "sha512": "F/j8Vs2CkK9BT6gOAJNmcUuf1DfCB7jF+rg6yiYMV1au8WDpuaasaehph/FFfN/2H+8hkXptEDWo1Ts24EVmPg==",
+      "type": "package",
+      "path": "namedpipeserverstream.netframeworkversion/1.1.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net40/NamedPipeServerStream.NetFrameworkVersion.dll",
+        "lib/net40/NamedPipeServerStream.NetFrameworkVersion.xml",
+        "lib/net45/NamedPipeServerStream.NetFrameworkVersion.dll",
+        "lib/net45/NamedPipeServerStream.NetFrameworkVersion.xml",
+        "lib/net6.0/NamedPipeServerStream.NetFrameworkVersion.dll",
+        "lib/net6.0/NamedPipeServerStream.NetFrameworkVersion.xml",
+        "lib/net7.0/NamedPipeServerStream.NetFrameworkVersion.dll",
+        "lib/net7.0/NamedPipeServerStream.NetFrameworkVersion.xml",
+        "lib/netstandard2.0/NamedPipeServerStream.NetFrameworkVersion.dll",
+        "lib/netstandard2.0/NamedPipeServerStream.NetFrameworkVersion.xml",
+        "namedpipeserverstream.netframeworkversion.1.1.13.nupkg.sha512",
+        "namedpipeserverstream.netframeworkversion.nuspec",
+        "nuget_icon.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "NamedPipeServerStream.NetFrameworkVersion >= 1.1.13"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\patri\\.nuget\\packages\\": {}
+    "C:\\Users\\Windows\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\StartAPI\\StartAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\StartAPI\\StartAPI\\StartAPI.csproj",
       "projectName": "StartAPI",
-      "projectPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\StartAPI\\StartAPI.csproj",
-      "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-      "outputPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\StartAPI\\obj\\",
+      "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\StartAPI\\StartAPI\\StartAPI.csproj",
+      "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\StartAPI\\StartAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,16 +80,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "NamedPipeServerStream.NetFrameworkVersion": {
+            "target": "Package",
+            "version": "[1.1.13, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -66,7 +107,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,6 +8,7 @@ using static System.Net.Mime.MediaTypeNames;
 using Org.BouncyCastle.Security;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using System.IO.Pipes;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,5 +25,59 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseDeveloperExceptionPage();
 app.MapMachineData();
+//var lifetime = app.Services.GetRequiredService<IHostApplicationLifetime>();
+//var lifetime = app.Lifetime;
+//lifetime.ApplicationStopping.Register(() =>
+//{
+//    Console.WriteLine("Shutting down!");
+//    MachineServices.SaveCurrentValuesIntoDB();
+//    // Environment.Exit(0);
+//});
+Thread thread = new Thread(new ThreadStart(ListenForSignal));
+thread.IsBackground = true;
+
+thread.Start();
 app.Run();
+static async void ListenForSignal()
+{
+    var pipeClient = new NamedPipeClientStream(".", "MyShuttdownPipe", PipeDirection.InOut);
+
+    try
+    {
+        Console.WriteLine("Connecting to named pipe server...");
+        pipeClient.Connect();
+
+        Console.WriteLine("Connected to named pipe server.");
+
+        using (var reader = new StreamReader(pipeClient))
+        {
+            while (true)
+            {
+                string receivedData = reader.ReadLine()!;
+                if (receivedData != null && receivedData.Length > 0)
+                {
+                    Console.WriteLine($"Data received from server: {receivedData}");
+                    Console.WriteLine("Shutting down!");
+                    MachineMaps.service.SaveCurrentValuesIntoDB();
+
+                    Thread.Sleep(5000);
+                    pipeClient.Close();
+                    await pipeClient.DisposeAsync();
+                    pipeClient = null!;
+                    Environment.Exit(0);
+
+                }
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        // Log or handle the exception
+        Console.WriteLine($"Error: {ex.Message}");
+
+    }
+}
+
+

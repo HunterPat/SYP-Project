@@ -1,12 +1,14 @@
 ﻿
+using Opc.Ua;
 using Opc.UaFx;
 using Opc.UaFx.Client;
 using OPC_UA_Client;
 using Org.BouncyCastle.Asn1.Mozilla;
-using System.Data.SQLite;
+using System.Net.Sockets;
 
 namespace API.Services
 {
+
     public class MachineServices
     {
         public static string server1URL = "opc.tcp://192.168.1.10:4840"; //TODO: change URL
@@ -23,24 +25,22 @@ namespace API.Services
         private static int GesamtTubenAnzBeforeTAA3 = 0;
         private static int GesamtTubenAnzBeforeTAA4 = 0;
         private static string password = null!;
-
+        private string finalCSVPath;
         public static int gesamtTubenAnzZiel = 8000;
         private static int timeInterval = 30;
 
         public MachineServices()
         {
-
+            var currentDirectory = Directory.GetCurrentDirectory();
+            for (int i = 0; i < 5; i++)
+            {
+                currentDirectory = Directory.GetParent(currentDirectory).FullName;
+            }
+            // Append the remaining path
+            finalCSVPath = currentDirectory + @"\OPC-UA_Client\API\ProdVis.csv";
+            ReadLatestValuesFromCSV();
             clientServer1.EstablishConnection();
             clientServer2.EstablishConnection();
-
-            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1(1);
-            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2(1);
-            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1(2);
-            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2(2);
-            KaputteTubenAnzTAA1 = 0;
-            KaputteTubenAnzTAA2 = 0;
-            KaputteTubenAnzTAA3 = 0;
-            KaputteTubenAnzTAA4 = 0;
         }
         public int GetGesamttubenanzahlServer1()
         {
@@ -55,59 +55,109 @@ namespace API.Services
             return (GetGesamttubenanzahlMachine1Visual(2)) + (GetGesamttubenanzahlMachine2Visual(2));
 
         }
-        public void GetDataFromDB()
+        public void ReadLatestValuesFromCSV()
         {
-            string connectionString = "Data Source=ProdVis.sqlite;Version=3;";
-            SQLiteConnection connection = new SQLiteConnection(connectionString);
-            connection.Open();
-            string query = "SELECT * FROM machineData";
-            var command = new SQLiteCommand(query, connection);
-            var reader = command.ExecuteReader();
-            while (reader.Read())
+            using (StreamReader reader = new StreamReader(finalCSVPath))
             {
-                Console.WriteLine(reader["name"]);
+
+                /*MachineId;";
+                      writeLine += "GesamttubenAnz;";
+                      writeLine += "KaputteTubenAnz;";
+                      writeLine += "GesamttubenAnzZiel;";
+                      writeLine += "TimeInterval;";
+                      writeLine += "Date;";
+                */
+                var readLine = reader.ReadLine();
+                if (readLine == null || readLine!.Length <= 0) return;
+                var splittedLine = readLine.Split(";");
+                if (int.Parse(splittedLine[0]) == 1)
+                {
+                    GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[1]);
+                    KaputteTubenAnzTAA1 = int.Parse(splittedLine[2]);
+                }
+                else if (int.Parse(splittedLine[0]) == 2)
+                {
+                    GesamtTubenAnzBeforeTAA2 = int.Parse(splittedLine[1]);
+                    KaputteTubenAnzTAA2 = int.Parse(splittedLine[2]);
+                }
+                else if (int.Parse(splittedLine[0]) == 3)
+                {
+                    GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
+                    KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
+                }
+                else if (int.Parse(splittedLine[0]) == 4)
+                {
+                    GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[1]);
+                    KaputteTubenAnzTAA4 = int.Parse(splittedLine[2]);
+                }
+                gesamtTubenAnzZiel = int.Parse(splittedLine[3]);
+                timeInterval = int.Parse(splittedLine[4]);
             }
-            connection.Close();
         }
-        public void SaveValueIntoDB(int serverID, int gesamttubenAnz, int gesamtTubenAnzZiel, string date)
+        public void ResetAllValuesAndCSV()
         {
-            //   CreateDatabase();
-            string connectionString = "Data Source=ProdVis.sqlite;Version=3;";
-            SQLiteConnection connection = new SQLiteConnection(connectionString);
-
-            connection.Open();
-            string createTableSql = "CREATE TABLE IF NOT EXISTS machineData (Id INTEGER  Generated ALWAYS PRIMARY KEY , ServerID INTEGER NOT NULL, GesamttubenAnz INTEGER NOT NULL, GesamttubenAnzZiel INTEGER NOT NULL, Date TEXT NOT NULL);";
-            string insertSql = "INSERT INTO machineData (ServerID, GesamttubenAnz, GesamttubenAnzZiel, Date) VALUES (@serverID, @gesamttubenAnz, @gesamtTubenAnzZiel, @date);";
-
-            SQLiteCommand createTableCommand = new SQLiteCommand(createTableSql, connection);
-            SQLiteCommand insertCommand = new SQLiteCommand(insertSql, connection);
-
-            //Parameters
-            insertCommand.Parameters.AddWithValue("@serverID", serverID);
-            insertCommand.Parameters.AddWithValue("@gesamttubenAnz", gesamttubenAnz);
-            insertCommand.Parameters.AddWithValue("@gesamtTubenAnzZiel", gesamtTubenAnzZiel);
-            insertCommand.Parameters.AddWithValue("@date", date);
-
-
-            try
+            using (StreamWriter writer = new StreamWriter(finalCSVPath, false))
             {
-                createTableCommand.ExecuteNonQuery();
-                insertCommand.ExecuteNonQuery();
+                writer.Write(""); // Write an empty string to clear the file
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-            finally
-            {
-                connection.Close();
-            }
-
+            Console.WriteLine("CSV file cleared successfully.");
+            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1Visual(1);
+            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2Visual(1);
+            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1Visual(2);
+            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2Visual(2);
+            KaputteTubenAnzTAA1 = 0;
+            KaputteTubenAnzTAA2 = 0;
+            KaputteTubenAnzTAA3 = 0;
+            KaputteTubenAnzTAA4 = 0;
         }
-        public void CreateDatabase()
-        {
-            SQLiteConnection.CreateFile("ProdVis.sqlite");
 
+        public void SaveCurrentValuesIntoDB()
+        {
+
+            using (StreamWriter writer = new StreamWriter(finalCSVPath, true))
+            {
+                for (int i = 1; i < 5; i++)
+                {
+                    var writeLine = "";
+                    /*  writeLine += "MachineId;";
+                      writeLine += "GesamttubenAnz;";
+                      writeLine += "KaputteTubenAnz;";
+                      writeLine += "GesamttubenAnzZiel;";
+                      writeLine += "TimeInterval;";
+                      writeLine += "Date;";
+                      writer.WriteLine(writeLine);
+                      writer.Flush();
+                    */
+                    writeLine += i + ";";
+                    if (i == 1)
+                    {
+                        writeLine += GetGesamttubenanzahlMachine1(1) + ";";
+                        writeLine += KaputteTubenAnzTAA1 + ";";
+                    }
+                    else if (i == 2)
+                    {
+                        writeLine += GetGesamttubenanzahlMachine2(1) + ";";
+                        writeLine += KaputteTubenAnzTAA2 + ";";
+                    }
+                    else if (i == 3)
+                    {
+                        writeLine += GetGesamttubenanzahlMachine1(2) + ";";
+                        writeLine += KaputteTubenAnzTAA3 + ";";
+                    }
+                    else if (i == 4)
+                    {
+                        writeLine += GetGesamttubenanzahlMachine2(2) + ";";
+                        writeLine += KaputteTubenAnzTAA4 + ";";
+                    }
+
+                    writeLine += gesamtTubenAnzZiel + ";";
+                    writeLine += timeInterval + ";";
+                    writer.WriteLine(writeLine);
+                    writer.Flush();
+                    Console.WriteLine("Saved into CSV");
+                }
+                writer.Close();
+            }
         }
 
         public int GetGesamttubenanzahlMachine1(int serverID)

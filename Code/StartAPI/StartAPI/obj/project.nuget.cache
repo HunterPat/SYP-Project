@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "M8QyzW2IlRvawGP7+rs4GjE/kE/lDtPYc6AMuCfDDYlbu07zfbR7bTRdXCA0inSDZQ3FJ+3QIlH2elqslYFcXQ==",
+  "dgSpecHash": "AvjPByGWw2TKIljJRMFf7AdnpoO22x+V9YLhys6IWS/TJaU4FnWMhSDnPlgbUMVsre4corufVjbb9/fU2bZZ/w==",
   "success": true,
-  "projectFilePath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\StartAPI\\StartAPI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\StartAPI\\StartAPI\\StartAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\namedpipeserverstream.netframeworkversion\\1.1.13\\namedpipeserverstream.netframeworkversion.1.1.13.nupkg.sha512"
+  ],
   "logs": []
 }

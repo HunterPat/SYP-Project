@@ -44,10 +44,6 @@
               "target": "Package",
               "version": "[7.0.11, )"
             },
-            "Microsoft.Data.Sqlite.Core": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
             "Opc.UaFx.Advanced": {
               "target": "Package",
               "version": "[2.41.0, )"
@@ -55,10 +51,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
-            },
-            "System.Data.SQLite": {
-              "target": "Package",
-              "version": "[1.0.118, )"
             }
           },
           "imports": [

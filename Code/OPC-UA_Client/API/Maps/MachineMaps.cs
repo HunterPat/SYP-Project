@@ -7,7 +7,7 @@ namespace API.Maps
 {
     public static class MachineMaps
     {
-        private static MachineServices service = new MachineServices();
+        public static MachineServices service = new MachineServices();
 
 
         public static IEndpointRouteBuilder MapMachineData(this IEndpointRouteBuilder routes)
@@ -19,7 +19,6 @@ namespace API.Maps
             var resetBitGroup = routes.MapGroup("/resetBit");
             var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
             var timeIntervalGroup = routes.MapGroup("/timeInterval");
-            //   MachineServices.CreateDatabase(); If not created
             System.Timers.Timer timer = new System.Timers.Timer(3600 * 1000 * 3); // every 3 hours check => 3600 seconds in a hour
             timer.Elapsed += Timer_Elapsed!;
             timer.Start();
@@ -34,7 +33,7 @@ namespace API.Maps
             resetBitGroup.MapPost("/Server1", () => service.PostResetbitServer1());
             resetBitGroup.MapPost("/Server2", () => service.PostResetbitServer2());
 
-            timeIntervalGroup.MapPut("/", (int intervalValue) => service.PutTimeInterval(intervalValue));   
+            timeIntervalGroup.MapPut("/", (int intervalValue) => service.PutTimeInterval(intervalValue));
             timeIntervalGroup.MapGet("/", () => service.GetTimeInterval());
 
             gesamtTubenAnzVisualGroup.MapGet("/Server1", () => service.GetGesamttubenanzahlServer1());
@@ -73,8 +72,7 @@ namespace API.Maps
         {
             if (DateTime.Now.TimeOfDay.Hours >= 0 && DateTime.Now.TimeOfDay.Hours <= 3 && DateTime.Now.TimeOfDay.Minutes >= 0 && DateTime.Now.TimeOfDay.Minutes <= 60)// check if time is 12:00 or 0:00
             {
-                service.SaveValueIntoDB(1, service.GetGesamttubenanzahlServer1(), service.GetGesamttubenanzahlServer1(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
-                service.SaveValueIntoDB(2, service.GetGesamttubenanzahlServer2(), service.GetGesamttubenanzahlServer2(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
+                service.ResetAllValuesAndCSV();
                 service = new MachineServices();
             }
         }

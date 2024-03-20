@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\ProdVisOverviewFrontendV2.csproj": {}
+    "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\ProdVisOverviewFrontendV2.csproj": {}
   },
   "projects": {
-    "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\ProdVisOverviewFrontendV2.csproj": {
+    "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\ProdVisOverviewFrontendV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\ProdVisOverviewFrontendV2.csproj",
+        "projectUniqueName": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\ProdVisOverviewFrontendV2.csproj",
         "projectName": "ProdVisOverviewFrontendV2",
-        "projectPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\ProdVisOverviewFrontendV2.csproj",
-        "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
-        "outputPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\obj\\",
+        "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\ProdVisOverviewFrontendV2.csproj",
+        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\ProdVisOverviewFrontendV2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
-                "projectPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj"
+              "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
+                "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj"
               }
             }
           }
@@ -66,17 +66,17 @@
         }
       }
     },
-    "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
+    "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
+        "projectUniqueName": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
         "projectName": "Org.OpenAPITools",
-        "projectPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
-        "packagesPath": "C:\\Users\\Vadym\\.nuget\\packages\\",
-        "outputPath": "D:\\GitRepositories\\Forks\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\obj\\",
+        "projectPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj",
+        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows\\Documents\\schule\\Jahr4\\SYP\\Projekt\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vadym\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

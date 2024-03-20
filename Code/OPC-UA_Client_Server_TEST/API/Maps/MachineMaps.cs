@@ -9,8 +9,9 @@ namespace API.Maps
 {
     public static class MachineMaps
     {
-        private static MachineServices service = null;
-
+        public static MachineServices service = null!;
+        public static MyOPCServer1 server1 = null!;
+        public static MyOPCServer2 server2 = null!;
 
         public static IEndpointRouteBuilder MapMachineData(this IEndpointRouteBuilder routes)
         {
@@ -21,12 +22,11 @@ namespace API.Maps
             var resetBitGroup = routes.MapGroup("/resetBit");
             var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
             var timeIntervalGroup = routes.MapGroup("/timeInterval");
-            MyOPCServer1 server1 = new MyOPCServer1(MachineServices.server1URL);
-            MyOPCServer2 server2 = new MyOPCServer2(MachineServices.server2URL);
+            server1 = new MyOPCServer1(MachineServices.server1URL);
+            server2 = new MyOPCServer2(MachineServices.server2URL);
             server1.StartServer();
             server2.StartServer();
             service = new MachineServices();
-            //   MachineServices.CreateDatabase(); If not created
             System.Timers.Timer timer = new System.Timers.Timer((60 * 1000) * 180); // every 3 hours check =>  60 seconds * 180
             timer.Elapsed += Timer_Elapsed!;
             timer.Start();
@@ -80,8 +80,7 @@ namespace API.Maps
         {
             if (DateTime.Now.TimeOfDay.Hours >= 0 && DateTime.Now.TimeOfDay.Hours <= 3 && DateTime.Now.TimeOfDay.Minutes >= 0 && DateTime.Now.TimeOfDay.Minutes <= 60)// check if time is 12:00 or 0:00
             {
-                service.SaveValueIntoDB(1, service.GetGesamttubenanzahlServer1(), service.GetGesamttubenanzahlServer1(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
-                service.SaveValueIntoDB(2, service.GetGesamttubenanzahlServer2(), service.GetGesamttubenanzahlServer2(), DateTime.Now.ToString("dd.MMMM.yyyy hh:mm "));
+                service.ResetAllValuesAndCSV();
                 service = new MachineServices();
             }
         }

@@ -12,7 +12,7 @@ using Opc.UaFx.Server;
 
 namespace OPC_UA_Client
 {
-    internal class MyOPCServer1
+    public class MyOPCServer1
     {
         OpcServer server;
         List<OpcObjectNode> nodes = new List<OpcObjectNode>();
@@ -57,6 +57,23 @@ namespace OPC_UA_Client
                 CheckResetBitMethod();
                 Thread.Sleep(2000);
             }
+        }
+        public void InitServerValues(int taa1Val, int taa2Val)
+        {
+            var gesamttubenAnzTAA1 = server.NodeManagers[0].Nodes[0].Children().ToList()[0].AttributeValue<int>(OpcAttribute.Value);
+            var resetBitValTAA1 = server.NodeManagers[0].Nodes[0].Children().ToList()[1].AttributeValue<int>(OpcAttribute.Value);
+            server.NodeManagers[0].RemoveNode(server.NodeManagers[0].Nodes[0]);
+            server.NodeManagers[0].AddNode(new OpcObjectNode(
+      "TAA1",
+      new OpcDataVariableNode<int>("Gesamttubenanzahl", value: taa1Val),
+      new OpcDataVariableNode<int>("resetBit", value: resetBitValTAA1)));
+            var gesamttubenAnzTAA2 = server.NodeManagers[0].Nodes[3].Children().ToList()[0].AttributeValue<int>(OpcAttribute.Value);
+            var resetBitValTAA2 = server.NodeManagers[0].Nodes[3].Children().ToList()[1].AttributeValue<int>(OpcAttribute.Value);
+            server.NodeManagers[0].RemoveNode(server.NodeManagers[0].Nodes[3]);
+            server.NodeManagers[0].AddNode(new OpcObjectNode(
+      "TAA2",
+      new OpcDataVariableNode<int>("Gesamttubenanzahl", value: taa2Val),
+                new OpcDataVariableNode<int>("resetBit", value: resetBitValTAA2)));
         }
 
         private void CheckResetBitMethod()
