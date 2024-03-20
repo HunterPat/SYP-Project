@@ -21,12 +21,12 @@ namespace OPC_UA_Client
         {
             var taa1 = new OpcObjectNode(
           "TAA1",
-          new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 99),
+          new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 0),
           new OpcDataVariableNode<int>("resetBit", value: 0));
             nodes.Add(taa1);
             var taa2 = new OpcObjectNode(
             "TAA2",
-            new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 1000),
+            new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 0),
             new OpcDataVariableNode<int>("resetBit", value: 0));
             nodes.Add(taa2);
             server = new OpcServer(url, nodes); //real-server: "opc.tcp://192.168.1.10:4840"

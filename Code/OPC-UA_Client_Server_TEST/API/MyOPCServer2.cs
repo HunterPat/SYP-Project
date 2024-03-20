@@ -18,15 +18,15 @@ namespace OPC_UA_Client
         {
             var taa3 = new OpcObjectNode(
           "TAA3",
-          new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 1234),
+          new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 0),
           new OpcDataVariableNode<int>("resetBit", value: 1));
             nodes.Add(taa3);
             var taa4 = new OpcObjectNode(
             "TAA4",
-            new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 4321),
+            new OpcDataVariableNode<int>("Gesamttubenanzahl", value: 0),
             new OpcDataVariableNode<int>("resetBit", value: 0));
             nodes.Add(taa4);
-            server = new OpcServer(url, nodes); //real-server: "opc.tcp://192.168.1.10:4840"
+            server = new OpcServer(url, nodes);
 
         }
         public void InitServer2Values(int taa3Val, int taa4Val)

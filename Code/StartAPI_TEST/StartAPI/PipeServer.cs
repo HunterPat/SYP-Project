@@ -71,8 +71,6 @@ namespace StartAPI
         {
             try { 
             Console.WriteLine("+----------------------------------+\n|    Restarting the application... |\n+----------------------------------+");
-            SendMessageToClient("END");
-
             if (Process.GetProcessesByName("API").Length > 0)
             {
                 SendMessageToClient("END");
@@ -82,8 +80,6 @@ namespace StartAPI
                     Process.GetProcessesByName("API").First().Kill();
                 }
             }
-            //pipeServer.Disconnect();
-
             pipeServer?.Dispose();
             pipeServer = null!;
             Start();

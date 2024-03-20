@@ -15,10 +15,10 @@ namespace API.Services
         public static string server2URL = "opc.tcp://192.168.1.20:4850"; //TODO: change URL
         static MyOPCClient clientServer1 = new MyOPCClient(server1URL);
         static MyOPCClient clientServer2 = new MyOPCClient(server2URL);
-        private static int KaputteTubenAnzTAA1;
-        private static int KaputteTubenAnzTAA2;
-        private static int KaputteTubenAnzTAA3;
-        private static int KaputteTubenAnzTAA4;
+        private static int KaputteTubenAnzTAA1 = 0;
+        private static int KaputteTubenAnzTAA2 = 0;
+        private static int KaputteTubenAnzTAA3 = 0;
+        private static int KaputteTubenAnzTAA4 = 0;
 
         private static int GesamtTubenAnzBeforeTAA1 = 0;
         private static int GesamtTubenAnzBeforeTAA2 = 0;
@@ -59,39 +59,33 @@ namespace API.Services
         {
             using (StreamReader reader = new StreamReader(finalCSVPath))
             {
-
-                /*MachineId;";
-                      writeLine += "GesamttubenAnz;";
-                      writeLine += "KaputteTubenAnz;";
-                      writeLine += "GesamttubenAnzZiel;";
-                      writeLine += "TimeInterval;";
-                      writeLine += "Date;";
-                */
                 var readLine = reader.ReadLine();
-                if (readLine == null || readLine!.Length <= 0) return;
-                var splittedLine = readLine.Split(";");
-                if (int.Parse(splittedLine[0]) == 1)
+                while (readLine != null || readLine!.Length > 0)
                 {
-                    GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[1]);
-                    KaputteTubenAnzTAA1 = int.Parse(splittedLine[2]);
+                    var splittedLine = readLine.Split(";");
+                    if (int.Parse(splittedLine[0]) == 1)
+                    {
+                        GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[1]);
+                        KaputteTubenAnzTAA1 = int.Parse(splittedLine[2]);
+                    }
+                    else if (int.Parse(splittedLine[0]) == 2)
+                    {
+                        GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
+                        KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
+                    }
+                    else if (int.Parse(splittedLine[0]) == 3)
+                    {
+                        GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
+                        KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
+                    }
+                    else if (int.Parse(splittedLine[0]) == 4)
+                    {
+                        GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[1]);
+                        KaputteTubenAnzTAA4 = int.Parse(splittedLine[2]);
+                    }
+                    gesamtTubenAnzZiel = int.Parse(splittedLine[3]);
+                    timeInterval = int.Parse(splittedLine[4]);
                 }
-                else if (int.Parse(splittedLine[0]) == 2)
-                {
-                    GesamtTubenAnzBeforeTAA2 = int.Parse(splittedLine[1]);
-                    KaputteTubenAnzTAA2 = int.Parse(splittedLine[2]);
-                }
-                else if (int.Parse(splittedLine[0]) == 3)
-                {
-                    GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
-                    KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
-                }
-                else if (int.Parse(splittedLine[0]) == 4)
-                {
-                    GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[1]);
-                    KaputteTubenAnzTAA4 = int.Parse(splittedLine[2]);
-                }
-                gesamtTubenAnzZiel = int.Parse(splittedLine[3]);
-                timeInterval = int.Parse(splittedLine[4]);
             }
         }
         public void ResetAllValuesAndCSV()
@@ -101,10 +95,10 @@ namespace API.Services
                 writer.Write(""); // Write an empty string to clear the file
             }
             Console.WriteLine("CSV file cleared successfully.");
-            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1Visual(1);
-            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2Visual(1);
-            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1Visual(2);
-            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2Visual(2);
+            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1(1);
+            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2(1);
+            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1(2);
+            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2(2);
             KaputteTubenAnzTAA1 = 0;
             KaputteTubenAnzTAA2 = 0;
             KaputteTubenAnzTAA3 = 0;
@@ -119,34 +113,25 @@ namespace API.Services
                 for (int i = 1; i < 5; i++)
                 {
                     var writeLine = "";
-                    /*  writeLine += "MachineId;";
-                      writeLine += "GesamttubenAnz;";
-                      writeLine += "KaputteTubenAnz;";
-                      writeLine += "GesamttubenAnzZiel;";
-                      writeLine += "TimeInterval;";
-                      writeLine += "Date;";
-                      writer.WriteLine(writeLine);
-                      writer.Flush();
-                    */
                     writeLine += i + ";";
                     if (i == 1)
                     {
-                        writeLine += GetGesamttubenanzahlMachine1(1) + ";";
+                        writeLine += GesamtTubenAnzBeforeTAA1 + ";";
                         writeLine += KaputteTubenAnzTAA1 + ";";
                     }
                     else if (i == 2)
                     {
-                        writeLine += GetGesamttubenanzahlMachine2(1) + ";";
+                        writeLine += GesamtTubenAnzBeforeTAA2 + ";";
                         writeLine += KaputteTubenAnzTAA2 + ";";
                     }
                     else if (i == 3)
                     {
-                        writeLine += GetGesamttubenanzahlMachine1(2) + ";";
+                        writeLine += GesamtTubenAnzBeforeTAA3 + ";";
                         writeLine += KaputteTubenAnzTAA3 + ";";
                     }
                     else if (i == 4)
                     {
-                        writeLine += GetGesamttubenanzahlMachine2(2) + ";";
+                        writeLine += GesamtTubenAnzBeforeTAA4 + ";";
                         writeLine += KaputteTubenAnzTAA4 + ";";
                     }
 

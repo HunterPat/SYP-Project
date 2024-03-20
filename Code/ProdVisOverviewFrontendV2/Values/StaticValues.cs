@@ -9,7 +9,7 @@ namespace ProdVisOverviewFrontend.Values
 {
     internal class StaticValues
     {
-        public static string BaseUrl { get; set; } = "http://localhost:5501";
+        public static string BaseUrl { get; set; } = "http://localhost:5000";
 
         
     }

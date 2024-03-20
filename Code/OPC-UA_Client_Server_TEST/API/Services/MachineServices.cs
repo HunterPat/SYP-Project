@@ -25,35 +25,34 @@ namespace API.Services
         private static int GesamtTubenAnzBeforeTAA4 = 0;
         private static string password = "dog";
 
-        public static int gesamtTubenAnzZiel = 8000;
+        public static int gesamtTubenAnzZiel = 800;
         private static int timeInterval = 30;
-        private static string finalPath = null;
+        private static string finalCSVPath = null!;
 
         public MachineServices()
         {
             var currentDirectory = Directory.GetCurrentDirectory();
             for (int i = 0; i < 5; i++)
             {
-                currentDirectory = Directory.GetParent(currentDirectory).FullName;
+                currentDirectory = Directory.GetParent(currentDirectory)!.FullName;
             }
             // Append the remaining path
-            finalPath = currentDirectory + @"\OPC-UA_Client_Server_TEST\API\ProdVis.csv";
-            ReadLatestValuesFromCSV();
+            finalCSVPath = currentDirectory + @"\OPC-UA_Client_Server_TEST\API\ProdVis.csv";
             clientServer1.EstablishConnection();
             clientServer2.EstablishConnection();
-
+            ReadLatestValuesFromCSV();
         }
         public void ResetAllValuesAndCSV()
         {
-            using (StreamWriter writer = new StreamWriter(finalPath, false))
+            using (StreamWriter writer = new StreamWriter(finalCSVPath, false))
             {
-                writer.Write(""); // Write an empty string to clear the file
+                writer.Write("");
             }
             Console.WriteLine("CSV file cleared successfully.");
-            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1Visual(1);
-            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2Visual(1);
-            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1Visual(2);
-            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2Visual(2);
+            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1(1);
+            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2(1);
+            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1(2);
+            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2(2);
             KaputteTubenAnzTAA1 = 0;
             KaputteTubenAnzTAA2 = 0;
             KaputteTubenAnzTAA3 = 0;
@@ -73,80 +72,87 @@ namespace API.Services
         }
         public void ReadLatestValuesFromCSV()
         {
-            using (StreamReader reader = new StreamReader(finalPath))
+            var taa1Val = 0;
+            var taa2Val = 0;
+            var taa3Val = 0;
+            var taa4Val = 0;
+            using (StreamReader reader = new StreamReader(finalCSVPath))
             {
-
-                /*MachineId;";
-                      writeLine += "GesamttubenAnz;";
-                      writeLine += "KaputteTubenAnz;";
-                      writeLine += "GesamttubenAnzZiel;";
-                      writeLine += "TimeInterval;";
-                      writeLine += "Date;";
-                */
                 var readLine = reader.ReadLine();
-                if (readLine == null || readLine!.Length <= 0) return;
-                var splittedLine = readLine.Split(";");
-                if (int.Parse(splittedLine[0]) ==  1) {
-                    GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[1]);
-                    KaputteTubenAnzTAA1 = int.Parse(splittedLine[2]);
-                }
-                else if (int.Parse(splittedLine[0]) == 2)
+                while (readLine != null || readLine!.Length > 0)
                 {
-                    GesamtTubenAnzBeforeTAA2 = int.Parse(splittedLine[1]);
-                    KaputteTubenAnzTAA2 = int.Parse(splittedLine[2]);
+                    Console.WriteLine("Tester: " + readLine.ToString());
+                    var splittedLine = readLine.Split(";");
+                    if (int.Parse(splittedLine[0]) == 1)
+                    {
+                        taa1Val = int.Parse(splittedLine[1]);
+                        GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[2]);
+                        KaputteTubenAnzTAA1 = int.Parse(splittedLine[3]);
+                    }
+                    else if (int.Parse(splittedLine[0]) == 2)
+                    {
+                        taa2Val = int.Parse(splittedLine[1]);
+                        GesamtTubenAnzBeforeTAA2 = int.Parse(splittedLine[2]);
+
+                        KaputteTubenAnzTAA2 = int.Parse(splittedLine[3]);
+                    }
+                    else if (int.Parse(splittedLine[0]) == 3)
+                    {
+                        taa3Val = int.Parse(splittedLine[1]);
+                        GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[2]);
+
+                        KaputteTubenAnzTAA3 = int.Parse(splittedLine[3]);
+                    }
+                    else if (int.Parse(splittedLine[0]) == 4)
+                    {
+                        taa4Val = int.Parse(splittedLine[1]);
+                        GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[2]);
+                        KaputteTubenAnzTAA4 = int.Parse(splittedLine[3]);
+                    }
+                    gesamtTubenAnzZiel = int.Parse(splittedLine[4]);
+                    timeInterval = int.Parse(splittedLine[5]);
+                    readLine = reader.ReadLine();
                 }
-                else if (int.Parse(splittedLine[0]) == 3)
-                {
-                    GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
-                    KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
-                }
-                else if (int.Parse(splittedLine[0]) == 4)
-                {
-                    GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[1]);
-                    KaputteTubenAnzTAA4 = int.Parse(splittedLine[2]);
-                }
-                gesamtTubenAnzZiel = int.Parse(splittedLine[3]);
-                timeInterval = int.Parse(splittedLine[4]);
             }
+            MachineMaps.server1.InitServerValues(taa1Val, taa2Val);
+            MachineMaps.server2.InitServer2Values(taa3Val, taa4Val);
         }
 
         public void SaveCurrentValuesIntoDB()
         {
-            MachineMaps.server1.InitServerValues(GetGesamttubenanzahlMachine1(1), GetGesamttubenanzahlMachine2(1));
-            MachineMaps.server2.InitServer2Values(GetGesamttubenanzahlMachine1(2), GetGesamttubenanzahlMachine2(2));
-            using (StreamWriter writer = new StreamWriter(finalPath, true))
+            using (StreamWriter writer = new StreamWriter(finalCSVPath, true))
             {
                 for (int i = 1; i < 5; i++)
                 {
-                    var writeLine = ""; 
-                    /*  writeLine += "MachineId;";
-                      writeLine += "GesamttubenAnz;";
-                      writeLine += "KaputteTubenAnz;";
-                      writeLine += "GesamttubenAnzZiel;";
-                      writeLine += "TimeInterval;";
-                      writeLine += "Date;";
-                      writer.WriteLine(writeLine);
-                      writer.Flush();
-                    */
-                    writeLine += i+";";
+                    var writeLine = "";
+                    writeLine += i + ";";
                     if (i == 1)
                     {
+
                         writeLine += GetGesamttubenanzahlMachine1(1) + ";";
+                        writeLine += GesamtTubenAnzBeforeTAA1 + ";";
+
                         writeLine += KaputteTubenAnzTAA1 + ";";
                     }
                     else if (i == 2)
                     {
                         writeLine += GetGesamttubenanzahlMachine2(1) + ";";
+                        writeLine += GesamtTubenAnzBeforeTAA2 + ";";
+
                         writeLine += KaputteTubenAnzTAA2 + ";";
                     }
                     else if (i == 3)
                     {
                         writeLine += GetGesamttubenanzahlMachine1(2) + ";";
+                        writeLine += GesamtTubenAnzBeforeTAA3 + ";";
+
                         writeLine += KaputteTubenAnzTAA3 + ";";
                     }
                     else if (i == 4)
                     {
                         writeLine += GetGesamttubenanzahlMachine2(2) + ";";
+                        writeLine += GesamtTubenAnzBeforeTAA4 + ";";
+
                         writeLine += KaputteTubenAnzTAA4 + ";";
                     }
 
@@ -156,7 +162,7 @@ namespace API.Services
                     writer.Flush();
                     Console.WriteLine("Saved into CSV");
                 }
-                writer.Close();
+                //writer.Close();
             }
         }
 
@@ -419,28 +425,28 @@ namespace API.Services
         }
         public bool PutKaputtGesamtTubenAnzTAA4(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA4 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA3(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA3 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA2(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA2 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA1(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA1 = value;
             return true;
         }
