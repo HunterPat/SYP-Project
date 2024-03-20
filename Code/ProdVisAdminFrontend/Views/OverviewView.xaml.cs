@@ -64,15 +64,15 @@ namespace ProdVisAdminFrontend.Views
             return 0;
         }
 
-        public async void UpdateAllValues()
+        public void UpdateAllValues()
         {
             if (api == null) return;
-            viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielMachinePairsGetAsync();
-            viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielMachinePairsGetAsync();
-            viewModel.CurrentAmount_AP1 = await api.GesamttubenAnzVisualServer1GetAsync(); 
-            viewModel.CurrentAmount_AP2 = await api.GesamttubenAnzVisualServer1GetAsync(); 
-            viewModel.Progress_AP1 = await api.GesamttubenAnzVisualServer1PercentGetAsync(); 
-            viewModel.Progress_AP2 = await api.GesamttubenAnzVisualServer2PercentGetAsync(); 
+            viewModel.ProductionGoal_AP1 = api.GesamttubenanzZielMachinePairsGet();
+            viewModel.ProductionGoal_AP2 =  api.GesamttubenanzZielMachinePairsGet();
+            viewModel.CurrentAmount_AP1 =  api.GesamttubenAnzVisualServer1Get(); 
+            viewModel.CurrentAmount_AP2 =  api.GesamttubenAnzVisualServer1Get(); 
+            viewModel.Progress_AP1 = api.GesamttubenAnzVisualServer1PercentGet(); 
+            viewModel.Progress_AP2 =  api.GesamttubenAnzVisualServer2PercentGet(); 
         }
 
         //public event EventHandler SwitchUserControlRequested;

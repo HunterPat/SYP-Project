@@ -163,12 +163,12 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Border Grid.Row="1" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center" CornerRadius="5" BorderThickness="1">
-                    <ComboBox SelectedIndex="0">
-                        <ComboBoxItem Name="swInt15Sec" Content="15 Sekunden"></ComboBoxItem>
-                        <ComboBoxItem Name="swInt30Sec" Content="30 Sekunden"></ComboBoxItem>
-                        <ComboBoxItem Name="swInt45Sec" Content="45 Sekunden"></ComboBoxItem>
-                        <ComboBoxItem Name="swInt1Min" Content="1 Minute"></ComboBoxItem>
+                    <Border Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" CornerRadius="5" BorderThickness="1">
+                    <ComboBox Name="cboInterval" SelectedIndex="0" SelectionChanged="Interval_Changed">
+                        <ComboBoxItem Name="swInt15Sec" Content="15 Sekunden" Tag="15"></ComboBoxItem>
+                            <ComboBoxItem Name="swInt30Sec" Content="30 Sekunden" Tag="30"></ComboBoxItem>
+                            <ComboBoxItem Name="swInt45Sec" Content="45 Sekunden" Tag="45"></ComboBoxItem>
+                            <ComboBoxItem Name="swInt1Min" Content="1 Minute" Tag="60"></ComboBoxItem>
                     </ComboBox>
                     </Border>
                     <Popup  Name="popupInfo" HorizontalOffset="-150" VerticalOffset="-5" IsOpen="False" StaysOpen="True" Placement="Top" PlacementTarget="{Binding ElementName=btnIntervalInfo}"  AllowsTransparency="True">

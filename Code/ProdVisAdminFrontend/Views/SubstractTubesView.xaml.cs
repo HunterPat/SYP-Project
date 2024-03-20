@@ -50,54 +50,35 @@ namespace ProdVisAdminFrontend.Views
             var passwordCorrect = api.PasswordCheckGet(alert.Password);
             if (passwordCorrect)
             {
-                // Assuming txtBadTubes_A1, txtBadTubes_A2, txtBadTubes_A3, and txtBadTubes_A4 are TextBox controls
+                string text = txtBadTubes_A1.Text;
 
-                // Define an array to hold the TextBoxes
-                TextBox[] textBoxes = { txtBadTubes_A1, txtBadTubes_A2, txtBadTubes_A3, txtBadTubes_A4 };
-
-                // Define a list to hold valid values
-                List<int> validValues = new List<int>();
-                // Define a list to hold invalid values
-                List<int> invalidValues = new List<int>();
-
-                // Loop through each TextBox and check its content
-                foreach (TextBox textBox in textBoxes)
+                if (int.TryParse(text, out int result1))
                 {
-                    int value;
-                    // Try parsing the text as an integer
-                    if (int.TryParse(textBox.Text, out value) && value > 0)
-                    {
-                        // Valid integer and positive value
-                        validValues.Add(value); // Add valid value to the list
-                    }
-                    else
-                    {
-                        // Invalid integer or non-positive value
-                        invalidValues.Add(value); // Add invalid value to the list
-                    }
+                    // The text represents a valid integer, and the parsed value is in 'result'
+                    api.KaputteTubenAnzTAA1Put(result1);
+                }
+                text = txtBadTubes_A2.Text;
+                if (int.TryParse(text, out int result2))
+                {
+                    // The text represents a valid integer, and the parsed value is in 'result'
+                    api.KaputteTubenAnzTAA2Put(result2);
+                }
+                text = txtBadTubes_A3.Text;
+                if (int.TryParse(text, out int result3))
+                {
+                    // The text represents a valid integer, and the parsed value is in 'result'
+                    api.KaputteTubenAnzTAA3Put(result3);
+                }
+                text = txtBadTubes_A4.Text;
+                if (int.TryParse(text, out int result4))
+                {
+                    // The text represents a valid integer, and the parsed value is in 'result'
+                    api.KaputteTubenAnzTAA4Put(result4);
                 }
 
-                // Check if any invalid values were found
-                if (invalidValues.Count == 0)
-                {
-                    api.KaputteTubenAnzTAA1Put(validValues[0]);
-                    api.KaputteTubenAnzTAA2Put(validValues[1]);
-                    api.KaputteTubenAnzTAA3Put(validValues[2]);
-                    api.KaputteTubenAnzTAA4Put(validValues[3]);
-                    UpdateAllValues();
-                    
-                }
-                
-                else
-                {
-                    // At least one value is invalid
-                    // Handle the invalid values here
-                    foreach (int invalidValue in invalidValues)
-                    {
-                        Console.WriteLine("Invalid value: " + invalidValue);
-                    }
-                }
+
                 HidePasswordAlert();
+                UpdateAllValues();
             }
             else
             {
