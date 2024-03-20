@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProdVisAdminFrontend.Views
 {
@@ -40,16 +41,73 @@ namespace ProdVisAdminFrontend.Views
 
         private void ConfirmGoal_Clicked(object sender, RoutedEventArgs e)
         {
-            var alert = passwordAlert.Child as PasswordAlert;
-            alert.CloseButtonClicked -= PasswordAlertForReset_CloseButtonClicked;
-            alert.ConfirmButtonClicked -= PasswordAlertForReset_ConfirmButtonClicked;
-            alert.CloseButtonClicked -= PasswordAlert_CloseButtonClicked;
-            alert.ConfirmButtonClicked -= PasswordAlert_ConfirmButtonClicked;
-            OpenPasswordPopup();
+
+            string text = txtProductionGoal.Text;
+            if (int.TryParse(text, out int result))
+            {
+                // The text represents a valid integer, and the parsed value is in 'result'
+
+                if (result % 4 == 0)
+                {
+                    //valid
+                    var alert = passwordAlert.Child as PasswordAlert;
+                    alert.CloseButtonClicked -= PasswordAlertForReset_CloseButtonClicked;
+                    alert.ConfirmButtonClicked -= PasswordAlertForReset_ConfirmButtonClicked;
+                    alert.CloseButtonClicked -= PasswordAlert_CloseButtonClicked;
+                    alert.ConfirmButtonClicked -= PasswordAlert_ConfirmButtonClicked;
+                    OpenPasswordPopup();
+                }
+                else
+                {
+                    OpenInvalidNumberPopup();
+                }
+                
+            }
+            else
+            {
+                // The text does not represent a valid integer
+                OpenNotANumberPopup();
+            }
+
+
+            
             //var api = new APIApi(baseUrl);
             //var productionGoal = Int32.Parse(txtProductionGoal.Text);
             //var response = api.GesamttubenanzZielPost(productionGoal);
             //UpdateAllValues();
+        }
+
+        private void OpenInvalidNumberPopup()
+        {
+            var customAlert = resetAlert.Child as CustomAlert;
+            customAlert.Message = "Falsche Eingabe!";
+            customAlert.Details = "Hier kann nur eine durch 4 teilbare Zahl eingegeben werden!";
+
+            customAlert.CancelButtonVisibility = Visibility.Hidden;
+            customAlert.ConfirmButtonVisibility = Visibility.Visible;
+            customAlert.ConfirmButtonClicked += AlertPopupClose_Clicked;
+            resetAlert.IsOpen = true;
+        }
+
+        private void OpenNotANumberPopup()
+        {
+            var customAlert = resetAlert.Child as CustomAlert;
+            customAlert.Message = "Falsche Eingabe!";
+            customAlert.Details = "Hier kann nur eine ganze Zahl eingegeben werden!";
+
+            customAlert.CancelButtonVisibility = Visibility.Hidden;
+            customAlert.ConfirmButtonVisibility = Visibility.Visible;
+            customAlert.ConfirmButtonClicked += AlertPopupClose_Clicked;
+            resetAlert.IsOpen = true;
+        }
+
+        private void AlertPopupClose_Clicked(object? sender, EventArgs e)
+        {
+            
+            var customAlert = resetAlert.Child as CustomAlert;
+            customAlert.ConfirmButtonClicked -= AlertPopupClose_Clicked;
+            resetAlert.IsOpen = false;
+
         }
 
         private void OpenPasswordPopup()
@@ -148,6 +206,8 @@ namespace ProdVisAdminFrontend.Views
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
+
+
             viewModel = DataContext as SettingsViewModel;
             updateTimer = new DispatcherTimer();
             updateTimer.Interval = TimeSpan.FromMilliseconds(1000);
@@ -166,11 +226,18 @@ namespace ProdVisAdminFrontend.Views
         {
             if (api == null) return;
            
-            viewModel.ProductionGoal_AP1 = await api.GesamttubenanzZielMachinePairsGetAsync();
-            viewModel.ProductionGoal_AP2 = await api.GesamttubenanzZielMachinePairsGetAsync();
-            viewModel.CurrentAmount_AP1 = await api.GesamttubenAnzVisualServer1GetAsync();
-            viewModel.CurrentAmount_AP2 = await api.GesamttubenAnzVisualServer2GetAsync();
-
+            viewModel.ProductionGoal_AP1 = api.GesamttubenanzZielMachinePairsGet();
+            viewModel.ProductionGoal_AP2 = api.GesamttubenanzZielMachinePairsGet();
+            viewModel.CurrentAmount_AP1 =  api.GesamttubenAnzVisualServer1Get();
+            viewModel.CurrentAmount_AP2 =  api.GesamttubenAnzVisualServer2Get();
+            var interval = api.TimeIntervalGet().ToString();
+            foreach (ComboBoxItem item in cboInterval.Items)
+            {
+                if (item.Tag != null && item.Tag.ToString() == interval)
+                {
+                    cboInterval.SelectedItem = item;
+                }
+            }
         }
 
         private void Resest_Clicked(object sender, RoutedEventArgs e)
@@ -225,8 +292,8 @@ namespace ProdVisAdminFrontend.Views
                 customAlert.Details = "Die Tubenanzahl wird zurückgesetzt!";
                 customAlert.CancelButtonVisibility = Visibility.Hidden;
                 customAlert.ConfirmButtonVisibility = Visibility.Hidden;
-                await api.ResetBitServer1PostAsync();
-                await api.ResetBitServer2PostAsync();
+                api.ResetBitServer1Post();
+                api.ResetBitServer2Post();
 
                 UpdateAllValues();
                 resetAlert.IsOpen = false;
@@ -268,6 +335,15 @@ namespace ProdVisAdminFrontend.Views
             window.Height = 600;
             window.Show();
             window.Title = "Tuben entfernen";
+        }
+
+        private void Interval_Changed(object sender, SelectionChangedEventArgs e)
+        {
+            if (api == null) return;
+            if (cboInterval.SelectedItem == null) return;
+            var selectedItem = cboInterval.SelectedItem as ComboBoxItem;
+            var interval = int.Parse(selectedItem.Tag.ToString());
+            api.TimeIntervalPut(interval);
         }
     }
 }
