@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tagesbericht</title>
+
+</head>
+<body>
+<h1>Tagesbericht</h1>
+<hr />
+<p>Erstellt am: {{create_date}}</p>
+<p>&nbsp;</p>
+<p>Dieses Dokument wurde automatisch generiert!</p>
+<hr />
+<h2>Derzeitiger Stand</h2>
+<h3 style="text-align: center">{{global_amount}} vom Ziel {{global_goal}} wurden produziert. Das sind {{global_percent}}%</h3>
+<hr />
+<h2>Details</h2>
+<div class="container">
+
+    <div class="section">
+    <h3>Ziele</h3>
+    <p>Anlage 1: {{goal_a1}} Tuben</p>
+    <p>Anlage 2: {{goal_a2}} Tuben</p>
+    <p>Anlage 3: {{goal_a3}} Tuben</p>
+    <p>Anlage 4: {{goal_a4}} Tuben</p>
+  </div>
+  <div class="section">
+    <h3>Produzierte Mengen</h3>
+    <p>Anlage 1: {{amount_a1}} Tuben</p>
+    <p>Anlage 2: {{amount_a2}} Tuben</p>
+    <p>Anlage 3: {{amount_a3}} Tuben</p>
+    <p>Anlage 4: {{amount_a4}} Tuben</p>
+  </div>
+</div>
+<div class="container">
+
+    <div class="section">
+    <h3>Produktionsfehler</h3>
+<p>Anlage 1: {{error_a1}} Tuben</p>
+<p>Anlage 2: {{error_a2}} Tuben</p>
+<p>Anlage 3: {{error_a3}} Tuben</p>
+<p>Anlage 4: {{error_a4}} Tuben</p>
+  </div>
+  <div class="section">
+   <h3>Endergebnis</h3>
+<p>Anlage 1: {{final_a1}} Tuben</p>
+<p>Anlage 2: {{final_a2}} Tuben</p>
+<p>Anlage 3: {{final_a3}} Tuben</p>
+<p>Anlage 4: {{final_a4}} Tuben</p>
+  </div>
+</div>
+<hr />
+<h2>Abschluss</h2>
+<h3 style="text-align: center">Die {{global_error}} fehlerhaften Tuben resultieren in einer Fehlerquote von {{global_error_percent}}%.</h3>
+<p>&nbsp;</p>
+<h3 style="text-align: center">Zum festgelegten Ziel fehlen noch {{global_missing}} Tuben oder {{global_missing_percent}}%.</h3>
+<hr />
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center">Seit dem letzten Bericht vom {{last_report_date}} hat sich der Fortschritt zum Ziel um {{added_percent}}% geändert.</h3>
+
+</body>
+</html>
