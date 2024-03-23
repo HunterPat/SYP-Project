@@ -40,7 +40,7 @@ namespace API.Services
             finalCSVPath = currentDirectory + @"\OPC-UA_Client_Server_TEST\API\ProdVis.csv";
             clientServer1.EstablishConnection();
             clientServer2.EstablishConnection();
-            ReadLatestValuesFromCSV();
+            //ReadLatestValuesFromCSV();
         }
         public void ResetAllValuesAndCSV()
         {
