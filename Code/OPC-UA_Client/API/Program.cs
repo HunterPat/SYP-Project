@@ -49,7 +49,8 @@ static async void ListenForSignal()
                 {
                     Console.WriteLine($"Data received from server: {receivedData}");
                     Console.WriteLine("Shutting down!");
-                    MachineMaps.service.SaveCurrentValuesIntoDB();
+                    MachineMaps.service.SaveCurrentValuesIntoProdVis();
+                    ResetCheck();
                     Thread.Sleep(5000);
                     pipeClient.Close();
                     await pipeClient.DisposeAsync();
@@ -64,5 +65,14 @@ static async void ListenForSignal()
     {
         // Log or handle the exception
         Console.WriteLine($"Error: {ex.Message}");
+    }
+}
+static void ResetCheck()
+{
+    if (DateTime.Now.TimeOfDay.Hours == 18 && DateTime.Now.TimeOfDay.Minutes <= 30)
+    {
+        MachineMaps.service.SaveValueIntoProdVisLongTerm();
+        MachineMaps.service.ResetAllValuesAndCSV();
+        MachineMaps.service = new MachineServices();
     }
 }
