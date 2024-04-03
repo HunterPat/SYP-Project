@@ -44,7 +44,7 @@ namespace ProdVisOverviewFrontendV2
             timer.Tick += Timer_Tick;
             timer.Start();
             updateTimer = new DispatcherTimer();
-            updateTimer.Interval = TimeSpan.FromMilliseconds(200);
+            updateTimer.Interval = TimeSpan.FromMilliseconds(StaticValues.ThreadCallInterval);
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
         }

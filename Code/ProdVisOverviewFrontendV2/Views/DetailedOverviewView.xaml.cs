@@ -67,7 +67,7 @@ namespace ProdVisOverviewFrontendV2.Views
         {
             viewModel = DataContext as DetailedOverviewViewModel;
             updateTimer = new DispatcherTimer();
-            updateTimer.Interval = TimeSpan.FromMilliseconds(1000);
+            updateTimer.Interval = TimeSpan.FromMilliseconds(StaticValues.ThreadCallInterval);
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
             api = new APIApi(baseUrl);

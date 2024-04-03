@@ -44,7 +44,7 @@ namespace ProdVisAdminFrontend.Views
         {
             viewModel = DataContext as DetailedOverviewViewModel;
             updateTimer = new DispatcherTimer();
-            updateTimer.Interval = TimeSpan.FromMilliseconds(1000);
+            updateTimer.Interval = TimeSpan.FromMilliseconds(StaticValues.ThreadTimeInterval);
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
             api = new APIApi(baseUrl);

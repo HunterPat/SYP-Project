@@ -31,3 +31,6 @@ C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\StartAPI\St
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\StartAPI\StartAPI\obj\Debug\net8.0\StartAPI.csproj.CopyComplete
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\StartAPI\StartAPI\obj\Debug\net8.0\StartAPI.genruntimeconfig.cache
 C:\Users\Windows\Documents\schule\Jahr4\SYP\Projekt\SYP-Project\Code\StartAPI\StartAPI\obj\Debug\net8.0\ref\StartAPI.dll
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\StartAPI\StartAPI\bin\Debug\net8.0\NamedPipeServerStream.NetFrameworkVersion.dll
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\StartAPI\StartAPI\obj\Debug\net8.0\StartAPI.csproj.AssemblyReference.cache
+D:\HtlFolder\4Klasse\SYP\SYP-Project\Code\StartAPI\StartAPI\obj\Debug\net8.0\StartAPI.csproj.Up2Date

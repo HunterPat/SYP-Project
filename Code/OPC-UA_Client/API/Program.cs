@@ -1,6 +1,7 @@
 using API.Maps;
 using API.Services;
 using OPC_UA_Client;
+using System.Diagnostics;
 using System.IO.Pipes;
 
 
@@ -35,9 +36,7 @@ static async void ListenForSignal()
 
     try
     {
-        Console.WriteLine("Connecting to named pipe server...");
         pipeClient.Connect();
-
         Console.WriteLine("Connected to named pipe server.");
 
         using (var reader = new StreamReader(pipeClient))
@@ -51,7 +50,7 @@ static async void ListenForSignal()
                     Console.WriteLine("Shutting down!");
                     MachineMaps.service.SaveCurrentValuesIntoProdVis();
                     ResetCheck();
-                    Thread.Sleep(5000);
+                  //  Thread.Sleep(5000);
                     pipeClient.Close();
                     await pipeClient.DisposeAsync();
                     pipeClient = null!;
@@ -64,12 +63,12 @@ static async void ListenForSignal()
     catch (Exception ex)
     {
         // Log or handle the exception
-        Console.WriteLine($"Error: {ex.Message}");
+        Console.WriteLine($"Error in Listen for Server signals: {ex.Message}");
     }
 }
 static void ResetCheck()
 {
-    if (DateTime.Now.TimeOfDay.Hours == 18 && DateTime.Now.TimeOfDay.Minutes <= 30)
+    if (DateTime.Now.TimeOfDay.Hours == 18 && DateTime.Now.TimeOfDay.Minutes <= 20)
     {
         MachineMaps.service.SaveValueIntoProdVisLongTerm();
         MachineMaps.service.ResetAllValuesAndCSV();

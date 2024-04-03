@@ -14,7 +14,7 @@ namespace API.Maps
         {
             var gesamtTubenAnzVisualGroup = routes.MapGroup("/gesamttubenAnzVisual");
             var reportGroup = routes.MapGroup("/report");
-            var gesamtTubenAnzDataGroup = routes.MapGroup("/gesamttubenAnz");
+            var gesamtTubenAnzGroup = routes.MapGroup("/gesamttubenAnz");
             var kaputteTubenAnzGroup = routes.MapGroup("/kaputteTubenAnz");
             var passwordGroup = routes.MapGroup("/password");
             var resetBitGroup = routes.MapGroup("/resetBit");
@@ -37,8 +37,8 @@ namespace API.Maps
             gesamtTubenAnzVisualGroup.MapGet("/Server1", () => service.GetGesamttubenanzahlServer1());
             gesamtTubenAnzVisualGroup.MapGet("/Server2", () => service.GetGesamttubenanzahlServer2());
 
-            gesamtTubenAnzDataGroup.MapGet("/Machine1/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine1(serverID));
-            gesamtTubenAnzDataGroup.MapGet("/Machine2/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine2(serverID));
+            gesamtTubenAnzGroup.MapGet("/Machine1/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine1(serverID));
+            gesamtTubenAnzGroup.MapGet("/Machine2/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine2(serverID));
             //in Percent
             gesamtTubenAnzVisualGroup.MapGet("/Server1/Percent", () => service.GetGesamttubenanzahlPercentServer1());
             gesamtTubenAnzVisualGroup.MapGet("/Server2/Percent", () => service.GetGesamttubenanzahlPercentServer2());

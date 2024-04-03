@@ -88,38 +88,46 @@ namespace API.Services
                 var readLine = reader.ReadLine();
                 while (readLine != null)
                 {
-                    var splittedLine = readLine.Split(";");
-                    if (int.Parse(splittedLine[0]) == 1)
+                    if (readLine.Length <= 0)
                     {
-                        taa1Val = int.Parse(splittedLine[1]);
-                        GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[2]);
-                        KaputteTubenAnzTAA1 = int.Parse(splittedLine[3]);
+                        readLine = reader.ReadLine();
                     }
-                    else if (int.Parse(splittedLine[0]) == 2)
+                    else
                     {
-                        taa2Val = int.Parse(splittedLine[1]);
-                        GesamtTubenAnzBeforeTAA2 = int.Parse(splittedLine[2]);
+                        var splittedLine = readLine.Split(";");
+                        if (int.Parse(splittedLine[0]) == 1)
+                        {
+                            taa1Val = int.Parse(splittedLine[1]);
+                            GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[2]);
+                            KaputteTubenAnzTAA1 = int.Parse(splittedLine[3]);
+                        }
+                        else if (int.Parse(splittedLine[0]) == 2)
+                        {
+                            taa2Val = int.Parse(splittedLine[1]);
+                            GesamtTubenAnzBeforeTAA2 = int.Parse(splittedLine[2]);
 
-                        KaputteTubenAnzTAA2 = int.Parse(splittedLine[3]);
-                    }
-                    else if (int.Parse(splittedLine[0]) == 3)
-                    {
-                        taa3Val = int.Parse(splittedLine[1]);
-                        GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[2]);
+                            KaputteTubenAnzTAA2 = int.Parse(splittedLine[3]);
+                        }
+                        else if (int.Parse(splittedLine[0]) == 3)
+                        {
+                            taa3Val = int.Parse(splittedLine[1]);
+                            GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[2]);
 
-                        KaputteTubenAnzTAA3 = int.Parse(splittedLine[3]);
+                            KaputteTubenAnzTAA3 = int.Parse(splittedLine[3]);
+                        }
+                        else if (int.Parse(splittedLine[0]) == 4)
+                        {
+                            taa4Val = int.Parse(splittedLine[1]);
+                            GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[2]);
+                            KaputteTubenAnzTAA4 = int.Parse(splittedLine[3]);
+                        }
+                        gesamtTubenAnzZiel = int.Parse(splittedLine[4]);
+                        timeInterval = int.Parse(splittedLine[5]);
+                        readLine = reader.ReadLine();
                     }
-                    else if (int.Parse(splittedLine[0]) == 4)
-                    {
-                        taa4Val = int.Parse(splittedLine[1]);
-                        GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[2]);
-                        KaputteTubenAnzTAA4 = int.Parse(splittedLine[3]);
-                    }
-                    gesamtTubenAnzZiel = int.Parse(splittedLine[4]);
-                    timeInterval = int.Parse(splittedLine[5]);
-                    readLine = reader.ReadLine();
                 }
             }
+
             MachineMaps.server1.InitServerValues(taa1Val, taa2Val);
             MachineMaps.server2.InitServer2Values(taa3Val, taa4Val);
         }
@@ -173,22 +181,29 @@ namespace API.Services
                 var readLine = reader.ReadLine();
                 while (readLine != null)
                 {
-                    if (readLine.Contains(dateTime.ToString("dd.MM.yyyy")))
+                    if (readLine.Length <= 0)
                     {
-                        var splittedLine = readLine.Split(";");
-                        for (int i = 1; i < 5; i++)
+                        readLine = reader.ReadLine();
+                    }
+                    else
+                    {
+                        if (readLine.Contains(dateTime.ToString("dd.MM.yyyy")))
                         {
-                            if (readLine != null)
+                            var splittedLine = readLine.Split(";");
+                            for (int i = 1; i < 5; i++)
                             {
-                                if (readLine.Contains(dateTime.ToString("dd.MM.yyyy")))
+                                if (readLine != null)
                                 {
-                                    machineDictionary.Add(int.Parse(splittedLine[0]), new List<string> { splittedLine[1], splittedLine[2], splittedLine[3], splittedLine[4] });
-                                    readLine = reader.ReadLine();
-                                }
+                                    if (readLine.Contains(dateTime.ToString("dd.MM.yyyy")))
+                                    {
+                                        machineDictionary.Add(int.Parse(splittedLine[0]), new List<string> { splittedLine[1], splittedLine[2], splittedLine[3], splittedLine[4] });
+                                        readLine = reader.ReadLine();
+                                    }
 
+                                }
                             }
+                            break;
                         }
-                        break;
                     }
                 }
             }
