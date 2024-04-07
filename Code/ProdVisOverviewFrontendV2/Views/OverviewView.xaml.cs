@@ -27,6 +27,7 @@ namespace ProdVisOverviewFrontendV2.Views
         private string baseUrl = StaticValues.BaseUrl;
         private OverviewViewModel viewModel;
         private DispatcherTimer updateTimer;
+        private DispatcherTimer timeTimer;
         private APIApi api;
         public OverviewView()
         {
@@ -37,13 +38,21 @@ namespace ProdVisOverviewFrontendV2.Views
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             viewModel = DataContext as OverviewViewModel;
-
+            timeTimer = new DispatcherTimer();
+            timeTimer.Tick += TimeTimer_Tick;
+            timeTimer.Interval = TimeSpan.FromMilliseconds(500);
+            timeTimer.Start();
             updateTimer = new DispatcherTimer();
             updateTimer.Interval = TimeSpan.FromMilliseconds(StaticValues.ThreadCallInterval);
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
             api = new APIApi(baseUrl);
             UpdateAllValues();
+        }
+
+        private void TimeTimer_Tick(object? sender, EventArgs e)
+        {
+            
         }
 
         private void UpdateTimer_Tick(object? sender, EventArgs e)

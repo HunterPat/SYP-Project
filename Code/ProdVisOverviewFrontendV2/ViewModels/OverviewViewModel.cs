@@ -1,4 +1,5 @@
 ﻿using Org.OpenAPITools.Api;
+using ProdVisOverviewFrontend.Values;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,7 @@ namespace ProdVisOverviewFrontendV2.ViewModels
         private DispatcherTimer timeTimer;
         private DispatcherTimer updateTimer;
         private APIApi api;
-        private const string baseUrl = "http://localhost:5501";
+        private string baseUrl = StaticValues.BaseUrl;
 
         public OverviewViewModel()
         {

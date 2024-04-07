@@ -38,7 +38,7 @@
                         <RowDefinition Height="7*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,8,10,0">
-                        <Label FontWeight="DemiBold" Content="Anlagenpaar 1" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
+                        <Label FontWeight="DemiBold" Content="Anlagenpaar 2" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
                     </Border>
                     <Grid Grid.Column="1" Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -52,8 +52,8 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF06B025" CornerRadius="5" BorderThickness="2"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="{Binding Progress_AP1}" Orientation="Vertical" Margin="1.5"></ProgressBar>
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="DeepSkyBlue" CornerRadius="5" BorderThickness="2"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1" Foreground="DeepSkyBlue" Background="White" Value="{Binding Progress_AP2}" Orientation="Vertical" Margin="1.5"></ProgressBar>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -80,21 +80,21 @@
                                     <RowDefinition></RowDefinition>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.05*"></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="1.05*"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
-                                <Label  Grid.Row="2" Content="Ziel:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="2" Grid.Column="1" Content="{Binding ProductionGoal_AP1}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="2" Grid.Column="2" Content="Tuben" HorizontalAlignment="Left" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Content="Ziel:" HorizontalAlignment="Left" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="1" Content="{Binding ProductionGoal_AP2}" Padding="12,5" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2" Content="Tuben" HorizontalAlignment="Right" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
 
-                                <Label Grid.Row="4" Content="Jetzt:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentAmount_AP1}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="4" Grid.Column="2" Content="Tuben" HorizontalAlignment="Left" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="4" Content="Jetzt:" HorizontalAlignment="Left" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentAmount_AP2}" Padding="12,5" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="4" Grid.Column="2" Content="Tuben" HorizontalAlignment="Right" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
 
-                                <Label Grid.Row="6" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="6" Grid.Column="1" Content="{Binding Progress_AP1}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="6" Grid.Column="2" Content="%" HorizontalAlignment="Left" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="6" Content="Erfüllt:" HorizontalAlignment="Left" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="6" Grid.Column="1" Content="{Binding Progress_AP2}" Padding="12,5" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="6" Grid.Column="2" Content="%" HorizontalAlignment="Right" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
 
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="14" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
@@ -115,7 +115,7 @@
                         <RowDefinition Height="7*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,8,10,0">
-                        <Label FontWeight="DemiBold" Content="Anlagenpaar 2" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
+                        <Label FontWeight="DemiBold" Content="Anlagenpaar 1" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
                     </Border>
                     <Grid Grid.Column="1" Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -129,8 +129,8 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF06B025" CornerRadius="5" BorderThickness="2"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="{Binding Progress_AP2}" Orientation="Vertical" Margin="1.5"></ProgressBar>
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="DeepSkyBlue" CornerRadius="5" BorderThickness="2"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1" Foreground="DeepSkyBlue" Background="White" Value="{Binding Progress_AP1}" Orientation="Vertical" Margin="1.5"></ProgressBar>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -157,21 +157,21 @@
                                     <RowDefinition></RowDefinition>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
+                                    <ColumnDefinition  Width="1.05*"></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="1.05*"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
-                                <Label  Grid.Row="2" Content="Ziel:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="2" Grid.Column="1" Content="{Binding ProductionGoal_AP2}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="2" Grid.Column="2" Content="Tuben" HorizontalAlignment="Left" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Content="Ziel:" HorizontalAlignment="Left" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="1" Content="{Binding ProductionGoal_AP1}" Padding="12,5" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2" Content="Tuben" HorizontalAlignment="Right" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
 
-                                <Label Grid.Row="4" Content="Jetzt:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="4" Grid.Column="1"  Content="{Binding CurrentAmount_AP2}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="4" Grid.Column="2" Content="Tuben" HorizontalAlignment="Left" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="4" Content="Jetzt:" HorizontalAlignment="Left" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="4" Grid.Column="1"  Content="{Binding CurrentAmount_AP1}" Padding="12,5" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="4" Grid.Column="2" Content="Tuben" HorizontalAlignment="Right" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
 
-                                <Label Grid.Row="6" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="6" Grid.Column="1" Content="{Binding Progress_AP2}" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="6" Grid.Column="2" Content="%" HorizontalAlignment="Left" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="6" Content="Erfüllt:" HorizontalAlignment="Left" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="6" Grid.Column="1" Content="{Binding Progress_AP1}" Padding="12,5" HorizontalAlignment="Center" FontSize="14" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="6" Grid.Column="2" Content="%" HorizontalAlignment="Right" Padding="12,5" FontSize="14" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="14" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>
