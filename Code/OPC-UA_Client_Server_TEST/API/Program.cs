@@ -37,7 +37,6 @@ app.MapMachineData();
 //});
 Thread thread = new Thread(new ThreadStart(ListenForSignal));
 thread.IsBackground = true;
-
 thread.Start();
 app.Run();
 static async void ListenForSignal()
@@ -48,7 +47,6 @@ static async void ListenForSignal()
     {
         Console.WriteLine("Connecting to named pipe server...");
         pipeClient.Connect();
-
         Console.WriteLine("Connected to named pipe server.");
 
         using (var reader = new StreamReader(pipeClient))
@@ -58,25 +56,30 @@ static async void ListenForSignal()
                 string receivedData = reader.ReadLine()!;
                 if (receivedData != null && receivedData.Length > 0)
                 {
-                    Console.WriteLine($"Data received from server: {receivedData}");
                     Console.WriteLine("Shutting down!");
-                    MachineMaps.service.SaveCurrentValuesIntoDB();
-
-                    Thread.Sleep(5000);
+                    MachineMaps.service.SaveCurrentValuesIntoProdVis();
+                    ResetCheck();
+                   // Thread.Sleep(5000);
                     pipeClient.Close();
                     await pipeClient.DisposeAsync();
                     pipeClient = null!;
                     Environment.Exit(0);
-
                 }
             }
         }
     }
     catch (Exception ex)
     {
-        // Log or handle the exception
         Console.WriteLine($"Error: {ex.Message}");
-
+    }
+}
+static void ResetCheck()
+{
+    if (DateTime.Now.TimeOfDay.Hours == 18 && DateTime.Now.TimeOfDay.Minutes <= 20)
+    {
+        MachineMaps.service.SaveValueIntoProdVisLongTerm();
+        MachineMaps.service.ResetAllValuesAndCSV();
+        MachineMaps.service = new MachineServices();
     }
 }
 

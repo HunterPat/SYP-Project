@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\services\\machineservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\services\\machineservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\prodvis.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\prodvis.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\services\\machineservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\services\\machineservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\myopcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\myopcserver2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -42,23 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProdVis.csv",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\ProdVis.csv",
-              "RelativeDocumentMoniker": "API\\ProdVis.csv",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\ProdVis.csv",
-              "RelativeToolTip": "API\\ProdVis.csv",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2024-03-20T14:58:50.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "API\\Properties\\launchSettings.json",
@@ -70,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MachineServices.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Services\\MachineServices.cs",
               "RelativeDocumentMoniker": "API\\Services\\MachineServices.cs",
               "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Services\\MachineServices.cs",
               "RelativeToolTip": "API\\Services\\MachineServices.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAAAFQAAAA7AAAA",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAUwLkAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T12:23:46.34Z",
               "EditorCaption": ""
@@ -131,15 +115,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
               "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAD4AAAA/AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwFUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T12:23:46.362Z"
+              "WhenOpened": "2024-03-10T12:23:46.362Z",
+              "EditorCaption": ""
             }
           ]
         }

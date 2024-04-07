@@ -55,12 +55,10 @@ namespace StartAPI
         }
         private void StartRestartTimer()
         {
-            // Dispose of any existing timer
             restartTimer?.Dispose();
 
-            // Start a new timer for restarting the application
             restartTimer = new System.Timers.Timer();
-            restartTimer.Interval = 10000; // Adjust as needed
+            restartTimer.Interval = 1000*60*20; 
             restartTimer.Elapsed += RestartApplication!;
             restartTimer.AutoReset = true;
             restartTimer.Start();
@@ -117,5 +115,4 @@ namespace StartAPI
             }
         }
     }
-
 }

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\values\\staticvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:values\\staticvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\settingsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\settingsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\substracttubesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\substracttubesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\passwordalert.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\passwordalert.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\overviewview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,12 +27,20 @@
       "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\detailedoverviewview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\viewmodels\\overviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:viewmodels\\overviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\detailedoverviewview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\detailedoverviewview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\settingsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\settingsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\values\\staticvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:values\\staticvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\passwordalert.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\passwordalert.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\viewmodels\\overviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:viewmodels\\overviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\substracttubesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -46,19 +58,11 @@
       "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\overviewview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\detailedoverviewview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\detailedoverviewview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\customalert.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:views\\customalert.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D56B743-1A2F-44C9-AFFC-A8186268C4B9}|..\\swagger\\src\\Org.OpenAPITools\\Org.OpenAPITools.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\swagger\\src\\org.openapitools\\client\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{386CAC48-7F2A-46AB-A301-42B9F7D3D730}|ProdVisAdminFrontend.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\prodvisadminfrontend\\views\\passwordalert.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -104,8 +108,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T19:18:37.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Client\\Configuration.cs",
+              "RelativeDocumentMoniker": "..\\swagger\\src\\Org.OpenAPITools\\Client\\Configuration.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Client\\Configuration.cs",
+              "RelativeToolTip": "..\\swagger\\src\\Org.OpenAPITools\\Client\\Configuration.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T14:55:16.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OverviewView.xaml.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\OverviewView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\OverviewView.xaml.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\OverviewView.xaml.cs",
+              "RelativeToolTip": "Views\\OverviewView.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAADgvywAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T14:55:16.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StaticValues.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Values\\StaticValues.cs",
+              "RelativeDocumentMoniker": "Values\\StaticValues.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Values\\StaticValues.cs",
+              "RelativeToolTip": "Values\\StaticValues.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T14:55:16.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OverviewView.xaml",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\OverviewView.xaml",
+              "RelativeDocumentMoniker": "Views\\OverviewView.xaml",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\OverviewView.xaml",
+              "RelativeToolTip": "Views\\OverviewView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T14:55:16.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DetailedOverviewView.xaml.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\DetailedOverviewView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\DetailedOverviewView.xaml.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\DetailedOverviewView.xaml.cs",
+              "RelativeToolTip": "Views\\DetailedOverviewView.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAlwC4AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T14:55:16.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DetailedOverviewView.xaml",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\DetailedOverviewView.xaml",
+              "RelativeDocumentMoniker": "Views\\DetailedOverviewView.xaml",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\DetailedOverviewView.xaml",
+              "RelativeToolTip": "Views\\DetailedOverviewView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T14:55:16.234Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -121,30 +209,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "SettingsView.xaml.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SettingsView.xaml.cs",
               "RelativeDocumentMoniker": "Views\\SettingsView.xaml.cs",
               "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SettingsView.xaml.cs",
               "RelativeToolTip": "Views\\SettingsView.xaml.cs",
-              "ViewState": "AQIAAMYAAAAAAAAAAIAwwN4AAAAIAAAA",
+              "ViewState": "AQIAADMBAAAAAAAAAAAIwEkBAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T14:55:16.185Z"
+              "WhenOpened": "2024-03-20T14:55:16.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SubstractTubesView.xaml",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SubstractTubesView.xaml",
+              "RelativeDocumentMoniker": "Views\\SubstractTubesView.xaml",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SubstractTubesView.xaml",
+              "RelativeToolTip": "Views\\SubstractTubesView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T14:55:16.198Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "SettingsView.xaml",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SettingsView.xaml",
-              "RelativeDocumentMoniker": "Views\\SettingsView.xaml",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SettingsView.xaml",
-              "RelativeToolTip": "Views\\SettingsView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-20T14:55:16.19Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "PasswordAlert.xaml.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\PasswordAlert.xaml.cs",
               "RelativeDocumentMoniker": "Views\\PasswordAlert.xaml.cs",
@@ -156,66 +245,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SubstractTubesView.xaml",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SubstractTubesView.xaml",
-              "RelativeDocumentMoniker": "Views\\SubstractTubesView.xaml",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SubstractTubesView.xaml",
-              "RelativeToolTip": "Views\\SubstractTubesView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-20T14:55:16.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Client\\Configuration.cs",
-              "RelativeDocumentMoniker": "..\\swagger\\src\\Org.OpenAPITools\\Client\\Configuration.cs",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Client\\Configuration.cs",
-              "RelativeToolTip": "..\\swagger\\src\\Org.OpenAPITools\\Client\\Configuration.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T14:55:16.203Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "OverviewView.xaml.cs",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\OverviewView.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\OverviewView.xaml.cs",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\OverviewView.xaml.cs",
-              "RelativeToolTip": "Views\\OverviewView.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAADgv0IAAAAPAAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T14:55:16.207Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StaticValues.cs",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Values\\StaticValues.cs",
-              "RelativeDocumentMoniker": "Values\\StaticValues.cs",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Values\\StaticValues.cs",
-              "RelativeToolTip": "Values\\StaticValues.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T14:55:16.404Z",
+              "WhenOpened": "2024-03-20T14:55:16.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OverviewView.xaml",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\OverviewView.xaml",
-              "RelativeDocumentMoniker": "Views\\OverviewView.xaml",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\OverviewView.xaml",
-              "RelativeToolTip": "Views\\OverviewView.xaml",
+              "DocumentIndex": 11,
+              "Title": "SettingsView.xaml",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SettingsView.xaml",
+              "RelativeDocumentMoniker": "Views\\SettingsView.xaml",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\SettingsView.xaml",
+              "RelativeToolTip": "Views\\SettingsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-20T14:55:16.212Z"
+              "WhenOpened": "2024-03-20T14:55:16.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -226,19 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DetailedOverviewView.xaml.cs",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\DetailedOverviewView.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\DetailedOverviewView.xaml.cs",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\DetailedOverviewView.xaml.cs",
-              "RelativeToolTip": "Views\\DetailedOverviewView.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwEgAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T14:55:16.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "OverviewViewModel.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\ViewModels\\OverviewViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\OverviewViewModel.cs",
@@ -250,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DetailedOverviewViewModel.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\ViewModels\\DetailedOverviewViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\DetailedOverviewViewModel.cs",
@@ -262,18 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DetailedOverviewView.xaml",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\DetailedOverviewView.xaml",
-              "RelativeDocumentMoniker": "Views\\DetailedOverviewView.xaml",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\DetailedOverviewView.xaml",
-              "RelativeToolTip": "Views\\DetailedOverviewView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-20T14:55:16.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "CustomAlert.xaml",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\CustomAlert.xaml",
               "RelativeDocumentMoniker": "Views\\CustomAlert.xaml",
@@ -284,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -295,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PasswordAlert.xaml",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\PasswordAlert.xaml",
               "RelativeDocumentMoniker": "Views\\PasswordAlert.xaml",
@@ -306,19 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T14:55:16.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ProdVisAdminFrontend.csproj",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\ProdVisAdminFrontend.csproj",
               "RelativeDocumentMoniker": "ProdVisAdminFrontend.csproj",
@@ -330,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "CustomAlert.xaml.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\Views\\CustomAlert.xaml.cs",
               "RelativeDocumentMoniker": "Views\\CustomAlert.xaml.cs",
@@ -342,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\swagger\\src\\Org.OpenAPITools\\Client\\ApiResponse.cs",
               "RelativeDocumentMoniker": "..\\swagger\\src\\Org.OpenAPITools\\Client\\ApiResponse.cs",
@@ -354,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IntegerSharedService.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\SharedServices\\IntegerSharedService.cs",
               "RelativeDocumentMoniker": "SharedServices\\IntegerSharedService.cs",
@@ -366,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "SettingsViewModel.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\ViewModels\\SettingsViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\SettingsViewModel.cs",
@@ -378,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ISharedService.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\ProdVisAdminFrontend\\SharedServices\\ISharedService.cs",
               "RelativeDocumentMoniker": "SharedServices\\ISharedService.cs",

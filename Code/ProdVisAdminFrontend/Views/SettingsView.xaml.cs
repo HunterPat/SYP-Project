@@ -210,7 +210,7 @@ namespace ProdVisAdminFrontend.Views
 
             viewModel = DataContext as SettingsViewModel;
             updateTimer = new DispatcherTimer();
-            updateTimer.Interval = TimeSpan.FromMilliseconds(1000);
+            updateTimer.Interval = TimeSpan.FromMilliseconds(StaticValues.ThreadTimeInterval);
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
             api = new APIApi(baseUrl);
@@ -285,9 +285,6 @@ namespace ProdVisAdminFrontend.Views
             }
             else
             {
-
-
-
                 customAlert.Message = "Bitte warten!";
                 customAlert.Details = "Die Tubenanzahl wird zurückgesetzt!";
                 customAlert.CancelButtonVisibility = Visibility.Hidden;

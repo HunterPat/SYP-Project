@@ -24,8 +24,8 @@ namespace API.Services
         private static int GesamtTubenAnzBeforeTAA2 = 0;
         private static int GesamtTubenAnzBeforeTAA3 = 0;
         private static int GesamtTubenAnzBeforeTAA4 = 0;
-        private static string password = null!;
-        private string finalCSVPath;
+        private static string password = "dog";
+        private static string finalCSVPath = "";
         public static int gesamtTubenAnzZiel = 8000;
         private static int timeInterval = 30;
 
@@ -34,11 +34,11 @@ namespace API.Services
             var currentDirectory = Directory.GetCurrentDirectory();
             for (int i = 0; i < 5; i++)
             {
-                currentDirectory = Directory.GetParent(currentDirectory).FullName;
+                currentDirectory = Directory.GetParent(currentDirectory)!.FullName;
             }
             // Append the remaining path
-            finalCSVPath = currentDirectory + @"\OPC-UA_Client\API\ProdVis.csv";
-            ReadLatestValuesFromCSV();
+            finalCSVPath = currentDirectory + @"\OPC-UA_Client\API\";
+            ReadLatestValuesFromProdVis();
             clientServer1.EstablishConnection();
             clientServer2.EstablishConnection();
         }
@@ -55,46 +55,9 @@ namespace API.Services
             return (GetGesamttubenanzahlMachine1Visual(2)) + (GetGesamttubenanzahlMachine2Visual(2));
 
         }
-        public void ReadLatestValuesFromCSV()
-        {
-            using (StreamReader reader = new StreamReader(finalCSVPath))
-            {
-                var readLine = reader.ReadLine();
-                while (readLine != null || readLine!.Length > 0)
-                {
-                    var splittedLine = readLine.Split(";");
-                    if (int.Parse(splittedLine[0]) == 1)
-                    {
-                        GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[1]);
-                        KaputteTubenAnzTAA1 = int.Parse(splittedLine[2]);
-                    }
-                    else if (int.Parse(splittedLine[0]) == 2)
-                    {
-                        GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
-                        KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
-                    }
-                    else if (int.Parse(splittedLine[0]) == 3)
-                    {
-                        GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
-                        KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
-                    }
-                    else if (int.Parse(splittedLine[0]) == 4)
-                    {
-                        GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[1]);
-                        KaputteTubenAnzTAA4 = int.Parse(splittedLine[2]);
-                    }
-                    gesamtTubenAnzZiel = int.Parse(splittedLine[3]);
-                    timeInterval = int.Parse(splittedLine[4]);
-                }
-            }
-        }
         public void ResetAllValuesAndCSV()
         {
-            using (StreamWriter writer = new StreamWriter(finalCSVPath, false))
-            {
-                writer.Write(""); // Write an empty string to clear the file
-            }
-            Console.WriteLine("CSV file cleared successfully.");
+            ClearProdVis();
             GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1(1);
             GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2(1);
             GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1(2);
@@ -104,11 +67,146 @@ namespace API.Services
             KaputteTubenAnzTAA3 = 0;
             KaputteTubenAnzTAA4 = 0;
         }
+        private static void ClearProdVis()
+        {
+            using (StreamWriter writer = new StreamWriter(finalCSVPath + "ProdVis.csv", false))
+            {
+                writer.Write("");
+            }
+            Console.WriteLine("CSV file cleared successfully.");
+        }
+        public void ReadLatestValuesFromProdVis()
+        {
+            try
+            {
+                using (StreamReader reader = new StreamReader(finalCSVPath + "ProdVis.csv"))
+                {
+                    var readLine = reader.ReadLine();
+                    while (readLine != null)
+                    {
+                        if (readLine.Length <= 0)
+                        {
+                            readLine = reader.ReadLine();
+                        }
+                        else
+                        {
 
-        public void SaveCurrentValuesIntoDB()
+                            var splittedLine = readLine.Split(";");
+                            if (int.Parse(splittedLine[0]) == 1)
+                            {
+                                GesamtTubenAnzBeforeTAA1 = int.Parse(splittedLine[1]);
+                                KaputteTubenAnzTAA1 = int.Parse(splittedLine[2]);
+                            }
+                            else if (int.Parse(splittedLine[0]) == 2)
+                            {
+                                GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
+                                KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
+                            }
+                            else if (int.Parse(splittedLine[0]) == 3)
+                            {
+                                GesamtTubenAnzBeforeTAA3 = int.Parse(splittedLine[1]);
+                                KaputteTubenAnzTAA3 = int.Parse(splittedLine[2]);
+                            }
+                            else if (int.Parse(splittedLine[0]) == 4)
+                            {
+                                GesamtTubenAnzBeforeTAA4 = int.Parse(splittedLine[1]);
+                                KaputteTubenAnzTAA4 = int.Parse(splittedLine[2]);
+                            }
+                            gesamtTubenAnzZiel = int.Parse(splittedLine[3]);
+                            timeInterval = int.Parse(splittedLine[4]);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Read from Prodvis failed: \n" + ex.Message);
+            }
+        }
+        public void SaveValueIntoProdVisLongTerm()
+        {
+            using (StreamWriter writer = new StreamWriter(finalCSVPath + "ProdVisLongTerm.csv", true))
+            {
+                for (int i = 1; i < 5; i++)
+                {
+                    var writeLine = "";
+                    writeLine += i + ";";
+                    if (i == 1)
+                    {
+
+                        writeLine += GetGesamttubenanzahlMachine1Visual(1) + ";";
+                        writeLine += KaputteTubenAnzTAA1 + ";";
+                    }
+                    else if (i == 2)
+                    {
+                        writeLine += GetGesamttubenanzahlMachine2Visual(1) + ";";
+                        writeLine += KaputteTubenAnzTAA2 + ";";
+                    }
+                    else if (i == 3)
+                    {
+                        writeLine += GetGesamttubenanzahlMachine1Visual(2) + ";";
+                        writeLine += KaputteTubenAnzTAA3 + ";";
+                    }
+                    else if (i == 4)
+                    {
+                        writeLine += GetGesamttubenanzahlMachine2Visual(2) + ";";
+                        writeLine += KaputteTubenAnzTAA4 + ";";
+                    }
+                    writeLine += GetGesamttubenanzahlZiel4Machines() + ";";
+                    writeLine += DateTime.Now.ToString("dd.MM.yyyy") + ";";
+                    writer.WriteLine(writeLine);
+                    writer.Flush();
+                    Console.WriteLine("Saved into CSV");
+                }
+                //writer.Close();
+            }
+        }
+        public Dictionary<int, List<string>> ReadValuesOfLongTermCSV(DateTime dateTime)
+        {
+            Dictionary<int, List<string>> machineDictionary = new Dictionary<int, List<string>>();
+            try
+            {
+                using (StreamReader reader = new StreamReader(finalCSVPath + "ProdVisLongTerm.csv"))
+                {
+                    var readLine = reader.ReadLine();
+                    while (readLine != null)
+                    {
+                        if (readLine.Length <= 0)
+                        {
+                            readLine = reader.ReadLine();
+                        }
+                        else
+                        {
+                            if (readLine.Contains(dateTime.ToString("dd.MM.yyyy")))
+                            {
+                                var splittedLine = readLine.Split(";");
+                                for (int i = 1; i < 5; i++)
+                                {
+                                    if (readLine != null)
+                                    {
+                                        if (readLine.Contains(dateTime.ToString("dd.MM.yyyy")))
+                                        {
+                                            machineDictionary.Add(int.Parse(splittedLine[0]), new List<string> { splittedLine[1], splittedLine[2], splittedLine[3], splittedLine[4] });
+                                            readLine = reader.ReadLine();
+                                        }
+                                    }
+                                }
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Read of ProdVisLongTerm failed: {ex.Message}");
+            }
+            return machineDictionary;
+        }
+        public void SaveCurrentValuesIntoProdVis()
         {
 
-            using (StreamWriter writer = new StreamWriter(finalCSVPath, true))
+            using (StreamWriter writer = new StreamWriter(finalCSVPath + "ProdVis.csv", true))
             {
                 for (int i = 1; i < 5; i++)
                 {
@@ -134,14 +232,12 @@ namespace API.Services
                         writeLine += GesamtTubenAnzBeforeTAA4 + ";";
                         writeLine += KaputteTubenAnzTAA4 + ";";
                     }
-
                     writeLine += gesamtTubenAnzZiel + ";";
                     writeLine += timeInterval + ";";
                     writer.WriteLine(writeLine);
                     writer.Flush();
                     Console.WriteLine("Saved into CSV");
                 }
-                writer.Close();
             }
         }
 
@@ -152,14 +248,14 @@ namespace API.Services
             if (serverID == 1)
             {
 
-                if (clientServer1.ReadDataFromTAA1() != -1) return int.Parse(clientServer1.ReadDataFromTAA1().ToString()!);
+                if (clientServer1.ReadDataFromTAA1() != -1) return clientServer1.ReadDataFromTAA1();
 
                 return GetGesamttubenanzahlMachine1(serverID);
 
             }
             else if (serverID == 2)
             {
-                if (clientServer2.ReadDataFromTAA3() != -1) return int.Parse(clientServer2.ReadDataFromTAA3().ToString()!);
+                if (clientServer2.ReadDataFromTAA3() != -1) return clientServer2.ReadDataFromTAA3();
                 return GetGesamttubenanzahlMachine1(serverID);
             }
             return GetGesamttubenanzahlMachine1(serverID);
@@ -171,13 +267,13 @@ namespace API.Services
 
             if (serverID == 1)
             {
-                if (clientServer1.ReadDataFromTAA2() != -1) return int.Parse(clientServer1.ReadDataFromTAA2().ToString()!);
+                if (clientServer1.ReadDataFromTAA2() != -1) return clientServer1.ReadDataFromTAA2();
                 return GetGesamttubenanzahlMachine2(serverID);
 
             }
             else if (serverID == 2)
             {
-                if (clientServer2.ReadDataFromTAA4() != -1) return int.Parse(clientServer2.ReadDataFromTAA4().ToString()!);
+                if (clientServer2.ReadDataFromTAA4() != -1) return clientServer2.ReadDataFromTAA4();
 
                 return GetGesamttubenanzahlMachine2(serverID);
             }
@@ -190,14 +286,14 @@ namespace API.Services
             if (serverID == 1)
             {
 
-                if (clientServer1.ReadDataFromTAA1() != -1) return int.Parse(clientServer1.ReadDataFromTAA1().ToString()!) - GesamtTubenAnzBeforeTAA1;
+                if (clientServer1.ReadDataFromTAA1() != -1) return clientServer1.ReadDataFromTAA1() - GesamtTubenAnzBeforeTAA1;
 
                 return GetGesamttubenanzahlMachine1Visual(serverID);
 
             }
             else if (serverID == 2)
             {
-                if (clientServer2.ReadDataFromTAA3() != -1) return int.Parse(clientServer2.ReadDataFromTAA3().ToString()!) - GesamtTubenAnzBeforeTAA3;
+                if (clientServer2.ReadDataFromTAA3() != -1) return clientServer2.ReadDataFromTAA3() - GesamtTubenAnzBeforeTAA3;
                 return GetGesamttubenanzahlMachine1Visual(serverID);
             }
             return -1;
@@ -209,13 +305,13 @@ namespace API.Services
 
             if (serverID == 1)
             {
-                if (clientServer1.ReadDataFromTAA2() != -1) return int.Parse(clientServer1.ReadDataFromTAA2().ToString()!) - GesamtTubenAnzBeforeTAA2;
+                if (clientServer1.ReadDataFromTAA2() != -1) return clientServer1.ReadDataFromTAA2() - GesamtTubenAnzBeforeTAA2;
                 return GetGesamttubenanzahlMachine2Visual(serverID);
 
             }
             else if (serverID == 2)
             {
-                if (clientServer2.ReadDataFromTAA4() != -1) return int.Parse(clientServer2.ReadDataFromTAA4().ToString()!) - GesamtTubenAnzBeforeTAA4;
+                if (clientServer2.ReadDataFromTAA4() != -1) return clientServer2.ReadDataFromTAA4() - GesamtTubenAnzBeforeTAA4;
 
                 return GetGesamttubenanzahlMachine2Visual(serverID);
             }
@@ -224,7 +320,7 @@ namespace API.Services
 
         public void PostResetbitServer1()
         {
-            Console.WriteLine("POST: ResetbitServer1");
+            Console.WriteLine("POST: ResetbitServer1"); //check if Resetbit is 1 or true
             clientServer1.ResetBitServer1();
         }
 
@@ -322,10 +418,9 @@ namespace API.Services
         {
             return gesamtTubenAnzZiel;
         }
-
         public bool PutGesamttubenAnzZiel(int value)
         {
-            gesamtTubenAnzZiel = value > 0 ? gesamtTubenAnzZiel : value;
+            gesamtTubenAnzZiel = value <= 0 || value % 2 != 0 ? gesamtTubenAnzZiel : value;
             return gesamtTubenAnzZiel == value;
         }
 

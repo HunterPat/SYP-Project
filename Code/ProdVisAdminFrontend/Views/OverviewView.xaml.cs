@@ -40,7 +40,7 @@ namespace ProdVisAdminFrontend.Views
             viewModel = DataContext as OverviewViewModel;
             
             updateTimer = new DispatcherTimer();
-            updateTimer.Interval = TimeSpan.FromMilliseconds(200);
+            updateTimer.Interval = TimeSpan.FromMilliseconds(StaticValues.ThreadTimeInterval);
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
             api = new APIApi(baseUrl);
@@ -50,18 +50,6 @@ namespace ProdVisAdminFrontend.Views
         private void UpdateTimer_Tick(object? sender, EventArgs e)
         {
             UpdateAllValues();
-        }
-
-        private int CalculatePercentage(int numerator, int denominator)
-        {
-            // Check if the denominator is not zero to avoid division by zero
-            if (denominator != 0)
-            {
-                // Calculate the percentage and return the result
-                double result = ((double)numerator / denominator) * 100;
-                return (int)result;
-            }
-            return 0;
         }
 
         public void UpdateAllValues()
@@ -79,7 +67,6 @@ namespace ProdVisAdminFrontend.Views
         private void Switch_Clicked(object sender, RoutedEventArgs e)
         {
             viewModel.OnSwitchUserControlRequested();
-
         }
 
 

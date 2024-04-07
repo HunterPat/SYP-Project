@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{659489F4-2016-44E1-9DE7-8D2AD9FB3E5F}|StartAPI\\StartAPI.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\startapi\\startapi\\pipeserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{659489F4-2016-44E1-9DE7-8D2AD9FB3E5F}|StartAPI\\StartAPI.csproj|solutionrelative:startapi\\pipeserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{659489F4-2016-44E1-9DE7-8D2AD9FB3E5F}|StartAPI\\StartAPI.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\startapi\\startapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{659489F4-2016-44E1-9DE7-8D2AD9FB3E5F}|StartAPI\\StartAPI.csproj|solutionrelative:startapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,15 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PipeServer.cs",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\StartAPI\\PipeServer.cs",
+              "RelativeDocumentMoniker": "StartAPI\\PipeServer.cs",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\StartAPI\\PipeServer.cs",
+              "RelativeToolTip": "StartAPI\\PipeServer.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAwwEAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T13:05:56.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\StartAPI\\Program.cs",
               "RelativeDocumentMoniker": "StartAPI\\Program.cs",
               "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\StartAPI\\StartAPI\\Program.cs",
               "RelativeToolTip": "StartAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T17:41:55.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-10T17:41:55.667Z"
             }
           ]
         }

@@ -13,15 +13,13 @@ namespace API.Maps
         public static IEndpointRouteBuilder MapMachineData(this IEndpointRouteBuilder routes)
         {
             var gesamtTubenAnzVisualGroup = routes.MapGroup("/gesamttubenAnzVisual");
-            var gesamtTubenAnzDataGroup = routes.MapGroup("/gesamttubenAnz");
+            var reportGroup = routes.MapGroup("/report");
+            var gesamtTubenAnzGroup = routes.MapGroup("/gesamttubenAnz");
             var kaputteTubenAnzGroup = routes.MapGroup("/kaputteTubenAnz");
             var passwordGroup = routes.MapGroup("/password");
             var resetBitGroup = routes.MapGroup("/resetBit");
             var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
             var timeIntervalGroup = routes.MapGroup("/timeInterval");
-            System.Timers.Timer timer = new System.Timers.Timer(3600 * 1000 * 3); // every 3 hours check => 3600 seconds in a hour
-            timer.Elapsed += Timer_Elapsed!;
-            timer.Start();
 
             gesamtTubenAnzZielGroup.MapGet("", () => service.GetGesamttubenanzahlZiel());
             gesamtTubenAnzZielGroup.MapPut("", ([FromBody] int value) => service.PutGesamttubenAnzZiel(value));
@@ -39,8 +37,8 @@ namespace API.Maps
             gesamtTubenAnzVisualGroup.MapGet("/Server1", () => service.GetGesamttubenanzahlServer1());
             gesamtTubenAnzVisualGroup.MapGet("/Server2", () => service.GetGesamttubenanzahlServer2());
 
-            gesamtTubenAnzDataGroup.MapGet("/Machine1/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine1(serverID));
-            gesamtTubenAnzDataGroup.MapGet("/Machine2/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine2(serverID));
+            gesamtTubenAnzGroup.MapGet("/Machine1/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine1(serverID));
+            gesamtTubenAnzGroup.MapGet("/Machine2/{serverID}", (int serverID) => service.GetGesamttubenanzahlMachine2(serverID));
             //in Percent
             gesamtTubenAnzVisualGroup.MapGet("/Server1/Percent", () => service.GetGesamttubenanzahlPercentServer1());
             gesamtTubenAnzVisualGroup.MapGet("/Server2/Percent", () => service.GetGesamttubenanzahlPercentServer2());
@@ -65,16 +63,12 @@ namespace API.Maps
 
             gesamtTubenAnzZielGroup.MapGet("/MachinePairs", () => service.GetGesamttubenanzahlZielMachinePairs());
             gesamtTubenAnzZielGroup.MapGet("/4Machines", () => service.GetGesamttubenanzahlZiel4Machines());
-
-            return routes;
-        }
-        private static void Timer_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            if (DateTime.Now.TimeOfDay.Hours >= 0 && DateTime.Now.TimeOfDay.Hours <= 3 && DateTime.Now.TimeOfDay.Minutes >= 0 && DateTime.Now.TimeOfDay.Minutes <= 60)// check if time is 12:00 or 0:00
+            
+            reportGroup.MapGet("/information", (DateTime dateTime) =>
             {
-                service.ResetAllValuesAndCSV();
-                service = new MachineServices();
-            }
+                return service.ReadValuesOfLongTermCSV(dateTime);
+            });
+            return routes;
         }
     }
 }

@@ -16,6 +16,7 @@ namespace API.Maps
         public static IEndpointRouteBuilder MapMachineData(this IEndpointRouteBuilder routes)
         {
             var gesamtTubenAnzDataGroup = routes.MapGroup("/gesamttubenAnz");
+            var reportGroup = routes.MapGroup("/report");
             var gesamtTubenAnzVisualGroup = routes.MapGroup("/gesamttubenAnzVisual");
             var kaputteTubenAnzGroup = routes.MapGroup("/kaputteTubenAnz");
             var passwordGroup = routes.MapGroup("/password");
@@ -27,9 +28,6 @@ namespace API.Maps
             server1.StartServer();
             server2.StartServer();
             service = new MachineServices();
-            System.Timers.Timer timer = new System.Timers.Timer((60 * 1000) * 180); // every 3 hours check =>  60 seconds * 180
-            timer.Elapsed += Timer_Elapsed!;
-            timer.Start();
 
             gesamtTubenAnzZielGroup.MapGet("", () => service.GetGesamttubenanzahlZiel());
             gesamtTubenAnzZielGroup.MapPut("", ([FromBody] int value) => service.PutGesamttubenAnzZiel(value));
@@ -74,15 +72,12 @@ namespace API.Maps
             gesamtTubenAnzZielGroup.MapGet("/MachinePairs", () => service.GetGesamttubenanzahlZielMachinePairs());
             gesamtTubenAnzZielGroup.MapGet("/4Machines", () => service.GetGesamttubenanzahlZiel4Machines());
 
-            return routes;
-        }
-        private static void Timer_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            if (DateTime.Now.TimeOfDay.Hours >= 0 && DateTime.Now.TimeOfDay.Hours <= 3 && DateTime.Now.TimeOfDay.Minutes >= 0 && DateTime.Now.TimeOfDay.Minutes <= 60)// check if time is 12:00 or 0:00
+            reportGroup.MapGet("/information", (DateTime dateTime) =>
             {
-                service.ResetAllValuesAndCSV();
-                service = new MachineServices();
-            }
+                return service.ReadValuesOfLongTermCSV(dateTime);
+            });
+
+            return routes;
         }
     }
 }
