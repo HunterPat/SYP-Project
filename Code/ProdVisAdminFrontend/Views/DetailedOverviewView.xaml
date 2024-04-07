@@ -40,7 +40,7 @@
                         <RowDefinition Height="8*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,4,10,0">
-                        <Label FontWeight="DemiBold" Content="Anlage 1" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
+                        <Label FontWeight="DemiBold" Content="Anlage 3" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
                     </Border>
                     <Grid Grid.Column="1" Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -54,8 +54,8 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF06B025" CornerRadius="5" BorderThickness="2"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="{Binding Progress_A1}" Orientation="Vertical" Margin="1.5"></ProgressBar>
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="DeepSkyBlue" CornerRadius="5" BorderThickness="2"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1" Foreground="DeepSkyBlue" Background="White" Value="{Binding Progress_A3}" Orientation="Vertical" Margin="1.5"></ProgressBar>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -82,16 +82,16 @@
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
-                                <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A3}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
 
-                                <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A1}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A3}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A3}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>
@@ -100,76 +100,6 @@
                 </Grid>
             </Border>
             <Border Grid.Row="1" Background="#EEEDED" BorderThickness="1" BorderBrush="#EEEDED" CornerRadius="5" Margin="10, 0, 10, 10">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="2*"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="2*"></RowDefinition>
-                        <RowDefinition Height="8*"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,4,10,0">
-                        <Label FontWeight="DemiBold" Content="Anlage 3" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
-                    </Border>
-                    <Grid Grid.Column="1" Grid.Row="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition Height="8*"></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition Width="2*"></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF06B025" CornerRadius="5" BorderThickness="2"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="{Binding Progress_A3}" Orientation="Vertical" Margin="1.5"></ProgressBar>
-                    </Grid>
-                    <Grid Grid.Row="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition Height="8*"></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition Width="6*"></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Border Grid.Column="1" Grid.Row="1" Background="#C7C8CC" BorderThickness="1" BorderBrush="#C7C8CC" CornerRadius="5">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition></RowDefinition>
-                                    <RowDefinition></RowDefinition>
-                                    <RowDefinition></RowDefinition>
-                                    <RowDefinition></RowDefinition>
-
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
-                                    <ColumnDefinition></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                                <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
-
-                                <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A3}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-                            </Grid>
-                        </Border>
-
-                    </Grid>
-                </Grid>
-            </Border>
-            <Border Grid.Row="1" Grid.Column="1" Background="#EEEDED" BorderThickness="1" BorderBrush="#EEEDED" CornerRadius="5" Margin="10, 0, 10, 10">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="2*"></ColumnDefinition>
@@ -194,8 +124,8 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF06B025" CornerRadius="5" BorderThickness="2"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="{Binding Progress_A4}" Orientation="Vertical" Margin="1.5"></ProgressBar>
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="DeepSkyBlue" CornerRadius="5" BorderThickness="2"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1" Foreground="DeepSkyBlue" Background="White" Value="{Binding Progress_A3}" Orientation="Vertical" Margin="1.5"></ProgressBar>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -222,16 +152,86 @@
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
-                                <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A4}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
 
-                                <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A4}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A4}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A4}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" Background="#EEEDED" BorderThickness="1" BorderBrush="#EEEDED" CornerRadius="5" Margin="10, 0, 10, 10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="8*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Border Grid.ColumnSpan="2" Background="#C7C8CC" CornerRadius="5" BorderBrush="#C7C8CC" BorderThickness="1" Margin="10,4,10,0">
+                        <Label FontWeight="DemiBold" Content="Anlage 1" HorizontalAlignment="Center" FontSize="14" VerticalAlignment="Center"></Label>
+                    </Border>
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="8*"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="DeepSkyBlue" CornerRadius="5" BorderThickness="2"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1" Foreground="DeepSkyBlue" Background="White" Value="{Binding Progress_A3}" Orientation="Vertical" Margin="1.5"></ProgressBar>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="8*"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="6*"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="1" Grid.Row="1" Background="#C7C8CC" BorderThickness="1" BorderBrush="#C7C8CC" CornerRadius="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A1}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+
+                                <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A1}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A1}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>
@@ -264,8 +264,8 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF06B025" CornerRadius="5" BorderThickness="2"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1"  Background="White" Value="{Binding Progress_A2}" Orientation="Vertical" Margin="1.5"></ProgressBar>
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="DeepSkyBlue" CornerRadius="5" BorderThickness="2"></Border>
+                        <ProgressBar Grid.Column="1" Grid.Row="1" Foreground="DeepSkyBlue" Background="White" Value="{Binding Progress_A2}" Orientation="Vertical" Margin="1.5"></ProgressBar>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -292,16 +292,16 @@
                                     <ColumnDefinition></ColumnDefinition>
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
-                                <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Content="Ziel:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1"  Content="{Binding ProductionGoal_A2}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="1" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
 
-                                <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A2}" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
-                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Left" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Content="Jetzt:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentAmount_A2}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="2" Grid.Column="2"  Content="Tuben" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Content="Erfüllt:" HorizontalAlignment="Left" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Progress_A2}" Padding="15,5" HorizontalAlignment="Center" FontSize="12" FontWeight="DemiBold"></Label>
+                                <Label  Grid.Row="3" Grid.Column="2"  Content="%" HorizontalAlignment="Right" Padding="15,5" FontSize="12" FontWeight="DemiBold"></Label>
                                 <Label Grid.ColumnSpan="3" Content="Details" FontSize="12" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
                             </Grid>
                         </Border>
