@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics;
 using System.Security.Principal;
 using API.Maps;
 using Eco.FrameworkImpl.Ocl;
@@ -55,7 +56,76 @@ namespace API.Services
             KaputteTubenAnzTAA3 = 0;
             KaputteTubenAnzTAA4 = 0;
         }
+        public void RunPythonScript()
+        {
+            try
+            {
+                string pythonInterpreter = "python";
 
+                // Path to your Python script
+                var currentDirectory = Directory.GetCurrentDirectory();
+                for (int i = 0; i < 2; i++)
+                {
+                    currentDirectory = Directory.GetParent(currentDirectory)!.FullName;
+                }
+                var pythonScriptCreate = currentDirectory + @"\PythonScripts\create_complex_pdf.py";
+                var pythonScriptSend = currentDirectory + @"\PythonScripts\test_email_sender.py";
+                // Create process info
+                ProcessStartInfo startCreate = new ProcessStartInfo();
+                startCreate.FileName = pythonInterpreter;
+                startCreate.Arguments = pythonScriptCreate;
+                startCreate.UseShellExecute = false;
+                startCreate.RedirectStandardOutput = true;
+                startCreate.RedirectStandardError = true;
+
+                // Start the process
+                using (Process process = Process.Start(startCreate)!)
+                {
+                    // Read the output
+                    using (StreamReader reader = process.StandardOutput)
+                    {
+                        string result = reader.ReadToEnd();
+                        Console.WriteLine(result);
+                    }
+
+                    // Read any errors
+                    using (StreamReader reader = process.StandardError)
+                    {
+                        string error = reader.ReadToEnd();
+                        Console.WriteLine(error);
+                    }
+                }
+
+                ProcessStartInfo startSend = new ProcessStartInfo();
+                startSend.FileName = pythonInterpreter;
+                startSend.Arguments = pythonScriptCreate;
+                startSend.UseShellExecute = false;
+                startSend.RedirectStandardOutput = true;
+                startSend.RedirectStandardError = true;
+
+                // Start the process
+                using (Process process = Process.Start(startSend)!)
+                {
+                    // Read the output
+                    using (StreamReader reader = process.StandardOutput)
+                    {
+                        string result = reader.ReadToEnd();
+                        Console.WriteLine(result);
+                    }
+
+                    // Read any errors
+                    using (StreamReader reader = process.StandardError)
+                    {
+                        string error = reader.ReadToEnd();
+                        Console.WriteLine(error);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Send Bericht Exception: " + e.Message);
+            }
+        }
 
         private static void ClearProdVis()
         {
