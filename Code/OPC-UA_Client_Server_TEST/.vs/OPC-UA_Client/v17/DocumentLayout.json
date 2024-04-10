@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\services\\machineservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\services\\machineservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\myopcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\myopcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\prodvislongterm.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\prodvislongterm.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\maps\\machinemaps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\maps\\machinemaps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\myopcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|solutionrelative:api\\myopcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEE30D78-37EA-4FBF-8985-2CA04EDE3B4A}|API\\API.csproj|d:\\htlfolder\\4klasse\\syp\\syp-project\\code\\opc-ua_client_server_test\\api\\myopcserver1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "ProdVisLongTerm.csv",
+              "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\ProdVisLongTerm.csv",
+              "RelativeDocumentMoniker": "API\\ProdVisLongTerm.csv",
+              "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\ProdVisLongTerm.csv",
+              "RelativeToolTip": "API\\ProdVisLongTerm.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-04-10T13:34:23.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "API\\Properties\\launchSettings.json",
@@ -54,13 +71,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MachineServices.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Services\\MachineServices.cs",
               "RelativeDocumentMoniker": "API\\Services\\MachineServices.cs",
               "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Services\\MachineServices.cs",
               "RelativeToolTip": "API\\Services\\MachineServices.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAAAUwLkAAAA1AAAA",
+              "ViewState": "AQIAAPEAAAAAAAAAAAAtwP4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T12:23:46.34Z",
               "EditorCaption": ""
@@ -73,13 +90,14 @@
               "RelativeDocumentMoniker": "API\\Maps\\MachineMaps.cs",
               "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Maps\\MachineMaps.cs",
               "RelativeToolTip": "API\\Maps\\MachineMaps.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAQwFIAAAAkAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwE8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T12:23:46.345Z"
+              "WhenOpened": "2024-03-10T12:23:46.345Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MyOPCServer2.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCServer2.cs",
               "RelativeDocumentMoniker": "API\\MyOPCServer2.cs",
@@ -91,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MyOPCServer1.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCServer1.cs",
               "RelativeDocumentMoniker": "API\\MyOPCServer1.cs",
@@ -103,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MyOPCClient.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\MyOPCClient.cs",
               "RelativeDocumentMoniker": "API\\MyOPCClient.cs",
@@ -115,13 +133,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
               "ToolTip": "D:\\HtlFolder\\4Klasse\\SYP\\SYP-Project\\Code\\OPC-UA_Client_Server_TEST\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAqwFUAAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADsAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T12:23:46.362Z",
               "EditorCaption": ""

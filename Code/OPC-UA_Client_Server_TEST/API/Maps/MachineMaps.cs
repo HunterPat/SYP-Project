@@ -76,7 +76,14 @@ namespace API.Maps
             {
                 return service.ReadValuesOfLongTermCSV(dateTime);
             });
-
+            reportGroup.MapGet("/LastReportDate", () =>
+            {
+                return service.GetLastReportDate();
+            });
+            reportGroup.MapGet("/LastGoalPercent", () =>
+            {
+                return service.GetLastGoalPercent();
+            });
             return routes;
         }
     }

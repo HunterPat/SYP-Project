@@ -455,5 +455,43 @@ namespace API.Services
             KaputteTubenAnzTAA1 = value;
             return true;
         }
+
+        public string GetLastReportDate()
+        {
+            var lastLine = "";
+            using (StreamReader reader = new StreamReader(finalCSVPath + "ProdVisLongTerm.csv"))
+            {
+                var readLine = reader.ReadLine();
+                while (readLine != null)
+                {
+                    lastLine = readLine;
+                    readLine = reader.ReadLine();
+                }
+            }
+            return lastLine.Split(";")[4];
+        }
+        public int GetLastGoalPercent()
+        {
+            List<string> lastFourLines = new List<string>();
+
+            using (StreamReader reader = new StreamReader(finalCSVPath + "ProdVisLongTerm.csv"))
+            {
+                var readLine = reader.ReadLine();
+                while (readLine != null)
+                {
+                    lastFourLines.Add(readLine);
+
+                    if (lastFourLines.Count > 4)
+                    {
+                        lastFourLines.RemoveAt(0);
+                    }
+                    readLine = reader.ReadLine();
+                }
+                var allMachinesCombined = 0;
+                lastFourLines.ForEach(line => { allMachinesCombined += int.Parse(line.Split(";")[1]); });
+
+                return int.Parse(lastFourLines[lastFourLines.Count - 1].Split(";")[3]) * 4 / allMachinesCombined;
+            }
+        }
     }
 }
