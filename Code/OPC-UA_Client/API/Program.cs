@@ -72,6 +72,7 @@ static void ResetCheck()
     {
         MachineMaps.service.SaveValueIntoProdVisLongTerm();
         MachineMaps.service.ResetAllValuesAndCSV();
+        MachineMaps.service.RunPythonScript();
         MachineMaps.service = new MachineServices();
     }
 }

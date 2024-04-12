@@ -61,71 +61,108 @@ namespace API.Services
         {
             try
             {
-                string pythonInterpreter = "python";
+                Console.WriteLine("Run python script");
+                string pythonInterpreter = @"C:\Users\Windows\AppData\Local\Programs\Python\Python312\python.exe";
 
                 // Path to your Python script
                 var currentDirectory = Directory.GetCurrentDirectory();
-                for (int i = 0; i < 2; i++)
-                {
-                    currentDirectory = Directory.GetParent(currentDirectory)!.FullName;
-                }
+                //for (int i = 0; i < 5; i++)
+                //{
+                //    currentDirectory = Directory.GetParent(currentDirectory)!.FullName;
+                //}
                 var pythonScriptCreate = currentDirectory + @"\PythonScripts\create_complex_pdf.py";
                 var pythonScriptSend = currentDirectory + @"\PythonScripts\test_email_sender.py";
-                // Create process info
-                ProcessStartInfo startCreate = new ProcessStartInfo();
-                startCreate.FileName = pythonInterpreter;
-                startCreate.Arguments = pythonScriptCreate;
-                startCreate.UseShellExecute = false;
-                startCreate.RedirectStandardOutput = true;
-                startCreate.RedirectStandardError = true;
+
+                // Create a process start info
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.FileName = pythonInterpreter;
+                startInfo.Arguments = pythonScriptCreate;
+
+                // Redirect standard output and error
+                startInfo.RedirectStandardOutput = true;
+                startInfo.RedirectStandardError = true;
+                startInfo.UseShellExecute = false;
+
+                // Create the process
+                Process process = new Process();
+                process.StartInfo = startInfo;
+
+                // Subscribe to output data events
+                process.OutputDataReceived += (sender, e) =>
+                {
+                    if (!string.IsNullOrEmpty(e.Data))
+                    {
+                        Console.WriteLine("Output: " + e.Data);
+                    }
+                };
+
+                process.ErrorDataReceived += (sender, e) =>
+                {
+                    if (!string.IsNullOrEmpty(e.Data))
+                    {
+                        Console.WriteLine("Error: " + e.Data);
+                    }
+                };
 
                 // Start the process
-                using (Process process = Process.Start(startCreate)!)
+                process.Start();
+
+                // Begin asynchronous read of the output/error streams
+                process.BeginOutputReadLine();
+                process.BeginErrorReadLine();
+
+                // Wait for the process to exit
+                process.WaitForExit();
+
+                // Display exit code
+                Console.WriteLine("Exit code: " + process.ExitCode);
+
+                // Create a process start info
+
+                ProcessStartInfo startInfoSend = new ProcessStartInfo();
+                startInfoSend.FileName = pythonInterpreter;
+                startInfoSend.Arguments = pythonScriptSend;
+
+                // Redirect standard output and error
+                startInfoSend.RedirectStandardOutput = true;
+                startInfoSend.RedirectStandardError = true;
+                startInfoSend.UseShellExecute = false;
+
+                // Create the process
+                Process processSend = new Process();
+                processSend.StartInfo = startInfoSend;
+
+                // Subscribe to output data events
+                processSend.OutputDataReceived += (sender, e) =>
                 {
-                    // Read the output
-                    using (StreamReader reader = process.StandardOutput)
+                    if (!string.IsNullOrEmpty(e.Data))
                     {
-                        string result = reader.ReadToEnd();
-                        Console.WriteLine(result);
+                        Console.WriteLine("Output: " + e.Data);
                     }
+                };
 
-                    // Read any errors
-                    using (StreamReader reader = process.StandardError)
+                processSend.ErrorDataReceived += (sender, e) =>
+                {
+                    if (!string.IsNullOrEmpty(e.Data))
                     {
-                        string error = reader.ReadToEnd();
-                        Console.WriteLine(error);
+                        Console.WriteLine("Error: " + e.Data);
                     }
-                }
-
-                ProcessStartInfo startSend = new ProcessStartInfo();
-                startSend.FileName = pythonInterpreter;
-                startSend.Arguments = pythonScriptCreate;
-                startSend.UseShellExecute = false;
-                startSend.RedirectStandardOutput = true;
-                startSend.RedirectStandardError = true;
+                };
 
                 // Start the process
-                using (Process process = Process.Start(startSend)!)
-                {
-                    // Read the output
-                    using (StreamReader reader = process.StandardOutput)
-                    {
-                        string result = reader.ReadToEnd();
-                        Console.WriteLine(result);
-                    }
+                processSend.Start();
 
-                    // Read any errors
-                    using (StreamReader reader = process.StandardError)
-                    {
-                        string error = reader.ReadToEnd();
-                        Console.WriteLine(error);
-                    }
-                }
+                // Begin asynchronous read of the output/error streams
+                processSend.BeginOutputReadLine();
+                processSend.BeginErrorReadLine();
+
+                // Wait for the process to exit
+                processSend.WaitForExit();
+
+                // Display exit code
+                Console.WriteLine("Exit code: " + processSend.ExitCode);
             }
-            catch (Exception e)
-            {
-                Console.WriteLine("Send Bericht Exception: " + e.Message);
-            }
+            catch (Exception e) { Console.WriteLine("Exception" + e.Message); }
         }
 
         private static void ClearProdVis()
@@ -282,6 +319,7 @@ namespace API.Services
         }
         public void SaveCurrentValuesIntoProdVis()
         {
+            Console.WriteLine("ProdVis.csv write");
             using (StreamWriter writer = new StreamWriter(finalCSVPath + "ProdVis.csv", true))
             {
                 for (int i = 1; i < 5; i++)
@@ -645,8 +683,11 @@ namespace API.Services
                 }
                 var allMachinesCombined = 0;
                 lastFourLines.ForEach(line => { allMachinesCombined += int.Parse(line.Split(";")[1]); });
-
-                return int.Parse(lastFourLines[lastFourLines.Count - 1].Split(";")[3]) * 4 / allMachinesCombined;
+                double machineNowPercent = (GetGesamttubenanzahlServer1() + GetGesamttubenanzahlServer2()) / gesamtTubenAnzZiel;
+                double machineBeforePercent = (allMachinesCombined / gesamtTubenAnzZiel);
+                Console.WriteLine("MachinePercent: "+machineNowPercent);
+                Console.WriteLine("MachineBefore: "+machineBeforePercent);
+                return (int)((((double)(machineNowPercent)) - (double)machineBeforePercent) * 100);
             }
         }
     }

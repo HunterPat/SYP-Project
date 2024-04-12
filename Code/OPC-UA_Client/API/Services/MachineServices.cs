@@ -4,6 +4,7 @@ using Opc.UaFx;
 using Opc.UaFx.Client;
 using OPC_UA_Client;
 using Org.BouncyCastle.Asn1.Mozilla;
+using System.Diagnostics;
 using System.Net.Sockets;
 
 namespace API.Services
@@ -75,6 +76,115 @@ namespace API.Services
             }
             Console.WriteLine("CSV file cleared successfully.");
         }
+
+        public void RunPythonScript()
+        {
+            try
+            {
+                Console.WriteLine("Run python script");
+                string pythonInterpreter = @"C:\Users\Windows\AppData\Local\Programs\Python\Python312\python.exe";
+
+                // Path to your Python script
+                var currentDirectory = Directory.GetCurrentDirectory();
+                //for (int i = 0; i < 5; i++)
+                //{
+                //    currentDirectory = Directory.GetParent(currentDirectory)!.FullName;
+                //}
+                var pythonScriptCreate = currentDirectory + @"\PythonScripts\create_complex_pdf.py";
+                var pythonScriptSend = currentDirectory + @"\PythonScripts\test_email_sender.py";
+
+                // Create a process start info
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.FileName = pythonInterpreter;
+                startInfo.Arguments = pythonScriptCreate;
+
+                // Redirect standard output and error
+                startInfo.RedirectStandardOutput = true;
+                startInfo.RedirectStandardError = true;
+                startInfo.UseShellExecute = false;
+
+                // Create the process
+                Process process = new Process();
+                process.StartInfo = startInfo;
+
+                // Subscribe to output data events
+                process.OutputDataReceived += (sender, e) =>
+                {
+                    if (!string.IsNullOrEmpty(e.Data))
+                    {
+                        Console.WriteLine("Output: " + e.Data);
+                    }
+                };
+
+                process.ErrorDataReceived += (sender, e) =>
+                {
+                    if (!string.IsNullOrEmpty(e.Data))
+                    {
+                        Console.WriteLine("Error: " + e.Data);
+                    }
+                };
+
+                // Start the process
+                process.Start();
+
+                // Begin asynchronous read of the output/error streams
+                process.BeginOutputReadLine();
+                process.BeginErrorReadLine();
+
+                // Wait for the process to exit
+                process.WaitForExit();
+
+                // Display exit code
+                Console.WriteLine("Exit code: " + process.ExitCode);
+
+                // Create a process start info
+
+                ProcessStartInfo startInfoSend = new ProcessStartInfo();
+                startInfoSend.FileName = pythonInterpreter;
+                startInfoSend.Arguments = pythonScriptSend;
+
+                // Redirect standard output and error
+                startInfoSend.RedirectStandardOutput = true;
+                startInfoSend.RedirectStandardError = true;
+                startInfoSend.UseShellExecute = false;
+
+                // Create the process
+                Process processSend = new Process();
+                processSend.StartInfo = startInfoSend;
+
+                // Subscribe to output data events
+                processSend.OutputDataReceived += (sender, e) =>
+                {
+                    if (!string.IsNullOrEmpty(e.Data))
+                    {
+                        Console.WriteLine("Output: " + e.Data);
+                    }
+                };
+
+                processSend.ErrorDataReceived += (sender, e) =>
+                {
+                    if (!string.IsNullOrEmpty(e.Data))
+                    {
+                        Console.WriteLine("Error: " + e.Data);
+                    }
+                };
+
+                // Start the process
+                processSend.Start();
+
+                // Begin asynchronous read of the output/error streams
+                processSend.BeginOutputReadLine();
+                processSend.BeginErrorReadLine();
+
+                // Wait for the process to exit
+                processSend.WaitForExit();
+
+                // Display exit code
+                Console.WriteLine("Exit code: " + processSend.ExitCode);
+            }
+            catch (Exception e) { Console.WriteLine("Exception" + e.Message); }
+        }
+
         public void ReadLatestValuesFromProdVis()
         {
             try

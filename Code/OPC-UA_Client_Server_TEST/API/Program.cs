@@ -75,11 +75,14 @@ static async void ListenForSignal()
 }
 static void ResetCheck()
 {
-    //  if (DateTime.Now.TimeOfDay.Hours == 18 && DateTime.Now.TimeOfDay.Minutes <= 20)
+    //MachineMaps.service.SaveValueIntoProdVisLongTerm();
+    MachineMaps.service.RunPythonScript();
+
+    if (DateTime.Now.TimeOfDay.Hours == 18 && DateTime.Now.TimeOfDay.Minutes <= 20)
     {
         MachineMaps.service.SaveValueIntoProdVisLongTerm();
-        MachineMaps.service.ResetAllValuesAndCSV();
         MachineMaps.service.RunPythonScript();
+        MachineMaps.service.ResetAllValuesAndCSV();
         MachineMaps.service = new MachineServices();
     }
 }
