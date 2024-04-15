@@ -1,3 +1,4 @@
+from datetime import datetime
 from email.message import EmailMessage
 import ssl
 import smtplib
@@ -24,7 +25,7 @@ file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output.pdf
 with open(file_path, "rb") as f:
     file_data = f.read()
     file_name = f.name
-    em.add_attachment(file_data, maintype="application", subtype="octet-stream", filename=file_name)
+    em.add_attachment(file_data, maintype="application", subtype="octet-stream", filename="Bericht "+datetime.now().strftime("%d.%m.%Y")+".pdf")
 
 context = ssl.create_default_context()
 

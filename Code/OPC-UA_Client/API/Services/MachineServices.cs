@@ -112,7 +112,7 @@ namespace API.Services
                 {
                     if (!string.IsNullOrEmpty(e.Data))
                     {
-                        Console.WriteLine("Output: " + e.Data);
+                        Console.WriteLine("Python Output: " + e.Data);
                     }
                 };
 
@@ -120,7 +120,7 @@ namespace API.Services
                 {
                     if (!string.IsNullOrEmpty(e.Data))
                     {
-                        Console.WriteLine("Error: " + e.Data);
+                        Console.WriteLine("Python Error: " + e.Data);
                     }
                 };
 
@@ -597,10 +597,11 @@ namespace API.Services
                     }
                     readLine = reader.ReadLine();
                 }
-                var allMachinesCombined = 0;
+                double allMachinesCombined = 0;
                 lastFourLines.ForEach(line => { allMachinesCombined += int.Parse(line.Split(";")[1]); });
-
-                return int.Parse(lastFourLines[lastFourLines.Count - 1].Split(";")[3]) * 4 / allMachinesCombined;
+                double machineNowPercent = (double)(GetGesamttubenanzahlServer1() + GetGesamttubenanzahlServer2()) / (double)gesamtTubenAnzZiel;
+                double machineBeforePercent = (allMachinesCombined / (double)gesamtTubenAnzZiel);
+                return (int)((((machineNowPercent)) - machineBeforePercent) * 100);
             }
         }
     }

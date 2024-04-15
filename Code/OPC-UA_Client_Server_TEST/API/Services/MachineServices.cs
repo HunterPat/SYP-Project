@@ -681,13 +681,11 @@ namespace API.Services
                     }
                     readLine = reader.ReadLine();
                 }
-                var allMachinesCombined = 0;
+                double allMachinesCombined = 0;
                 lastFourLines.ForEach(line => { allMachinesCombined += int.Parse(line.Split(";")[1]); });
-                double machineNowPercent = (GetGesamttubenanzahlServer1() + GetGesamttubenanzahlServer2()) / gesamtTubenAnzZiel;
-                double machineBeforePercent = (allMachinesCombined / gesamtTubenAnzZiel);
-                Console.WriteLine("MachinePercent: "+machineNowPercent);
-                Console.WriteLine("MachineBefore: "+machineBeforePercent);
-                return (int)((((double)(machineNowPercent)) - (double)machineBeforePercent) * 100);
+                double machineNowPercent = (double)(GetGesamttubenanzahlServer1() + GetGesamttubenanzahlServer2()) / (double)gesamtTubenAnzZiel;
+                double machineBeforePercent = (allMachinesCombined / (double)gesamtTubenAnzZiel);
+                return (int)((((machineNowPercent)) - machineBeforePercent) * 100);
             }
         }
     }
