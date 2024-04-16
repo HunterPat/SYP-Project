@@ -58,7 +58,7 @@ namespace ProdVisAdminFrontend.Views
             viewModel.ProductionGoal_AP1 = api.GesamttubenanzZielMachinePairsGet();
             viewModel.ProductionGoal_AP2 =  api.GesamttubenanzZielMachinePairsGet();
             viewModel.CurrentAmount_AP1 =  api.GesamttubenAnzVisualServer1Get(); 
-            viewModel.CurrentAmount_AP2 =  api.GesamttubenAnzVisualServer1Get(); 
+            viewModel.CurrentAmount_AP2 =  api.GesamttubenAnzVisualServer2Get(); 
             viewModel.Progress_AP1 = api.GesamttubenAnzVisualServer1PercentGet(); 
             viewModel.Progress_AP2 =  api.GesamttubenAnzVisualServer2PercentGet(); 
         }

@@ -7,7 +7,7 @@
       "csharp": {
         "generatorName": "csharp",
         "output": "./swagger",
-        "inputSpec": "http://localhost:5501/swagger/v1/swagger.json",
+        "inputSpec": "http://localhost:5246/swagger/v1/swagger.json",
         "additionalProperties": {
           "targetFramework": "net8.0",
           "nullableReferenceTypes": true

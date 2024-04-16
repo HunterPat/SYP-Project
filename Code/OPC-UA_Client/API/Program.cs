@@ -75,4 +75,5 @@ static void ResetCheck()
         MachineMaps.service.RunPythonScript();
         MachineMaps.service = new MachineServices();
     }
+    MachineMaps.service.DisconnectAllClients();
 }

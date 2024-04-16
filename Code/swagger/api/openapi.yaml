@@ -5,48 +5,6 @@ info:
 servers:
 - url: /
 paths:
-  /gesamttubenAnz/Machine1/{serverID}:
-    get:
-      parameters:
-      - explode: false
-        in: path
-        name: serverID
-        required: true
-        schema:
-          format: int32
-          type: integer
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                format: int32
-                type: integer
-          description: Success
-      tags:
-      - API
-  /gesamttubenAnz/Machine2/{serverID}:
-    get:
-      parameters:
-      - explode: false
-        in: path
-        name: serverID
-        required: true
-        schema:
-          format: int32
-          type: integer
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                format: int32
-                type: integer
-          description: Success
-      tags:
-      - API
   /gesamttubenAnzVisual/Server1:
     get:
       responses:
@@ -165,6 +123,95 @@ paths:
       tags:
       - API
   /gesamttubenAnzVisual/Machine2/{serverID}:
+    get:
+      parameters:
+      - explode: false
+        in: path
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+  /report/information:
+    get:
+      parameters:
+      - explode: true
+        in: query
+        name: dateTime
+        required: true
+        schema:
+          format: date-time
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                additionalProperties:
+                  items:
+                    type: string
+                  type: array
+                type: object
+          description: Success
+      tags:
+      - API
+  /report/LastReportDate:
+    get:
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                type: string
+          description: Success
+      tags:
+      - API
+  /report/LastGoalPercent:
+    get:
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenAnz/Machine1/{serverID}:
+    get:
+      parameters:
+      - explode: false
+        in: path
+        name: serverID
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                format: int32
+                type: integer
+          description: Success
+      tags:
+      - API
+  /gesamttubenAnz/Machine2/{serverID}:
     get:
       parameters:
       - explode: false

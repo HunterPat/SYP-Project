@@ -544,6 +544,65 @@
             <param name="operationIndex">Index associated with the operation.</param>
             <returns>ApiResponse of bool</returns>
         </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ReportInformationGet(System.DateTime,System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="dateTime"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>Dictionary&lt;string, List&lt;string&gt;&gt;</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ReportInformationGetWithHttpInfo(System.DateTime,System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="dateTime"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of Dictionary&lt;string, List&lt;string&gt;&gt;</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ReportLastGoalPercentGet(System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ReportLastGoalPercentGetWithHttpInfo(System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of int</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ReportLastReportDateGet(System.Int32)">
+            <summary>
+            
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ReportLastReportDateGetWithHttpInfo(System.Int32)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of string</returns>
+        </member>
         <member name="M:Org.OpenAPITools.Api.IAPIApiSync.ResetBitServer1Post(System.Int32)">
             <summary>
             
@@ -1296,6 +1355,80 @@
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
             <returns>Task of ApiResponse (bool)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ReportInformationGetAsync(System.DateTime,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="dateTime"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of Dictionary&lt;string, List&lt;string&gt;&gt;</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ReportInformationGetWithHttpInfoAsync(System.DateTime,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="dateTime"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (Dictionary&lt;string, List&lt;string&gt;&gt;)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ReportLastGoalPercentGetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of int</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ReportLastGoalPercentGetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (int)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ReportLastReportDateGetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of string</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ReportLastReportDateGetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (string)</returns>
         </member>
         <member name="M:Org.OpenAPITools.Api.IAPIApiAsync.ResetBitServer1PostAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
@@ -2422,6 +2555,112 @@
             <param name="operationIndex">Index associated with the operation.</param>
             <param name="cancellationToken">Cancellation Token to cancel the request.</param>
             <returns>Task of ApiResponse (bool)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportInformationGet(System.DateTime,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="dateTime"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>Dictionary&lt;string, List&lt;string&gt;&gt;</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportInformationGetWithHttpInfo(System.DateTime,System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="dateTime"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of Dictionary&lt;string, List&lt;string&gt;&gt;</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportInformationGetAsync(System.DateTime,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="dateTime"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of Dictionary&lt;string, List&lt;string&gt;&gt;</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportInformationGetWithHttpInfoAsync(System.DateTime,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="dateTime"></param>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (Dictionary&lt;string, List&lt;string&gt;&gt;)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportLastGoalPercentGet(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportLastGoalPercentGetWithHttpInfo(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of int</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportLastGoalPercentGetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of int</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportLastGoalPercentGetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (int)</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportLastReportDateGet(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportLastReportDateGetWithHttpInfo(System.Int32)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <returns>ApiResponse of string</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportLastReportDateGetAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of string</returns>
+        </member>
+        <member name="M:Org.OpenAPITools.Api.APIApi.ReportLastReportDateGetWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="operationIndex">Index associated with the operation.</param>
+            <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+            <returns>Task of ApiResponse (string)</returns>
         </member>
         <member name="M:Org.OpenAPITools.Api.APIApi.ResetBitServer1Post(System.Int32)">
             <summary>

@@ -125,7 +125,7 @@
                         </Grid.ColumnDefinitions>
 
                         <Border Grid.Column="1" Grid.Row="1" BorderBrush="DeepSkyBlue" CornerRadius="5" BorderThickness="2"></Border>
-                        <ProgressBar Grid.Column="1" Grid.Row="1" Foreground="DeepSkyBlue" Background="White" Value="{Binding Progress_A3}" Orientation="Vertical" Margin="1.5"></ProgressBar>
+                        <ProgressBar Grid.Column="1" Grid.Row="1" Foreground="DeepSkyBlue" Background="White" Value="{Binding Progress_A4}" Orientation="Vertical" Margin="1.5"></ProgressBar>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>

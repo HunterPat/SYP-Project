@@ -82,7 +82,7 @@ namespace API.Services
             try
             {
                 Console.WriteLine("Run python script");
-                string pythonInterpreter = @"C:\Users\Windows\AppData\Local\Programs\Python\Python312\python.exe";
+                string pythonInterpreter = @"C:\Users\PUROLEX\AppData\Local\Programs\Python\Python312\python.exe";
 
                 // Path to your Python script
                 var currentDirectory = Directory.GetCurrentDirectory();
@@ -461,19 +461,19 @@ namespace API.Services
         }
         public int GetGesamttubenanzahlPercentTAA1()
         {
-            return CalculatePercentage(GetGesamttubenanzahlMachine1(1), GetGesamttubenanzahlZiel4Machines());
+            return CalculatePercentage(GetGesamttubenanzahlMachine1Visual(1), GetGesamttubenanzahlZiel4Machines());
         }
         public int GetGesamttubenanzahlPercentTAA2()
         {
-            return CalculatePercentage(GetGesamttubenanzahlMachine2(1), GetGesamttubenanzahlZiel4Machines());
+            return CalculatePercentage(GetGesamttubenanzahlMachine2Visual(1), GetGesamttubenanzahlZiel4Machines());
         }
         public int GetGesamttubenanzahlPercentTAA3()
         {
-            return CalculatePercentage(GetGesamttubenanzahlMachine1(2), GetGesamttubenanzahlZiel4Machines());
+            return CalculatePercentage(GetGesamttubenanzahlMachine1Visual(2), GetGesamttubenanzahlZiel4Machines());
         }
         public int GetGesamttubenanzahlPercentTAA4()
         {
-            return CalculatePercentage(GetGesamttubenanzahlMachine2(2), GetGesamttubenanzahlZiel4Machines());
+            return CalculatePercentage(GetGesamttubenanzahlMachine2Visual(2), GetGesamttubenanzahlZiel4Machines());
         }
         public int GetGesamttubenanzahlZielMachinePairs()
         {
@@ -540,28 +540,28 @@ namespace API.Services
         }
         public bool PutKaputtGesamtTubenAnzTAA4(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA4 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA3(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA3 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA2(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA2 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA1(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA1 = value;
             return true;
         }
@@ -603,6 +603,12 @@ namespace API.Services
                 double machineBeforePercent = (allMachinesCombined / (double)gesamtTubenAnzZiel);
                 return (int)((((machineNowPercent)) - machineBeforePercent) * 100);
             }
+        }
+
+        public void DisconnectAllClients()
+        {
+            clientServer1.Disconnect();
+            clientServer2.Disconnect();
         }
     }
 }

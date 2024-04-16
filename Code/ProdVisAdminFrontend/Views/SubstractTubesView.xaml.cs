@@ -31,59 +31,31 @@ namespace ProdVisAdminFrontend.Views
 
         private void Send_Clicked(object sender, RoutedEventArgs e)
         {
-            var pwAlert = passwordAlert.Child as PasswordAlert;
-
-            passwordAlert.IsOpen = true;
-            pwAlert.CloseButtonClicked += PasswordAlert_CloseButtonClicked;
-            pwAlert.ConfirmButtonClicked += PasswordAlert_ConfirmButtonClicked;
-
-            pwAlert.WrongPasswordVisibility = Visibility.Hidden;
-            pwAlert.Message = "Passwort benötigt!";
-
-
-
-        }
-
-        private void PasswordAlert_ConfirmButtonClicked(object? sender, EventArgs e)
-        {
-            var alert = passwordAlert.Child as PasswordAlert;
-            var passwordCorrect = api.PasswordCheckGet(alert.Password);
-            if (passwordCorrect)
+            string text = txtBadTubes_A1.Text;
+            if (int.TryParse(text, out int result1))
             {
-                string text = txtBadTubes_A1.Text;
-
-                if (int.TryParse(text, out int result1))
-                {
-                    // The text represents a valid integer, and the parsed value is in 'result'
-                    api.KaputteTubenAnzTAA1Put(result1);
-                }
-                text = txtBadTubes_A2.Text;
-                if (int.TryParse(text, out int result2))
-                {
-                    // The text represents a valid integer, and the parsed value is in 'result'
-                    api.KaputteTubenAnzTAA2Put(result2);
-                }
-                text = txtBadTubes_A3.Text;
-                if (int.TryParse(text, out int result3))
-                {
-                    // The text represents a valid integer, and the parsed value is in 'result'
-                    api.KaputteTubenAnzTAA3Put(result3);
-                }
-                text = txtBadTubes_A4.Text;
-                if (int.TryParse(text, out int result4))
-                {
-                    // The text represents a valid integer, and the parsed value is in 'result'
-                    api.KaputteTubenAnzTAA4Put(result4);
-                }
-
-
-                HidePasswordAlert();
-                UpdateAllValues();
+                // The text represents a valid integer, and the parsed value is in 'result'
+                api.KaputteTubenAnzTAA1Put(result1);
             }
-            else
+            text = txtBadTubes_A2.Text;
+            if (int.TryParse(text, out int result2))
             {
-                alert.WrongPasswordVisibility = Visibility.Visible;
+                // The text represents a valid integer, and the parsed value is in 'result'
+                api.KaputteTubenAnzTAA2Put(result2);
             }
+            text = txtBadTubes_A3.Text;
+            if (int.TryParse(text, out int result3))
+            {
+                // The text represents a valid integer, and the parsed value is in 'result'
+                api.KaputteTubenAnzTAA3Put(result3);
+            }
+            text = txtBadTubes_A4.Text;
+            if (int.TryParse(text, out int result4))
+            {
+                // The text represents a valid integer, and the parsed value is in 'result'
+                api.KaputteTubenAnzTAA4Put(result4);
+            }
+            UpdateAllValues();
         }
 
         private void PasswordAlert_CloseButtonClicked(object? sender, EventArgs e)

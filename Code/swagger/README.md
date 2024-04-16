@@ -139,6 +139,9 @@ Class | Method | HTTP request | Description
 *APIApi* | [**PasswordCheckGet**](docs/APIApi.md#passwordcheckget) | **GET** /password/check | 
 *APIApi* | [**PasswordGet**](docs/APIApi.md#passwordget) | **GET** /password | 
 *APIApi* | [**PasswordNewPasswordPut**](docs/APIApi.md#passwordnewpasswordput) | **PUT** /password/newPassword | 
+*APIApi* | [**ReportInformationGet**](docs/APIApi.md#reportinformationget) | **GET** /report/information | 
+*APIApi* | [**ReportLastGoalPercentGet**](docs/APIApi.md#reportlastgoalpercentget) | **GET** /report/LastGoalPercent | 
+*APIApi* | [**ReportLastReportDateGet**](docs/APIApi.md#reportlastreportdateget) | **GET** /report/LastReportDate | 
 *APIApi* | [**ResetBitServer1Post**](docs/APIApi.md#resetbitserver1post) | **POST** /resetBit/Server1 | 
 *APIApi* | [**ResetBitServer2Post**](docs/APIApi.md#resetbitserver2post) | **POST** /resetBit/Server2 | 
 *APIApi* | [**TimeIntervalGet**](docs/APIApi.md#timeintervalget) | **GET** /timeInterval | 
