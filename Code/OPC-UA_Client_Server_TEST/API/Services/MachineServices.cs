@@ -624,28 +624,28 @@ namespace API.Services
         }
         public bool PutKaputtGesamtTubenAnzTAA4(int value)
         {
-            if (value < 0) return false;
+            if (value <= 0) return false;
             KaputteTubenAnzTAA4 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA3(int value)
         {
-            if (value < 0) return false;
+            if (value <= 0) return false;
             KaputteTubenAnzTAA3 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA2(int value)
         {
-            if (value < 0) return false;
+            if (value <= 0) return false;
             KaputteTubenAnzTAA2 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA1(int value)
         {
-            if (value < 0) return false;
+            if (value <= 0) return false;
             KaputteTubenAnzTAA1 = value;
             return true;
         }
@@ -683,9 +683,9 @@ namespace API.Services
                 }
                 double allMachinesCombined = 0;
                 lastFourLines.ForEach(line => { allMachinesCombined += int.Parse(line.Split(";")[1]); });
-                double machineNowPercent = (double)(GetGesamttubenanzahlServer1() + GetGesamttubenanzahlServer2()) / (double)gesamtTubenAnzZiel;
-                double machineBeforePercent = (allMachinesCombined / (double)gesamtTubenAnzZiel);
-                return (int)((((machineNowPercent)) - machineBeforePercent) * 100);
+                double machineNowPercent = (double)(GetGesamttubenanzahlServer1() + GetGesamttubenanzahlServer2());
+                double machineBeforePercent = (allMachinesCombined);
+                return (int)((((machineNowPercent) - machineBeforePercent)/gesamtTubenAnzZiel) * 100);
             }
         }
     }

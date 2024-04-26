@@ -8,10 +8,9 @@ email_sender = "produktion.purolex@gmail.com"
 email_password = "edlq jfvs mtcc tgfz"
 email_receiver = "mario@purolex.at"
 
-subject = "this is a testmail"
+subject = "Bericht vom "+ format(datetime.now().strftime("%d.%m.%Y"))
 body = """
-This is the body of the test Email!
-"""
+Guten Abend, es ist """+ format(datetime.now().strftime("%H:%M"))
 em = EmailMessage()
 em["From"] = email_sender
 em["To"] = email_receiver

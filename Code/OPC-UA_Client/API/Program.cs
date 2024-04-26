@@ -22,7 +22,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+Console.ForegroundColor = ConsoleColor.Green;
+
 Console.WriteLine("Ready!");
+Console.ResetColor();
+
 app.MapMachineData();
 Thread thread = new Thread(new ThreadStart(ListenForSignal));
 thread.IsBackground = true;
@@ -46,8 +50,10 @@ static async void ListenForSignal()
                 string receivedData = reader.ReadLine()!;
                 if (receivedData != null && receivedData.Length > 0)
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine($"Data received from server: {receivedData}");
                     Console.WriteLine("Shutting down!");
+                    Console.ResetColor();
                     MachineMaps.service.SaveCurrentValuesIntoProdVis();
                     ResetCheck();
                   //  Thread.Sleep(5000);

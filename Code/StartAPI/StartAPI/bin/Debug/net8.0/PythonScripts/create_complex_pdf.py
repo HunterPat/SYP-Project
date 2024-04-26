@@ -42,6 +42,8 @@ if global_amount != 0:
 else:
     global_error_percent = 0
 global_missing = global_goal - global_amount
+if global_missing < 0:
+    global_missing = 0
 if global_goal != 0:
     global_missing_percent = round((global_missing / global_goal) * 100, 2)
 else:
