@@ -20,7 +20,6 @@ namespace API.Maps
             var resetBitGroup = routes.MapGroup("/resetBit");
             var gesamtTubenAnzZielGroup = routes.MapGroup("/gesamttubenanzZiel");
             var timeIntervalGroup = routes.MapGroup("/timeInterval");
-
             gesamtTubenAnzZielGroup.MapGet("", () => service.GetGesamttubenanzahlZiel());
             gesamtTubenAnzZielGroup.MapPut("", ([FromBody] int value) => service.PutGesamttubenAnzZiel(value));
 

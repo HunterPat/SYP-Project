@@ -58,7 +58,7 @@ namespace StartAPI
             restartTimer?.Dispose();
 
             restartTimer = new System.Timers.Timer();
-            restartTimer.Interval = 1000*60*20; 
+            restartTimer.Interval = 1000 * 60 * 20;
             restartTimer.Elapsed += RestartApplication!;
             restartTimer.AutoReset = true;
             restartTimer.Start();

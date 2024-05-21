@@ -5,6 +5,7 @@ using Opc.UaFx.Client;
 using OPC_UA_Client;
 using Org.BouncyCastle.Asn1.Mozilla;
 using System.Diagnostics;
+using System.Drawing;
 using System.Net.Sockets;
 
 namespace API.Services
@@ -27,7 +28,7 @@ namespace API.Services
         private static int GesamtTubenAnzBeforeTAA4 = 0;
         private static string password = "dog";
         private static string finalCSVPath = "";
-        public static int gesamtTubenAnzZiel = 8000;
+        public static int gesamtTubenAnzZiel = 20000;
         private static int timeInterval = 30;
 
         public MachineServices()
@@ -39,9 +40,13 @@ namespace API.Services
             }
             // Append the remaining path
             finalCSVPath = currentDirectory + @"\OPC-UA_Client\API\";
-            ReadLatestValuesFromProdVis();
             clientServer1.EstablishConnection();
             clientServer2.EstablishConnection();
+            GesamtTubenAnzBeforeTAA1 = GetGesamttubenanzahlMachine1(1);
+            GesamtTubenAnzBeforeTAA2 = GetGesamttubenanzahlMachine2(1);
+            GesamtTubenAnzBeforeTAA3 = GetGesamttubenanzahlMachine1(2);
+            GesamtTubenAnzBeforeTAA4 = GetGesamttubenanzahlMachine2(2);
+            ReadLatestValuesFromProdVis();
         }
         public int GetGesamttubenanzahlServer1()
         {
@@ -175,6 +180,9 @@ namespace API.Services
                 Console.WriteLine("Exit code: " + processSend.ExitCode);
             }
             catch (Exception e) { Console.WriteLine("Exception" + e.Message); }
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Report sent!");
+            Console.ResetColor();
         }
 
         public void ReadLatestValuesFromProdVis()
@@ -352,15 +360,15 @@ namespace API.Services
 
                 if (clientServer1.ReadDataFromTAA1() != -1) return clientServer1.ReadDataFromTAA1();
 
-                return GetGesamttubenanzahlMachine1(serverID);
+                return 0;
 
             }
             else if (serverID == 2)
             {
                 if (clientServer2.ReadDataFromTAA3() != -1) return clientServer2.ReadDataFromTAA3();
-                return GetGesamttubenanzahlMachine1(serverID);
+                return 0;
             }
-            return GetGesamttubenanzahlMachine1(serverID);
+            return -1;
         }
 
         public int GetGesamttubenanzahlMachine2(int serverID)
@@ -370,16 +378,16 @@ namespace API.Services
             if (serverID == 1)
             {
                 if (clientServer1.ReadDataFromTAA2() != -1) return clientServer1.ReadDataFromTAA2();
-                return GetGesamttubenanzahlMachine2(serverID);
+                return 0;
 
             }
             else if (serverID == 2)
             {
                 if (clientServer2.ReadDataFromTAA4() != -1) return clientServer2.ReadDataFromTAA4();
 
-                return GetGesamttubenanzahlMachine2(serverID);
+                return 0;
             }
-            return GetGesamttubenanzahlMachine2(serverID);
+            return -1;
         }
         public int GetGesamttubenanzahlMachine1Visual(int serverID)
         {
@@ -390,13 +398,13 @@ namespace API.Services
 
                 if (clientServer1.ReadDataFromTAA1() != -1) return clientServer1.ReadDataFromTAA1() - GesamtTubenAnzBeforeTAA1;
 
-                return GetGesamttubenanzahlMachine1Visual(serverID);
+                return 0;
 
             }
             else if (serverID == 2)
             {
                 if (clientServer2.ReadDataFromTAA3() != -1) return clientServer2.ReadDataFromTAA3() - GesamtTubenAnzBeforeTAA3;
-                return GetGesamttubenanzahlMachine1Visual(serverID);
+                return 0;
             }
             return -1;
         }
@@ -408,14 +416,14 @@ namespace API.Services
             if (serverID == 1)
             {
                 if (clientServer1.ReadDataFromTAA2() != -1) return clientServer1.ReadDataFromTAA2() - GesamtTubenAnzBeforeTAA2;
-                return GetGesamttubenanzahlMachine2Visual(serverID);
+                return 0;
 
             }
             else if (serverID == 2)
             {
                 if (clientServer2.ReadDataFromTAA4() != -1) return clientServer2.ReadDataFromTAA4() - GesamtTubenAnzBeforeTAA4;
 
-                return GetGesamttubenanzahlMachine2Visual(serverID);
+                return 0;
             }
             return -1;
         }
@@ -532,28 +540,28 @@ namespace API.Services
         }
         public bool PutKaputtGesamtTubenAnzTAA4(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA4 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA3(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA3 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA2(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA2 = value;
             return true;
         }
 
         public bool PutKaputtGesamtTubenAnzTAA1(int value)
         {
-            if (value <= 0) return false;
+            if (value < 0) return false;
             KaputteTubenAnzTAA1 = value;
             return true;
         }

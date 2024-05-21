@@ -56,7 +56,7 @@ static async void ListenForSignal()
                     Console.ResetColor();
                     MachineMaps.service.SaveCurrentValuesIntoProdVis();
                     ResetCheck();
-                  //  Thread.Sleep(5000);
+                    //  Thread.Sleep(5000);
                     pipeClient.Close();
                     await pipeClient.DisposeAsync();
                     pipeClient = null!;
@@ -74,7 +74,9 @@ static async void ListenForSignal()
 }
 static void ResetCheck()
 {
-    if (DateTime.Now.TimeOfDay.Hours == 18 && DateTime.Now.TimeOfDay.Minutes <= 20)
+    Console.WriteLine("In ResetCheck: ");
+   // MachineMaps.service.RunPythonScript();
+    if (DateTime.Now.TimeOfDay.Hours == 14 && DateTime.Now.TimeOfDay.Minutes >= 40)
     {
         MachineMaps.service.SaveValueIntoProdVisLongTerm();
         MachineMaps.service.ResetAllValuesAndCSV();
