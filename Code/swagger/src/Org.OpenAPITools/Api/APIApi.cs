@@ -1529,7 +1529,7 @@ namespace Org.OpenAPITools.Api
         /// <returns></returns>
         public APIApi(Org.OpenAPITools.Client.Configuration configuration)
         {
-            if (configuration == null) throw new ArgumentNullException("configuration");
+            if (configuration == null) ////throw new ArgumentNullException("configuration");
 
             this.Configuration = Org.OpenAPITools.Client.Configuration.MergeConfigurations(
                 Org.OpenAPITools.Client.GlobalConfiguration.Instance,
@@ -1549,9 +1549,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="configuration">The configuration object.</param>
         public APIApi(Org.OpenAPITools.Client.ISynchronousClient client, Org.OpenAPITools.Client.IAsynchronousClient asyncClient, Org.OpenAPITools.Client.IReadableConfiguration configuration)
         {
-            if (client == null) throw new ArgumentNullException("client");
-            if (asyncClient == null) throw new ArgumentNullException("asyncClient");
-            if (configuration == null) throw new ArgumentNullException("configuration");
+            if (client == null) ////throw new ArgumentNullException("client");
+            if (asyncClient == null) ////throw new ArgumentNullException("asyncClient");
+            if (configuration == null) ////throw new ArgumentNullException("configuration");
 
             this.Client = client;
             this.AsynchronousClient = asyncClient;
@@ -1593,7 +1593,7 @@ namespace Org.OpenAPITools.Api
             {
                 if (_exceptionFactory != null && _exceptionFactory.GetInvocationList().Length > 1)
                 {
-                    throw new InvalidOperationException("Multicast delegate for ExceptionFactory is unsupported.");
+                    ////throw new InvalidOperationException("Multicast delegate for ExceptionFactory is unsupported.");
                 }
                 return _exceptionFactory;
             }
@@ -1657,7 +1657,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzMachine1ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -1725,7 +1725,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzMachine1ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -1789,7 +1789,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzMachine2ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -1857,7 +1857,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzMachine2ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -1921,7 +1921,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualMachine1ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -1989,7 +1989,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualMachine1ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -2053,7 +2053,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualMachine2ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -2121,7 +2121,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualMachine2ServerIDGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -2182,7 +2182,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualServer1Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    ////throw _exception;
                 }
             }
 
@@ -2247,7 +2247,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualServer1Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2308,7 +2308,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualServer1PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2373,7 +2373,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualServer1PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2434,7 +2434,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualServer2Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2499,7 +2499,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualServer2Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2560,7 +2560,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualServer2PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2625,7 +2625,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualServer2PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2686,7 +2686,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualTAA1PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2751,7 +2751,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualTAA1PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2812,7 +2812,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualTAA2PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2877,7 +2877,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualTAA2PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -2938,7 +2938,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualTAA3PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3003,7 +3003,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualTAA3PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3064,7 +3064,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualTAA4PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3129,7 +3129,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenAnzVisualTAA4PercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3190,7 +3190,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenanzZiel4MachinesGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3255,7 +3255,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenanzZiel4MachinesGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3316,7 +3316,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenanzZielGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3381,7 +3381,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenanzZielGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3442,7 +3442,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenanzZielMachinePairsGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3507,7 +3507,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenanzZielMachinePairsGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3572,7 +3572,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenanzZielPut", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3641,7 +3641,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("GesamttubenanzZielPut", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3702,7 +3702,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA1Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3767,7 +3767,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA1Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3831,7 +3831,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA1Put", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3899,7 +3899,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA1Put", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -3960,7 +3960,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA2Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4025,7 +4025,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA2Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4089,7 +4089,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA2Put", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4157,7 +4157,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA2Put", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4218,7 +4218,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA3Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4283,7 +4283,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA3Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4347,7 +4347,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA3Put", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4415,7 +4415,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA3Put", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4476,7 +4476,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA4Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4541,7 +4541,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA4Get", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4605,7 +4605,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA4Put", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4673,7 +4673,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("KaputteTubenAnzTAA4Put", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4705,7 +4705,7 @@ namespace Org.OpenAPITools.Api
             // verify the required parameter 'passwordValue' is set
             if (passwordValue == null)
             {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'passwordValue' when calling APIApi->PasswordCheckGet");
+                //throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'passwordValue' when calling APIApi->PasswordCheckGet");
             }
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -4743,7 +4743,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("PasswordCheckGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4777,7 +4777,7 @@ namespace Org.OpenAPITools.Api
             // verify the required parameter 'passwordValue' is set
             if (passwordValue == null)
             {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'passwordValue' when calling APIApi->PasswordCheckGet");
+                //throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'passwordValue' when calling APIApi->PasswordCheckGet");
             }
 
 
@@ -4817,7 +4817,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("PasswordCheckGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4878,7 +4878,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("PasswordGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4943,7 +4943,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("PasswordGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -4975,7 +4975,7 @@ namespace Org.OpenAPITools.Api
             // verify the required parameter 'newPasswordValue' is set
             if (newPasswordValue == null)
             {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'newPasswordValue' when calling APIApi->PasswordNewPasswordPut");
+                //throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'newPasswordValue' when calling APIApi->PasswordNewPasswordPut");
             }
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -5013,7 +5013,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("PasswordNewPasswordPut", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5047,7 +5047,7 @@ namespace Org.OpenAPITools.Api
             // verify the required parameter 'newPasswordValue' is set
             if (newPasswordValue == null)
             {
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'newPasswordValue' when calling APIApi->PasswordNewPasswordPut");
+                //throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'newPasswordValue' when calling APIApi->PasswordNewPasswordPut");
             }
 
 
@@ -5087,7 +5087,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("PasswordNewPasswordPut", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5151,7 +5151,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ReportInformationGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5219,7 +5219,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ReportInformationGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5280,7 +5280,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ReportLastGoalPercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5345,7 +5345,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ReportLastGoalPercentGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5406,7 +5406,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ReportLastReportDateGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5471,7 +5471,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ReportLastReportDateGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5530,7 +5530,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ResetBitServer1Post", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5593,7 +5593,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ResetBitServer1Post", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5652,7 +5652,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ResetBitServer2Post", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5715,7 +5715,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("ResetBitServer2Post", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5776,7 +5776,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("TimeIntervalGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5841,7 +5841,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("TimeIntervalGet", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5905,7 +5905,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("TimeIntervalPut", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 
@@ -5973,7 +5973,7 @@ namespace Org.OpenAPITools.Api
                 Exception _exception = this.ExceptionFactory("TimeIntervalPut", localVarResponse);
                 if (_exception != null)
                 {
-                    throw _exception;
+                    //throw _exception;
                 }
             }
 

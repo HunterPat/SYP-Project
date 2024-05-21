@@ -37,6 +37,7 @@ namespace ProdVisOverviewFrontendV2.Views
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
+            api = new APIApi(baseUrl);
             viewModel = DataContext as OverviewViewModel;
             timeTimer = new DispatcherTimer();
             timeTimer.Tick += TimeTimer_Tick;
@@ -46,7 +47,6 @@ namespace ProdVisOverviewFrontendV2.Views
             updateTimer.Interval = TimeSpan.FromMilliseconds(StaticValues.ThreadCallInterval);
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
-            api = new APIApi(baseUrl);
             UpdateAllValues();
         }
 
@@ -74,6 +74,7 @@ namespace ProdVisOverviewFrontendV2.Views
 
         public void UpdateAllValues()
         {
+            viewModel.DateText = DateTime.Now.ToString("HH:mm:ss - dddd.MM.yyyy");
             if (api == null) return;
             viewModel.ProductionGoal_AP1 =  api.GesamttubenanzZielMachinePairsGet();
             viewModel.ProductionGoal_AP2 =  api.GesamttubenanzZielMachinePairsGet();

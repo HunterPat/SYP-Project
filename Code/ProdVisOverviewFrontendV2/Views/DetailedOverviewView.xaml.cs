@@ -65,12 +65,12 @@ namespace ProdVisOverviewFrontendV2.Views
 
         private void UserControl_Loaded_1(object sender, RoutedEventArgs e)
         {
+            api = new APIApi(baseUrl);
             viewModel = DataContext as DetailedOverviewViewModel;
             updateTimer = new DispatcherTimer();
             updateTimer.Interval = TimeSpan.FromMilliseconds(StaticValues.ThreadCallInterval);
             updateTimer.Tick += UpdateTimer_Tick;
             updateTimer.Start();
-            api = new APIApi(baseUrl);
             UpdateAllValues();
         }
     }

@@ -21,9 +21,7 @@ namespace ProdVisOverviewFrontendV2.ViewModels
         private string baseUrl = StaticValues.BaseUrl;
 
         public OverviewViewModel()
-        {
-
-            
+        {   
             timeTimer = new DispatcherTimer();
             _dateText = "Loading...";
             timeTimer.Interval = TimeSpan.FromMilliseconds(500);
@@ -39,7 +37,7 @@ namespace ProdVisOverviewFrontendV2.ViewModels
 
         private void TimeTimer_Tick(object? sender, EventArgs e)
         {
-            DateText = DateTime.Now.ToString("dddd, dd.MM.yyyy - HH:mm:ss");
+            DateText = DateTime.Now.ToString("HH:mm:ss - dddd.MM.yyyy");
         }
         
 

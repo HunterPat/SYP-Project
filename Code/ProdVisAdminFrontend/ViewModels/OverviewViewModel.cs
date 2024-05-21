@@ -152,7 +152,7 @@ namespace ProdVisAdminFrontend.ViewModels
 
         private void TimeTimer_Tick(object? sender, EventArgs e)
         {
-            DateText = DateTime.Now.ToString("dddd, dd.MM.yyyy - HH:mm:ss");
+            DateText = DateTime.Now.ToString("HH:mm:ss - dddd.MM.yyyy");
         }
 
         protected virtual void OnPropertyChanged(string propertyName)

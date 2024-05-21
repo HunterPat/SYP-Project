@@ -54,6 +54,8 @@ namespace ProdVisAdminFrontend.Views
 
         public void UpdateAllValues()
         {
+            viewModel.DateText = DateTime.Now.ToString("HH:mm:ss - dddd.MM.yyyy");
+
             if (api == null) return;
             viewModel.ProductionGoal_AP1 = api.GesamttubenanzZielMachinePairsGet();
             viewModel.ProductionGoal_AP2 =  api.GesamttubenanzZielMachinePairsGet();
